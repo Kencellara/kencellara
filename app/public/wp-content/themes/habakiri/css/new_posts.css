@@ -1,0 +1,114 @@
+.newPostsZone {
+  background-color: cornsilk;
+  border: 3px outset cornsilk;
+}
+.newPostsZone:nth-child(n + 2) {
+  margin-top: 20px;
+}
+.newPostsZone.ramen {
+  background-color: #ffeaea;
+  border-color: #ffeaea;
+}
+.newPostsZone.meat {
+  background-color: #ffffea;
+  border-color: #ffffea;
+}
+.newPostsZone.cafe {
+  background-color: #ffeaff;
+  border-color: #ffeaff;
+}
+.newPostsZone.izakaya {
+  background-color: #ffeaf4;
+  border-color: #ffeaf4;
+}
+.newPostsZone.bakery {
+  background-color: #f4ffea;
+  border-color: #f4ffea;
+}
+.newPostsZone.set-meal {
+  background-color: #fff4ea;
+  border-color: #fff4ea;
+}
+/* .newPostsZone.chain {
+  background-color: #f4eaff;
+  border-color: #f4eaff;
+} */
+.newPostsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 20px;
+  padding: 5px 10px;
+}
+.newPostCard {
+  background-color: #fff;
+  border: 3px outset silver;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  width: calc(50% - 10px);
+  margin: 5px;
+}
+.newPostTitle {
+  margin: 10px;
+  line-height: 1.0;
+  font-weight: bold;
+  font-size: 19px;
+  padding: 15px;
+  border: 3px solid #ccc;
+  border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
+}
+.newPostTitle a {
+  color: #333;
+}
+.newPostTitle a:hover {
+  color: #375A7F;
+}
+.newPostThumbnail {
+  text-align: center;
+}
+.newPostCategory {
+  margin: 0 0 8px 8px;
+}
+.newPostCategory a {
+  background: #C2EEFF;
+  color: #000000;
+  border-radius: 0.2em;
+  font-size: 11px;
+  display: inline-block;
+  margin: 8px 4px 0 0;
+  padding: 4px 8px 2px;
+}
+.goToArchivePage {
+  width: 250px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  margin-left: auto;
+  border-radius: 5px;
+  background: #f1e767;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f1e767), to(#feb645));
+  background: -webkit-linear-gradient(top, #f1e767 0%, #feb645 100%);
+  background: linear-gradient(to bottom, #f1e767 0%, #feb645 100%);
+}
+.goToArchivePage:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#f1e767), to(#feb645));
+  background: -webkit-linear-gradient(bottom, #f1e767 0%, #feb645 100%);
+  background: linear-gradient(to top, #f1e767 0%, #feb645 100%);
+}
+.goToArchivePage a {
+  display: block;
+}
+.goToArchivePage a:hover {
+  color: crimson;
+}
+.goToArchivePage i {
+  font-size: .8em;
+  margin-left: .8em;
+}

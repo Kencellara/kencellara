@@ -1,0 +1,122 @@
+@media screen and (max-width: 420px) {
+  section.typeA .tabLabel {
+    font-size: 14px;
+  }
+  .topPageHeader {
+    width: 290px;
+    font-size: 20px;
+  }
+  .areaSearchZone {
+    height: 510px;
+  }
+  .areaSearchInner {
+    height: 400px;
+    width: 350px;
+  }
+  .areaZone {
+    width: 65px;
+    height: 100px;
+  }
+  .areaZone.hokubu {
+    top: -10px;
+    left: 100px;
+  }
+  .areaZone.iga {
+    top: 93px;
+    left: -50px;
+  }
+  .areaZone.chubu {
+    top: 60px;
+    right: -126px;
+  }
+  .areaZone.iseShima {
+    top: 253px;
+    right: -17px;
+  }
+  .areaZone.higashikishu {
+    top: 208px;
+    left: -238px;
+  }
+  .areaHeader {
+    font-size: 15px;
+    margin-bottom: 4px;
+  }
+  .areaSearchZone li {
+    font-size: 15px;
+    margin-bottom: 4px;
+  }
+  .genreSearchCard {
+    margin: 10px;
+    height: 135px;
+  }
+  .genreSearchCard a {
+    font-size: 25px;
+    padding: 20px 3px 0;
+  }
+  .genreSearchColumn .fa-bookmark {
+    font-size: 24px;
+    top: -146px;
+  }
+  .genreSearchCard:hover + i {
+    transform: rotateZ(10deg) translateX(10px);
+  }
+  .recommendGourmetZone {
+    padding: 10px 5px;
+  }
+  .recommendGourmetBox {
+    margin: 6px;
+  }
+  .banzukeRank {
+    width: 55px;
+    font-size: 19px;
+    padding-left: 6px;
+    padding-right: 0;
+  }
+  .banzukePost {
+    width: 200px;
+    padding: 6px;
+  }
+  .banzukePost h3 {
+    font-size: 18px;
+  }
+  .banzukeStar {
+    padding-right: 6px;
+  }
+  .star-rating {
+    font-size: 16px;
+  }
+  .kenceWindowModalContent {
+    width: calc(700px / 2);
+  }
+  .kencemeshiExplainContents p {
+    font-size: 14px;
+    text-align: left;
+  }
+  .kencemeshiExplainContents {
+    padding: 0 3px;
+  }
+  .kencemeshiHistory {
+    padding: 10px 5px;
+  }
+  .kencemeshiHistoryContents h3 {
+    font-size: 20px;
+    margin: 10px 0 3px;
+  }
+  .kencemeshiHistoryContents h4 {
+    font-size: 17px;
+    margin: 10px 0;
+    min-width: 35px;
+  }
+  .kencemeshiHistoryContents ul {
+    padding-left: 20px;
+  }
+  .codoc-entry {
+    margin: 15px auto;
+  }
+  .acknowledgement {
+    font-size: 14px;
+  }
+  .to_kence_work {
+    font-size: 15px;
+  }
+}

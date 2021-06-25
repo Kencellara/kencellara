@@ -1,0 +1,77 @@
+html {
+  scroll-padding-top: 74px;
+}
+.page_parent a {
+  color: saddlebrown;
+}
+.page_parent a:focus,
+.page_parent a:hover,
+.page_parent a:active {
+  outline: none;
+  color: brown;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+.btn {
+  color: saddlebrown;
+  background-color: cornsilk;
+  border-color: saddlebrown;
+}
+.btn:hover,
+.btn:active,
+.btn:focus {
+  color: cornsilk;
+  background-color: saddlebrown;
+  border-color: cornsilk;
+}
+.btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover, .open>.btn-default.dropdown-toggle {
+  color: saddlebrown;
+  background-color: cornsilk;
+  border-color: saddlebrown;
+}
+.form-control {
+  color: saddlebrown !important;
+}
+.form-control:focus {
+  border-color: saddlebrown !important;
+}
+input::placeholder {
+  color: saddlebrown !important;
+}
+
+/* parts */
+.p_bold {
+  font-weight: bold;
+}
+.p_crimson {
+  color: crimson;
+}
+.p_kakudai {
+  font-size: 1.05em;
+}
+
+/* font-awesome */
+.fa-fire {
+  color: firebrick;
+}
+.fa-trophy {
+  color: goldenrod;
+  text-shadow: 2px 2px 2px gold;
+}
+
+/* codoc */
+.codoc-entry {
+  border: 3px outset crimson;
+  margin: 30px auto;
+  background-color: #fff;
+}
+
+a.instaLink {
+  color: deeppink;
+}
+a.supportLink,
+a.workLink {
+  color: crimson;
+}

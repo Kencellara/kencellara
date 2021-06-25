@@ -1,0 +1,107 @@
+.header {
+  border: 5px ridge cornsilk;
+  background: content-box radial-gradient(white, cornsilk);
+}
+.header .container {
+  padding: 0;
+}
+.headerImgContainer {
+  width: 100%;
+}
+.site-branding {
+  padding: 0;
+}
+.site-branding__heading img {
+  max-width: 1100px;
+  margin: auto;
+  display: block;
+}
+.site-branding__heading a {
+  display: block;
+}
+
+/* 固定ヘッダー */
+.miniInfoArea {
+  display: flex;
+  height: 50px;
+  padding: 10px 0;
+}
+.snsContainer {
+  display: flex;
+  margin: 0 auto;
+  width: 320px;
+  height: 100%;
+}
+.snsContainer span {
+  color: saddlebrown;
+  margin: auto;
+  font-size: 17px;
+  font-weight: bold;
+}
+.leadToSnsShort {
+  display: none;
+}
+.snsContainer a {
+  margin: 0 auto;
+}
+.snsContainer img {
+  height: 30px !important;
+  border-radius: 10px;
+}
+.snsContainer .twitter-button {
+  text-align: center;
+  font-size: 25px;
+  width: 30px;
+}
+.snsContainer .fa-twitter-square {
+	background-color: #fff;
+	color: #55acee;
+  font-size: 31px;
+  vertical-align: top;
+}
+.snsContainer .facebook-button {
+  font-size: 29px;
+}
+.snsContainer .fa-facebook-square {
+  background-color: white;
+  border-radius: 10px;
+  vertical-align: top;
+  font-size: 31px;
+  color: #305097;
+}
+.fixedHeaderHomeBtn {
+  display: none;
+  margin-right: 20px;
+  font-size: 20px;
+  color: saddlebrown;
+  background-color: cornsilk;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 10px;
+}
+/* 固定時 */
+.miniInfoArea.fixed {
+  position: fixed;
+  top: 0;
+  left: auto;
+  z-index: 5;
+  width: 100%;
+  background-color: #fff;
+  margin: 0;
+  padding: 12px 0;
+  height: 50px;
+}
+.miniInfoArea.fixed .snsContainer {
+  width: 240px;
+}
+.miniInfoArea.fixed .fixedHeaderHomeBtn,
+.miniInfoArea.fixed .fixedHeaderHomeBtn a {
+  display: block;
+}
+.miniInfoArea.fixed .leadToSns {
+  display: none;
+}
+.miniInfoArea.fixed .leadToSnsShort {
+  display: inline;
+}

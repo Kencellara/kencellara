@@ -1,0 +1,70 @@
+.footer {
+  text-align: center;
+  width: 100%;
+  padding: 2em 40px 1em 40px;
+  font-size: 80%;
+  background-color: cornsilk;
+}
+.footer-links {
+  padding-top: 10px;
+}
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-links ul li {
+  display: inline-block;
+  padding: 0 6px;
+  font-size: 14.5px;
+}
+.footer-links ul li a {
+  color: darkgoldenrod;
+  text-decoration: none;
+}
+.copyright {
+  font-size: 10px;
+  background-color: cornsilk;
+  color: darkgoldenrod;
+}
+
+/*ページトップボタン*/
+.toTop-nav {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: -webkit-flex;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  z-index: 999;
+}
+.toTop-nav li {
+  list-style-type: none;
+  background-color: saddlebrown;
+  border-radius: 50px;
+  text-align: center;
+}
+.toTop-nav li a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  font-size: 40px;
+  line-height: 60px;
+}
+.toTop-nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+.toTop-nav li a:visited {
+  color: #fff;
+}
+.toTop-nav li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.toTop-nav li a:active, .toTop-nav li a:focus {
+  color: #fff;
+}
+.toTop-nav li a:hover {
+  text-decoration: none;
+}

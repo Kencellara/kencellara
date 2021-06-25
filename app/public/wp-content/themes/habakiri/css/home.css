@@ -1,0 +1,676 @@
+body.home .sub-page-contents {
+  padding-top: 0px;
+}
+/* ヘッダー共通 */
+.topPageHeader {
+  color: black;
+  background-color: white;
+  margin: 10px auto 20px;
+  width: 320px;
+  box-shadow: 5px 5px 5px 1px black;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  text-shadow: 1px 1px 1px silver;
+  font-size: 22px;
+}
+
+/* 3タブ */
+section.typeA {
+  margin-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+section.typeA::after {
+	content: '';
+	width: 100%;
+	height: 3px;
+	order: -1;
+	display: block;
+	background: darkgoldenrod;
+}
+section.typeA .tabLabel {	/* タブ */
+  font-size: 20px;
+	margin-right: 3px;
+	padding: 8px 12px;
+	flex: 1;
+	order: -1;
+	border-radius: 3px 3px 0 0;
+	color: saddlebrown;
+	background: cornsilk;
+	transition: .5s ;
+	cursor: pointer;
+  text-align: center;
+}
+section.typeA .tabLabel:nth-last-of-type(1){ margin-right: 0; }
+section.typeA input {		/* ラジオボタン非表示 */
+	display: none;
+}
+section.typeA .content {	/* 本文 */
+	width: 100%;
+	height: 0;
+	overflow: hidden;
+	opacity: 0;
+}
+/*アクティブ設定*/
+section.typeA input:checked + .tabLabel {
+	color: #fff;
+	background: darkgoldenrod;
+}
+section.typeA input:checked + .tabLabel + .content {
+	height: auto;
+	transition: .5s opacity;
+	opacity: 1;
+}
+
+/* 店舗数 */
+.storeCountArea {
+  display: block;
+  height: 90px;
+  padding: 15px 0;
+  background-color: cornsilk;
+}
+.storeCountArea.look {
+  display: block;
+  margin: 30px auto;
+}
+.storeCountContainer {
+  margin: auto;
+  width: 300px;
+  text-align: center;
+  background-color: #FFF;
+  border-radius: 10px;
+  text-shadow: 2px 2px 2px silver;
+  font-size: 24px;
+  box-shadow: 0px 0px 10px 5px gold;
+}
+.storeCountContainer img {
+  width: 32px;
+  vertical-align: sub;
+}
+.storeCounter {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin: 0 8px;
+  color: crimson;
+}
+
+/* スライドショー */
+.slider {
+  background-color: snow;
+  padding: 0 0 20px;
+}
+.slider img {
+  width: 90%;
+  margin: 20px auto 0;
+}
+.slick-slide {
+  margin: 20px;
+  opacity: 0.6;
+}
+.slick-slider {
+  margin-bottom: 40px !important;
+}
+.slick-center {
+  opacity: 1;
+  transform: scale(1.5);
+}
+.slick-center img {
+  margin: 10px;
+  padding: 15px 0;
+}
+.slick-prev {
+  z-index: 1;
+}
+.slick-next {
+  right: 75px !important;
+}
+.slick-prev::before,
+.slick-next::before {
+  position: absolute;
+  top: -18px;
+  font-size: 60px !important;
+  color: darkgoldenrod !important;
+}
+.slick-prev:before {
+  left: 30px;
+}
+.slick-next:before {
+  right: -70px;
+}
+.slick-dots {
+  background-color: cornsilk;
+  height: 50px;
+  padding-top: 10px !important;
+}
+.slick-dots li button:before {
+  color: darkgoldenrod !important;
+}
+
+/* 地域別検索エリア */
+.areaSearchZone {
+  border: 5px dashed cornsilk;
+  padding-top: 10px;
+  height: 950px;
+}
+.areaList {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.areaSearchZone li {
+  list-style: none;
+  border: 1px solid saddlebrown;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  width: 65px;
+  font-size: 20px;
+}
+.areaSearchZone a {
+  color: saddlebrown;
+  display: block;
+  background: linear-gradient(#fff, cornsilk);
+}
+.areaSearchZone a:hover {
+  opacity: 0.6;
+  color: #fff;
+  background: linear-gradient(#fff, saddlebrown);
+}
+.areaSearchContainer {
+  height: 100%;
+}
+.areaSearchHeader {
+  text-align: center;
+  font-weight: bold;
+  margin: 10px auto 30px;
+}
+.areaSearchInner {
+  display: flex;
+  margin: auto;
+  background-image: url("https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210209/20210209002422.jpg");
+  background-size: contain;
+}
+.areaZone {
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+.areaHeader {
+  color: #fff;
+  border-radius: 3px;
+}
+.hokubuHeader {
+  background-color: #1D87FB;
+}
+.igaHeader {
+  background-color: #92D050;
+}
+.chubuHeader {
+  background-color: #FFD13F;
+}
+.iseShimaHeader {
+  background-color: #91BCE3;
+}
+.higashikishuHeader {
+  background-color: #DA54BD;
+}
+.inabe,
+.suzuka,
+.nabari,
+.watarai,
+.tamaki,
+.taiki,
+.kumano,
+.mihama,
+.kiho {
+  display: none;
+}
+.areaSearchHeader {
+  height: 35px;
+}
+.areaSearchInner {
+  height: 800px;
+  width: 700px;
+}
+.areaZone {
+  width: 150px;
+  height: 200px;
+}
+.areaZone.hokubu {
+  top: 30px;
+  left: 150px;
+}
+.areaZone.iga {
+  top: 230px;
+  left: -120px;
+}
+.areaZone.chubu {
+  top: 190px;
+  right: -230px;
+}
+.areaZone.iseShima {
+  top: 520px;
+  right: -90px;
+}
+.areaZone.higashikishu {
+  top: 530px;
+  left: -580px;
+}
+.areaHeader {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+/* ジャンル検索 */
+.genreSearchZone {
+  border: 3px dotted cornsilk;
+  margin: 20px 0;
+  background-image: url("https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210212/20210212010912.jpg");
+}
+.genreSearchContainer {
+  padding: 20px 0 0;
+}
+.genreSearchHeader {
+  text-align: center;
+  font-weight: bold;
+  margin: 10px auto 20px;
+  background-color: white;
+}
+.genreSearchInner {
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  margin: auto;
+}
+.genreSearchColumn {
+  display: flex;
+}
+.genreSearchCard {
+  transition: 0.5s;
+  background: radial-gradient(ellipse closest-side, #433d3c, #8d6449 10%, #bc763c 50%, #946243);
+  font-weight: bold;
+  text-align: center;
+}
+.genreSearchColumn i {
+  z-index: 2;
+  transition: 0.5s;
+}
+i.oniku {
+  color: #ffffea;
+}
+i.teishoku {
+  color: #fff4ea;
+}
+i.kaisen {
+  color: #eaffea;
+}
+i.bread {
+  color: #f4ffea;
+}
+i.cafe {
+  color: #ffeaff;
+}
+i.chuka {
+  color: #f4eaff;
+}
+i.ramen {
+  color: #ffeaea;
+}
+i.izakaya {
+  color: #ffeaf4;
+}
+.genreSearchColumn .fa-bookmark {
+  margin: auto;
+  position: relative;
+}
+.genreSearchCard a {
+  display: block;
+  color: #fff;
+  font-family: “HGP行書体”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif, sans-serif;
+}
+.genreSearchCard a:hover {
+  color: #fff;
+}
+.genreSearchCard:hover {
+  transform: rotateZ(10deg);
+}
+.genreSearchCard:hover + i {
+  transform: rotateZ(10deg) translateX(20px);
+}
+.genreSearchCard {
+  margin: 30px;
+  height: 250px;
+}
+.genreSearchColumn .fa-bookmark {
+  font-size: 40px;
+  top: -280px;
+  text-shadow: 1px 1px 2px burlywood;
+}
+.genreSearchCard {
+  box-shadow: 3px 3px 3px 3px lightslategrey;
+  border: 3px outset burlywood;
+}
+.genreSearchCard a {
+  font-size: 45px;
+  padding: 45px 10px 0;
+}
+
+/* ケンチェ激推しグルメ */
+.recommendGourmetZone {
+  background-color: cornsilk;
+  border: 3px outset cornsilk;
+  padding: 20px 10px;
+  margin: 20px 0;
+}
+.recommendGourmetHeader {
+  background-color: white;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  text-shadow: 1px 1px 1px silver;
+}
+.recommendGourmetContainer {
+  width: 90%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  margin: 0px auto;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.recommendGourmetBox {
+  box-sizing: border-box;
+  border: 3px outset silver;
+  width: 45%;
+  margin: 15px;
+  overflow: hidden;
+}
+.recommendGourmetImg {
+  height: 100%;
+}
+.recommendGourmetImg img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition-duration: 0.5s;
+}
+.recommendGourmetImg:hover img {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+}
+
+/* ケンチェ番付 */
+.banzukeZone {
+  margin: 20px 0;
+}
+.banzukeContainer {
+  padding: 10px 0;
+  border: 3px ridge darkgoldenrod;
+  background-color: cornsilk;
+}
+.banzukeContainer.sp {
+  overflow-y: hidden;
+  border: 2px inset cornsilk;
+}
+.banzukeContainer.sp.open {
+  height: calc(100% + 45px);
+}
+/* .banzukeContainer.sp tr:nth-child(n+4) {
+  display: none;
+} */
+.banzukeContainer.sp.open tr:nth-child(n+4) {
+  display: table-row;
+}
+.openBanzuke {
+  display: block;
+  font-size: 15px;
+  padding: 10px 15px 15px;
+  width: 160px;
+  z-index: 1;
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+  background-color: cornsilk;
+}
+.banzukeHeader {
+  padding: 0;
+  text-align: center;
+  margin: 10px auto 20px;
+  background-color: white;
+  font-weight: bold;
+}
+.banzukeContainer table {
+  margin: auto;
+}
+.banzukeRank {
+  width: 70px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+  padding-right: 30px;
+}
+.banzukeRank.first {
+  text-shadow: 3px 3px 3px gold;
+}
+.banzukeRank.second {
+  text-shadow: 3px 3px 3px silver;
+}
+.banzukeRank.third {
+  text-shadow: 3px 3px 3px #b87333;
+}
+.banzukePost {
+  width: 450px;
+  padding: 12px 10px;
+}
+.banzukeContainer a {
+  color: black;
+}
+.banzukeContainer a:hover {
+  text-shadow: 1px 1px 3px silver;
+  opacity: 0.8;
+  color: saddlebrown;
+}
+.banzukeContainer h3 {
+  margin: 5px 0;
+}
+.banzukeContainer p {
+  margin: 2px 0;
+}
+.star-rating {
+  position: relative;
+  display:inline-block;
+  font-size: 25px;
+}
+.sp .star-rating {
+  font-size: 20px;
+}
+.star-rating .star-rating-item {
+  position: absolute;
+  overflow: hidden;
+}
+.star-rating .star-rating-item:before {
+  content:"★★★★★";
+  color: #ffcc33;
+}
+.star-rating:after {
+  content:"★★★★★";
+  color: #ccc;
+}
+
+/* ケンチェの窓口モーダル */
+.kenceWindowModal iframe[src^="https://docs.google.com/forms/d/e"] {
+  width: 100%;
+  height: 100vh;
+}
+.kenceWindowAnnounce {
+  border-top: 3px double darkgoldenrod;
+  background-color: cornsilk;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+}
+.kenceWindowAnnounce i {
+  font-size: 50px;
+}
+.kenceWindowCaution {
+  display: block;
+  border-bottom: 3px double darkgoldenrod;
+  font-size: 12px;
+  background-color: cornsilk;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.kenceWindowModalOpen {
+  display: block;
+  background-color: cornsilk;
+  text-align: center;
+  color: black;
+  padding: 20px 0;
+}
+.kenceWindowModalOpen a {
+  text-shadow: 1px 1px 1px silver;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+  border: 3px outset silver;
+  background-color: white;
+  color: black;
+}
+.kenceWindowModalOpen a:hover {
+  opacity: 0.6;
+  color: black;
+  text-shadow: 3px 3px 3px silver;
+}
+.kenceWindowModal {
+  display: none;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.kenceWindowModalBg {
+  background: rgba(0, 0, 0, 0.6);
+  height: 100vh;
+  width: 100%;
+}
+.kenceWindowModalContent {
+  width: 700px;
+  max-height: 830px;
+  background: #fff;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+}
+.kenceWindowModalContentInner {
+  overflow-y: scroll;
+  position: relative;
+  max-height: 95vh;
+}
+a.kenceWindowModalClose {
+  color: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 15;
+  background: #fff;
+  padding: 10px;
+  border: 2px solid black;
+  font-weight: bold;
+  border-radius: 10px;
+  margin: 8px;
+}
+.kenceWindowModalOpen:hover,
+.kenceWindowModalClose:hover {
+  color: black;
+}
+.kenceWindowAnnounce {
+  font-size: 0.75em;
+}
+.kenceWindowAnnounce i {
+  font-size: calc(50px / 2);
+}
+.kenceWindowModalOpen {
+  padding: 15px 0 20px;
+}
+.kenceWindowModalContentInner {
+  max-height: 100vh;
+}
+
+.monthlyBlogInfo {
+  position: relative;
+  max-width: 100%;
+}
+.monthlyBlogInfo:hover {
+  opacity: 0.8;
+}
+.monthlyBlogInfo a {
+  font-weight: bold;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: .5em .8em;
+  border-radius: 0px;
+  border: 2px outset silver;
+  text-shadow: 1px 1px 1px black;
+  font-size: 1.5em;
+  background-color: burlywood;
+  color: #fff;
+}
+.monthlyBlogInfo a:hover {
+  text-shadow: 3px 3px 3px black;
+}
+
+/* ケンチェ飯とは？ */
+.kencemeshiExplain {
+  margin: 20px 0;
+  padding: 10px 0;
+  text-align: center;
+  background-color: cornsilk;
+  border: 3px inset cornsilk;
+}
+.kencemeshiExplainContents img {
+  margin-bottom: 20px;
+}
+.kencemeshiExplainContents p {
+  font-size: 18px;
+}
+
+/* ケンチェ飯の実績 */
+.kencemeshiHistory {
+  padding: 10px 50px;
+  background-color: #eee;
+  font-weight: bold;
+}
+.kencemeshiHistoryHeader {
+  color: black;
+  box-shadow: 5px 5px 5px 1px black;
+}
+.kencemeshiHistoryContents .month {
+  display: flex;
+}
+.kencemeshiHistoryContents ul {
+  margin-top: 10px;
+}
+
+/* 支援 */
+.acknowledgement {
+  font-size: 16px;
+}
+.to_kence_work {
+  font-size: 18px;
+}
+.supportNavList li {
+  font-size: 17px;
+}

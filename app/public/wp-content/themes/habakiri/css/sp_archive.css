@@ -1,0 +1,28 @@
+@media screen and (max-width: 420px) {
+  .sub-page-contents {
+    padding-top: 10px;
+  }
+  .col-md-9 {
+    padding: 0 10px;
+  }
+  .categoryHeaderZone {
+    margin: 0 0 10px;
+    padding: 20px 0;
+  }
+  .entries {
+    margin: 0;
+  }
+  .entries .article {
+    width: 100%;
+  }
+  .ramenCategoryZone {
+    padding: 5px;
+    margin: 0 0 10px;
+  }
+  .categoryRecommendExplain {
+    padding: 10px;
+  }
+  .categoryRecommendExplain img {
+    height: 85px;
+  }
+}

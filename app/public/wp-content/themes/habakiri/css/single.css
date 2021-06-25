@@ -1,0 +1,607 @@
+.sub-page-contents {
+  padding-top: 20px;
+}
+.entry__content {
+  padding: 10px 20px;
+}
+.entry__content em {
+  font-weight: bold;
+  font-style: normal;
+  margin: 0 0.1em;
+  padding: 0.1em 0.2em;
+  background: linear-gradient(to bottom, transparent 60%, #ffd700 60%);
+}
+.entry__content i {
+  font-style: oblique;
+}
+.entry h1.entry__title {
+  font-size: 25px;
+  color: saddlebrown;
+  box-shadow: 0 7px 10px -5px saddlebrown inset;
+  background: cornsilk;
+  font-weight: bold;
+  padding: 1em;
+  border: 3px solid saddlebrown;
+  border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
+  margin: 0 0 20px;
+}
+.entry__content h2 {
+  font-size: 23px;
+  padding: 8px;
+  border-top: 2px solid saddlebrown;
+  border-bottom: 2px solid saddlebrown;
+  color: saddlebrown;
+  line-height: 1.5;
+  background-color: cornsilk;
+}
+.entry__content h3 {
+  margin: 18px 0;
+  font-size: 20px;
+  padding: 10px;
+  color: black;
+  background: transparent;
+  border-left: solid 5px brown;
+}
+.entry__content h4 {
+  font-size: 15px;
+  position: relative;
+  padding-bottom: 10px;
+  color: #333;
+  line-height: 1.5;
+  text-align: center;
+}
+.entry__content h4:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 40px;
+  background-color: #333;
+}
+.entry__content h4:first-letter {
+  font-size: 1.6em;
+  letter-spacing: .04em;
+}
+.entry__content p {
+  font-size: 16px;
+  margin: 0 0 13px;
+}
+.entry__content ul {
+  font-size: 16px;
+}
+.entry__content img {
+  width: 100%;
+  max-width: 700px;
+}
+.entry__content a:hover {
+  opacity: 0.7;
+}
+.entry-meta {
+  display: none;
+}
+.trackbacks {
+  display: none;
+}
+
+/*シェアボタン*/
+.snsShareInner {
+  margin: auto;
+  width: 300px;
+  display: flex;
+}
+.snsShareInner span {
+  font-size: 22px;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px silver;
+  margin: auto;
+}
+.snsShare .facebook-button,
+.snsShare .line-button {
+  font-size: 36px;
+  margin: auto;
+}
+.snsShare .facebook-button,
+.snsShare .facebook-button:hover,
+.snsShare .facebook-button:active,
+.snsShare .facebook-button:focus {
+  color: #3b5998;
+}
+.snsShare .twitter-button {
+  font-size: 35px;
+  vertical-align: bottom;
+  margin: auto;
+  border-radius: 5px;
+  color: #00aced;
+}
+.snsShare .twitter-button:hover,
+.snsShare .twitter-button:active,
+.snsShare .twitter-button:focus {
+  color: #00aced;
+}
+.snsShare .line-button i {
+  color: #00B900;
+}
+.snsShare a:hover {
+  opacity: 0.6;
+}
+.aboveArticle .snsShare {
+  margin-top: 10px;
+}
+.belowArticle .snsShare {
+  margin-bottom: 20px;
+}
+
+/* 関連記事 */
+.emphasize-link {
+  position: relative;
+  margin: 36px 0 0;
+  padding: 16px 8px 14px;
+  border-top: 3px ridge black;
+  border-bottom: 3px ridge black;
+  background-color: #fff;
+}
+.emphasize-link::before {
+  position: absolute;
+  top: -12px;
+  left: calc(50% - 48px);
+  padding: 0 10px 0 26px;
+  content: "関連記事";
+  background-color: black;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+}
+.emphasize-link::after {
+  position: absolute;
+  top: -16px;
+  left: calc(50% - 54px);
+  width: 28px;
+  height: 28px;
+  background-color: black;
+  border-radius: 14px;
+  line-height: 28px;
+  text-align: center;
+  content: "\f044";
+  font-size: 18px;
+  font-family: "FontAwesome";
+  color: #fff;
+}
+
+/* 目次 */
+.table-of-contents {
+  display: none;
+}
+#toc_container {
+  color: saddlebrown;
+  margin: auto !important;
+  max-width: 700px;
+  border-radius: 15px;
+  padding: 18px 20px 10px !important;
+}
+#toc_container.no_bullets li,
+#toc_container.no_bullets ul,
+#toc_container.no_bullets ul li,
+.toc_widget_list.no_bullets,
+.toc_widget_list.no_bullets li {
+  list-style: circle !important;
+}
+#toc_container > ul {
+  margin-left: 12px !important;
+}
+#toc_container > ul > li > ul {
+  margin-left: 25px !important;
+  margin-bottom: 5px !important;
+}
+#toc_container a {
+  font-weight: bold;
+}
+/* 記事内強調するための囲い枠*/
+.box7 {
+  padding: 5px 10px;
+  margin: 35px 0;
+  color: black;
+  background: floralwhite;
+  border-left: double 7px saddlebrown;
+  border-right: double 7px saddlebrown;
+}
+.box7 p {
+  margin: 0;
+  padding: 0;
+}
+.box7 ul {
+  margin: 0;
+  padding: 0 0 0 1.5em;
+  list-style: disc;
+}
+
+/* 記事内「ケンチェの一言」「この記事の内容」*/
+.emphasize-link-1,
+.emphasize-link-2 {
+  position: relative;
+  margin: 36px 0 16px;
+  padding: 16px 10px 13px;
+  border: 3px solid saddlebrown;
+  background-color: #fffbf5;
+}
+.emphasize-link-1::before,
+.emphasize-link-2::before {
+  position: absolute;
+  top: -12px;
+  left: 10px;
+  padding: 0 10px 0 26px;
+  background-color: saddlebrown;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+}
+.emphasize-link-1::after,
+.emphasize-link-2::after {
+  position: absolute;
+  top: -16px;
+  left: 4px;
+  width: 28px;
+  height: 28px;
+  background-color: saddlebrown;
+  border-radius: 14px;
+  line-height: 28px;
+  text-align: center;
+  content: "\f044";
+  font-size: 18px;
+  font-family: "FontAwesome";
+  color: #fff;
+}
+.emphasize-link-1 p,
+.emphasize-link-2 p {
+  margin: 0;
+}
+.emphasize-link-1 ul,
+.emphasize-link-2 ul {
+  margin: 0;
+  list-style: disclosure-closed;
+}
+.emphasize-link-1 li,
+.emphasize-link-2 li {
+  font-weight: bold;
+}
+.emphasize-link-1::before {
+  content: "この記事の内容";
+}
+.emphasize-link-2::before {
+  content: "ケンチェの一言";
+}
+/* 記事内リスト */
+.list11,
+.list10,
+.list03,
+.list02,
+.list05 {
+  border: outset 3px saddlebrown;
+  padding: 5px;
+  position: relative;
+  margin-top: 2em;
+  background-color: snow;
+}
+.list11 ul,
+.list10 ul,
+.list03 ul,
+.list02 ul,
+.list05 ul {
+  padding: 0;
+  margin: 0 0 0 1.5em;
+}
+.list11 li,
+.list10 li,
+.list03 li,
+.list02 li,
+.list05 li {
+  line-height: 1.5;
+  padding: 0.5em 0 0.5em 1.4em;
+  border-bottom: dashed 1px silver;
+  list-style-type: none;
+}
+.list11 li:last-of-type,
+.list10 li:last-of-type,
+.list03 li:last-of-type,
+.list02 li:last-of-type,
+.list05 li:last-of-type {
+  border-bottom: none;
+}
+/*リスト内のアイコン*/
+.list11 li:before,
+.list10 li:before,
+.list03 li:before,
+.list02 li:before,
+.list05 li:before {
+  font-family: "FontAwesome";
+  content: "\f138";
+  position: absolute;
+  left : 10px;
+  color: saddlebrown;
+}
+/*タイトルタブ*/
+.list11 li:after,
+.list10 li:after,
+.list03 li:after,
+.list02 li:after,
+.list05 li:after {
+  background: #4682b4;
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  left: -2px;
+  bottom: 100%;
+  padding: 1px 7px;
+  letter-spacing: 0.05em;
+}
+.list11 li:after {
+  content: "具体例";
+}
+.list10 li:after {
+  content: "戦歴";
+}
+.list02 li:after {
+  content: "まとめ";
+}
+.list05 li:after {
+  content: "member";
+}
+.menuCaution {
+  text-align: right;
+}
+.list03::before {
+  content: "MENU";
+  position: relative;
+  right: calc(-50% + 41px);
+  font-weight: bold;
+  color: #fff;
+  font-size: 20px;
+  padding: 12px;
+  background-color: saddlebrown;
+  border-radius: 5px;
+}
+.list03 {
+  max-height: 300px;
+  overflow-y: scroll;
+  border-radius: 8px;
+}
+
+/* 吹き出し */
+.l-fuki,
+.r-fuki {
+  position: relative;
+  width: calc(100% - 82px);
+  padding: 20px;
+  border-radius: 6px;
+  border: 2px solid saddlebrown;
+  box-shadow: 0 3px 8px -2px rgb(0 0 0 / 16%);
+  background-color: #ffe4e1;
+  z-index: 1;
+  box-sizing: border-box;
+}
+.l-fuki {
+  margin: 20px auto 36px 0 !important;
+}
+.r-fuki {
+  margin: 20px 0 36px auto !important;
+}
+.l-fuki::before,
+.r-fuki::before {
+  position: absolute;
+  content: "";
+  top: 16px;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid saddlebrown;
+  border-bottom: 2px solid saddlebrown;
+  background-color: #ffe4e1;
+  z-index: 2;
+}
+.l-fuki::before {
+  right: -7px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.r-fuki::before {
+  left: -7px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.l-fuki::after,
+.r-fuki::after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 60px;
+  top: -6px;
+  border-radius: 50%;
+  border: 2px solid saddlebrown;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-shadow: 1px 1px 5px saddlebrown;
+  box-sizing: border-box;
+}
+.l-fuki::after {
+  right: -82px;
+}
+.r-fuki::after {
+  left: -82px;
+}
+@media screen and (min-width: 478px) {
+  .l-fuki::after,
+  .r-fuki::after {
+    width: 80px;
+    height: 80px;
+  }
+  .l-fuki,
+  .r-fuki {
+    width: calc(100% - 106px);
+  }
+  .l-fuki::after {
+    right: -106px;
+  }
+  .r-fuki::after {
+    left: -106px;
+  }
+}
+.kensuke01::after,
+.kensuke02::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/toppage/butace.png);
+}
+
+.summaryTable {
+  font-size: 15px;
+  border-collapse: collapse;
+  width: 80%;
+}
+.summaryTable caption {
+  font-size: 1.1em;
+  font-weight: bold;
+  background-color: #eee;
+  color: black;
+  text-align: center;
+  text-shadow: 2px 2px 2px silver;
+}
+.summaryTable th, .summaryTable td {
+  border: 1px solid silver;
+}
+.summaryTable th {
+  width: 22%;
+  text-align: center;
+  color: black;
+  background-color: #eee;
+}
+.summaryTable td {
+  padding: 6px;
+}
+
+/* リンクカード */
+.blogcard {
+  line-height: 1;
+  border: 1px solid black;
+  word-wrap: break-word;
+  margin: 20px;
+  box-shadow: 0 0 3px 2px black;
+}
+.blogcard.ex {
+  background-color: #snow;
+}
+.blogcard a {
+  text-decoration: none;
+  opacity: 1;
+  transition: all 0.2s ease;
+}
+.blogcard a:hover {
+  opacity: 0.7;
+}
+.blogcard_thumbnail {
+  float: left;
+  padding: 15px;
+}
+.blogcard_thumbnail img {
+  max-height: 130px;
+  width: inherit;
+}
+.blogcard_title {
+  color: #333;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 1.4;
+  padding: 17px 20px 10px;
+}
+.blogcard_title:hover {
+  opacity: 0.7;
+}
+.blogcard_excerpt {
+  font-size: 0.85em;
+  line-height: 1.6;
+  padding: 0 17px 15px 20px;
+}
+.blogcard_link {
+  font-size: 13px;
+  padding: 0 17px 15px 20px;
+  text-align: left;
+}
+.blogcard_link .favicon {
+  width: 13px;
+  margin-bottom: -4px;
+}
+.blogcard_link .icon-external-link-alt::before {
+  font-size: 0.75em;
+}
+
+.related-posts__title {
+  color: saddlebrown;
+  font-size: 28px;
+  text-align: center;
+  background-color: cornsilk;
+  font-weight: bold;
+  margin: 20px auto 30px;
+  box-shadow: 0 0 10px 5px cornsilk;
+}
+.related-posts .entry--has_media__media {
+  width: 150px;
+}
+.related-posts .entry--has_media__body {
+  padding-left: 15px;
+}
+.related-posts .entries article {
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+}
+
+.kenceWorkWindowZone {
+  margin: 40px 0;
+}
+.kenceWorkWindowHeader {
+  color: saddlebrown;
+  font-size: 28px;
+  text-align: center;
+  background-color: cornsilk;
+  font-weight: bold;
+  width: 90%;
+  margin: 5px auto 10px;
+  box-shadow: 0 0 10px 5px cornsilk;
+}
+.kenceWorkWindowExplain {
+  margin: 20px 40px;
+  font-weight: bold;
+}
+.kenceWorkWindowExplain ul {
+  list-style-type: bengali;
+}
+@media screen and (min-width: 1200px) {
+  .kenceWorkWindowExplain ul {
+    margin: 0 170px 10px;
+  }
+}
+.kenceWorkWindowExplain p {
+  text-align: center;
+  font-size: 1.1em;
+}
+.kenceWorkWindow {
+  margin: 20px 0 50px;
+}
+.kenceWorkWindow iframe {
+  max-height: 400px;
+}
+.kencemeshiSupportZone {
+  margin: 60px 0;
+}
+.kencemeshiSupportHeader {
+  font-weight: bold;
+  font-size: 23px;
+  text-align: center;
+  margin: 20px auto;
+  padding: 1em;
+  width: 90%;
+  color: #555555;
+  background-color: #ffcccc;
+  box-shadow: 0 0 10px 10px #ffcccc;
+}
