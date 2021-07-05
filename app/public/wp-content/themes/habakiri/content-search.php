@@ -11,6 +11,9 @@
 ?>
 <article class="article article--search">
 	<div class="entry">
+		<div class="searchHeaderZone">
+			<div class="searchResultHeader">検索結果</div>
+		</div>
 		<?php do_action( 'habakiri_before_entries' ); ?>
 		<div class="entries entries--search">
 			<?php while ( have_posts() ) : the_post(); ?>
