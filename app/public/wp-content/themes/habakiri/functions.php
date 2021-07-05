@@ -738,6 +738,39 @@ class Habakiri_Base_Functions {
 			return NULL;
 		}
 	}
+
+	public function dateArithmetic() {
+		$dateArithmetic = array( 'result' => '',  'display' => '',  'switch' => 0 );
+		$modified_date = get_the_modified_date('Y-m-d');
+		$now_date = new DateTime();
+		$now_date = $now_date->format('Y-m-d');
+		$dateArithmetic['result'] = (strtotime($now_date) - strtotime($modified_date)) / (60 * 60 * 24);
+		if($dateArithmetic['result']>365){
+			$dateArithmetic['switch'] = 1;
+			for($count=-1; $count>=-10; $count--){
+				if($count==-10){
+					$dateArithmetic['display'] = '10年以上';
+					break;
+				}
+				$XX = date('Y-m-d', strtotime($count.'year'));
+				if((strtotime($modified_date)>strtotime($XX))){
+					$dateArithmetic['display'] = ''.abs($count+1).'年';
+					break;
+				}
+			}
+		}else if($dateArithmetic['result']>31){
+			for($count=-1; $count>=-12; $count--){
+				$XX = date('Y-m-d', strtotime($count.'month'));
+				if((strtotime($modified_date)>strtotime($XX))){
+					$dateArithmetic['display'] = abs($count+1).'月';
+					break;
+				}
+			}
+		}else{
+					$dateArithmetic['display'] = $dateArithmetic['result'].'日';
+		}
+		return $dateArithmetic;
+	}
 }
 
 add_shortcode("sc_Linkcard", "Habakiri_Base_Functions::show_Linkcard");

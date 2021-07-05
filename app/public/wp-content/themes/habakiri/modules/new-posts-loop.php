@@ -7,12 +7,16 @@
   foreach ( $posts as $post ):
   setup_postdata( $post );
   $cats = get_the_category();
+  $dateArithmetic = Habakiri_Base_Functions::dateArithmetic();
 ?>
 <div class="newPostCard">
   <div class="newPostThumbnail">
     <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail($post->ID, 'thumbnail',array('loading'=>'lazy')); ?></a>
   </div>
   <div class="newPostTitle">
+    <?php if ($dateArithmetic['result'] <= 10) { ?>
+      <div class="newestPostMark">NEW!</div>
+    <?php } ?>
     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
   </div>
   <div class="newPostCategory">
