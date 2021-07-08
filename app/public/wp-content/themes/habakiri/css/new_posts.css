@@ -81,9 +81,6 @@
 .newPostTitle a {
   color: #333;
 }
-.newPostTitle a:hover {
-  color: #375A7F;
-}
 .newPostThumbnail {
   text-align: center;
 }

@@ -20,3 +20,8 @@
 .entries--search {
   border-top: none;
 }
+@media screen and (max-width: 420px) {
+  .searchHeaderZone {
+    margin: 0;
+  }
+}
