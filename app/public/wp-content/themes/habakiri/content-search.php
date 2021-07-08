@@ -9,6 +9,7 @@
  * License URI: license.txt
  */
 ?>
+<?php $dateArithmetic = Habakiri_Base_Functions::dateArithmetic(); ?>
 <article class="article article--search">
 	<div class="entry">
 		<div class="searchHeaderZone">
@@ -17,19 +18,22 @@
 		<?php do_action( 'habakiri_before_entries' ); ?>
 		<div class="entries entries--search">
 			<?php while ( have_posts() ) : the_post(); ?>
-			<article <?php post_class( array( 'article' ) ); ?>>
-				<div class="entry">
-					<div class="entry--has_media__media">
-						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-					</div>
-					<?php Habakiri::the_title(); ?>
-					<div class="newPostCategory">
-						<?php $cats = get_the_category(); ?>
-				    <?php foreach ($cats as $cat) { ?>
-				      <a href=<?php echo get_category_link($cat->cat_ID); ?>><?php echo $cat->name; ?></a>
-				    <?php } ?>
-				  </div>
+			<article <?php post_class( array( 'article', 'newPostCard' ) ); ?>>
+				<div class="entry--has_media__media newPostThumbnail">
+					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 				</div>
+				<div class="newPostTitle">
+			    <?php if ($dateArithmetic['result'] <= 7) { ?>
+			      <div class="newestPostMark">NEW!</div>
+			    <?php } ?>
+			    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+			  </div>
+				<div class="newPostCategory">
+					<?php $cats = get_the_category(); ?>
+			    <?php foreach ($cats as $cat) { ?>
+			      <a href=<?php echo get_category_link($cat->cat_ID); ?>><?php echo $cat->name; ?></a>
+			    <?php } ?>
+			  </div>
 			</article>
 			<?php endwhile; ?>
 			<?php get_template_part( 'modules/pagination' ); ?>
