@@ -14,7 +14,7 @@
     <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail($post->ID, 'thumbnail',array('loading'=>'lazy')); ?></a>
   </div>
   <div class="newPostTitle">
-    <?php if ($dateArithmetic['result'] <= 10) { ?>
+    <?php if ($dateArithmetic['result'] <= 7) { ?>
       <div class="newestPostMark">NEW!</div>
     <?php } ?>
     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
