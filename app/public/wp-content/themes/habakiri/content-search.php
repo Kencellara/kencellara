@@ -1,15 +1,7 @@
 <?php
-/**
- * Version    : 1.4.0
- * Author     : inc2734
- * Author URI : http://2inc.org
- * Created    : July 5, 2015
- * Modified   : December 9, 2015
- * License    : GPLv2 or later
- * License URI: license.txt
- */
+	$dateArithmetic = Habakiri_Base_Functions::dateArithmetic();
+	$new_mark_bool = $dateArithmetic['result'] <= 7;
 ?>
-<?php $dateArithmetic = Habakiri_Base_Functions::dateArithmetic(); ?>
 <article class="article article--search">
 	<div class="entry">
 		<div class="searchHeaderZone">
@@ -18,23 +10,34 @@
 		<?php do_action( 'habakiri_before_entries' ); ?>
 		<div class="entries entries--search">
 			<?php while ( have_posts() ) : the_post(); ?>
-			<article <?php post_class( array( 'article', 'newPostCard' ) ); ?>>
-				<div class="entry--has_media__media newPostThumbnail">
-					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-				</div>
-				<div class="newPostTitle">
-			    <?php if ($dateArithmetic['result'] <= 7) { ?>
-			      <div class="newestPostMark">NEW!</div>
-			    <?php } ?>
-			    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-			  </div>
-				<div class="newPostCategory">
-					<?php $cats = get_the_category(); ?>
-			    <?php foreach ($cats as $cat) { ?>
-			      <a href=<?php echo get_category_link($cat->cat_ID); ?>><?php echo $cat->name; ?></a>
-			    <?php } ?>
-			  </div>
-			</article>
+				<?php
+					$post_count_num = Habakiri_Base_Functions::getPostThNumber();
+					$post_count_bool = in_category('gourmet');
+				?>
+				<article <?php post_class( array( 'article', 'newPostCard' ) ); ?>>
+					<div class="entry--has_media__media newPostThumbnail">
+						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+					</div>
+					<div class="newPostTitle">
+						<?php if ($post_count_bool || $new_mark_bool) { ?>
+							<div class="aboveTitleZone">
+								<?php if ($post_count_bool) { ?>
+									<div class="mileStone"><?php echo $post_count_num; ?>店舗目</div>
+								<?php } ?>
+					      <?php if ($new_mark_bool) { ?>
+					        <div class="newestPostMark">NEW!</div>
+					      <?php } ?>
+					    </div>
+						<?php } ?>
+				    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+				  </div>
+					<div class="newPostCategory">
+						<?php $cats = get_the_category(); ?>
+				    <?php foreach ($cats as $cat) { ?>
+				      <a href=<?php echo get_category_link($cat->cat_ID); ?>><?php echo $cat->name; ?></a>
+				    <?php } ?>
+				  </div>
+				</article>
 			<?php endwhile; ?>
 			<?php get_template_part( 'modules/pagination' ); ?>
 		</div>

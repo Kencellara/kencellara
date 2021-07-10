@@ -741,7 +741,7 @@ class Habakiri_Base_Functions {
 
 	public function dateArithmetic() {
 		$dateArithmetic = array( 'result' => '',  'display' => '',  'switch' => 0 );
-		$modified_date = get_the_modified_date('Y-m-d');
+		$modified_date = get_the_time('Y-m-d');
 		$now_date = new DateTime();
 		$now_date = $now_date->format('Y-m-d');
 		$dateArithmetic['result'] = (strtotime($now_date) - strtotime($modified_date)) / (60 * 60 * 24);
@@ -770,6 +770,23 @@ class Habakiri_Base_Functions {
 					$dateArithmetic['display'] = $dateArithmetic['result'].'日';
 		}
 		return $dateArithmetic;
+	}
+
+	public function getPostThNumber($slug = 'gourmet') {
+	  global $wpdb, $post;
+		// $term_id = get_tags(array('slug' => $slug))[0]->term_id;
+		$term_id = get_category_by_slug($slug)->term_id;
+
+	  $number = $wpdb->get_var("
+	    SELECT COUNT(*)
+	    FROM $wpdb->posts INNER JOIN $wpdb->term_relationships ON $wpdb->posts.ID = $wpdb->term_relationships.object_id
+	    WHERE post_status = 'publish'
+	    AND post_type = 'post'
+	    AND term_taxonomy_id = $term_id
+	    AND post_date <= '$post->post_date'
+	  ");
+
+	  return $number;
 	}
 }
 
