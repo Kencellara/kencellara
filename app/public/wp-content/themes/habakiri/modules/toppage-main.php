@@ -8,7 +8,7 @@
 <div class="storeCountArea">
   <div class="storeCountContainer">
     <img src="<?php echo $common_img_dir; ?>/crown.jpg" alt="王冠" />
-    現在<span class="storeCounter"><?php echo $gourmet_posts_count+7; ?></span>店舗制覇
+    現在<span class="storeCounter"><?php echo $gourmet_posts_count+8; ?></span>店舗制覇
     <img src="<?php echo $common_img_dir; ?>/crown.jpg" alt="王冠" />
   </div>
 </div>

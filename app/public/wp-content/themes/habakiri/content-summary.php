@@ -12,7 +12,7 @@
 		<?php if ($post_count_bool || $new_mark_bool) { ?>
 			<div class="aboveTitleZone">
 				<?php if ($post_count_bool) { ?>
-					<div class="mileStone"><?php echo $post_count_num+7; ?>店舗目</div>
+					<div class="mileStone"><?php echo $post_count_num+8; ?>店舗目</div>
 				<?php } ?>
 	      <?php if ($new_mark_bool) { ?>
 	        <div class="newestPostMark">NEW!</div>
