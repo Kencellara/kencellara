@@ -95,7 +95,7 @@
 					</li>
 				<?php endforeach; ?>
 			</ul>
-			<div class="categorySubHeader sb_subHeader">エリア</div>
+			<div class="categorySubHeader sb_subHeader">エリア（三重県内）</div>
 			<ul>
 				<?php foreach( $area_categories as $category ) : ?>
 					<li>
@@ -103,6 +103,7 @@
 					</li>
 				<?php endforeach; ?>
 			</ul>
+			<div class="categorySubHeader sb_subHeader">エリア（三重県外）</div>
 			<ul>
 				<?php foreach( $outside_categories as $category ) : ?>
 					<li>

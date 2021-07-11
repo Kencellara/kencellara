@@ -553,7 +553,8 @@
 }
 .related-posts .entries article {
   margin-bottom: 10px;
-  padding-bottom: 15px;
+  padding: 5px 0 10px;
+  border-bottom: 2px dotted rosybrown;
 }
 
 .kenceWorkWindowZone {

@@ -1,15 +1,4 @@
 <?php
-/**
- * Version    : 1.3.0
- * Author     : inc2734
- * Author URI : http://2inc.org
- * Created    : April 20, 2015
- * Modified   : November 7, 2015
- * License    : GPLv2 or later
- * License URI: license.txt
- */
-?>
-<?php
 	$cat = get_category( get_query_var("cat") );
 	$cat_name = $cat->name;
 ?>

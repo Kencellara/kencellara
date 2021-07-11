@@ -1,7 +1,5 @@
 <?php
-  $all_posts_count = wp_count_posts()->publish;
-  $other_posts_count = get_category_by_slug('others')->count;
-  $gourmet_posts_count = $all_posts_count - $other_posts_count;
+  $gourmet_posts_count = get_category_by_slug('gourmet')->count;
 	$support_page_id = get_page_by_path('support')->ID;
 	$kence_work_page_id = get_page_by_path('kence_work')->ID;
   $upload_dir = wp_upload_dir();
@@ -10,7 +8,7 @@
 <div class="storeCountArea">
   <div class="storeCountContainer">
     <img src="<?php echo $common_img_dir; ?>/crown.jpg" alt="王冠" />
-    現在<span class="storeCounter"><?php echo $gourmet_posts_count; ?></span>店舗制覇
+    現在<span class="storeCounter"><?php echo $gourmet_posts_count+8; ?></span>店舗制覇
     <img src="<?php echo $common_img_dir; ?>/crown.jpg" alt="王冠" />
   </div>
 </div>

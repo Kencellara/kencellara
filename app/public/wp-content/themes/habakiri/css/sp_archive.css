@@ -11,6 +11,7 @@
   }
   .entries {
     margin: 0;
+    padding: 5px;
   }
   .entries .article {
     width: 100%;

@@ -40,6 +40,9 @@
   .related-posts .entry--has_media__body {
     padding: 15px 5px 0;
   }
+  .related-posts .entry__summary {
+    display: none;
+  }
   .kencemeshiSupportHeader {
     font-size: 22px;
   }

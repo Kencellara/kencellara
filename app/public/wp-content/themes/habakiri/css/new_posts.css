@@ -55,6 +55,28 @@
   width: calc(50% - 10px);
   margin: 5px;
 }
+.aboveTitleZone {
+  display: flex;
+  margin-bottom: 12px;
+}
+.aboveTitleZone > div {
+  text-align: center;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.mileStone {
+  box-shadow: 0px 0px 5px 2px gold;
+  color: crimson;
+  text-shadow: 2px 2px 2px silver;
+  margin-right: 10px;
+}
+.newestPostMark {
+  background-color: maroon;
+  color: #fff;
+  text-shadow: 1px 1px 2px silver;
+  border-radius: 4px;
+}
 .newPostTitle {
   margin: 10px;
   line-height: 1.0;
@@ -67,14 +89,14 @@
 .newPostTitle a {
   color: #333;
 }
-.newPostTitle a:hover {
-  color: #375A7F;
-}
 .newPostThumbnail {
   text-align: center;
 }
 .newPostCategory {
+  display: flex;
   margin: 0 0 8px 8px;
+  height: 100%;
+  align-items: flex-end;
 }
 .newPostCategory a {
   background: #C2EEFF;

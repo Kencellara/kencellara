@@ -1,49 +1,30 @@
 <?php
-/**
- * Version    : 1.0.0
- * Author     : inc2734
- * Author URI : http://2inc.org
- * Created    : August 28, 2015
- * Modified   :
- * License    : GPLv2 or later
- * License URI: license.txt
- */
+	$dateArithmetic = Habakiri_Base_Functions::dateArithmetic();
+	$new_mark_bool = $dateArithmetic['result'] <= 7;
+  $post_count_num = Habakiri_Base_Functions::getPostThNumber();
+	$post_count_bool = in_category('gourmet');
 ?>
-<article <?php post_class( array( 'article', 'article--summary' ) ); ?>>
-
-	<?php if ( Habakiri::get( 'is_displaying_thumbnail' ) === 'false' ) : ?>
-
-		<div class="entry">
-			<?php Habakiri::the_title(); ?>
-			<div class="entry__summary">
-				<?php the_excerpt(); ?>
-			</div>
-			<?php get_template_part( 'modules/entry-meta' ); ?>
-		</div>
-
-	<?php else : ?>
-
-		<div class="entry--has_media entry">
-			<div class="entry--has_media__inner">
-				<div class="entry--has_media__media">
-					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-				</div>
-				<div class="entry--has_media__body">
-					<?php Habakiri::the_title(); ?>
-					<div class="newPostCategory">
-						<?php $cats = get_the_category(); ?>
-				    <?php foreach ($cats as $cat) { ?>
-				      <a href=<?php echo get_category_link($cat->cat_ID); ?>><?php echo $cat->name; ?></a>
-				    <?php } ?>
-				  </div>
-					<!-- <div class="entry__summary">
-						<?php #the_excerpt(); ?>
-					</div> -->
-					<?php #get_template_part( 'modules/entry-meta' ); ?>
-				</div>
-			</div>
-		</div>
-
-	<?php endif; ?>
-
+<article <?php post_class( array( 'article', 'article--summary', 'newPostCard' ) ); ?>>
+	<div class="entry--has_media__media newPostThumbnail">
+		<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+	</div>
+	<div class="newPostTitle">
+		<?php if ($post_count_bool || $new_mark_bool) { ?>
+			<div class="aboveTitleZone">
+				<?php if ($post_count_bool) { ?>
+					<div class="mileStone"><?php echo $post_count_num+8; ?>店舗目</div>
+				<?php } ?>
+	      <?php if ($new_mark_bool) { ?>
+	        <div class="newestPostMark">NEW!</div>
+	      <?php } ?>
+	    </div>
+		<?php } ?>
+    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+  </div>
+	<div class="newPostCategory">
+		<?php $cats = get_the_category(); ?>
+    <?php foreach ($cats as $cat) { ?>
+      <a href=<?php echo get_category_link($cat->cat_ID); ?>><?php echo $cat->name; ?></a>
+    <?php } ?>
+  </div>
 </article>
