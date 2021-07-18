@@ -1,0 +1,57 @@
+.catRcmdRankHeader {
+  background-color: white;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  text-shadow: 1px 1px 1px silver;
+}
+.catRcmdRankHeader .fa-crown {
+  color: gold;
+}
+.catRcmdRankRow {
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 10px 0;
+  border: 5px outset grey;
+}
+.catRcmdRankRow > a {
+  color: #333;
+}
+.catRcmdRankRow > a:hover,
+.catRcmdRankRow > a:active,
+.catRcmdRankRow > a:focus {
+  color: #333;
+}
+.catRcmdRankRow.first {
+  border-color: gold;
+}
+.catRcmdRankRow.first .catRcmRankHead {
+  box-shadow: 0px 0px 5px 1px gold;
+}
+.catRcmdRankRow.second {
+  border-color: silver;
+}
+.catRcmdRankRow.second .catRcmRankHead {
+  box-shadow: 0px 0px 5px 1px silver;
+}
+.catRcmdRankRow.third {
+  border-color: #b87333;
+}
+.catRcmdRankRow.third .catRcmRankHead {
+  box-shadow: 0px 0px 5px 1px #b87333;
+}
+.catRcmRankHead {
+  background-color: #333;
+  color: #fff;
+}
+.catRcmRankHead > span {
+  margin-right: 20px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.catRcmRankDescription {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 15px 0;
+}

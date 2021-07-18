@@ -1,0 +1,13 @@
+@media screen and (max-width: 420px) {
+  .catRcmdRankRow {
+    margin-bottom: 15px;
+    padding: 5px 0;
+  }
+  .catRcmRankHead > span {
+    margin-right: 10px;
+    padding: 5px;
+  }
+  .catRcmRankDescription {
+    padding: 4px 7px;
+  }
+}
