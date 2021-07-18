@@ -692,6 +692,9 @@ a.kenceWindowModalClose {
   margin-top: 10px;
   list-style-type: disc;
 }
+.kencemeshiAnalytics {
+  margin: 30px 0;
+}
 
 /* 支援 */
 .acknowledgement {

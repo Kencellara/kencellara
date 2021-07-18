@@ -450,6 +450,10 @@
   <div class="kencemeshiHistoryContents">
     <?php get_template_part('modules/history'); ?>
   </div>
+  <div class="kencemeshiAnalytics">
+    <div class="kencemeshiAnalyticsHeader commonHeader">月別サイト運用結果</div>
+    <img src="<?php echo $upload_dir['baseurl']; ?>/common/analytics_202106.jpg" alt="アナリティクス202106" loading="lazy" />
+  </div>
   <div class="supportZone">
     <script src="https://codoc.jp/js/cms.js" data-css="red-square" charset="UTF-8" defer></script>
     <div id="codoc-entry-Aly1W7g5Yg" class="codoc-entries" data-without-body="1" data-support-button-text="ケンチェ飯を支援する" data-show-like="0" data-show-powered-by="0" data-support-message="頂戴しましたご支援は、サイトの運営費に補填させて頂いております。"></div>

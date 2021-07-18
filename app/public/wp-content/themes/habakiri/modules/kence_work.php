@@ -38,6 +38,10 @@
 <div class="kencemeshiHistoryHeader topPageHeader">過去の実績</div>
 <div class="kencemeshiHistoryContents kenceWorkContents">
   <?php get_template_part('modules/history'); ?>
+	<div class="kencemeshiAnalytics">
+    <div class="kencemeshiAnalyticsHeader commonHeader">月別サイト運用結果</div>
+    <img src="<?php echo $upload_dir['baseurl']; ?>/common/analytics_202106.jpg" alt="アナリティクス202106" loading="lazy" />
+  </div>
 </div>
 
 <div class="kenceWorkSlogan kenceWorkContents">
