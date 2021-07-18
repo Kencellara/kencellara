@@ -52,7 +52,7 @@
                 <div class="catRcmRankHead">
                   <span class="catRcmRankNum">1位</span>
                   <span class="catRcmRankTitle">風見鶏</span>
-                  <span class="catRcmRankArea">尾鷲</span>
+                  <span class="catRcmRankArea">【尾鷲】</span>
                 </div>
                 <div class="catRcmRankDescription">ミシュランお墨付きの鶏白湯。三重県で一番美味い説。</div>
               </a>
@@ -63,7 +63,7 @@
                 <div class="catRcmRankHead">
                   <span class="catRcmRankNum">2位</span>
                   <span class="catRcmRankTitle">蜂ノ葦葉</span>
-                  <span class="catRcmRankArea">四日市</span>
+                  <span class="catRcmRankArea">【四日市】</span>
                 </div>
                 <div class="catRcmRankDescription">県内食べログ評価ナンバーワン。独学で行きついた究極の塩ラーメン。</div>
               </a>
@@ -74,7 +74,7 @@
                 <div class="catRcmRankHead">
                   <span class="catRcmRankNum">3位</span>
                   <span class="catRcmRankTitle">吉風</span>
-                  <span class="catRcmRankArea">伊勢</span>
+                  <span class="catRcmRankArea">【伊勢】</span>
                 </div>
                 <div class="catRcmRankDescription">前代未聞の美味さ！？一度食べる死ぬまで忘れない鶏豚骨ラーメン。</div>
               </a>
@@ -85,7 +85,7 @@
                 <div class="catRcmRankHead">
                   <span class="catRcmRankNum">4位</span>
                   <span class="catRcmRankTitle">丸山商店</span>
-                  <span class="catRcmRankArea">津</span>
+                  <span class="catRcmRankArea">【津】</span>
                 </div>
                 <div class="catRcmRankDescription">シンプルな鶏白湯。調和のとれた異次元のレベルのチャーシュー。</div>
               </a>
@@ -96,7 +96,7 @@
                 <div class="catRcmRankHead">
                   <span class="catRcmRankNum">5位</span>
                   <span class="catRcmRankTitle">京風担々麵 百福</span>
-                  <span class="catRcmRankArea">松阪</span>
+                  <span class="catRcmRankArea">【松阪】</span>
                 </div>
                 <div class="catRcmRankDescription">松阪市唯一無二の担々麵専門店。辛くないスープに病み付き者続出！？</div>
               </a>

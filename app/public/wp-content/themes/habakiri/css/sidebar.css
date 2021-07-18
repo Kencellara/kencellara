@@ -66,14 +66,13 @@
 }
 .sb_categories a {
   font-weight: bold;
-  color: #fff;
   padding: 5px;
   text-align: center;
-  width: 80px;
+  width: 82px;
   margin: 0 5px 5px 0;
-  background: lightcoral;
-  border-bottom: solid 6px lightsalmon;
+  border: 1px solid saddlebrown;
   border-radius: 9px;
+}
 }
 
 /* インスタ */
