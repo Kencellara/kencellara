@@ -8,9 +8,31 @@
   <img src="<?php echo $upload_dir['baseurl']; ?>/toppage/kence_work.jpg" alt="コラボ・取材の依頼" loading="lazy" />
 </div>
 
-<div id="kenceWorkWindow" class="kenceWorkWindowHeader topPageHeader">お問い合わせフォーム</div>
+<div class="kenceWorkWindowHeader topPageHeader">お問い合わせフォーム</div>
 <div class="kenceWorkWindow kenceWorkContents">
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf7z8zl1FGl9_pWK9EOQBTbHDTRJ3hd8yIlKoSIPhl4-LbGfg/viewform?embedded=true" width="600" height="850" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+	<div class="kenceWorkWindowExplain">
+		各種お問い合わせは下記フォーム（ケンチェの窓口）よりお願い致します。
+	</div>
+	<!-- modal open -->
+	<div class="kenceWindowModalOpen kenceWorkWindowModalOpen">
+	  <a id="js-modal-open-2" href="" data-target="modal02">ケンチェの窓口</a>
+	</div>
+	<!-- ./modal open -->
+	<!-- modal -->
+	<div id="modal02" class="kenceWindowModal js-modal">
+	  <div class="kenceWindowModalBg js-modal-close"></div>
+	  <div class="kenceWindowModalContent">
+	    <div class="kenceWindowModalContentInner">
+	      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf7z8zl1FGl9_pWK9EOQBTbHDTRJ3hd8yIlKoSIPhl4-LbGfg/viewform?embedded=true" width="639" height="830" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+	      <a class="js-modal-close kenceWindowModalClose" href=""><span>閉じる</span></a>
+	    </div>
+	  </div>
+	</div>
+	<!-- ./modal -->
+	<div class="kenceWorkWindowCaution">
+	  ※Googleフォームが開きます<br/>
+	  ※ページの遷移はございません
+	</div>
 </div>
 
 <div class="kencemeshiHistoryHeader topPageHeader">過去の実績</div>

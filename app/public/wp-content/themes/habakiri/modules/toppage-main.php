@@ -399,7 +399,7 @@
 
 <!-- modal open -->
 <div id='kenceWindowModalOpen' class="kenceWindowModalOpen">
-  <a class="js-modal-open" href="" data-target="modal01">ケンチェの窓口</a>
+  <a id="js-modal-open-1" href="" data-target="modal01">ケンチェの窓口</a>
 </div>
 <!-- ./modal open -->
 

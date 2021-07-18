@@ -576,7 +576,7 @@ i.izakaya {
 .kenceWindowModalContentInner {
   overflow-y: scroll;
   position: relative;
-  max-height: 95vh;
+  max-height: 88vh;
 }
 a.kenceWindowModalClose {
   color: black;
@@ -603,9 +603,6 @@ a.kenceWindowModalClose {
 }
 .kenceWindowModalOpen {
   padding: 15px 0 20px;
-}
-.kenceWindowModalContentInner {
-  max-height: 100vh;
 }
 
 .monthlyBlogInfo {
