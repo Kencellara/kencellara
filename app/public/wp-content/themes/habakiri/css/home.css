@@ -690,6 +690,7 @@ a.kenceWindowModalClose {
 }
 .kencemeshiHistoryContents ul {
   margin-top: 10px;
+  list-style-type: disc;
 }
 
 /* 支援 */
