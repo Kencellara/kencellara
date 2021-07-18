@@ -54,14 +54,26 @@
   font-weight: bold;
   padding-top: 10px;
 }
-.sb_categories ul,
 .sb_archive ul {
   padding-left: 10px;
 }
-.sb_categories a,
 .sb_archive a {
-  font-weight: bold;
   color: saddlebrown;
+}
+.sb_categoryContents {
+  display: inline-flex;
+  flex-flow: wrap;
+}
+.sb_categories a {
+  font-weight: bold;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  width: 80px;
+  margin: 0 5px 5px 0;
+  background: lightcoral;
+  border-bottom: solid 6px lightsalmon;
+  border-radius: 9px;
 }
 
 /* インスタ */
