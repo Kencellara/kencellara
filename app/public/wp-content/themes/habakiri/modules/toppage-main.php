@@ -4,6 +4,11 @@
 	$kence_work_page_id = get_page_by_path('kence_work')->ID;
   $upload_dir = wp_upload_dir();
   $common_img_dir = $upload_dir['baseurl'] . '/common';
+  $hokubu_post_count = get_category_by_slug('kameyama')->count + get_category_by_slug('komono')->count + get_category_by_slug('yokkaichi')->count + get_category_by_slug('kuwana')->count;
+  $iga_post_count = get_category_by_slug('iga')->count;
+  $chubu_post_count = get_category_by_slug('tsu')->count + get_category_by_slug('matsusaka')->count + get_category_by_slug('meiwa')->count + get_category_by_slug('taki')->count;
+  $iseShima_post_count = get_category_by_slug('ise')->count + get_category_by_slug('shima')->count + get_category_by_slug('toba')->count + get_category_by_slug('minamiise')->count;
+  $higashikishu_post_count = get_category_by_slug('odai')->count + get_category_by_slug('kihoku')->count + get_category_by_slug('owase')->count;
 ?>
 <div class="storeCountArea">
   <div class="storeCountContainer">
@@ -61,6 +66,7 @@
     <div class="areaSearchHeader topPageHeader">エリアでグルメ検索 <i class="fas fa-search"></i></div>
     <div class="areaSearchInner">
       <div class="hokubu areaZone">
+        <div class="areaBadge hokubu"><?php echo $hokubu_post_count; ?></div>
         <div class="hokubuHeader areaHeader">北部</div>
         <ul class="areaList">
           <li class="inabe">
@@ -84,6 +90,7 @@
         </ul>
       </div>
       <div class="iga areaZone">
+        <div class="areaBadge iga"><?php echo $iga_post_count; ?></div>
         <div class="igaHeader areaHeader">伊賀</div>
         <ul class="areaList">
           <li class="iga">
@@ -95,6 +102,7 @@
         </ul>
       </div>
       <div class="chubu areaZone">
+        <div class="areaBadge chubu"><?php echo $chubu_post_count; ?></div>
         <div class="chubuHeader areaHeader">中部</div>
         <ul class="areaList">
           <li class="tsu">
@@ -112,6 +120,7 @@
         </ul>
       </div>
       <div class="iseShima areaZone">
+        <div class="areaBadge iseShima"><?php echo $iseShima_post_count; ?></div>
         <div class="iseShimaHeader areaHeader">伊勢志摩</div>
         <ul class="areaList">
           <li class="ise">
@@ -135,6 +144,7 @@
         </ul>
       </div>
       <div class="higashikishu areaZone">
+        <div class="areaBadge higashikishu"><?php echo $higashikishu_post_count; ?></div>
         <div class="higashikishuHeader areaHeader">東紀州</div>
         <ul class="areaList">
           <li class="odai">
