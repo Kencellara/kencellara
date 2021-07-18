@@ -175,8 +175,7 @@ section.typeA input:checked + .tabLabel + .content {
 }
 .areaSearchZone a:hover {
   opacity: 0.6;
-  color: #fff;
-  background: linear-gradient(#fff, saddlebrown);
+  background: linear-gradient(#fff, lightcoral);
 }
 .areaSearchContainer {
   height: 100%;
