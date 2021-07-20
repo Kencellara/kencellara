@@ -1,26 +1,11 @@
 <?php
-/**
- * Template Name: Blank Page
- *
- * Version      : 1.3.0
- * Author       : inc2734
- * Author URI   : http://2inc.org
- * Created      : April 17, 2015
- * Modified     : August 30, 2015
- * License      : GPLv2 or later
- * License URI  : license.txt
- */
-?>
-<?php
 	add_action('wp_enqueue_scripts', wp_enqueue_style('home-style', get_template_directory_uri() . '/css/home.css', array('habakiri', 'common-style')));
 	add_action('wp_enqueue_scripts', wp_enqueue_style('sp_home-style', get_template_directory_uri() . '/css/sp_home.css'));
-	add_action('wp_enqueue_scripts', wp_enqueue_style('new_posts-style', get_template_directory_uri() . '/css/new_posts.css',));
-	add_action('wp_enqueue_scripts', wp_enqueue_style('sp_new_posts-style', get_template_directory_uri() . '/css/sp_new_posts.css',));
 	add_action('wp_enqueue_scripts', wp_enqueue_style('slick-style', get_template_directory_uri() . '/src/js/slick/slick.css'));
 	add_action('wp_enqueue_scripts', wp_enqueue_style('slick-theme-style', get_template_directory_uri() . '/src/js/slick/slick-theme.css'));
-?>
-<?php add_action('wp_enqueue_scripts', wp_enqueue_script('slick-script', get_theme_file_uri('/src/js/slick/slick.min.js'), array('jquery'))); ?>
-<?php
+	add_action('wp_enqueue_scripts', wp_enqueue_script('slick-script', get_theme_file_uri('/src/js/slick/slick.min.js'), array('jquery')));
+	add_action('wp_enqueue_scripts', wp_enqueue_style('new_posts-style', get_template_directory_uri() . '/css/new_posts.css',));
+	add_action('wp_enqueue_scripts', wp_enqueue_style('sp_new_posts-style', get_template_directory_uri() . '/css/sp_new_posts.css',));
 	function toppage_scripts() {
 		wp_enqueue_script( 'modal-script', get_template_directory_uri() . '/js/modal.js', array('jquery'));
 	}
@@ -57,7 +42,6 @@
 			</div>
 		</div>
 	</div>
-
 </div>
 
 <?php get_footer(); ?>

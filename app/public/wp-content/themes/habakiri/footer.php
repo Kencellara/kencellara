@@ -28,10 +28,10 @@
 	      <div class="footer-links">
 	        <ul>
 	          <li>
-	            <a href="<?php echo esc_url(get_permalink(get_page_by_path('kence_work')->ID)); ?>">お仕事のご依頼</a>
+	            <a href=<?php echo home_url() ?>>トップページ</a>
 	          </li>
 	          <li>
-	            <a href="<?php echo esc_url(get_permalink(get_page_by_path('kence_work')->ID)); ?>">お問い合わせ</a>
+	            <a href="https://www.yuruchariders.com/" target="_blank">ロードバイク</a>
 	          </li>
 	          <li>
 	            <a href="<?php echo esc_url(get_permalink(get_page_by_path('privacy_policy')->ID)); ?>">プライバシーポリシー</a>

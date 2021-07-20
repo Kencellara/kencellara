@@ -1,19 +1,19 @@
 <?php
-/**
- * Version    : 1.4.0
- * Author     : inc2734
- * Author URI : http://2inc.org
- * Created    : April 17, 2015
- * Modified   : August 28, 2015
- * License    : GPLv2 or later
- * License URI: license.txt
- */
+	$post_count_bool = in_category('gourmet');
+	$post_count_num = Habakiri_Base_Functions::getPostThNumber();
 ?>
 <article <?php post_class( array( 'article', 'article--single' ) ); ?>>
 	<div class="entry">
+		<div class="aboveTitleInfo">
+			<?php if ($post_count_bool) { ?>
+				<div class="milestone"><i class="fas fa-utensils"></i>  <?php echo $post_count_num+8; ?>店舗目  <i class="fas fa-utensils"></i></div>
+			<?php } ?>
+		</div>
 		<?php Habakiri::the_title(); ?>
+		<div class="belowTitleInfo">
+			<div class="lastModifiedDate">最終更新日：<?php the_modified_date("Y年m月d日"); ?></div>
+		</div>
 		<?php get_template_part( 'modules/above_article' ); ?>
-		<?php #get_template_part( 'modules/entry-meta' ); ?>
 		<?php do_action( 'habakiri_before_entry_content' ); ?>
 		<div class="entry__content">
 			<?php the_content(); ?>

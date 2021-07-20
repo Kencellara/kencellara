@@ -175,8 +175,7 @@ section.typeA input:checked + .tabLabel + .content {
 }
 .areaSearchZone a:hover {
   opacity: 0.6;
-  color: #fff;
-  background: linear-gradient(#fff, saddlebrown);
+  background: linear-gradient(#fff, lightcoral);
 }
 .areaSearchContainer {
   height: 100%;
@@ -197,6 +196,38 @@ section.typeA input:checked + .tabLabel + .content {
   text-align: center;
   font-weight: bold;
   flex-shrink: 0;
+}
+.areaBadge {
+  font-size: 20px;
+  border: 2px solid;
+  width: 40px;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  padding: 1px 0;
+  top: -17px;
+  left: -17px;
+  background-color: #fff;
+}
+.areaBadge.hokubu {
+  border-color: #1D87FB;
+  color: #1D87FB;
+}
+.areaBadge.iga {
+  border-color: #92D050;
+  color: #92D050;
+}
+.areaBadge.chubu {
+  border-color: #FFD13F;
+  color: #FFD13F;
+}
+.areaBadge.iseShima {
+  border-color: #91BCE3;
+  color: #91BCE3;
+}
+.areaBadge.higashikishu {
+  border-color: #DA54BD;
+  color: #DA54BD;
 }
 .areaHeader {
   color: #fff;
@@ -262,6 +293,11 @@ section.typeA input:checked + .tabLabel + .content {
 .areaHeader {
   font-size: 30px;
   margin-bottom: 8px;
+}
+.areaSearchNote {
+  font-size: 12px;
+  text-align: right;
+  color: saddlebrown;
 }
 
 /* ジャンル検索 */
@@ -576,7 +612,7 @@ i.izakaya {
 .kenceWindowModalContentInner {
   overflow-y: scroll;
   position: relative;
-  max-height: 95vh;
+  max-height: 88vh;
 }
 a.kenceWindowModalClose {
   color: black;
@@ -603,9 +639,6 @@ a.kenceWindowModalClose {
 }
 .kenceWindowModalOpen {
   padding: 15px 0 20px;
-}
-.kenceWindowModalContentInner {
-  max-height: 100vh;
 }
 
 .monthlyBlogInfo {
@@ -662,6 +695,10 @@ a.kenceWindowModalClose {
 }
 .kencemeshiHistoryContents ul {
   margin-top: 10px;
+  list-style-type: disc;
+}
+.kencemeshiAnalytics {
+  margin: 30px 0;
 }
 
 /* 支援 */

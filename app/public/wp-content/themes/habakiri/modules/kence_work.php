@@ -8,74 +8,39 @@
   <img src="<?php echo $upload_dir['baseurl']; ?>/toppage/kence_work.jpg" alt="コラボ・取材の依頼" loading="lazy" />
 </div>
 
-<div id="kenceWorkWindow" class="kenceWorkWindowHeader topPageHeader">お問い合わせフォーム</div>
+<div class="kenceWorkWindowHeader topPageHeader">お問い合わせフォーム</div>
 <div class="kenceWorkWindow kenceWorkContents">
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf7z8zl1FGl9_pWK9EOQBTbHDTRJ3hd8yIlKoSIPhl4-LbGfg/viewform?embedded=true" width="600" height="850" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+	<div class="kenceWorkWindowExplain">
+		各種お問い合わせは下記フォーム（ケンチェの窓口）よりお願い致します。
+	</div>
+	<!-- modal open -->
+	<div class="kenceWindowModalOpen kenceWorkWindowModalOpen">
+	  <a id="js-modal-open-2" href="" data-target="modal02">ケンチェの窓口</a>
+	</div>
+	<!-- ./modal open -->
+	<!-- modal -->
+	<div id="modal02" class="kenceWindowModal js-modal">
+	  <div class="kenceWindowModalBg js-modal-close"></div>
+	  <div class="kenceWindowModalContent">
+	    <div class="kenceWindowModalContentInner">
+	      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf7z8zl1FGl9_pWK9EOQBTbHDTRJ3hd8yIlKoSIPhl4-LbGfg/viewform?embedded=true" width="639" height="830" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+	      <a class="js-modal-close kenceWindowModalClose" href=""><span>閉じる</span></a>
+	    </div>
+	  </div>
+	</div>
+	<!-- ./modal -->
+	<div class="kenceWorkWindowCaution">
+	  ※Googleフォームが開きます<br/>
+	  ※ページの遷移はございません
+	</div>
 </div>
 
 <div class="kencemeshiHistoryHeader topPageHeader">過去の実績</div>
 <div class="kencemeshiHistoryContents kenceWorkContents">
-  <div class="year">
-    <h3>2020年</h3>
-    <div class="month">
-      <h4>8月</h4>
-      <ul>
-        <li>「ケンチェ飯」本格始動</li>
-      </ul>
-    </div>
-    <div class="month">
-      <h4>9月</h4>
-      <ul>
-        <li>GoogleAdsense広告連携開始</li>
-      </ul>
-    </div>
-    <div class="month">
-      <h4>11月</h4>
-      <ul>
-        <li><span style="color: #ff0000;"><strong>月間アクセス数 12703 PV</strong></span></li>
-      </ul>
-    </div>
-    <div class="month">
-      <h4>12月</h4>
-      <ul>
-        <li><strong><span style="color: #ff0000;">月間アクセス数  13948 PV</span></strong></li>
-      </ul>
-    </div>
-  </div>
-  <div class="year">
-    <h3>2021年</h3>
-    <div class="month">
-      <h4>1月</h4>
-      <ul>
-        <li><strong><span style="color: #ff0000;">月間アクセス数 18757 PV</span></strong></li>
-        <li><a href="https://miecolle.net/hito/1282" target="_blank" rel="noreferrer">ミエコレ 飲食店ライターとして「ケンチェ飯」掲載  <i class="fas fa-external-link-alt"></i></a></li>
-        <li>にっこう亭 取材依頼 受託</li>
-        <li><a href="https://www.kencellara.com/entry/2021-1-event" target="_blank" rel="noreferrer">江戸橋 富や コラボイベント 開催  <i class="fas fa-external-link-alt"></i></a></li>
-      </ul>
-    </div>
-    <div class="month">
-      <h4>2月</h4>
-      <ul>
-        <li><span style="color: #ff0000;"><strong>月間アクセス数 27704 PV</strong></span></li>
-        <li>三重タイムズ「ケンチェ飯」新聞掲載</li>
-        <li><a href="https://otonamie.jp/?page_id=34706" target="_blank" rel="noreferrer">OTONAMIE 地域のWEBメディアとして「ケンチェ飯」掲載  <i class="fas fa-external-link-alt"></i></a></li>
-        <li>CAFE&amp;BAR TRIPLE A 取材依頼 受託</li>
-      </ul>
-    </div>
-    <div class="month">
-      <h4>3月</h4>
-      <ul>
-        <li>B&amp;Bフォレスト志摩 取材依頼 受託</li>
-        <li>株式会社えんこね 業務提携</li>
-      </ul>
-    </div>
-    <div class="month">
-      <h4>4月</h4>
-      <ul>
-        <li>ごきげんえびすHANARE 取材依頼 受託</li>
-        <li>麵屋AZITO 取材依頼 受託</li>
-      </ul>
-    </div>
+  <?php get_template_part('modules/history'); ?>
+	<div class="kencemeshiAnalytics">
+    <div class="kencemeshiAnalyticsHeader commonHeader">月別サイト運用結果</div>
+    <img src="<?php echo $upload_dir['baseurl']; ?>/common/analytics_202106.jpg" alt="アナリティクス202106" loading="lazy" />
   </div>
 </div>
 

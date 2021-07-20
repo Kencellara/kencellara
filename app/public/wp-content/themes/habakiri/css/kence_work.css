@@ -6,12 +6,21 @@
   margin-bottom: 35px;
 }
 .kenceWorkWindow {
-  padding: 30px 0 0;
+  padding: 20px 0;
   background-color: #fff;
 }
-iframe {
+.kenceWorkWindowExplain {
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.kenceWorkWindowModalOpen {
   background-color: #fff;
-  width: 100%;
+}
+.kenceWorkWindowCaution {
+  text-align: center;
+  font-size: 12px;
 }
 .kenceWorkContents.kencemeshiHistoryContents {
   background-color: #fff;
