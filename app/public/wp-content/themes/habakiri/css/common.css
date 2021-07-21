@@ -75,3 +75,7 @@ a.supportLink,
 a.workLink {
   color: crimson;
 }
+
+.forAd {
+  border: none !important;
+}
