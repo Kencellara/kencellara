@@ -173,6 +173,7 @@
     </div>
   </div>
 </div>
+<div class="areaSearchNote">地域名左上の数字は訪問店舗数を示しています。</div>
 
 <!-- ジャンル別検索 -->
 <div class="genreSearchZone">

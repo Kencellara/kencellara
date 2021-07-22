@@ -24,12 +24,12 @@
     left: -18px;
   }
   .areaZone.hokubu {
-    top: -6px;
+    top: -3px;
     left: 100px;
   }
   .areaZone.iga {
     top: 105px;
-    left: -50px;
+    left: -45px;
   }
   .areaZone.chubu {
     top: 60px;
@@ -46,6 +46,7 @@
   .areaHeader {
     font-size: 15px;
     margin-bottom: 4px;
+    padding: 2px 0;
   }
   .areaSearchZone li {
     font-size: 15px;
