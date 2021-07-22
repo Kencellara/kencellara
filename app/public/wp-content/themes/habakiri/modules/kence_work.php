@@ -11,7 +11,7 @@
 <div class="kenceWorkWindowHeader topPageHeader">お問い合わせフォーム</div>
 <div class="kenceWorkWindow kenceWorkContents">
 	<div class="kenceWorkWindowExplain">
-		各種お問い合わせは下記フォーム（ケンチェの窓口）よりお願い致します。
+		お問い合わせは下記フォーム（ケンチェの窓口）よりお願い致します。
 	</div>
 	<!-- modal open -->
 	<div class="kenceWindowModalOpen kenceWorkWindowModalOpen">
