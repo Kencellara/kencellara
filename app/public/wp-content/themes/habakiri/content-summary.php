@@ -4,7 +4,7 @@
   $post_count_num = Habakiri_Base_Functions::getPostThNumber();
 	$post_count_bool = in_category('gourmet');
 ?>
-<article <?php post_class( array( 'article', 'article--summary', 'newPostCard' ) ); ?>>
+<article <?php post_class( array( 'article', 'article--summary', 'newPostCard', 'permitAd' ) ); ?>>
 	<div class="entry--has_media__media newPostThumbnail">
 		<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
 	</div>
