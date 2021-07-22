@@ -13,11 +13,7 @@
   $post_count_num = Habakiri_Base_Functions::getPostThNumber();
   $post_count_bool = in_category('gourmet');
 ?>
-<?php if ($args['category_name'] == "") { ?>
-  <div class="newPostCard permitAd">
-<?php } else { ?>
-  <div class="newPostCard">
-<?php } ?>
+<div class="newPostCard">
   <div class="newPostThumbnail">
     <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail($post_id, 'thumbnail',array('loading'=>'lazy')); ?></a>
   </div>

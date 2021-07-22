@@ -294,11 +294,6 @@ section.typeA input:checked + .tabLabel + .content {
   font-size: 30px;
   margin-bottom: 8px;
 }
-.areaSearchNote {
-  font-size: 12px;
-  text-align: right;
-  color: saddlebrown;
-}
 
 /* ジャンル検索 */
 .genreSearchZone {
