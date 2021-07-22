@@ -79,3 +79,15 @@ a.workLink {
 .forAd {
   border: none !important;
 }
+.commonHeader {
+  color: black;
+  background-color: white;
+  margin: 10px auto 20px;
+  width: 320px;
+  box-shadow: 5px 5px 5px 1px black;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  text-shadow: 1px 1px 1px silver;
+  font-size: 22px;
+}

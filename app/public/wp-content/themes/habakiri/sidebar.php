@@ -1,14 +1,3 @@
-<?php
-/**
- * Version    : 1.0.0
- * Author     : inc2734
- * Author URI : http://2inc.org
- * Created    : April 17, 2015
- * Modified   :
- * License    : GPLv2 or later
- * License URI: license.txt
- */
-?>
 <!-- 変数定義 -->
 <?php
 	$upload_dir = wp_upload_dir();
@@ -88,29 +77,31 @@
 		<div class="sb_categories sb_content">
 			<div class="sb_categoryHeader sb_header">カテゴリー</div>
 			<div class="categorySubHeader sb_subHeader">ジャンル</div>
-			<ul>
+			<div class="sb_categoryContents">
 				<?php foreach( $genre_categories as $category ) : ?>
-					<li>
-						<a href="<?php echo get_category_link( $category->term_id ); ?>"><?php echo $category->name; ?></a>
-					</li>
+					<a href="<?php echo get_category_link( $category->term_id ); ?>"><?php echo $category->name; ?></a>
 				<?php endforeach; ?>
-			</ul>
+			</div>
 			<div class="categorySubHeader sb_subHeader">エリア（三重県内）</div>
-			<ul>
+			<div class="sb_categoryContents">
 				<?php foreach( $area_categories as $category ) : ?>
-					<li>
-						<a href="<?php echo get_category_link( $category->term_id ); ?>"><?php echo $category->name; ?></a>
-					</li>
+					<a href="<?php echo get_category_link( $category->term_id ); ?>"><?php echo $category->name; ?></a>
 				<?php endforeach; ?>
-			</ul>
+			</div>
 			<div class="categorySubHeader sb_subHeader">エリア（三重県外）</div>
-			<ul>
+			<div class="sb_categoryContents">
 				<?php foreach( $outside_categories as $category ) : ?>
-					<li>
-						<a href="<?php echo get_category_link( $category->term_id ); ?>"><?php echo $category->name; ?></a>
-					</li>
+					<a href="<?php echo get_category_link( $category->term_id ); ?>"><?php echo $category->name; ?></a>
 				<?php endforeach; ?>
-			</ul>
+			</div>
+		</div>
+		<div class="sb_adsense sb_content">
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- rectangle広告 -->
+			<ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-7898839193224300" data-ad-slot="4070625880" data-ad-format="rectangle" data-full-width-responsive="true"></ins>
+			<script>
+			     (adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
 		</div>
 		<div class="sb_archive sb_content">
 			<div class="archiveHeader sb_header">アーカイブ</div>
