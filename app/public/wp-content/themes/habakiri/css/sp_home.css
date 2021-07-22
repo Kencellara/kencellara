@@ -17,12 +17,18 @@
     width: 65px;
     height: 100px;
   }
+  .areaBadge {
+    font-size: 14px;
+    width: 29px;
+    top: -18px;
+    left: -18px;
+  }
   .areaZone.hokubu {
-    top: -10px;
+    top: -6px;
     left: 100px;
   }
   .areaZone.iga {
-    top: 93px;
+    top: 105px;
     left: -50px;
   }
   .areaZone.chubu {
