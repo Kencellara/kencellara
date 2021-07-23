@@ -23,6 +23,15 @@
 ?>
 <aside id="sub">
 	<div class="sidebar">
+		<?php
+			do_action( 'habakiri_before_sidebar_widget_area' );
+			if ( is_active_sidebar( 'sidebar' ) ) {
+				echo '<div class="sb_search sb_translate"><div class="translateHeader sb_header">Translate(翻訳)</div>';
+				dynamic_sidebar( 'sidebar' );
+				echo '</div>';
+			}
+			do_action( 'habakiri_after_sidebar_widget_area' );
+		?>
 		<div class="sb_search sb_content">
 			<div class="searchHeader sb_header">ワードで検索 <i class="fas fa-search"></i></div>
 			<?php get_template_part( 'searchform' ); ?>
