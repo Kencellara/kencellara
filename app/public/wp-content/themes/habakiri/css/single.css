@@ -225,13 +225,25 @@
   font-weight: bold;
 }
 /* 記事内強調するための囲い枠*/
+.box7::before {
+  content: "総評";
+  font-weight: bold;
+  background-color: black;
+  color: #fff;
+  padding: 10px;
+  position: relative;
+  top: -8px;
+  left: -8px;
+  border-radius: 3px;
+  font-size: 16px;
+}
 .box7 {
   padding: 5px 10px;
   margin: 35px 0;
   color: black;
   background: floralwhite;
-  border-left: double 7px saddlebrown;
-  border-right: double 7px saddlebrown;
+  border-left: double 7px black;
+  border-right: double 7px black;
 }
 .box7 p {
   margin: 0;
