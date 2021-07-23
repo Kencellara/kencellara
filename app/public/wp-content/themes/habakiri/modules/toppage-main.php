@@ -10,6 +10,11 @@
   $iseShima_post_count = get_category_by_slug('ise')->count + get_category_by_slug('shima')->count + get_category_by_slug('toba')->count + get_category_by_slug('minamiise')->count;
   $higashikishu_post_count = get_category_by_slug('odai')->count + get_category_by_slug('kihoku')->count + get_category_by_slug('owase')->count;
 ?>
+
+<div class="simpleNews">
+  <p>ニュース <i class="fas fa-chevron-circle-right"></i> 月間PV数最高値更新！</p>
+</div>
+
 <div class="storeCountArea">
   <div class="storeCountContainer">
     <img src="<?php echo $common_img_dir; ?>/crown.jpg" alt="王冠" />
