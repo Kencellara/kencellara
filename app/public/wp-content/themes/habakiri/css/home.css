@@ -218,7 +218,7 @@ section.typeA input:checked + .tabLabel + .content {
 .areaSearchHeader {
   text-align: center;
   font-weight: bold;
-  margin: 10px auto 30px;
+  margin: 10px auto 35px;
 }
 .areaSearchInner {
   display: flex;
@@ -284,7 +284,6 @@ section.typeA input:checked + .tabLabel + .content {
   background-color: #DA54BD;
 }
 .inabe,
-.suzuka,
 .nabari,
 .watarai,
 .tamaki,
@@ -306,7 +305,7 @@ section.typeA input:checked + .tabLabel + .content {
   height: 200px;
 }
 .areaZone.hokubu {
-  top: 30px;
+  top: 10px;
   left: 150px;
 }
 .areaZone.iga {

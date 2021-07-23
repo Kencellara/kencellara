@@ -90,7 +90,7 @@
             <a href=<?php echo get_category_link(get_category_by_slug('kameyama')->cat_ID); ?>>亀山</a>
           </li>
           <li class="suzuka">
-            <a href="">鈴鹿</a>
+            <a href=<?php echo get_category_link(get_category_by_slug('suzuka')->cat_ID); ?>>鈴鹿</a>
           </li>
         </ul>
       </div>
