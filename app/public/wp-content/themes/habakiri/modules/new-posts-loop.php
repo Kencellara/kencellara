@@ -30,6 +30,12 @@
         <?php if ($new_mark_bool) { ?>
           <div class="newestPostMark">NEW!</div>
         <?php } ?>
+        <?php if (has_tag('lunch')) { ?>
+          <div class="lunchMark"><i class="fas fa-sun"></i></div>
+        <?php } ?>
+        <?php if (has_tag('dinner')) { ?>
+          <div class="dinnerMark"><i class="fas fa-moon"></i></div>
+        <?php } ?>
       </div>
     <?php } ?>
     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
