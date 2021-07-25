@@ -28,21 +28,6 @@
           </p>
         </div>
 
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- トップページ カテゴリー上 -->
-        <div class="categoryAd">
-          <ins class="adsbygoogle"
-               style="display:block"
-               data-ad-client="ca-pub-7898839193224300"
-               data-ad-slot="5520243193"
-               data-ad-format="horizontal"
-               data-full-width-responsive="false">
-          </ins>
-        </div>
-        <script>
-             (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-
         <div class="catRcmdRank">
           <div class="catRcmdRankHeader commonHeader"><i class="fas fa-crown"></i> ケンチェ激押しラーメン <i class="fas fa-crown"></i></div>
           <div class="catRcmdRankContainer">
