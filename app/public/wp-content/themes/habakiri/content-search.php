@@ -27,10 +27,10 @@
 					      <?php if ($new_mark_bool) { ?>
 					        <div class="newestPostMark">NEW!</div>
 					      <?php } ?>
-								<?php if (has_tag('lunch')) { ?>
+								<?php if (has_tag('afternoon')) { ?>
 				          <div class="lunchMark"><i class="fas fa-sun"></i></div>
 				        <?php } ?>
-				        <?php if (has_tag('dinner')) { ?>
+				        <?php if (has_tag('night')) { ?>
 				          <div class="dinnerMark"><i class="fas fa-moon"></i></div>
 				        <?php } ?>
 					    </div>
