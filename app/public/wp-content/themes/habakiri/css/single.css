@@ -96,11 +96,8 @@
   text-shadow: 2px 2px 2px silver;
   margin: 15px auto 8px;
 }
-.belowTitleInfo {
-  display: flex;
-}
-.lastModifiedDate {
-  margin-left: auto;
+.articleDate {
+  text-align: right;
   margin-right: 10px;
 }
 .entry-meta {
