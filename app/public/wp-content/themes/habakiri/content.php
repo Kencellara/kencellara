@@ -23,14 +23,9 @@
 	<?php get_template_part( 'modules/below_article' ); ?>
 	<?php get_template_part( 'modules/link-pages' ); ?>
 	<?php get_template_part( 'modules/related-posts' ); ?>
-	<?php /*
-	if ( comments_open() || pings_open() || get_comments_number() ) {
-		comments_template( '', true );
-	}
-	*/ ?>
-	<div class="kenceWorkWindowZone">
-		<div class="kenceWorkWindowHeader belowArticleHeader">お問い合わせフォーム</div>
-		<div class="kenceWorkWindowExplain">
+	<div class="kenceWindowZone">
+		<div class="kenceWindowHeader belowArticleHeader">お問い合わせフォーム</div>
+		<div class="kenceWindowExplain">
 			<ul>
 				<li>お店の取材依頼</li>
 				<li>コラボ依頼</li>
@@ -38,10 +33,30 @@
 				<li>読者がケンチェ飯に行って欲しいお店</li>
 				<li>ケンチェ飯とご飯を一緒に食べてみたい</li>
 			</ul>
-			<p>内容問わず、お気軽に下記フォームよりご連絡下さい！</p>
+			<p>
+				内容問わず！お気軽に！<br>
+				下記フォームよりご連絡下さい！
+			</p>
 		</div>
-		<div class="kenceWorkWindow">
-		  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf7z8zl1FGl9_pWK9EOQBTbHDTRJ3hd8yIlKoSIPhl4-LbGfg/viewform?embedded=true" width="100%" height="850" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+		<!-- modal open -->
+		<div class="kenceWindowModalOpen">
+		  <a id="js-modal-open-1" href="" data-target="modal01">ケンチェの窓口</a>
+		</div>
+		<!-- ./modal open -->
+		<!-- modal -->
+		<div id="modal01" class="kenceWindowModal js-modal">
+		  <div class="kenceWindowModalBg js-modal-close"></div>
+		  <div class="kenceWindowModalContent">
+		    <div class="kenceWindowModalContentInner">
+		      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf7z8zl1FGl9_pWK9EOQBTbHDTRJ3hd8yIlKoSIPhl4-LbGfg/viewform?embedded=true" width="639" height="830" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+		      <a class="js-modal-close kenceWindowModalClose" href=""><span>閉じる</span></a>
+		    </div>
+		  </div>
+		</div>
+		<!-- ./modal -->
+		<div class="kenceWindowCaution">
+		  ※Googleフォームが開きます<br/>
+		  ※ページの遷移はございません
 		</div>
 	</div>
 	<div class="kencemeshiSupportZone">

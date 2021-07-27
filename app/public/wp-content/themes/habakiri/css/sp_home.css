@@ -24,24 +24,27 @@
     left: -18px;
   }
   .areaZone.hokubu {
+    width: 135px;
     top: -3px;
     left: 100px;
   }
   .areaZone.iga {
-    top: 105px;
-    left: -45px;
+    top: 110px;
+    left: -110px;
   }
   .areaZone.chubu {
-    top: 60px;
-    right: -126px;
+    width: 135px;
+    top: 120px;
+    right: -5px;
   }
   .areaZone.iseShima {
+    width: 135px;
     top: 253px;
-    right: -17px;
+    right: 145px;
   }
   .areaZone.higashikishu {
-    top: 208px;
-    left: -238px;
+    top: 210px;
+    left: -445px;
   }
   .areaHeader {
     font-size: 15px;
@@ -91,9 +94,6 @@
   }
   .star-rating {
     font-size: 16px;
-  }
-  .kenceWindowModalContent {
-    width: calc(700px / 2);
   }
   .kencemeshiExplainContents p {
     font-size: 14px;

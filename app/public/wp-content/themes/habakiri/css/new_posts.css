@@ -76,6 +76,13 @@
   color: #fff;
   text-shadow: 1px 1px 2px silver;
   border-radius: 4px;
+  margin-right: 5px;
+}
+.lunchMark {
+  color: #eb6101;
+}
+.dinnerMark {
+  color: #010066;
 }
 .newPostTitle {
   margin: 10px;

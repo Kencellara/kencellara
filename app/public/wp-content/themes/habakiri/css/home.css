@@ -63,6 +63,41 @@ section.typeA input:checked + .tabLabel + .content {
 	opacity: 1;
 }
 
+.simpleNews {
+  color: #fff;
+  background-color: brown;
+  width : 100%;
+  font-size : 17px;
+  text-align : center;
+  overflow : hidden;
+  font-weight: bold;
+}
+.simpleNews p {
+  margin: 0;
+  display : inline-block;
+  padding-left: 100%;
+  white-space : nowrap;
+  animation : scrollsimpleNews 20s linear infinite;
+}
+.simpleNews i {
+  margin-right: 1em;
+}
+.simpleNews a {
+  background-color: #fff;
+  color: brown;
+  padding: 1.5px;
+}
+.simpleNews a:focus,
+.simpleNews a:hover,
+.simpleNews a:active {
+  color: brown;
+  opacity: 0.7;
+}
+@keyframes scrollsimpleNews {
+  0% { transform: translateX(0) }
+  100% { transform: translateX(-100%) }
+}
+
 /* 店舗数 */
 .storeCountArea {
   display: block;
@@ -183,7 +218,7 @@ section.typeA input:checked + .tabLabel + .content {
 .areaSearchHeader {
   text-align: center;
   font-weight: bold;
-  margin: 10px auto 30px;
+  margin: 10px auto 35px;
 }
 .areaSearchInner {
   display: flex;
@@ -249,7 +284,6 @@ section.typeA input:checked + .tabLabel + .content {
   background-color: #DA54BD;
 }
 .inabe,
-.suzuka,
 .nabari,
 .watarai,
 .tamaki,
@@ -271,7 +305,7 @@ section.typeA input:checked + .tabLabel + .content {
   height: 200px;
 }
 .areaZone.hokubu {
-  top: 30px;
+  top: 10px;
   left: 150px;
 }
 .areaZone.iga {
@@ -540,20 +574,8 @@ i.izakaya {
   color: #ccc;
 }
 
-/* ケンチェの窓口モーダル */
-.kenceWindowModal iframe[src^="https://docs.google.com/forms/d/e"] {
-  width: 100%;
-  height: 100vh;
-}
-.kenceWindowAnnounce {
-  border-top: 3px double darkgoldenrod;
+.kenceWindowModalOpen {
   background-color: cornsilk;
-  text-align: center;
-  padding: 10px 0;
-  font-weight: bold;
-}
-.kenceWindowAnnounce i {
-  font-size: 50px;
 }
 .kenceWindowCaution {
   display: block;
@@ -562,83 +584,6 @@ i.izakaya {
   background-color: cornsilk;
   text-align: center;
   padding-bottom: 10px;
-}
-.kenceWindowModalOpen {
-  display: block;
-  background-color: cornsilk;
-  text-align: center;
-  color: black;
-  padding: 20px 0;
-}
-.kenceWindowModalOpen a {
-  text-shadow: 1px 1px 1px silver;
-  font-weight: bold;
-  font-size: 20px;
-  padding: 10px;
-  border: 3px outset silver;
-  background-color: white;
-  color: black;
-}
-.kenceWindowModalOpen a:hover {
-  opacity: 0.6;
-  color: black;
-  text-shadow: 3px 3px 3px silver;
-}
-.kenceWindowModal {
-  display: none;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-}
-.kenceWindowModalBg {
-  background: rgba(0, 0, 0, 0.6);
-  height: 100vh;
-  width: 100%;
-}
-.kenceWindowModalContent {
-  width: 700px;
-  max-height: 830px;
-  background: #fff;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 5px;
-}
-.kenceWindowModalContentInner {
-  overflow-y: scroll;
-  position: relative;
-  max-height: 88vh;
-}
-a.kenceWindowModalClose {
-  color: black;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 15;
-  background: #fff;
-  padding: 10px;
-  border: 2px solid black;
-  font-weight: bold;
-  border-radius: 10px;
-  margin: 8px;
-}
-.kenceWindowModalOpen:hover,
-.kenceWindowModalClose:hover {
-  color: black;
-}
-.kenceWindowAnnounce {
-  font-size: 0.75em;
-}
-.kenceWindowAnnounce i {
-  font-size: calc(50px / 2);
-}
-.kenceWindowModalOpen {
-  padding: 15px 0 20px;
 }
 
 .monthlyBlogInfo {

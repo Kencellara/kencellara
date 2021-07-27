@@ -225,13 +225,25 @@
   font-weight: bold;
 }
 /* 記事内強調するための囲い枠*/
+.box7::before {
+  content: "総評";
+  font-weight: bold;
+  background-color: black;
+  color: #fff;
+  padding: 10px;
+  position: relative;
+  top: -8px;
+  left: -8px;
+  border-radius: 3px;
+  font-size: 16px;
+}
 .box7 {
   padding: 5px 10px;
   margin: 35px 0;
   color: black;
   background: floralwhite;
-  border-left: double 7px saddlebrown;
-  border-right: double 7px saddlebrown;
+  border-left: double 7px black;
+  border-right: double 7px black;
 }
 .box7 p {
   margin: 0;
@@ -355,7 +367,7 @@
 .list03 li:after,
 .list02 li:after,
 .list05 li:after {
-  background: #4682b4;
+  background: saddlebrown;
   color: #fff;
   font-weight: bold;
   position: absolute;
@@ -582,10 +594,10 @@
   border-bottom: 2px dotted rosybrown;
 }
 
-.kenceWorkWindowZone {
+.kenceWindowZone {
   margin: 40px 0;
 }
-.kenceWorkWindowHeader {
+.kenceWindowHeader {
   color: saddlebrown;
   font-size: 28px;
   text-align: center;
@@ -595,26 +607,35 @@
   margin: 5px auto 10px;
   box-shadow: 0 0 10px 5px cornsilk;
 }
-.kenceWorkWindowExplain {
+.kenceWindowExplain {
   margin: 20px 40px;
   font-weight: bold;
 }
-.kenceWorkWindowExplain ul {
+.kenceWindowExplain ul {
   list-style-type: bengali;
 }
 @media screen and (min-width: 1200px) {
-  .kenceWorkWindowExplain ul {
+  .kenceWindowExplain ul {
     margin: 0 170px 10px;
   }
 }
-.kenceWorkWindowExplain p {
+.kenceWindowExplain p {
   text-align: center;
   font-size: 1.1em;
 }
-.kenceWorkWindow {
+.kenceWindow {
   margin: 20px 0 50px;
 }
-.kenceWorkWindow iframe {
+.kenceWindowModalOpen {
+  border-top: 3px double black;
+  margin: 0 40px;
+  padding: 20px 0;
+}
+.kenceWindowCaution {
+  border-bottom: 3px double black;
+  margin: 0 40px;
+}
+.kenceWindow iframe {
   max-height: 400px;
 }
 .kencemeshiSupportZone {
