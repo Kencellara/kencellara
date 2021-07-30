@@ -441,7 +441,6 @@
     <p>三重県の飲食店を探す際, <strong><u>カテゴリー別</u>, <u>エリア別</u></strong>に検索が可能.</p>
     <p><strong><u>読者限定のイベント</u></strong>や<strong><u>特典</u></strong>が盛りだくさんなので、ぜひご活用ください.</p>
     <p><span class="instaText">Instagram</span>で随時情報をお知らせ <a class="instaLink" href="https://www.instagram.com/kencellara_food/"><strong><u>@kencellara_food</u></strong></a></p>
-    <!-- <p class="p_f12em"><strong>ケンチェ飯の詳細は<a class="supportLink p_link" href=<?php echo get_permalink( $support_page_id ); ?>>こちら>></a></strong></p> -->
   </div>
 </div>
 
@@ -461,20 +460,6 @@
       <p class="acknowledgement">
         お気持ありがとうございます。支援金は、ケンチェ飯の活動費用として大切に使わせていただきます。今後とも応援よろしくお願いします。
       </p>
-      <!-- <h3 class="supportNavTitle">支援金の使い道</h3>
-      <ul class="supportNavList">
-        <li>ブログ維持費</li>
-        <li>活動費</li>
-        <li>宣伝費</li>
-      </ul> -->
-      <!-- <h3 class="supportNavTitle">支援額</h3>
-      <ul class="supportNavList">
-        <li>100円～10000円</li>
-      </ul> -->
-      <!-- <h3 class="supportNavTitle">コラボ・お仕事の依頼</h3>
-      <ul class="supportNavList">
-        <li><a class="supportLink" href=<?php echo get_permalink( $kence_work_page_id ); ?>>こちら</a>をクリック！</li>
-      </ul> -->
       <p class="to_kence_work">コラボ・お仕事のご依頼は上記『ケンチェの窓口』からお願い致します。</p>
     </div>
   </div>
