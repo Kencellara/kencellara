@@ -7,9 +7,9 @@
 <article class="article article--archive">
 	<div class="entry">
 		<?php do_action( 'habakiri_before_entries' ); ?>
-		<?php if ($cat_slug == 'ramen'): ?>
-			<?php get_template_part( 'modules/category-ramen' ); ?>
-		<?php endif ?>
+		<?php if ($cat_slug != '') {
+			get_template_part( 'modules/category-' . $cat_slug );
+		} ?>
 		<div class="categoryHeaderZone">
 			<?php if ($cat_slug == ''): ?>
 				<div class="categoryHeader">新着記事</div>

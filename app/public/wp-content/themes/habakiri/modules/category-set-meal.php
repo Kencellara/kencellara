@@ -1,36 +1,34 @@
 <?php
-  $meat_posts_count = get_category_by_slug('meat')->count;
+  $set_meal_posts_count = get_category_by_slug('set-meal')->count;
   $upload_dir = wp_upload_dir();
   $common_img_dir = $upload_dir['baseurl'] . '/common';
   $cat_img_dir = $upload_dir['baseurl'] . '/category';
 ?>
 
-<div class="categoryZone meat">
+<div class="categoryZone set-meal">
   <div class="categoryRecommendZone">
     <div class="categoryRecommendContainer">
       <div class="categoryRecommendInner">
-        <div class="categoryRecommendTitle">三重県お肉制覇</div>
+        <div class="categoryRecommendTitle">三重県定食制覇</div>
 
         <div class="storeCountArea">
           <div class="storeCountContainer">
             <img src="<?php echo $common_img_dir; ?>/crown.jpg" alt="王冠" />
-            現在<span class="storeCounter"><?php echo $meat_posts_count; ?></span>店舗制覇
+            現在<span class="storeCounter"><?php echo $set_meal_posts_count; ?></span>店舗制覇
             <img src="<?php echo $common_img_dir; ?>/crown.jpg" alt="王冠" />
           </div>
         </div>
 
         <div class="categoryRecommendExplain">
-          <!-- <img src="<?php echo $cat_img_dir; ?>/meat_butace.png" alt="お肉ブタチェ" /> -->
+          <!-- <img src="<?php echo $cat_img_dir; ?>/set-meal_butace.png" alt="定食ブタチェ" /> -->
           <p>
-            三重県には沢山の焼肉屋が眠っています。<br>
-            肉好きのケンチェラーラは、一般の方の数倍はお肉を消費するとか！？<br>
-            焼肉・ステーキなど日本中の和牛、ブランド肉について専門家顔負けレベルに詳しくなりたいと考えています。<br>
-            三重でお肉を探す際に、当ページをご活用ください！
+            安くてガッツリ食べられるランチ、ちょっぴり値が張るけど確かに美味しいランチなど、三重県各地の定食屋さんをまとめています。<br>
+            お手軽にランチをしたい時、母ちゃんの味を感じたい時など・・・様々な場面で当ページをご活用ください！
           </p>
         </div>
 
         <div class="catRcmdRank" style="display:none;">
-          <div class="catRcmdRankHeader commonHeader"><i class="fas fa-crown"></i> ケンチェ激押しお肉 <i class="fas fa-crown"></i></div>
+          <div class="catRcmdRankHeader commonHeader"><i class="fas fa-crown"></i> ケンチェ激押し定食 <i class="fas fa-crown"></i></div>
           <div class="catRcmdRankContainer">
             <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('toramaru'); ?>
             <div class="catRcmdRankRow first">
