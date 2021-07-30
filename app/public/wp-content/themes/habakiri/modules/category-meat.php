@@ -20,7 +20,6 @@
         </div>
 
         <div class="categoryRecommendExplain">
-          <!-- <img src="<?php echo $cat_img_dir; ?>/meat_butace.png" alt="お肉ブタチェ" /> -->
           <p>
             三重県には沢山の焼肉屋が眠っています。<br>
             肉好きのケンチェラーラは、一般の方の数倍はお肉を消費するとか！？<br>
@@ -38,7 +37,7 @@
                 <div class="catRcmRankHead">
                   <span class="catRcmRankNum">1位</span>
                   <span class="catRcmRankTitle">虎丸</span>
-                  <span class="catRcmRankArea">伊勢</span>
+                  <span class="catRcmRankArea">【伊勢】</span>
                 </div>
                 <div class="catRcmRankDescription">
                   ケンチェ飯＆ミシュランお墨付き！何を食べても美味い海鮮尽くし！<br>

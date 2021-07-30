@@ -20,7 +20,6 @@
         </div>
 
         <div class="categoryRecommendExplain">
-          <!-- <img src="<?php echo $cat_img_dir; ?>/izakaya_butace.png" alt="居酒屋ブタチェ" /> -->
           <p>
             三度の飯より酒。<br>
             皆と楽しくお酒を飲むことが好きなケンチェラーラ。<br>
@@ -38,7 +37,7 @@
                 <div class="catRcmRankHead">
                   <span class="catRcmRankNum">1位</span>
                   <span class="catRcmRankTitle">虎丸</span>
-                  <span class="catRcmRankArea">伊勢</span>
+                  <span class="catRcmRankArea">【伊勢】</span>
                 </div>
                 <div class="catRcmRankDescription">
                   ケンチェ飯＆ミシュランお墨付き！何を食べても美味い海鮮尽くし！<br>

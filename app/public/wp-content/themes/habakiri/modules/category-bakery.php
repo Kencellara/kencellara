@@ -20,7 +20,6 @@
         </div>
 
         <div class="categoryRecommendExplain">
-          <!-- <img src="<?php echo $cat_img_dir; ?>/bakery_butace.png" alt="パンブタチェ" /> -->
           <p>
             美味しいパン屋さんとは何か？<br>
             この永遠の疑問を解決するために、県内各地のパン屋さんを巡業しています。<br>
@@ -38,7 +37,7 @@
                 <div class="catRcmRankHead">
                   <span class="catRcmRankNum">1位</span>
                   <span class="catRcmRankTitle">虎丸</span>
-                  <span class="catRcmRankArea">伊勢</span>
+                  <span class="catRcmRankArea">【伊勢】</span>
                 </div>
                 <div class="catRcmRankDescription">
                   ケンチェ飯＆ミシュランお墨付き！何を食べても美味い海鮮尽くし！<br>

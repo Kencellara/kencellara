@@ -20,7 +20,6 @@
         </div>
 
         <div class="categoryRecommendExplain">
-          <!-- <img src="<?php echo $cat_img_dir; ?>/set-meal_butace.png" alt="定食ブタチェ" /> -->
           <p>
             安くてガッツリ食べられるランチ、ちょっぴり値が張るけど確かに美味しいランチなど、三重県各地の定食屋さんをまとめています。<br>
             お手軽にランチをしたい時、母ちゃんの味を感じたい時など・・・様々な場面で当ページをご活用ください！
@@ -36,7 +35,7 @@
                 <div class="catRcmRankHead">
                   <span class="catRcmRankNum">1位</span>
                   <span class="catRcmRankTitle">虎丸</span>
-                  <span class="catRcmRankArea">伊勢</span>
+                  <span class="catRcmRankArea">【伊勢】</span>
                 </div>
                 <div class="catRcmRankDescription">
                   ケンチェ飯＆ミシュランお墨付き！何を食べても美味い海鮮尽くし！<br>

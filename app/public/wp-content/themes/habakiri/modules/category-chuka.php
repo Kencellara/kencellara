@@ -20,7 +20,6 @@
         </div>
 
         <div class="categoryRecommendExplain">
-          <!-- <img src="<?php echo $cat_img_dir; ?>/chuka_butace.png" alt="中華ブタチェ" /> -->
           <p>
             中国3000年の歴史とあるように、非常に奥が深い中華料理。<br>
             本当に旨い中華を求め、日々県内各地のお店を食べ歩いています。<br>
@@ -37,7 +36,7 @@
                 <div class="catRcmRankHead">
                   <span class="catRcmRankNum">1位</span>
                   <span class="catRcmRankTitle">虎丸</span>
-                  <span class="catRcmRankArea">伊勢</span>
+                  <span class="catRcmRankArea">【伊勢】</span>
                 </div>
                 <div class="catRcmRankDescription">
                   ケンチェ飯＆ミシュランお墨付き！何を食べても美味い海鮮尽くし！<br>

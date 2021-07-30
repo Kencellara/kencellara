@@ -20,7 +20,6 @@
         </div>
 
         <div class="categoryRecommendExplain">
-          <!-- <img src="<?php echo $cat_img_dir; ?>/cafe_butace.png" alt="カフェブタチェ" /> -->
           <p>
             三重県にはお洒落・隠れ家・雰囲気が良いなど魅力的なカフェが沢山眠っています。<br>
             お店に行く前にカフェの特徴や店内の様子などを把握できるように当ページに詳しくまとめています。<br>
@@ -37,7 +36,7 @@
                 <div class="catRcmRankHead">
                   <span class="catRcmRankNum">1位</span>
                   <span class="catRcmRankTitle">ツリークロップ</span>
-                  <span class="catRcmRankArea">伊勢</span>
+                  <span class="catRcmRankArea">【伊勢】</span>
                 </div>
                 <div class="catRcmRankDescription">
                   伊勢でクレープを食べるならココ！<br>
