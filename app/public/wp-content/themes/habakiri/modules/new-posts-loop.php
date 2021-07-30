@@ -41,7 +41,10 @@
     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
   </div>
   <div class="newPostCategory">
-    <?php foreach ($cats as $cat) { ?>
+    <?php
+      foreach ($cats as $cat) {
+        if ($cat->slug == 'gourmet') continue;
+    ?>
       <a href=<?php echo get_category_link($cat->cat_ID); ?>><?php echo $cat->name; ?></a>
     <?php } ?>
   </div>
