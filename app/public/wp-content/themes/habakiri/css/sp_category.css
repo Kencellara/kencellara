@@ -1,4 +1,10 @@
 @media screen and (max-width: 420px) {
+  .categoryZone {
+    margin: 10px 5px;
+  }
+  .categoryHeaderZone {
+    margin: 5px;
+  }
   .catRcmdRankRow {
     margin-bottom: 15px;
     padding: 5px 0;
