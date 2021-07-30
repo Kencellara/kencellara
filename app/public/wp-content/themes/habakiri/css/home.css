@@ -223,7 +223,7 @@ section.typeA input:checked + .tabLabel + .content {
 .areaSearchInner {
   display: flex;
   margin: auto;
-  background-image: url("https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210209/20210209002422.jpg");
+  background-image: url("https://kencellara.com/wp-content/uploads/toppage/mie_map.jpg");
   background-size: contain;
 }
 .areaZone {
@@ -338,7 +338,7 @@ section.typeA input:checked + .tabLabel + .content {
 .genreSearchZone {
   border: 3px dotted cornsilk;
   margin: 20px 0;
-  background-image: url("https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210212/20210212010912.jpg");
+  background-image: url("https://kencellara.com/wp-content/uploads/toppage/izakaya_hukei_400.jpg");
 }
 .genreSearchContainer {
   padding: 20px 0 0;
