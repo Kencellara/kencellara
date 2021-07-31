@@ -12,7 +12,7 @@
 ?>
 
 <div class="simpleNews">
-  <p>ニュース <i class="fas fa-chevron-circle-right"></i> 月間閲覧数50,000達成！</p>
+  <p>ニュース <i class="fas fa-chevron-circle-right"></i> 月間50,000アクセス達成！</p>
 </div>
 
 <div class="storeCountArea">
