@@ -59,6 +59,78 @@
 <!-- slickはレイアウト崩れを避けるため直後読み込み -->
 <?php get_template_part( 'modules/slick-js' ); ?>
 
+<?php
+  $tags = get_tags( array( 'slug' => 'a' ) );
+  $tag_id = $tags[0]->term_id;
+?>
+<div class="aiueoSearchZone">
+  <div class="aiueoSearchHeader topPageHeader">あいうえお検索 <i class="fas fa-search"></i></div>
+  <table>
+    <tbody>
+      <tr>
+        <td class="aiueoTableTd wa"><a>わ</a></td>
+        <td class="aiueoTableTd ra"><a>ら</a></td>
+        <td class="aiueoTableTd ya"><a>や</a></td>
+        <td class="aiueoTableTd ma"><a>ま</a></td>
+        <td class="aiueoTableTd ha"><a>は</a></td>
+        <td class="aiueoTableTd na"><a>な</a></td>
+        <td class="aiueoTableTd ta"><a>た</a></td>
+        <td class="aiueoTableTd sa"><a>さ</a></td>
+        <td class="aiueoTableTd ka"><a>か</a></td>
+        <td class="aiueoTableTd a"><a href=<?php echo get_tag_link($tag_id); ?>>あ</a></td>
+      </tr>
+      <tr>
+        <td class="aiueoTableTd brank"></td>
+        <td class="aiueoTableTd ri"><a>り</a></td>
+        <td class="aiueoTableTd brank"></td>
+        <td class="aiueoTableTd mi"><a>み</a></td>
+        <td class="aiueoTableTd hi"><a>ひ</a></td>
+        <td class="aiueoTableTd ni"><a>に</a></td>
+        <td class="aiueoTableTd ti"><a>ち</a></td>
+        <td class="aiueoTableTd si"><a>し</a></td>
+        <td class="aiueoTableTd ki"><a>き</a></td>
+        <td class="aiueoTableTd i"><a>い</a></td>
+      </tr>
+      <tr>
+        <td class="aiueoTableTd brank"></td>
+        <td class="aiueoTableTd ru"><a>る</a></td>
+        <td class="aiueoTableTd yu"><a>ゆ</a></td>
+        <td class="aiueoTableTd mu"><a>む</a></td>
+        <td class="aiueoTableTd hu"><a>ふ</a></td>
+        <td class="aiueoTableTd nu"><a>ぬ</a></td>
+        <td class="aiueoTableTd tu"><a>つ</a></td>
+        <td class="aiueoTableTd su"><a>す</a></td>
+        <td class="aiueoTableTd ku"><a>く</a></td>
+        <td class="aiueoTableTd u"><a>う</a></td>
+      </tr>
+      <tr>
+        <td class="aiueoTableTd brank"></td>
+        <td class="aiueoTableTd re"><a>れ</a></td>
+        <td class="aiueoTableTd brank"></td>
+        <td class="aiueoTableTd me"><a>め</a></td>
+        <td class="aiueoTableTd he"><a>へ</a></td>
+        <td class="aiueoTableTd ne"><a>ね</a></td>
+        <td class="aiueoTableTd te"><a>て</a></td>
+        <td class="aiueoTableTd se"><a>せ</a></td>
+        <td class="aiueoTableTd ke"><a>け</a></td>
+        <td class="aiueoTableTd e"><a>え</a></td>
+      </tr>
+      <tr>
+        <td class="aiueoTableTd brank"></td>
+        <td class="aiueoTableTd ro"><a>ろ</a></td>
+        <td class="aiueoTableTd yo"><a>よ</a></td>
+        <td class="aiueoTableTd mo"><a>も</a></td>
+        <td class="aiueoTableTd ho"><a>ほ</a></td>
+        <td class="aiueoTableTd no"><a>の</a></td>
+        <td class="aiueoTableTd to"><a>と</a></td>
+        <td class="aiueoTableTd so"><a>そ</a></td>
+        <td class="aiueoTableTd ko"><a>こ</a></td>
+        <td class="aiueoTableTd o"><a>お</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 <!-- 地域別検索 -->
 <div class="areaSearchZone">
   <div class="areaSearchContainer">
