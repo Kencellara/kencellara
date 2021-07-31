@@ -12,7 +12,7 @@
 ?>
 
 <div class="simpleNews">
-  <p>ニュース <i class="fas fa-chevron-circle-right"></i> 月間PV数最高値更新！</p>
+  <p>ニュース <i class="fas fa-chevron-circle-right"></i> 月間50,000PV達成！</p>
 </div>
 
 <div class="storeCountArea">
