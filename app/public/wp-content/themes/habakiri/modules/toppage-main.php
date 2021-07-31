@@ -12,7 +12,7 @@
 ?>
 
 <div class="simpleNews">
-  <p>ニュース <i class="fas fa-chevron-circle-right"></i> 月間50,000PV達成！</p>
+  <p>ニュース <i class="fas fa-chevron-circle-right"></i> 月間閲覧数50,000達成！</p>
 </div>
 
 <div class="storeCountArea">
@@ -523,7 +523,7 @@
   </div>
   <div class="kencemeshiAnalytics">
     <div class="kencemeshiAnalyticsHeader commonHeader">月別サイト運用結果</div>
-    <img src="<?php echo $upload_dir['baseurl']; ?>/common/analytics_202106.jpg" alt="アナリティクス202106" loading="lazy" />
+    <img src="<?php echo $upload_dir['baseurl']; ?>/common/analytics_202107.jpg" alt="アナリティクス202106" loading="lazy" />
   </div>
   <div class="supportZone">
     <script src="https://codoc.jp/js/cms.js" data-css="red-square" charset="UTF-8" defer></script>
