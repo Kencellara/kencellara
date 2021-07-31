@@ -39,7 +39,7 @@
 		<div class="sb_plofile sb_content">
 			<div class="profileHeader sb_header">ケンチェ飯とは</div>
 			<div class="profileImg">
-				<img class="hatena-fotolife" title="f:id:ken_chan_bike:20200902121305p:plain" src="<?php echo $upload_dir['baseurl']; ?>/toppage/profile_1.jpg" alt="サイドバーブタチェ" loading="lazy" />
+				<img class="hatena-fotolife" title="f:id:ken_chan_bike:20200902121305p:plain" src="<?php echo $upload_dir['baseurl']; ?>/sidebar/profile_300.jpg" alt="サイドバーブタチェ" loading="lazy" />
 			</div>
 			<div class="profileSentence">
 				三重県で一番詳しいグルメディア.<br>

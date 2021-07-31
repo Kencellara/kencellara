@@ -1,14 +1,3 @@
-<?php
-/**
- * Version    : 1.2.0
- * Author     : inc2734
- * Author URI : http://2inc.org
- * Created    : April 17, 2015
- * Modified   : August 30, 2015
- * License    : GPLv2 or later
- * License URI: license.txt
- */
-?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head prefix="og: http://ogp.me/ns# <?php echo ( is_single() || is_page() ) ? 'fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#' : 'fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#' ?>">
@@ -19,10 +8,10 @@
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5shiv.min.js"></script>
 	<![endif]-->
 	<?php
-		add_action('wp_enqueue_scripts', wp_enqueue_style('common-style', get_template_directory_uri() . '/css/common.css', array('habakiri')));
+		add_action('wp_enqueue_scripts', wp_enqueue_style('common-style', get_template_directory_uri() . '/css/common.css', array('habakiri'), '1.0.5'));
 		add_action('wp_enqueue_scripts', wp_enqueue_style('sp_common-style', get_template_directory_uri() . '/css/sp_common.css'));
 		add_action('wp_enqueue_scripts', wp_enqueue_style('header-style', get_template_directory_uri() . '/css/header.css'));
-		add_action('wp_enqueue_scripts', wp_enqueue_style('sidebar-style', get_template_directory_uri() . '/css/sidebar.css'));
+		add_action('wp_enqueue_scripts', wp_enqueue_style('sidebar-style', get_template_directory_uri() . '/css/sidebar.css'), array(), '1.0.5');
 		add_action('wp_enqueue_scripts', wp_enqueue_style('sp_sidebar-style', get_template_directory_uri() . '/css/sp_sidebar.css'));
 	?>
 	<?php

@@ -1,35 +1,35 @@
 <?php
-  $meat_posts_count = get_category_by_slug('meat')->count;
+  $izakaya_posts_count = get_category_by_slug('izakaya')->count;
   $upload_dir = wp_upload_dir();
   $common_img_dir = $upload_dir['baseurl'] . '/common';
   $cat_img_dir = $upload_dir['baseurl'] . '/category';
 ?>
 
-<div class="categoryZone meat">
+<div class="categoryZone izakaya">
   <div class="categoryRecommendZone">
     <div class="categoryRecommendContainer">
       <div class="categoryRecommendInner">
-        <div class="categoryRecommendTitle">三重県お肉制覇</div>
+        <div class="categoryRecommendTitle">三重県居酒屋制覇</div>
 
         <div class="storeCountArea">
           <div class="storeCountContainer">
             <img src="<?php echo $common_img_dir; ?>/crown.jpg" alt="王冠" />
-            現在<span class="storeCounter"><?php echo $meat_posts_count; ?></span>店舗制覇
+            現在<span class="storeCounter"><?php echo $izakaya_posts_count; ?></span>店舗制覇
             <img src="<?php echo $common_img_dir; ?>/crown.jpg" alt="王冠" />
           </div>
         </div>
 
         <div class="categoryRecommendExplain">
           <p>
-            三重県には沢山の焼肉屋が眠っています。<br>
-            肉好きのケンチェラーラは、一般の方の数倍はお肉を消費するとか！？<br>
-            焼肉・ステーキなど日本中の和牛、ブランド肉について専門家顔負けレベルに詳しくなりたいと考えています。<br>
-            三重でお肉を探す際に、当ページをご活用ください！
+            三度の飯より酒。<br>
+            皆と楽しくお酒を飲むことが好きなケンチェラーラ。<br>
+            三重県中の居酒屋を気まぐれに飲み歩いています。<br>
+            このページを活用して、しっかり下調べしておけば、ベロベロになってもお財布が空っぽになる心配もなし！？
           </p>
         </div>
 
         <div class="catRcmdRank" style="display:none;">
-          <div class="catRcmdRankHeader commonHeader"><i class="fas fa-crown"></i> ケンチェ激押しお肉 <i class="fas fa-crown"></i></div>
+          <div class="catRcmdRankHeader commonHeader"><i class="fas fa-crown"></i> ケンチェ激押し居酒屋 <i class="fas fa-crown"></i></div>
           <div class="catRcmdRankContainer">
             <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('toramaru'); ?>
             <div class="catRcmdRankRow first">

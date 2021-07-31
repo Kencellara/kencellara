@@ -1,61 +1,60 @@
 <?php
-  $meat_posts_count = get_category_by_slug('meat')->count;
+  $cafe_posts_count = get_category_by_slug('cafe')->count;
   $upload_dir = wp_upload_dir();
   $common_img_dir = $upload_dir['baseurl'] . '/common';
   $cat_img_dir = $upload_dir['baseurl'] . '/category';
 ?>
 
-<div class="categoryZone meat">
+<div class="categoryZone cafe">
   <div class="categoryRecommendZone">
     <div class="categoryRecommendContainer">
       <div class="categoryRecommendInner">
-        <div class="categoryRecommendTitle">三重県お肉制覇</div>
+        <div class="categoryRecommendTitle">三重県カフェ制覇</div>
 
         <div class="storeCountArea">
           <div class="storeCountContainer">
             <img src="<?php echo $common_img_dir; ?>/crown.jpg" alt="王冠" />
-            現在<span class="storeCounter"><?php echo $meat_posts_count; ?></span>店舗制覇
+            現在<span class="storeCounter"><?php echo $cafe_posts_count; ?></span>店舗制覇
             <img src="<?php echo $common_img_dir; ?>/crown.jpg" alt="王冠" />
           </div>
         </div>
 
         <div class="categoryRecommendExplain">
           <p>
-            三重県には沢山の焼肉屋が眠っています。<br>
-            肉好きのケンチェラーラは、一般の方の数倍はお肉を消費するとか！？<br>
-            焼肉・ステーキなど日本中の和牛、ブランド肉について専門家顔負けレベルに詳しくなりたいと考えています。<br>
-            三重でお肉を探す際に、当ページをご活用ください！
+            三重県にはお洒落・隠れ家・雰囲気が良いなど魅力的なカフェが沢山眠っています。<br>
+            お店に行く前にカフェの特徴や店内の様子などを把握できるように当ページに詳しくまとめています。<br>
+            不器用な男がまとめているので、至らない点も多いと思いますが、三重でカフェを巡りをする際に、当ページをご活用ください！
           </p>
         </div>
 
-        <div class="catRcmdRank" style="display:none;">
-          <div class="catRcmdRankHeader commonHeader"><i class="fas fa-crown"></i> ケンチェ激押しお肉 <i class="fas fa-crown"></i></div>
+        <div class="catRcmdRank">
+          <div class="catRcmdRankHeader commonHeader"><i class="fas fa-crown"></i> ケンチェ激押しカフェ <i class="fas fa-crown"></i></div>
           <div class="catRcmdRankContainer">
-            <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('toramaru'); ?>
+            <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('tree-crop'); ?>
             <div class="catRcmdRankRow first">
               <a href="<?php echo the_permalink($recommend_articles_id); ?>">
                 <div class="catRcmRankHead">
                   <span class="catRcmRankNum">1位</span>
-                  <span class="catRcmRankTitle">虎丸</span>
+                  <span class="catRcmRankTitle">ツリークロップ</span>
                   <span class="catRcmRankArea">【伊勢】</span>
                 </div>
                 <div class="catRcmRankDescription">
-                  ケンチェ飯＆ミシュランお墨付き！何を食べても美味い海鮮尽くし！<br>
-                  少し贅沢な一時を過ごすならココ。
+                  伊勢でクレープを食べるならココ！<br>
+                  こだわりの手作りクレープとお洒落ランチ。
                 </div>
               </a>
             </div>
-            <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('ototo'); ?>
+            <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('chocolaterie4'); ?>
             <div class="catRcmdRankRow second">
               <a href="<?php echo the_permalink($recommend_articles_id); ?>">
                 <div class="catRcmRankHead">
                   <span class="catRcmRankNum">2位</span>
-                  <span class="catRcmRankTitle">魚市場 おとと</span>
-                  <span class="catRcmRankArea">【尾鷲】</span>
+                  <span class="catRcmRankTitle">chocolaterie 4</span>
+                  <span class="catRcmRankArea">【四日市】</span>
                 </div>
                 <div class="catRcmRankDescription">
-                  安くて新鮮、三重県南部で海鮮を食べるならココ一択。<br>
-                  新鮮なお刺身をテイクアウトすることも可能。
+                  2021年にオープンしたチョコレート菓子専門店。<br>
+                  濃厚なヨダレが止まらない！？
                 </div>
               </a>
             </div>
@@ -64,17 +63,17 @@
               <a href="<?php echo the_permalink($recommend_articles_id); ?>">
                 <div class="catRcmRankHead">
                   <span class="catRcmRankNum">3位</span>
-                  <span class="catRcmRankTitle">網元の店 八代</span>
-                  <span class="catRcmRankArea">【志摩】</span>
+                  <span class="catRcmRankTitle">BROOK CAFE＆ZAKKA</span>
+                  <span class="catRcmRankArea">【四日市】</span>
                 </div>
                 <div class="catRcmRankDescription">
-                  贅沢な特盛海鮮丼が1000円～食べられる！？<br>
-                  浜島にある伝説の海鮮料理屋さん。
+                  お洒落カフェと雑貨屋さんが併設。<br>
+                  若い女性客で店内飽和状態。
                 </div>
               </a>
             </div>
             <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('shiawaseya'); ?>
-            <!-- <div class="catRcmdRankRow">
+            <div class="catRcmdRankRow">
               <a href="<?php echo the_permalink($recommend_articles_id); ?>">
                 <div class="catRcmRankHead">
                   <span class="catRcmRankNum">4位</span>
@@ -86,9 +85,9 @@
                   明和に来たら絶対に立ち寄りたいお店。
                 </div>
               </a>
-            </div> -->
+            </div>
             <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('cafe-raku'); ?>
-            <!-- <div class="catRcmdRankRow">
+            <div class="catRcmdRankRow">
               <a href="<?php echo the_permalink($recommend_articles_id); ?>">
                 <div class="catRcmRankHead">
                   <span class="catRcmRankNum">5位</span>
@@ -100,7 +99,7 @@
                   ランチも絶品で、女性必見のお店！
                 </div>
               </a>
-            </div> -->
+            </div>
           </div>
         </div>
       </div>

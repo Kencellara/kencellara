@@ -2,10 +2,10 @@
   $ramen_posts_count = get_category_by_slug('ramen')->count;
   $upload_dir = wp_upload_dir();
   $common_img_dir = $upload_dir['baseurl'] . '/common';
-  $ramen_img_dir = $upload_dir['baseurl'] . '/category/ramen';
+  $cat_img_dir = $upload_dir['baseurl'] . '/category';
 ?>
 
-<div class="ramenCategoryZone">
+<div class="categoryZone ramen">
   <div class="categoryRecommendZone">
     <div class="categoryRecommendContainer">
       <div class="categoryRecommendInner">
@@ -20,7 +20,6 @@
         </div>
 
         <div class="categoryRecommendExplain">
-          <img src="<?php echo $ramen_img_dir; ?>/ramen_butace.png" alt="ラーメンブタコ" />
           <p>
             三重県にあるラーメン店は<span class="p_crimson">326</span>店舗。<br>
             ケンチェ飯では、全ラーメン店を巡り、<strong>味・量・値段・麺の太さ・お店情報</strong>について詳しくまとめています。<br>

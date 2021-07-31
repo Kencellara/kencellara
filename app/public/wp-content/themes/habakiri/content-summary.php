@@ -29,7 +29,10 @@
   </div>
 	<div class="newPostCategory">
 		<?php $cats = get_the_category(); ?>
-    <?php foreach ($cats as $cat) { ?>
+		<?php
+      foreach ($cats as $cat) {
+        if ($cat->slug == 'gourmet') continue;
+    ?>
       <a href=<?php echo get_category_link($cat->cat_ID); ?>><?php echo $cat->name; ?></a>
     <?php } ?>
   </div>

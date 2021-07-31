@@ -1,5 +1,5 @@
 <?php
-	add_action('wp_enqueue_scripts', wp_enqueue_style('single-style', get_template_directory_uri() . '/css/single.css', array('habakiri', 'common-style')));
+	add_action('wp_enqueue_scripts', wp_enqueue_style('single-style', get_template_directory_uri() . '/css/single.css', array('habakiri', 'common-style'), '1.0.5'));
 	add_action('wp_enqueue_scripts', wp_enqueue_style('sp_single-style', get_template_directory_uri() . '/css/sp_single.css'));
 	add_action('wp_enqueue_scripts', wp_enqueue_script('ad_infeed-script', get_theme_file_uri('/js/ad_infeed.js'), array('jquery')));
 	add_action('wp_enqueue_scripts', wp_enqueue_script('modal-script', get_theme_file_uri('/js/modal.js')));

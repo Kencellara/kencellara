@@ -11,7 +11,8 @@
 		</div>
 		<?php Habakiri::the_title(); ?>
 		<div class="belowTitleInfo">
-			<div class="lastModifiedDate">最終更新日：<?php the_modified_date("Y年m月d日"); ?></div>
+			<div class="createdDate articleDate">公開日：<?php the_date("Y年m月d日"); ?></div>
+			<div class="lastModifiedDate articleDate">最終更新日：<?php the_modified_date("Y年m月d日"); ?></div>
 		</div>
 		<?php get_template_part( 'modules/above_article' ); ?>
 		<?php do_action( 'habakiri_before_entry_content' ); ?>
