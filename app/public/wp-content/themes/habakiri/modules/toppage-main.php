@@ -453,7 +453,7 @@
   </div>
   <div class="kencemeshiAnalytics">
     <div class="kencemeshiAnalyticsHeader commonHeader">月別サイト運用結果</div>
-    <img src="<?php echo $upload_dir['baseurl']; ?>/common/analytics_202107.jpg" alt="アナリティクス202106" loading="lazy" />
+    <img src="<?php echo $upload_dir['baseurl']; ?>/common/analytics_202107.jpg" alt="アナリティクス202107" loading="lazy" />
   </div>
   <div class="supportZone">
     <script src="https://codoc.jp/js/cms.js" data-css="red-square" charset="UTF-8" defer></script>
