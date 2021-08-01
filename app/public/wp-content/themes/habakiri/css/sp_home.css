@@ -6,6 +6,19 @@
     width: 290px;
     font-size: 20px;
   }
+  .aiueoSearchZone td:not(.brank) {
+    line-height: 30px;
+  }
+  .aiueoSearchZone td {
+    height: 30px;
+    margin: 2.5px;
+  }
+  .aiueoSearchZone td.brank {
+    /* padding: 0 14px; */
+  }
+  .aiueoSearchZone td a {
+    padding: 0 5px;
+  }
   .areaSearchZone {
     height: 510px;
   }

@@ -12,7 +12,7 @@
 ?>
 
 <div class="simpleNews">
-  <p>ニュース <i class="fas fa-chevron-circle-right"></i> 月間PV数最高値更新！</p>
+  <p>ニュース <i class="fas fa-chevron-circle-right"></i> 月間50,000アクセス達成！ 三重県グルメはケンチェ飯！</p>
 </div>
 
 <div class="storeCountArea">
@@ -58,6 +58,8 @@
 </div>
 <!-- slickはレイアウト崩れを避けるため直後読み込み -->
 <?php get_template_part( 'modules/slick-js' ); ?>
+
+<?php #get_template_part( 'modules/aiueo_search' ); ?>
 
 <!-- 地域別検索 -->
 <div class="areaSearchZone">
@@ -451,7 +453,7 @@
   </div>
   <div class="kencemeshiAnalytics">
     <div class="kencemeshiAnalyticsHeader commonHeader">月別サイト運用結果</div>
-    <img src="<?php echo $upload_dir['baseurl']; ?>/common/analytics_202106.jpg" alt="アナリティクス202106" loading="lazy" />
+    <img src="<?php echo $upload_dir['baseurl']; ?>/common/analytics_202107.jpg" alt="アナリティクス202107" loading="lazy" />
   </div>
   <div class="supportZone">
     <script src="https://codoc.jp/js/cms.js" data-css="red-square" charset="UTF-8" defer></script>

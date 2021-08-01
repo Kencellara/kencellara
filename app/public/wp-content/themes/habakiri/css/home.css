@@ -182,9 +182,49 @@ section.typeA input:checked + .tabLabel + .content {
   color: darkgoldenrod !important;
 }
 
+/* あいうえお検索 */
+.aiueoSearchZone {
+  margin: 60px 10px 20px;
+  padding: 15px 0;
+  box-shadow: 0px 0px 8px 3px black;
+}
+.aiueoSearchZone table {
+  width: 100%;
+  margin: 10px 0;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+.aiueoSearchZone td {
+	height: 41px;
+	min-width: 20px;
+	margin: 5px 10px;
+	text-align: center;
+	display: inline-block;
+}
+.aiueoSearchZone td.brank {
+  padding: 0 9px;
+}
+.aiueoSearchZone td:not(.brank) {
+	background: #EDEDED;
+	border-radius: 10px;
+	box-shadow: 2px 3px 0px 0px rgba(0, 0, 0, 0.3);
+	font: bold 18px arial;
+	line-height: 41px;
+}
+.aiueoSearchZone td a {
+  display: block;
+  padding: 0 10px;
+  color: #333 !important;
+}
+.aiueoSearchZone td:not(.brank):hover {
+  opacity: 0.8;
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.3);;
+  cursor: pointer;
+}
+
 /* 地域別検索エリア */
 .areaSearchZone {
-  border: 5px dashed cornsilk;
   padding-top: 10px;
   height: 950px;
 }
@@ -644,6 +684,7 @@ i.izakaya {
 }
 .kencemeshiAnalytics {
   margin: 30px 0;
+  text-align: center;
 }
 
 /* 支援 */
