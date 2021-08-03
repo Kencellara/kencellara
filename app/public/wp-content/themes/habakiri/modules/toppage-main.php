@@ -59,10 +59,10 @@
 <!-- slickはレイアウト崩れを避けるため直後読み込み -->
 <?php get_template_part( 'modules/slick-js' ); ?>
 
-<?php #get_template_part( 'modules/aiueo_search' ); ?>
+<?php get_template_part( 'modules/aiueo_search' ); ?>
 
 <!-- 地域別検索 -->
-<div class="areaSearchZone">
+<div id="areaSearch" class="areaSearchZone">
   <div class="areaSearchContainer">
     <div class="areaSearchHeader topPageHeader">エリアでグルメ検索 <i class="fas fa-search"></i></div>
     <div class="areaSearchInner">
@@ -177,7 +177,7 @@
 <div class="areaSearchNote">地域名左上の数字は訪問店舗数を示しています。</div>
 
 <!-- ジャンル別検索 -->
-<div class="genreSearchZone">
+<div id="genreSearch" class="genreSearchZone">
   <div class="genreSearchContainer">
     <div class="genreSearchHeader topPageHeader">ジャンルでグルメ検索 <i class="fas fa-search"></i></div>
     <div class="genreSearchInner">

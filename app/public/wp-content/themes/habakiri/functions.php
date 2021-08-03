@@ -788,6 +788,27 @@ class Habakiri_Base_Functions {
 
 	  return $number;
 	}
+
+	public function sortPostsByCategory() {
+		global $posts;
+
+		$sorted_posts = array('hokubu'=>[],'iga'=>[],'chubu'=>[],'iseShima'=>[],'higashikishu'=>[]);
+		foreach ($posts as $a_post) {
+			if (in_category(array('kuwana','komono','suzuka','yokkaichi', 'kameyama'), $a_post)):
+				$sorted_posts['hokubu'][] = $a_post;
+			elseif (in_category(array('iga'), $a_post)):
+				$sorted_posts['iga'][] = $a_post;
+			elseif (in_category(array('tsu','meiwa','matsusaka','taki'), $a_post)):
+				$sorted_posts['chubu'][] = $a_post;
+			elseif (in_category(array('ise','toba','shima','minamiise'), $a_post)):
+				$sorted_posts['iseShima'][] = $a_post;
+			elseif (in_category(array('odai','kihoku','owase'), $a_post)):
+				$sorted_posts['higashikishu'][] = $a_post;
+			endif;
+		}
+
+	  return $sorted_posts;
+	}
 }
 
 add_shortcode("sc_Linkcard", "Habakiri_Base_Functions::show_Linkcard");

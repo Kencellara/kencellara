@@ -5,4 +5,7 @@
   .kenceWindowModalContent {
     width: calc(700px / 2);
   }
+  .pagination {
+    margin: 6px 0 6px 6px;
+  }
 }

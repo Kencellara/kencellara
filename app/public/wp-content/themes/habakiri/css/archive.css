@@ -49,21 +49,3 @@
   margin: 8px 4px 0 0;
   padding: 4px 8px 2px;
 }
-.pagination {
-  margin: 20px 0 20px 8px;
-}
-.pagination>li>span,
-.pagination>li>span:focus,
-.pagination>li>span:hover {
-  background-color: saddlebrown !important;
-  border-color: saddlebrown !important;
-  color: cornsilk;
-}
-.pagination>li>a {
-  color: saddlebrown !important;
-}
-.pagination>li>a:hover,
-.pagination>li>a:focus {
-  background-color: saddlebrown !important;
-  color: cornsilk !important;
-}

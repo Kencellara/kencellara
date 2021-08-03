@@ -190,3 +190,23 @@ a.kenceWindowModalClose {
 .kenceWindowModalOpen {
   padding: 15px 0 20px;
 }
+
+/* pagenation */
+.pagination {
+  margin: 20px 0 20px 8px;
+}
+.pagination>li>span,
+.pagination>li>span:focus,
+.pagination>li>span:hover {
+  background-color: saddlebrown !important;
+  border-color: saddlebrown !important;
+  color: cornsilk;
+}
+.pagination>li>a {
+  color: saddlebrown !important;
+}
+.pagination>li>a:hover,
+.pagination>li>a:focus {
+  background-color: saddlebrown !important;
+  color: cornsilk !important;
+}
