@@ -26,7 +26,7 @@
 <!-- スライドショー -->
 <div class="slider">
   <div>
-    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('tree-crop'); ?>
+    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('yorokoba'); ?>
     <a href="<?php echo the_permalink($slider_articles_id); ?>">
       <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
     </a>
@@ -310,7 +310,7 @@
     </div>
 
     <div class="recommendGourmetBox">
-      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('yamachanti'); ?>
+      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('tree-crop'); ?>
       <div class="recommendGourmetImg">
         <a href="<?php echo the_permalink($recommend_articles_id); ?>">
           <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="yamachanti" loading="lazy" />
