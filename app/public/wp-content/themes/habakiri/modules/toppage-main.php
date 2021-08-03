@@ -12,7 +12,7 @@
 ?>
 
 <div class="simpleNews">
-  <p>ニュース <i class="fas fa-chevron-circle-right"></i> 月間50,000アクセス達成！ 三重県グルメはケンチェ飯！</p>
+  <p>ニュース<i class="fas fa-chevron-circle-right"></i>月間50,000アクセス達成！<a href="https://store.line.me/stickershop/product/16142065/ja?ref=gnsh_stickerDetail" target="_blank"> ケンチェ飯公式LINEスタンプ販売開始（こちら）</a></p>
 </div>
 
 <div class="storeCountArea">

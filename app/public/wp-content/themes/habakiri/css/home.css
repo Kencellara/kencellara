@@ -80,12 +80,14 @@ section.typeA input:checked + .tabLabel + .content {
   animation : scrollsimpleNews 20s linear infinite;
 }
 .simpleNews i {
-  margin-right: 1em;
+  margin: 0 .8em 0 .3em;
 }
 .simpleNews a {
   background-color: #fff;
   color: brown;
-  padding: 1.5px;
+  padding: .1em .8em;
+  margin: 0 1em;
+  vertical-align: .1em;
 }
 .simpleNews a:focus,
 .simpleNews a:hover,
