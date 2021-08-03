@@ -88,10 +88,12 @@
     transform: rotateZ(10deg) translateX(10px);
   }
   .recommendGourmetZone {
-    padding: 10px 5px;
+    padding: 10px 3px;
   }
   .recommendGourmetBox {
-    margin: 6px;
+    margin: 5px 0;
+    border: 2px outset silver;
+    width: 48%;
   }
   .banzukeRank {
     width: 55px;
