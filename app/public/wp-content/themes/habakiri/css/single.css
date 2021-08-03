@@ -624,12 +624,11 @@
   margin: 20px 0 50px;
 }
 .kenceWindowModalOpen {
-  border-top: 3px double black;
   margin: 0 40px;
   padding: 20px 0;
 }
 .kenceWindowCaution {
-  border-bottom: 3px double black;
+  border-bottom: 10px solid cornsilk;
   margin: 0 40px;
 }
 .kenceWindow iframe {
