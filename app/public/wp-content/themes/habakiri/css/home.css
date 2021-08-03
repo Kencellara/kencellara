@@ -666,6 +666,9 @@ i.izakaya {
 .kencemeshiExplainContents p {
   font-size: 18px;
 }
+.kencemeshiExplainContents i {
+  margin: 0 .6em;
+}
 
 /* ケンチェ飯の実績 */
 .kencemeshiHistory {

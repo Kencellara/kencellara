@@ -439,9 +439,7 @@
 </div>
 
 <div class="kencemeshiExplain">
-  <div class="kencemeshiExplainHeader topPageHeader">
-    ケンチェ飯とは？
-  </div>
+  <div class="kencemeshiExplainHeader topPageHeader">ケンチェ飯とは？</div>
   <div class="kencemeshiExplainContents">
     <img src="<?php echo $upload_dir['baseurl']; ?>/toppage/kence_explain.jpg" alt="ケンチェ飯の説明" loading="lazy" />
     <p>三重県生まれ三重県育ちの「<strong>ケンチェラーラ.</strong>」が</p>
@@ -449,6 +447,8 @@
     <p>三重県の飲食店を探す際, <strong><u>カテゴリー別</u>, <u>エリア別</u></strong>に検索が可能.</p>
     <p><strong><u>読者限定のイベント</u></strong>や<strong><u>特典</u></strong>が盛りだくさんなので、ぜひご活用ください.</p>
     <p><span class="instaText">Instagram</span>で随時情報をお知らせ <a class="instaLink" href="https://www.instagram.com/kencellara_food/"><strong><u>@kencellara_food</u></strong></a></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wbnOVqYOFP8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p style="font-size:20px;"><strong><i class="fas fa-video"></i>20秒でわかる『ケンチェ飯』<i class="fas fa-video"></i></strong></p>
   </div>
 </div>
 
