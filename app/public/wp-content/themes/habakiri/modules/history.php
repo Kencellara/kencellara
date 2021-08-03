@@ -74,8 +74,8 @@
   <div class="month">
     <h4>7月</h4>
     <ul>
-      <li>よろこば食堂 取材依頼 受託</li>
       <li><strong><span style="color: #ff0000;">月間アクセス数 50,597 PV</span></strong></li>
+      <li>よろこば食堂 取材依頼 受託</li>
     </ul>
   </div>
 </div>
