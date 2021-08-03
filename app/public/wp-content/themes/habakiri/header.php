@@ -11,6 +11,7 @@
 		add_action('wp_enqueue_scripts', wp_enqueue_style('common-style', get_template_directory_uri() . '/css/common.css', array('habakiri'), '1.0.5'));
 		add_action('wp_enqueue_scripts', wp_enqueue_style('sp_common-style', get_template_directory_uri() . '/css/sp_common.css'));
 		add_action('wp_enqueue_scripts', wp_enqueue_style('header-style', get_template_directory_uri() . '/css/header.css'));
+		add_action('wp_enqueue_scripts', wp_enqueue_style('sp_header-style', get_template_directory_uri() . '/css/sp_header.css'));
 		add_action('wp_enqueue_scripts', wp_enqueue_style('sidebar-style', get_template_directory_uri() . '/css/sidebar.css'), array(), '1.0.5');
 		add_action('wp_enqueue_scripts', wp_enqueue_style('sp_sidebar-style', get_template_directory_uri() . '/css/sp_sidebar.css'));
 	?>
@@ -44,6 +45,7 @@
 	</header>
 	<!-- 固定ヘッダー -->
 	<div id="jsFixedSNS" class="miniInfoArea">
+		<a href=<?php echo home_url() ?>><div class="fixedHeaderKencemeshi">三重県グルメは<i class="fas fa-utensils"></i><strong>ケンチェ飯</strong><i class="fas fa-utensils"></i></div></a>
 		<div class="snsContainer">
 			<span class="leadToSns">
 				おトク情報GET! <i class="far fa-hand-point-right"></i>
