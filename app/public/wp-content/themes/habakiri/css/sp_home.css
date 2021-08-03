@@ -88,7 +88,8 @@
     transform: rotateZ(10deg) translateX(10px);
   }
   .recommendGourmetZone {
-    padding: 10px 3px;
+    padding: 10px 5px;
+    border: none;
   }
   .recommendGourmetBox {
     margin: 5px 0;
