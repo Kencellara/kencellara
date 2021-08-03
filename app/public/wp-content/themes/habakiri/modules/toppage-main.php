@@ -4,6 +4,7 @@
 	$kence_work_page_id = get_page_by_path('kence_work')->ID;
   $upload_dir = wp_upload_dir();
   $common_img_dir = $upload_dir['baseurl'] . '/common';
+  $sticker_img_dir = $upload_dir['baseurl'] . '/sticker';
   $hokubu_post_count = get_category_by_slug('kameyama')->count + get_category_by_slug('komono')->count + get_category_by_slug('yokkaichi')->count + get_category_by_slug('kuwana')->count;
   $iga_post_count = get_category_by_slug('iga')->count;
   $chubu_post_count = get_category_by_slug('tsu')->count + get_category_by_slug('matsusaka')->count + get_category_by_slug('meiwa')->count + get_category_by_slug('taki')->count;
@@ -12,7 +13,7 @@
 ?>
 
 <div class="simpleNews">
-  <p>ニュース<i class="fas fa-chevron-circle-right"></i>月間50,000アクセス達成！<a href="https://store.line.me/stickershop/product/16142065/ja?ref=gnsh_stickerDetail" target="_blank"> ケンチェ飯公式LINEスタンプ販売開始（こちら）</a></p>
+  <p>ニュース<i class="fas fa-chevron-circle-right"></i>月間50,000アクセス達成！<a href="https://store.line.me/stickershop/product/16142065/ja?ref=gnsh_stickerDetail" target="_blank" rel="noreferrer"> ケンチェ飯公式LINEスタンプ販売開始（こちら）</a></p>
 </div>
 
 <div class="storeCountArea">
@@ -29,6 +30,11 @@
     <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('yorokoba'); ?>
     <a href="<?php echo the_permalink($slider_articles_id); ?>">
       <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
+    </a>
+  </div>
+  <div>
+    <a href="https://store.line.me/stickershop/product/16142065/ja?ref=gnsh_stickerDetail" target="_blank" rel="noreferrer">
+      <img src="<?php echo $sticker_img_dir . '/LINEスタンプ.jpg'; ?>" alt="ケンチェ飯公式LINEスタンプ" />
     </a>
   </div>
   <div>

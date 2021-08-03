@@ -31,9 +31,9 @@
     <h4>1月</h4>
     <ul>
       <li><strong><span style="color: #ff0000;">月間アクセス数 18,757 PV</span></strong></li>
-      <li><a href="https://miecolle.net/hito/1282" target="_blank" rel="noreferrer">ミエコレ 飲食店ライターとして「ケンチェ飯」掲載  <i class="fas fa-external-link-alt"></i></a></li>
+      <li><a href="https://miecolle.net/hito/1282" target="_blank" rel="noreferrer">ミエコレ 飲食店ライターとして「ケンチェ飯」掲載<i class="fas fa-external-link-alt"></i></a></li>
       <li>にっこう亭 取材依頼 受託</li>
-      <li><a href="https://www.kencellara.com/entry/2021-1-event" target="_blank" rel="noreferrer">江戸橋 富や コラボイベント 開催  <i class="fas fa-external-link-alt"></i></a></li>
+      <li><a href="https://www.kencellara.com/entry/2021-1-event" target="_blank" rel="noreferrer">江戸橋 富や コラボイベント 開催<i class="fas fa-external-link-alt"></i></a></li>
     </ul>
   </div>
   <div class="month">
@@ -41,7 +41,7 @@
     <ul>
       <li><span style="color: #ff0000;"><strong>月間アクセス数 27,704 PV</strong></span></li>
       <li>三重タイムズ「ケンチェ飯」新聞掲載</li>
-      <li><a href="https://otonamie.jp/?page_id=34706" target="_blank" rel="noreferrer">OTONAMIE 地域のWEBメディアとして「ケンチェ飯」掲載  <i class="fas fa-external-link-alt"></i></a></li>
+      <li><a href="https://otonamie.jp/?page_id=34706" target="_blank" rel="noreferrer">OTONAMIE 地域のWEBメディアとして「ケンチェ飯」掲載<i class="fas fa-external-link-alt"></i></a></li>
       <li>CAFE&amp;BAR TRIPLE A 取材依頼 受託</li>
     </ul>
   </div>
@@ -76,6 +76,7 @@
     <ul>
       <li><strong><span style="color: #ff0000;">月間アクセス数 50,597 PV</span></strong></li>
       <li>よろこば食堂 取材依頼 受託</li>
+      <li><a href="https://store.line.me/stickershop/product/16142065/ja?ref=gnsh_stickerDetail" target="_blank" rel="noreferrer">ケンチェ飯公式LINEスタンプ販売開始<i class="fas fa-external-link-alt"></i></a></li>
     </ul>
   </div>
 </div>

@@ -684,6 +684,9 @@ i.izakaya {
   margin-top: 10px;
   list-style-type: disc;
 }
+.kencemeshiHistoryContents i {
+  margin-left: .5em;
+}
 .kencemeshiAnalytics {
   margin: 30px 0;
   text-align: center;
