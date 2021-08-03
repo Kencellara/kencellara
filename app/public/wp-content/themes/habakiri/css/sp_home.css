@@ -6,6 +6,10 @@
     width: 290px;
     font-size: 20px;
   }
+  .aiueoSearchZone {
+    margin: 60px 5px 15px;
+    padding: 12px 0;
+  }
   .aiueoSearchZone td:not(.brank) {
     line-height: 30px;
   }
