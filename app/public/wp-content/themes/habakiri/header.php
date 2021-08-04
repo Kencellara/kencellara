@@ -43,32 +43,6 @@
 		</div>
 		<?php do_action( 'habakiri_after_header_content' ); ?>
 	</header>
-	<!-- 固定ヘッダー -->
-	<div id="jsFixedSNS" class="miniInfoArea">
-		<a href=<?php echo home_url() ?>><div class="fixedHeaderKencemeshi">三重県グルメは<i class="fas fa-utensils"></i><strong>ケンチェ飯</strong><i class="fas fa-utensils"></i></div></a>
-		<div class="snsContainer">
-			<span class="leadToSns">
-				おトク情報GET! <i class="far fa-hand-point-right"></i>
-			</span>
-			<span class="leadToSnsShort">
-				SNS <i class="far fa-hand-point-right"></i>
-			</span>
-			<a href="https://www.instagram.com/kencellara_food" target="_blank" rel="noopener noreferrer">
-				<img class="InstagramIcon" src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210201/20210201213002.jpg" alt="instagram" />
-			</a>
-			<a class="twitter-button" href="https://twitter.com/kencellara_food" target="_blank" rel="noopener noreferrer">
-				<i class="fab fa-twitter-square"></i>
-			</a>
-			<a href="https://lin.ee/kjAkh3g" target="_blank" rel="noopener noreferrer">
-				<img class="LINEIcon" src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210201/20210201212953.jpg" alt="LINE" />
-			</a>
-			<a class="facebook-button" href="https://www.facebook.com/kencellarafood" target="_blank" rel="noopener noreferrer">
-				<i class="fab fa-facebook-square"></i>
-			</a>
-		</div>
-		<div class="fixedHeaderHomeBtn">
-			<a href=<?php echo home_url() ?>><i class="fas fa-home"></i></a>
-		</div>
-	</div>
+	<?php get_template_part( 'modules/fixed_header' ); ?>
 	<div id="contents">
 		<?php do_action( 'habakiri_before_contents_content' ); ?>
