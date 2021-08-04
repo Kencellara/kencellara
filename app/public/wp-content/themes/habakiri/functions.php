@@ -809,6 +809,21 @@ class Habakiri_Base_Functions {
 
 	  return $sorted_posts;
 	}
+
+	public function introInsta() {
+		$sticker_img_dir = wp_upload_dir()['baseurl'] . '/sticker/';
+		$introInsta .='
+			<div class="noticeBox">
+				<div class="noticeBoxHeader">おしらせ</div>
+				<p>ケンチェ飯では三重県グルメ全店舗制覇を目指して、どこよりも詳しいグルメ情報をお届け！</p>
+				<p>Instagramでは、随時DMでフォロワー様からの提案・ご意見を受付中！<br>また、フォロワー限定のイベントなども・・・！？</p>
+				<p>フォローしてお得な情報をゲットしてね！</p>
+				<a class="followInsta" href="https://www.instagram.com/kencellara_food/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i><span>フォロー</span></a>
+			</div>';
+
+		return $introInsta;
+	}
 }
 
 add_shortcode("sc_Linkcard", "Habakiri_Base_Functions::show_Linkcard");
+add_shortcode("introInsta", "Habakiri_Base_Functions::introInsta");
