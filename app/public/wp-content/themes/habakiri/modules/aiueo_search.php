@@ -14,8 +14,15 @@
           foreach ($a_row_array as $key => $value):
             $tags = get_tags(array('slug' => $key));
             $tag_id = $tags[0]->term_id;
+            $tag_link = get_tag_link($tag_id);
         ?>
-          <td class="aiueoTableTd <?php echo $key ?>"><a href=<?php echo get_tag_link($tag_id); ?>><?php echo $value; ?></a></td>
+          <td class="aiueoTableTd <?php echo $key ?>">
+            <?php if ($tag_link === ""): ?>
+              <span><?php echo $value; ?></span>
+            <?php else: ?>
+              <a href=<?php echo $tag_link ?>><?php echo $value; ?></a>
+            <?php endif; ?>
+          </td>
         <?php endforeach; ?>
       </tr>
       <tr>
@@ -31,7 +38,13 @@
               $tag_link = '';
             endif
         ?>
-          <td class="aiueoTableTd <?php echo $class_name ?>"><a href=<?php echo $tag_link ?>><?php echo $value; ?></a></td>
+          <td class="aiueoTableTd <?php echo $class_name ?>">
+            <?php if ($tag_link === ""): ?>
+              <span><?php echo $value; ?></span>
+            <?php else: ?>
+              <a href=<?php echo $tag_link ?>><?php echo $value; ?></a>
+            <?php endif; ?>
+          </td>
         <?php endforeach; ?>
       </tr>
       <tr>
@@ -39,8 +52,15 @@
           foreach ($u_row_array as $key => $value):
             $tags = get_tags(array('slug' => $key));
             $tag_id = $tags[0]->term_id;
+            $tag_link = get_tag_link($tag_id);
         ?>
-          <td class="aiueoTableTd <?php echo $key ?>"><a href=<?php echo get_tag_link($tag_id); ?>><?php echo $value; ?></a></td>
+          <td class="aiueoTableTd <?php echo $key ?>">
+            <?php if ($tag_link === ""): ?>
+              <span><?php echo $value; ?></span>
+            <?php else: ?>
+              <a href=<?php echo $tag_link ?>><?php echo $value; ?></a>
+            <?php endif; ?>
+          </td>
         <?php endforeach; ?>
       </tr>
       <tr>
@@ -56,7 +76,13 @@
               $tag_link = '';
             endif
         ?>
-          <td class="aiueoTableTd <?php echo $class_name ?>"><a href=<?php echo $tag_link; ?>><?php echo $value; ?></a></td>
+          <td class="aiueoTableTd <?php echo $class_name ?>">
+            <?php if ($tag_link === ""): ?>
+              <span><?php echo $value; ?></span>
+            <?php else: ?>
+              <a href=<?php echo $tag_link ?>><?php echo $value; ?></a>
+            <?php endif; ?>
+          </td>
         <?php endforeach; ?>
       </tr>
       <tr>
@@ -64,8 +90,15 @@
           foreach ($o_row_array as $key => $value):
             $tags = get_tags(array('slug' => $key));
             $tag_id = $tags[0]->term_id;
+            $tag_link = get_tag_link($tag_id);
         ?>
-          <td class="aiueoTableTd <?php echo $key ?>"><a href=<?php echo get_tag_link($tag_id); ?>><?php echo $value; ?></a></td>
+          <td class="aiueoTableTd <?php echo $key ?>">
+            <?php if ($tag_link === ""): ?>
+              <span><?php echo $value; ?></span>
+            <?php else: ?>
+              <a href=<?php echo $tag_link ?>><?php echo $value; ?></a>
+            <?php endif; ?>
+          </td>
         <?php endforeach; ?>
       </tr>
     </tbody>
