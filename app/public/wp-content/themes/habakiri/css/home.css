@@ -189,6 +189,9 @@ section.typeA input:checked + .tabLabel + .content {
   margin: 60px 10px 20px;
   padding: 15px 0;
   box-shadow: 0px 0px 8px 3px black;
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/めし_100.png);
+  background-blend-mode: lighten;
+  background-color: rgba(255, 255, 255, 0.97);
 }
 .aiueoSearchZone table {
   width: 100%;
