@@ -65,7 +65,7 @@
 <!-- slickはレイアウト崩れを避けるため直後読み込み -->
 <?php get_template_part( 'modules/slick-js' ); ?>
 
-<?php get_template_part( 'modules/aiueo_search' ); ?>
+<?php #get_template_part( 'modules/aiueo_search' ); ?>
 
 <!-- 地域別検索 -->
 <div id="areaSearch" class="areaSearchZone">
