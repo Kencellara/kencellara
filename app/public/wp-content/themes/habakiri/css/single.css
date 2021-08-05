@@ -676,3 +676,8 @@
   background-color: #ffcccc;
   box-shadow: 0 0 10px 10px #ffcccc;
 }
+
+.wp-caption-text {
+  text-align: center;
+  font-weight: bold;
+}
