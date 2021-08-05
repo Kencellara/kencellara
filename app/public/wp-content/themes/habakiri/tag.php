@@ -1,6 +1,6 @@
 <?php
-  add_action('wp_enqueue_scripts', wp_enqueue_style('tag-style', get_template_directory_uri() . '/css/tag.css', array('habakiri', 'common-style')));
-  add_action('wp_enqueue_scripts', wp_enqueue_style('sp_tag-style', get_template_directory_uri() . '/css/sp_tag.css', array()));
+  add_action('wp_enqueue_scripts', wp_enqueue_style('tag-style', get_template_directory_uri() . '/css/tag.css', array('habakiri', 'common-style'), '1.0.7'));
+  add_action('wp_enqueue_scripts', wp_enqueue_style('sp_tag-style', get_template_directory_uri() . '/css/sp_tag.css', array(), '1.0.7'));
 ?>
 <?php
   $tag = get_queried_object();
