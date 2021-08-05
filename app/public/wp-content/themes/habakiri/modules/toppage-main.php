@@ -448,7 +448,7 @@
     <p><strong><u>読者限定のイベント</u></strong>や<strong><u>特典</u></strong>が盛りだくさんなので、ぜひご活用ください.</p>
     <p><span class="instaText">Instagram</span>で随時情報をお知らせ <a class="instaLink" href="https://www.instagram.com/kencellara_food/"><strong><u>@kencellara_food</u></strong></a></p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/wbnOVqYOFP8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <p style="font-size:19px;"><strong>20秒でわかる『ケンチェ飯』<i class="fas fa-video"></i></strong></p>
+    <p style="font-size:19px;text-align:center;"><strong>20秒でわかる『ケンチェ飯』<i class="fas fa-video"></i></strong></p>
   </div>
 </div>
 
