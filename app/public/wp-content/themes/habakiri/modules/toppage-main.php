@@ -453,7 +453,7 @@
 </div>
 
 <div class="kencemeshiHistory">
-  <div class="kencemeshiHistoryHeader topPageHeader">ケンチェ飯の実績</div>
+  <div class="kencemeshiHistoryHeader topPageHeader">ケンチェ飯の歴史</div>
   <div class="kencemeshiHistoryContents">
     <?php get_template_part('modules/history'); ?>
   </div>
