@@ -2,6 +2,11 @@
   .categoryZone {
     margin: 10px 5px;
   }
+  .categoryRecommendInner {
+    background-position-y: -75px;
+    background-position-x: -240px;
+    background-size: 700px;
+  }
   .categoryHeaderZone {
     margin: 5px;
   }

@@ -788,6 +788,42 @@ class Habakiri_Base_Functions {
 
 	  return $number;
 	}
+
+	public function sortPostsByCategory() {
+		global $posts;
+
+		$sorted_posts = array('hokubu'=>[],'iga'=>[],'chubu'=>[],'iseShima'=>[],'higashikishu'=>[]);
+		foreach ($posts as $a_post) {
+			if (in_category(array('kuwana','komono','suzuka','yokkaichi', 'kameyama'), $a_post)):
+				$sorted_posts['hokubu'][] = $a_post;
+			elseif (in_category(array('iga'), $a_post)):
+				$sorted_posts['iga'][] = $a_post;
+			elseif (in_category(array('tsu','meiwa','matsusaka','taki'), $a_post)):
+				$sorted_posts['chubu'][] = $a_post;
+			elseif (in_category(array('ise','toba','shima','minamiise'), $a_post)):
+				$sorted_posts['iseShima'][] = $a_post;
+			elseif (in_category(array('odai','kihoku','owase'), $a_post)):
+				$sorted_posts['higashikishu'][] = $a_post;
+			endif;
+		}
+
+	  return $sorted_posts;
+	}
+
+	public function introInsta() {
+		$sticker_img_dir = wp_upload_dir()['baseurl'] . '/sticker/';
+		$introInsta .='
+			<div class="noticeBox">
+				<div class="noticeBoxHeader">おしらせ</div>
+				<p>ケンチェ飯では三重県グルメ全店舗制覇を目指して、どこよりも詳しいグルメ情報をお届け！</p>
+				<p>Instagramでは、随時DMでフォロワー様からの提案・ご意見を受付中！<br>また、フォロワー限定のイベントなども・・・！？</p>
+				<p>フォローしてお得な情報をゲットしてね！</p>
+				<a class="followInsta" href="https://www.instagram.com/kencellara_food/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i><span>フォロー</span></a>
+			</div>';
+
+		return $introInsta;
+	}
 }
 
 add_shortcode("sc_Linkcard", "Habakiri_Base_Functions::show_Linkcard");
+add_shortcode("introInsta", "Habakiri_Base_Functions::introInsta");

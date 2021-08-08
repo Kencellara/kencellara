@@ -6,6 +6,10 @@
     width: 290px;
     font-size: 20px;
   }
+  .aiueoSearchZone {
+    margin: 60px 5px 15px;
+    padding: 12px 0;
+  }
   .aiueoSearchZone td:not(.brank) {
     line-height: 30px;
   }
@@ -14,10 +18,11 @@
     margin: 2.5px;
   }
   .aiueoSearchZone td.brank {
-    /* padding: 0 14px; */
+    width: 29px;
   }
-  .aiueoSearchZone td a {
-    padding: 0 5px;
+  .aiueoSearchZone td a,
+  .aiueoSearchZone td span {
+    padding: 0 5px !important;
   }
   .areaSearchZone {
     height: 510px;
@@ -85,9 +90,12 @@
   }
   .recommendGourmetZone {
     padding: 10px 5px;
+    border: none;
   }
   .recommendGourmetBox {
-    margin: 6px;
+    margin: 5px 0;
+    border: 2px outset silver;
+    width: 48%;
   }
   .banzukeRank {
     width: 55px;

@@ -26,6 +26,19 @@
   height: 50px;
   padding: 10px 0;
 }
+.fixedHeaderKencemeshi {
+  display: none;
+  color: saddlebrown;
+  background-color: cornsilk;
+  padding: 1px 10px;
+  font-size: 17px;
+  margin-right: -175px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+.fixedHeaderKencemeshi i {
+  margin: 0 .3em;
+}
 .snsContainer {
   display: flex;
   margin: 0 auto;
@@ -91,6 +104,9 @@
   margin: 0;
   padding: 12px 0;
   height: 50px;
+}
+.miniInfoArea.fixed .fixedHeaderKencemeshi {
+  display: block;
 }
 .miniInfoArea.fixed .snsContainer {
   width: 240px;

@@ -252,6 +252,34 @@
   list-style: disc;
 }
 
+/* インスタ誘導 */
+.noticeBoxHeader {
+  font-weight: bold;
+  width: 110px;
+  margin: auto;
+  margin-bottom: 8px;
+  text-align: center;
+  font-size: 17px;
+  border-bottom: 1px solid black;
+}
+.noticeBox {
+  padding: 8px 10px;
+  box-shadow: 0 0 3px 3px #ffe4eb;
+  border-radius: 10px;
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/300/ありがとう_300.png);
+  background-size: contain;
+  background-blend-mode: lighten;
+  background-color: rgba(255, 228, 235, 0.97);
+  font-weight: bold;
+}
+.noticeBox p {
+  margin-bottom: 10px;
+}
+.noticeBox img {
+  width: 100px;
+  margin-left: 100px;
+}
+
 /* 記事内「ケンチェの一言」「この記事の内容」*/
 .emphasize-link-1,
 .emphasize-link-2 {
@@ -624,12 +652,11 @@
   margin: 20px 0 50px;
 }
 .kenceWindowModalOpen {
-  border-top: 3px double black;
   margin: 0 40px;
   padding: 20px 0;
 }
 .kenceWindowCaution {
-  border-bottom: 3px double black;
+  border-bottom: 10px solid cornsilk;
   margin: 0 40px;
 }
 .kenceWindow iframe {
@@ -648,4 +675,12 @@
   color: #555555;
   background-color: #ffcccc;
   box-shadow: 0 0 10px 10px #ffcccc;
+}
+
+figure.aligncenter {
+  text-align: center;
+}
+.wp-caption-text {
+  text-align: center;
+  font-weight: bold;
 }

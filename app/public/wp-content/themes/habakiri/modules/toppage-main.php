@@ -4,6 +4,7 @@
 	$kence_work_page_id = get_page_by_path('kence_work')->ID;
   $upload_dir = wp_upload_dir();
   $common_img_dir = $upload_dir['baseurl'] . '/common';
+  $sticker_img_dir = $upload_dir['baseurl'] . '/sticker';
   $hokubu_post_count = get_category_by_slug('kameyama')->count + get_category_by_slug('komono')->count + get_category_by_slug('yokkaichi')->count + get_category_by_slug('kuwana')->count;
   $iga_post_count = get_category_by_slug('iga')->count;
   $chubu_post_count = get_category_by_slug('tsu')->count + get_category_by_slug('matsusaka')->count + get_category_by_slug('meiwa')->count + get_category_by_slug('taki')->count;
@@ -12,7 +13,7 @@
 ?>
 
 <div class="simpleNews">
-  <p>ニュース <i class="fas fa-chevron-circle-right"></i> 月間50,000アクセス達成！ 三重県グルメはケンチェ飯！</p>
+  <p>ニュース<i class="fas fa-chevron-circle-right"></i>月間50,000アクセス達成！<a href="https://store.line.me/stickershop/product/16142065/ja?ref=gnsh_stickerDetail" target="_blank" rel="noreferrer"> ケンチェ飯公式LINEスタンプ販売開始（こちら）</a></p>
 </div>
 
 <div class="storeCountArea">
@@ -26,9 +27,14 @@
 <!-- スライドショー -->
 <div class="slider">
   <div>
-    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('tree-crop'); ?>
+    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('yorokoba'); ?>
     <a href="<?php echo the_permalink($slider_articles_id); ?>">
       <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
+    </a>
+  </div>
+  <div>
+    <a href="https://store.line.me/stickershop/product/16142065/ja?ref=gnsh_stickerDetail" target="_blank" rel="noreferrer">
+      <img src="<?php echo $sticker_img_dir . '/LINEスタンプ.jpg'; ?>" alt="ケンチェ飯公式LINEスタンプ" />
     </a>
   </div>
   <div>
@@ -62,7 +68,7 @@
 <?php #get_template_part( 'modules/aiueo_search' ); ?>
 
 <!-- 地域別検索 -->
-<div class="areaSearchZone">
+<div id="areaSearch" class="areaSearchZone">
   <div class="areaSearchContainer">
     <div class="areaSearchHeader topPageHeader">エリアでグルメ検索 <i class="fas fa-search"></i></div>
     <div class="areaSearchInner">
@@ -177,7 +183,7 @@
 <div class="areaSearchNote">地域名左上の数字は訪問店舗数を示しています。</div>
 
 <!-- ジャンル別検索 -->
-<div class="genreSearchZone">
+<div id="genreSearch" class="genreSearchZone">
   <div class="genreSearchContainer">
     <div class="genreSearchHeader topPageHeader">ジャンルでグルメ検索 <i class="fas fa-search"></i></div>
     <div class="genreSearchInner">
@@ -310,7 +316,7 @@
     </div>
 
     <div class="recommendGourmetBox">
-      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('yamachanti'); ?>
+      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('tree-crop'); ?>
       <div class="recommendGourmetImg">
         <a href="<?php echo the_permalink($recommend_articles_id); ?>">
           <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="yamachanti" loading="lazy" />
@@ -433,9 +439,7 @@
 </div>
 
 <div class="kencemeshiExplain">
-  <div class="kencemeshiExplainHeader topPageHeader">
-    ケンチェ飯とは？
-  </div>
+  <div class="kencemeshiExplainHeader topPageHeader">ケンチェ飯とは？</div>
   <div class="kencemeshiExplainContents">
     <img src="<?php echo $upload_dir['baseurl']; ?>/toppage/kence_explain.jpg" alt="ケンチェ飯の説明" loading="lazy" />
     <p>三重県生まれ三重県育ちの「<strong>ケンチェラーラ.</strong>」が</p>
@@ -443,11 +447,13 @@
     <p>三重県の飲食店を探す際, <strong><u>カテゴリー別</u>, <u>エリア別</u></strong>に検索が可能.</p>
     <p><strong><u>読者限定のイベント</u></strong>や<strong><u>特典</u></strong>が盛りだくさんなので、ぜひご活用ください.</p>
     <p><span class="instaText">Instagram</span>で随時情報をお知らせ <a class="instaLink" href="https://www.instagram.com/kencellara_food/"><strong><u>@kencellara_food</u></strong></a></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wbnOVqYOFP8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p style="font-size:19px;text-align:center;"><strong>20秒でわかる『ケンチェ飯』<i class="fas fa-video"></i></strong></p>
   </div>
 </div>
 
 <div class="kencemeshiHistory">
-  <div class="kencemeshiHistoryHeader topPageHeader">ケンチェ飯の実績</div>
+  <div class="kencemeshiHistoryHeader topPageHeader">ケンチェ飯の歴史</div>
   <div class="kencemeshiHistoryContents">
     <?php get_template_part('modules/history'); ?>
   </div>
