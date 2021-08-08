@@ -823,7 +823,20 @@ class Habakiri_Base_Functions {
 
 		return $introInsta;
 	}
+
+	public function kencePoint($atts, $content=null) {
+		$atts = shortcode_atts(array(
+				'title' => 'ケンチェの一言'
+			),
+			$atts
+		);
+		extract($atts);
+		$kencePoint ="<div class='kencePoint'><div class='kencePointTitle'><i class='fas fa-edit'></i>{$title}</div><ul>{$content}</ul></div>";
+
+		return $kencePoint;
+	}
 }
 
 add_shortcode("sc_Linkcard", "Habakiri_Base_Functions::show_Linkcard");
 add_shortcode("introInsta", "Habakiri_Base_Functions::introInsta");
+add_shortcode("kencePoint", "Habakiri_Base_Functions::kencePoint");

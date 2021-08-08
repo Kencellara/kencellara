@@ -684,3 +684,30 @@ figure.aligncenter {
   text-align: center;
   font-weight: bold;
 }
+
+.kencePoint {
+  border: 3px solid saddlebrown;
+}
+.kencePointTitle {
+  display: inline-block;
+  position: absolute;
+  font-weight: bold;
+  padding: 3px 15px;
+  background-color: saddlebrown;
+  color: #fff;
+  border-radius: 10px;
+  margin: 3px;
+}
+.kencePointTitle i {
+  font-style: inherit;
+  margin-right: .3em;
+}
+.kencePoint ul {
+  padding-top: 38px;
+  list-style: disclosure-closed;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.kencePoint p {
+  margin: 0;
+}
