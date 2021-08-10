@@ -21,7 +21,8 @@
 		}
 		add_action( 'wp_enqueue_scripts', 'header_scripts' );
 	?>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+	<?php $theme_url = get_theme_file_uri(); ?>
+	<link href="<?php echo $theme_url; ?>/assets/fontawesome/css/all.css" rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
