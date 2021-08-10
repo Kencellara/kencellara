@@ -831,7 +831,7 @@ class Habakiri_Base_Functions {
 			$atts
 		);
 		extract($atts);
-		$kencePoint ="<div class='kencePoint'><div class='kencePointTitle'><i class='fas fa-edit'></i>{$title}</div><ul>{$content}</ul></div>";
+		$kencePoint ="<div class='kencePoint'><div class='kencePointTitle'><i class='fas fa-edit'></i>{$title}</div>{$content}</div>";
 
 		return $kencePoint;
 	}
