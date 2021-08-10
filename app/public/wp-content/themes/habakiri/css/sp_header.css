@@ -1,5 +1,7 @@
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 768px) {
   .fixedHeaderKencemeshi {
     display: none !important;
   }
+}
+@media screen and (max-width: 420px) {
 }
