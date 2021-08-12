@@ -1,22 +1,17 @@
 <?php
-  $args = array(
-    'posts_per_page' => 5,
-    'category_name' => 'ise'
-  );
-  $posts = get_posts( $args );
-  foreach ( $posts as $post ):
-  setup_postdata( $post );
-  $cats = get_the_category();
+	Habakiri_Base_Functions::setPostViews(get_the_ID());
+	query_posts('meta_key=post_views_count&orderby=meta_value_num&posts_per_page=5&order=DESC');
+	while (have_posts()) : the_post();
+    $post_id = get_the_ID();
+    // $post_views_count = get_post_meta($post_id, 'post_views_count', true);
 ?>
 <div class="sb_popularArticle sb_article">
   <div class="sb_popularArticlesThumbnail sb_articleThumbnail">
-    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail($post->ID, 'thumbnail', array('loading'=>'lazy')); ?></a>
+    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail($post_id, 'thumbnail', array('loading'=>'lazy')); ?></a>
   </div>
   <div class="sb_popularArticlesTitle sb_articleTitle">
     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
   </div>
 </div>
-<?php
-  endforeach;
-  wp_reset_postdata(); // 直前のクエリを復元する
-?>
+<?php endwhile; ?>
+<?php wp_reset_postdata(); wp_reset_query(); ?>

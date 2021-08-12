@@ -1,6 +1,9 @@
 <?php
 	$post_count_bool = in_category('gourmet');
 	$post_count_num = Habakiri_Base_Functions::getPostThNumber();
+	if (!is_user_logged_in()) {
+    Habakiri_Base_Functions::setPostViews(get_the_ID());
+  }
 ?>
 <article <?php post_class( array( 'article', 'article--single' ) ); ?>>
 	<div class="entry">
