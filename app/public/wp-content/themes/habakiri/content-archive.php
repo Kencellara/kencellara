@@ -2,12 +2,14 @@
 	$cat = get_category( get_query_var("cat") );
 	$cat_slug = $cat->slug;
 	$cat_name = $cat->name;
+	$query_vars = $wp_query->query_vars;
+  $paged = $query_vars['paged'];
 ?>
 
 <article class="article article--archive">
 	<div class="entry">
 		<?php do_action( 'habakiri_before_entries' ); ?>
-		<?php if ($cat_slug != '') {
+		<?php if ($cat_slug != '' && $paged < 2) {
 			get_template_part( 'modules/category-' . $cat_slug );
 		} ?>
 		<div class="categoryHeaderZone">

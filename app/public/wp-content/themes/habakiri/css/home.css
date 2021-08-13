@@ -459,7 +459,9 @@ i.izakaya {
   color: #fff;
   font-family: “HGP行書体”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif, sans-serif;
 }
-.genreSearchCard a:hover {
+.genreSearchCard a:hover,
+.genreSearchCard a:active,
+.genreSearchCard a:focus {
   color: #fff;
 }
 .genreSearchCard:hover {
