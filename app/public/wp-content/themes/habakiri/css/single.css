@@ -512,8 +512,11 @@
     left: -106px;
   }
 }
-.kensuke01::after {
+.kensuke00::after {
   background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/ありがとう_100.png);
+}
+.kensuke01::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/toppage/butace.png);
 }
 .kensuke02::after {
   background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/おはよう_100.png);
