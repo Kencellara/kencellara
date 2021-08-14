@@ -831,7 +831,8 @@ figure.aligncenter {
   margin: 0;
 }
 .kencePoint .plainText {
-  margin: 20px;
-  padding-top: 30px;
+  margin: 18px 18px 15px;
+  font-size: 15px;
+  padding-top: 28px;
   font-weight: bold;
 }

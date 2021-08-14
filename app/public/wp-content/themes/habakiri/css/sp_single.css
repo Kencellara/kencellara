@@ -83,4 +83,14 @@
   .kenceWindowCaution {
     margin: 0 20px;
   }
+  .kencePointTitle {
+    display: table;
+    position: inherit;
+    margin: 5px auto 0;
+  }
+  .kencePoint .plainText {
+    margin: 12px 18px;
+    font-size: 14px;
+    padding: 0;
+  }
 }
