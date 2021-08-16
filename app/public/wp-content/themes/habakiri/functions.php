@@ -859,6 +859,15 @@ class Habakiri_Base_Functions {
 	    update_post_meta($postID, $count_key, $count);
 	  }
 	}
+
+	public function is_sp() {
+    $useragents = array('Android', 'iPhone');
+    $pattern = '/'.implode('|', $useragents).'/i';
+    if (!preg_match($pattern, $_SERVER['HTTP_USER_AGENT'])) {
+      return false;
+    }
+    return true;
+	}
 }
 
 add_shortcode("sc_Linkcard", "Habakiri_Base_Functions::show_Linkcard");

@@ -69,7 +69,7 @@
 		</div>
 		<div class="sb_categoryArticles sb_content">
 			<div class="sb_ramenHeader sb_header">『ラーメン』特集</div>
-			<?php get_template_part( 'modules/sb_category', null, array('name'=>'ramen', 'count'=>5) ); ?>
+			<?php get_template_part( 'modules/sb_category', null, array('name'=>'ramen', 'count'=>3) ); ?>
 			<div class="sb_goToArchivePage">
 		    <a href=<?php echo get_category_link(get_category_by_slug('ramen')->cat_ID); ?>>もっと見る <i class="fas fa-chevron-right"></i></a>
 		  </div>
@@ -102,32 +102,6 @@
 					<a href="<?php echo get_category_link( $category->term_id ); ?>"><?php echo $category->name; ?></a>
 				<?php endforeach; ?>
 			</div>
-		</div>
-		<div class="sb_adsense sb_content">
-			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-			<!-- rectangle広告 -->
-			<ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-7898839193224300" data-ad-slot="4070625880" data-ad-format="rectangle" data-full-width-responsive="true"></ins>
-			<script>
-			     (adsbygoogle = window.adsbygoogle || []).push({});
-			</script>
-		</div>
-		<div class="sb_archive sb_content">
-			<div class="archiveHeader sb_header">アーカイブ</div>
-			<ul class="archive_list">
-			  <?php
-		      $string = wp_get_archives(
-						array(
-							'show_post_count' => 1,
-							'echo' => 0
-		        ));
-		      echo preg_replace('/<\/a>&nbsp;(\([0-9]*\))/', ' <span class="count">$1</span></a>', $string);
-			  ?>
-			</ul>
-		</div>
-		<div class="sb_twitter sb_content">
-			<div class="twitterHeader sb_header">公式Twitter</div>
-			<a class="twitter-timeline" href="https://twitter.com/kencellara_food?ref_src=twsrc%5Etfw">Tweets by kencellara_food</a>
-			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</div>
 		<div class="sb_adsense sb_content">
 			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>

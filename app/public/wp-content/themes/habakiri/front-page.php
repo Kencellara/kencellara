@@ -7,6 +7,7 @@
   add_action('wp_enqueue_scripts', wp_enqueue_style('new_posts-style', get_template_directory_uri() . '/css/new_posts.css', array(), '1.0.9'));
   add_action('wp_enqueue_scripts', wp_enqueue_style('sp_new_posts-style', get_template_directory_uri() . '/css/sp_new_posts.css', array(), '1.0.5'));
 	add_action('wp_enqueue_scripts', wp_enqueue_script('sp_ad_article-script', get_theme_file_uri('/js/sp_ad_article.js')));
+	$is_sp = Habakiri_Base_Functions::is_sp();
 ?>
 <?php
 	function toppage_scripts() {
@@ -41,7 +42,11 @@
 				</main>
 			</div>
 			<div class="col-md-3">
-				<?php get_sidebar(); ?>
+				<?php if ($is_sp) {
+					get_sidebar('sp');
+				} else {
+					get_sidebar();
+				} ?>
 			</div>
 		</div>
 	</div>
