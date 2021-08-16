@@ -65,8 +65,6 @@
 <!-- slickはレイアウト崩れを避けるため直後読み込み -->
 <?php get_template_part( 'modules/slick-js' ); ?>
 
-<?php get_template_part( 'modules/aiueo_search' ); ?>
-
 <!-- 地域別検索 -->
 <div id="areaSearch" class="areaSearchZone">
   <div class="areaSearchContainer">
@@ -246,6 +244,9 @@
     </div>
   </div>
 </div>
+
+<!-- あいうえお検索 -->
+<?php get_template_part( 'modules/aiueo_search' ); ?>
 
 <div class="recommendGourmetZone">
   <div class="recommendGourmetHeader topPageHeader"><i class="fas fa-fire"></i> ケンチェ激推しグルメ <i class="fas fa-fire"></i></div>

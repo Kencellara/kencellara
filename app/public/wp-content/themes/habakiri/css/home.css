@@ -186,7 +186,7 @@ section.typeA input:checked + .tabLabel + .content {
 
 /* あいうえお検索 */
 .aiueoSearchZone {
-  margin: 60px 10px 20px;
+  margin: 20px 10px;
   padding: 15px 0;
   box-shadow: 0px 0px 8px 3px black;
   background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/めし_100.png);
