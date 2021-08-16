@@ -5,7 +5,7 @@
 .newPostsZone:nth-child(n + 2) {
   margin-top: 20px;
 }
-.newPostsZone.ramen {
+/* .newPostsZone.ramen {
   background-color: #ffeaea;
   border-color: #ffeaea;
 }
@@ -28,10 +28,6 @@
 .newPostsZone.set-meal {
   background-color: #fff4ea;
   border-color: #fff4ea;
-}
-/* .newPostsZone.chain {
-  background-color: #f4eaff;
-  border-color: #f4eaff;
 } */
 .newPostsContainer {
   display: -webkit-box;
