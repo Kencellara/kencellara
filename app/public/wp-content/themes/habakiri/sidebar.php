@@ -4,7 +4,6 @@
 	$kw_page_id = get_page_by_path('kence_work')->ID;
 	$genre_cat_ID = get_category_by_slug('genre')->cat_ID;
 	$area_cat_ID = get_category_by_slug('area')->cat_ID;
-	$outside_cat_ID = get_category_by_slug('outside_mie')->cat_ID;
 	$genre_categories = get_categories(array(
 		'child_of' => $genre_cat_ID,
 		'orderby' => 'term_order',
@@ -15,11 +14,7 @@
 		'orderby' => 'term_order',
 		'order' => 'ASC'
 	));
-	$outside_categories = get_categories(array(
-		'child_of' => $outside_cat_ID,
-		'orderby' => 'term_order',
-		'order' => 'ASC'
-	));
+	$outside_area_category = get_category_by_slug('outside_mie');
 ?>
 <aside id="sub">
 	<div class="sidebar">
@@ -90,17 +85,12 @@
 					<a href="<?php echo get_category_link( $category->term_id ); ?>"><?php echo $category->name; ?></a>
 				<?php endforeach; ?>
 			</div>
-			<div class="categorySubHeader sb_subHeader">エリア（三重県内）</div>
+			<div class="categorySubHeader sb_subHeader">エリア</div>
 			<div class="sb_categoryContents">
 				<?php foreach( $area_categories as $category ) : ?>
 					<a href="<?php echo get_category_link( $category->term_id ); ?>"><?php echo $category->name; ?></a>
 				<?php endforeach; ?>
-			</div>
-			<div class="categorySubHeader sb_subHeader">エリア（三重県外）</div>
-			<div class="sb_categoryContents">
-				<?php foreach( $outside_categories as $category ) : ?>
-					<a href="<?php echo get_category_link( $category->term_id ); ?>"><?php echo $category->name; ?></a>
-				<?php endforeach; ?>
+				<a href="<?php echo get_category_link( $outside_area_category->term_id ); ?>"><?php echo $outside_area_category->name; ?></a>
 			</div>
 		</div>
 		<div class="sb_adsense sb_content">
