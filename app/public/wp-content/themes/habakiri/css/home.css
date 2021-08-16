@@ -245,7 +245,6 @@ section.typeA input:checked + .tabLabel + .content {
 /* 地域別検索エリア */
 .areaSearchZone {
   padding-top: 10px;
-  height: 950px;
 }
 .areaList {
   margin: 0;
