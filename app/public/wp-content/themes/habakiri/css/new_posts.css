@@ -5,30 +5,6 @@
 .newPostsZone:nth-child(n + 2) {
   margin-top: 20px;
 }
-/* .newPostsZone.ramen {
-  background-color: #ffeaea;
-  border-color: #ffeaea;
-}
-.newPostsZone.meat {
-  background-color: #ffffea;
-  border-color: #ffffea;
-}
-.newPostsZone.cafe {
-  background-color: #ffeaff;
-  border-color: #ffeaff;
-}
-.newPostsZone.izakaya {
-  background-color: #ffeaf4;
-  border-color: #ffeaf4;
-}
-.newPostsZone.bakery {
-  background-color: #f4ffea;
-  border-color: #f4ffea;
-}
-.newPostsZone.set-meal {
-  background-color: #fff4ea;
-  border-color: #fff4ea;
-} */
 .newPostsContainer {
   display: -webkit-box;
   display: -ms-flexbox;
