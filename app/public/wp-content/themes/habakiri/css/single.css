@@ -806,6 +806,7 @@ figure.aligncenter {
 
 .kencePoint {
   border: 3px solid saddlebrown;
+  margin: 0 0 13px;
 }
 .kencePointTitle {
   display: inline-block;

@@ -88,6 +88,9 @@
     position: inherit;
     margin: 5px auto 0;
   }
+  .kencePoint ul {
+    padding-top: 10px;
+  }
   .kencePoint .plainText {
     margin: 12px 18px;
     font-size: 14px;
