@@ -100,7 +100,9 @@
   display: block;
   color: #fff;
 }
-.goToArchivePage a:hover {
+.goToArchivePage a:hover,
+.goToArchivePage a:active,
+.goToArchivePage a:focus {
   background-color: cornsilk;
   color: chocolate;
 }
