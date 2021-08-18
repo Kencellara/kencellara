@@ -76,6 +76,7 @@
   margin: 0 0 8px 8px;
   height: 100%;
   align-items: flex-end;
+  flex-flow: wrap;
 }
 .newPostCategory a {
   background: #C2EEFF;
