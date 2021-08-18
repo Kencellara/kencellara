@@ -85,7 +85,7 @@
 					<a href="<?php echo get_category_link( $category->term_id ); ?>"><?php echo $category->name; ?></a>
 				<?php endforeach; ?>
 			</div>
-			<div class="categorySubHeader sb_subHeader">エリア（三重県内）</div>
+			<div class="categorySubHeader sb_subHeader">エリア</div>
 			<div class="sb_categoryContents">
 				<?php foreach( $area_categories as $category ) : ?>
 					<a href="<?php echo get_category_link( $category->term_id ); ?>"><?php echo $category->name; ?></a>
