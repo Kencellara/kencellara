@@ -21,9 +21,12 @@
       			<?php endwhile; ?>
             <?php get_template_part( 'modules/pagination' ); ?>
           </div>
-          <div class="toTopBtnZone">
+          <div class="toTopBtnZone toSearch">
             <a class="toTopBtn" href=<?php echo home_url('#areaSearch') ?>>地域で検索</a>
             <a class="toTopBtn" href=<?php echo home_url('#genreSearch') ?>>ジャンルで検索</a>
+          </div>
+          <div class="toTopBtnZone toTop">
+            <a class="toTopBtn" href=<?php echo home_url() ?>>トップへ</a>
           </div>
   			</main>
   		</div>
