@@ -4,6 +4,15 @@
 ?>
 <?php
   $tag = get_queried_object();
+  $multi_tags_arr = $wp_query->query_vars['tag_slug__and'];
+  $is_multi = !!$multi_tags_arr;
+  if ($is_multi) {
+    foreach ($multi_tags_arr as &$value) {
+      $tags = get_tags(array('slug' => $value));
+      $value = $tags[0]->name;
+    }
+    unset($value);
+  }
   $tag_name = $tag->name;
 ?>
 <?php get_header(); ?>
@@ -15,7 +24,11 @@
   		<div class="col-md-9 tag">
   			<main id="main" role="main">
           <div class="tagSearchZone">
-            <div class="commonHeader tagSearchHeader">『<?php echo $tag_name ?>』のお店一覧</div>
+            <?php if ($is_multi): ?>
+              <div class="commonHeader tagSearchHeader">『<?php echo implode(" + ", $multi_tags_arr); ?>』のお店一覧</div>
+            <?php else: ?>
+              <div class="commonHeader tagSearchHeader">『<?php echo $tag_name; ?>』のお店一覧</div>
+            <?php endif; ?>
             <?php while ( have_posts() ) : the_post(); ?>
       				<?php get_template_part( 'content', 'tag_summary' ); ?>
       			<?php endwhile; ?>
