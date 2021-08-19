@@ -1,7 +1,7 @@
 <?php
   $args = array(
-    'posts_per_page' => 5,
-    'category_name' => 'ramen'
+    'posts_per_page' => $args['count'],
+    'category_name' => $args['name']
   );
   $posts = get_posts( $args );
   foreach ( $posts as $post ):

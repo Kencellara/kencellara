@@ -2,7 +2,7 @@
   padding-top: 20px;
 }
 .entry__content {
-  padding: 10px 20px;
+  padding: 5px 20px;
 }
 .entry__content em {
   font-weight: bold;
@@ -23,7 +23,7 @@
   padding: 1em;
   border: 3px solid saddlebrown;
   border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
-  margin: 0 0 10px;
+  margin: 0 0 8px;
 }
 .entry__content h2 {
   font-size: 23px;
@@ -99,6 +99,7 @@
 .articleDate {
   text-align: right;
   margin-right: 10px;
+  font-size: 13px;
 }
 .entry-meta {
   display: none;
@@ -147,9 +148,6 @@
 }
 .snsShare a:hover {
   opacity: 0.6;
-}
-.aboveArticle .snsShare {
-  margin-top: 10px;
 }
 .belowArticle .snsShare {
   margin-bottom: 20px;
@@ -806,6 +804,7 @@ figure.aligncenter {
 
 .kencePoint {
   border: 3px solid saddlebrown;
+  margin: 0 0 13px;
 }
 .kencePointTitle {
   display: inline-block;
@@ -831,7 +830,8 @@ figure.aligncenter {
   margin: 0;
 }
 .kencePoint .plainText {
-  margin: 20px;
-  padding-top: 30px;
+  margin: 18px 18px 15px;
+  font-size: 15px;
+  padding-top: 28px;
   font-weight: bold;
 }

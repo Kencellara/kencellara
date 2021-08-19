@@ -1,71 +1,7 @@
 .categoryZone {
   padding: 10px;
   margin: 0 20px 10px;
-}
-
-.categoryZone.ramen {
-  background-color: #ffeaea;
-}
-.categoryZone.meat {
-  background-color: #ffffea;
-}
-.categoryZone.cafe {
-  background-color: #ffeaff;
-}
-.categoryZone.izakaya {
-  background-color: #ffeaf4;
-}
-.categoryZone.bakery {
-  background-color: #f4ffea;
-}
-.categoryZone.sushi {
-  background-color: #eaffea;
-}
-.categoryZone.set-meal {
-  background-color: #fff4ea;
-}
-.categoryZone.chuka {
-  background-color: #ffccd5;
-}
-.category-ramen .categoryHeaderZone,
-.category-ramen .entries {
-  background-color: #ffeaea;
-  border-color: #ffeaea;
-}
-.category-meat .categoryHeaderZone,
-.category-meat .entries {
-  background-color: #ffffea;
-  border-color: #ffffea;
-}
-.category-cafe .categoryHeaderZone,
-.category-cafe .entries {
-  background-color: #ffeaff;
-  border-color: #ffeaff;
-}
-.category-izakaya .categoryHeaderZone,
-.category-izakaya .entries {
-  background-color: #ffeaf4;
-  border-color: #ffeaf4;
-}
-.category-bakery .categoryHeaderZone,
-.category-bakery .entries {
-  background-color: #f4ffea;
-  border-color: #f4ffea;
-}
-.category-sushi .categoryHeaderZone,
-.category-sushi .entries {
-  background-color: #eaffea;
-  border-color: #eaffea;
-}
-.category-set-meal .categoryHeaderZone,
-.category-set-meal .entries {
-  background-color: #fff4ea;
-  border-color: #fff4ea;
-}
-.category-chuka .categoryHeaderZone,
-.category-chuka .entries {
-  background-color: #ffccd5;
-  border-color: #ffccd5;
+  background-color: cornsilk;
 }
 
 .categoryAd {
@@ -103,37 +39,30 @@
   background-size: 1200px;
   background-blend-mode: lighten;
   background-repeat: no-repeat;
+  background-color: rgba(255, 248, 220, 0.7);
 }
 .ramen .categoryRecommendInner {
-  background-color: rgba(255, 234, 234, 0.7);
   background-image: url(https://kencellara.com/wp-content/uploads/category/700/ramen_butace_700.png);
 }
 .meat .categoryRecommendInner {
-  background-color: rgba(255, 255, 234, 0.7);
   background-image: url(https://kencellara.com/wp-content/uploads/category/700/meat_butace_700.png);
 }
 .cafe .categoryRecommendInner {
-  background-color: rgba(255, 234, 255, 0.7);
   background-image: url(https://kencellara.com/wp-content/uploads/category/700/cafe_butace_700.png);
 }
 .izakaya .categoryRecommendInner {
-  background-color: rgba(255, 234, 244, 0.7);
   background-image: url(https://kencellara.com/wp-content/uploads/category/700/izakaya_butace_700.png);
 }
 .bakery .categoryRecommendInner {
-  background-color: rgba(244, 255, 234, 0.7);
   background-image: url(https://kencellara.com/wp-content/uploads/category/700/bakery_butace_700.png);
 }
 .sushi .categoryRecommendInner {
-  background-color: rgba(234, 255, 234, 0.7);
   background-image: url(https://kencellara.com/wp-content/uploads/category/700/sushi_butace_700.png);
 }
 .set-meal .categoryRecommendInner {
-  background-color: rgba(255, 244, 234, 0.7);
   background-image: url(https://kencellara.com/wp-content/uploads/category/700/set-meal_butace_700.png);
 }
 .chuka .categoryRecommendInner {
-  background-color: rgba(255, 204, 213, 0.7);
   background-image: url(https://kencellara.com/wp-content/uploads/category/700/chuka_butace_700.png);
 }
 .storeCounter {

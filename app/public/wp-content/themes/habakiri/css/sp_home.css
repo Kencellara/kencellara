@@ -7,7 +7,7 @@
     font-size: 20px;
   }
   .aiueoSearchZone {
-    margin: 60px 5px 15px;
+    margin: 10px 5px;
     padding: 12px 0;
   }
   .aiueoSearchZone td:not(.brank) {
@@ -23,9 +23,6 @@
   .aiueoSearchZone td a,
   .aiueoSearchZone td span {
     padding: 0 5px !important;
-  }
-  .areaSearchZone {
-    height: 510px;
   }
   .areaSearchInner {
     height: 400px;

@@ -65,8 +65,6 @@
 <!-- slickはレイアウト崩れを避けるため直後読み込み -->
 <?php get_template_part( 'modules/slick-js' ); ?>
 
-<?php #get_template_part( 'modules/aiueo_search' ); ?>
-
 <!-- 地域別検索 -->
 <div id="areaSearch" class="areaSearchZone">
   <div class="areaSearchContainer">
@@ -246,6 +244,9 @@
     </div>
   </div>
 </div>
+
+<!-- あいうえお検索 -->
+<?php get_template_part( 'modules/aiueo_search' ); ?>
 
 <div class="recommendGourmetZone">
   <div class="recommendGourmetHeader topPageHeader"><i class="fas fa-fire"></i> ケンチェ激推しグルメ <i class="fas fa-fire"></i></div>
@@ -447,7 +448,7 @@
     <p>三重県の飲食店を探す際, <strong><u>カテゴリー別</u>, <u>エリア別</u></strong>に検索が可能.</p>
     <p><strong><u>読者限定のイベント</u></strong>や<strong><u>特典</u></strong>が盛りだくさんなので、ぜひご活用ください.</p>
     <p><span class="instaText">Instagram</span>で随時情報をお知らせ <a class="instaLink" href="https://www.instagram.com/kencellara_food/"><strong><u>@kencellara_food</u></strong></a></p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/wbnOVqYOFP8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/wbnOVqYOFP8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <p style="font-size:19px;text-align:center;"><strong>20秒でわかる『ケンチェ飯』<i class="fas fa-video"></i></strong></p>
   </div>
 </div>

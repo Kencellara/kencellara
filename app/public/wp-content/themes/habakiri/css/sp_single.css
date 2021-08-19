@@ -1,13 +1,15 @@
 @media screen and (max-width: 420px) {
   .sub-page-contents {
-    padding-top: 10px;
+    padding-top: 0;
   }
   .col-md-9 {
     padding: 0 10px;
   }
   .entry h1.entry__title {
     font-size: 19px;
-    margin: 0 0 10px;
+  }
+  .articleDate {
+    font-size: 12.5px;
   }
   .entry__content {
     padding: 10px;
@@ -82,5 +84,18 @@
   }
   .kenceWindowCaution {
     margin: 0 20px;
+  }
+  .kencePointTitle {
+    display: table;
+    position: inherit;
+    margin: 5px auto 0;
+  }
+  .kencePoint ul {
+    padding-top: 10px;
+  }
+  .kencePoint .plainText {
+    margin: 12px 18px;
+    font-size: 14px;
+    padding: 0;
   }
 }

@@ -5,34 +5,6 @@
 .newPostsZone:nth-child(n + 2) {
   margin-top: 20px;
 }
-.newPostsZone.ramen {
-  background-color: #ffeaea;
-  border-color: #ffeaea;
-}
-.newPostsZone.meat {
-  background-color: #ffffea;
-  border-color: #ffffea;
-}
-.newPostsZone.cafe {
-  background-color: #ffeaff;
-  border-color: #ffeaff;
-}
-.newPostsZone.izakaya {
-  background-color: #ffeaf4;
-  border-color: #ffeaf4;
-}
-.newPostsZone.bakery {
-  background-color: #f4ffea;
-  border-color: #f4ffea;
-}
-.newPostsZone.set-meal {
-  background-color: #fff4ea;
-  border-color: #fff4ea;
-}
-/* .newPostsZone.chain {
-  background-color: #f4eaff;
-  border-color: #f4eaff;
-} */
 .newPostsContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -104,6 +76,7 @@
   margin: 0 0 8px 8px;
   height: 100%;
   align-items: flex-end;
+  flex-flow: wrap;
 }
 .newPostCategory a {
   background: #C2EEFF;
@@ -128,7 +101,9 @@
   display: block;
   color: #fff;
 }
-.goToArchivePage a:hover {
+.goToArchivePage a:hover,
+.goToArchivePage a:active,
+.goToArchivePage a:focus {
   background-color: cornsilk;
   color: chocolate;
 }
