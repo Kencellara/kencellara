@@ -200,7 +200,7 @@ a.kenceWindowModalClose {
 .pagination>li>span:hover {
   background-color: saddlebrown !important;
   border-color: saddlebrown !important;
-  color: cornsilk;
+  color: cornsilk !important;
 }
 .pagination>li>a {
   color: saddlebrown !important;
