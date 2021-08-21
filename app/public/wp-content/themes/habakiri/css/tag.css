@@ -1,0 +1,72 @@
+.sub-page-contents {
+  padding-top: 0;
+}
+.tagSearchZone {
+  background-color: cornsilk;
+  padding: 20px;
+}
+.tagSearchHeader {
+  margin-bottom: 35px;
+}
+.tagPostContainer {
+  color: #333;
+  padding: 10px 20px;
+  box-shadow: 0 0 5px 2px black;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+.tagPostTitle {
+  font-weight: bold;
+  margin-right: 20px;
+  font-size: 28px;
+}
+.tagPostAreaCat {
+  font-size: 20px;
+}
+.tagSearchaAreaHeader {
+  color: #fff;
+  width: 150px;
+  margin: 10px auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+.hokubuHeader {
+  background-color: #1D87FB;
+}
+.igaHeader {
+  background-color: #92D050;
+}
+.chubuHeader {
+  background-color: #FFD13F;
+}
+.iseShimaHeader {
+  background-color: #91BCE3;
+}
+.higashikishuHeader {
+  background-color: #DA54BD;
+}
+.toTopBtnZone {
+  display: flex;
+  background-image: url("https://kencellara.com/wp-content/uploads/sticker/300/三重県最高じゃ_300.png");
+  background-size: contain;
+}
+.toTopBtn {
+  display: inline-block;
+  font-weight: bold;
+  margin: 15px auto ;
+  background-color: cornsilk;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid saddlebrown;
+  font-size: 25px;
+  width: 30%;
+  text-align: center;
+}
+a.toTopBtn:focus,
+a.toTopBtn:hover,
+a.toTopBtn:active {
+  color: cornsilk;
+  background-color: saddlebrown;
+  border-color: cornsilk;
+}

@@ -2,7 +2,7 @@
   padding-top: 20px;
 }
 .entry__content {
-  padding: 10px 20px;
+  padding: 5px 20px;
 }
 .entry__content em {
   font-weight: bold;
@@ -23,7 +23,7 @@
   padding: 1em;
   border: 3px solid saddlebrown;
   border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
-  margin: 0 0 20px;
+  margin: 0 0 8px;
 }
 .entry__content h2 {
   font-size: 23px;
@@ -78,6 +78,29 @@
 .entry__content a:hover {
   opacity: 0.7;
 }
+.aboveTitleInfo {
+  display: flex;
+  background-image: url(https://kencellara.com/wp-content/uploads/toppage/butace.png);
+  background-size: contain;
+}
+.milestone {
+  background-color: #fff;
+  width: 172px;
+  text-align: center;
+  font-size: 21px;
+  font-weight: bold;
+  padding: 5px 10px;
+  margin-left: 30px;
+  box-shadow: 0px 0px 5px 2px salmon;
+  color: black;
+  text-shadow: 2px 2px 2px silver;
+  margin: 15px auto 8px;
+}
+.articleDate {
+  text-align: right;
+  margin-right: 10px;
+  font-size: 13px;
+}
 .entry-meta {
   display: none;
 }
@@ -125,9 +148,6 @@
 }
 .snsShare a:hover {
   opacity: 0.6;
-}
-.aboveArticle .snsShare {
-  margin-top: 10px;
 }
 .belowArticle .snsShare {
   margin-bottom: 20px;
@@ -200,13 +220,25 @@
   font-weight: bold;
 }
 /* 記事内強調するための囲い枠*/
+.box7::before {
+  content: "総評";
+  font-weight: bold;
+  background-color: black;
+  color: #fff;
+  padding: 10px;
+  position: relative;
+  top: -8px;
+  left: -8px;
+  border-radius: 3px;
+  font-size: 16px;
+}
 .box7 {
   padding: 5px 10px;
   margin: 35px 0;
   color: black;
   background: floralwhite;
-  border-left: double 7px saddlebrown;
-  border-right: double 7px saddlebrown;
+  border-left: double 7px black;
+  border-right: double 7px black;
 }
 .box7 p {
   margin: 0;
@@ -216,6 +248,34 @@
   margin: 0;
   padding: 0 0 0 1.5em;
   list-style: disc;
+}
+
+/* インスタ誘導 */
+.noticeBoxHeader {
+  font-weight: bold;
+  width: 110px;
+  margin: auto;
+  margin-bottom: 8px;
+  text-align: center;
+  font-size: 17px;
+  border-bottom: 1px solid black;
+}
+.noticeBox {
+  padding: 8px 10px;
+  box-shadow: 0 0 3px 3px #ffe4eb;
+  border-radius: 10px;
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/300/ありがとう_300.png);
+  background-size: contain;
+  background-blend-mode: lighten;
+  background-color: rgba(255, 228, 235, 0.97);
+  font-weight: bold;
+}
+.noticeBox p {
+  margin-bottom: 10px;
+}
+.noticeBox img {
+  width: 100px;
+  margin-left: 100px;
 }
 
 /* 記事内「ケンチェの一言」「この記事の内容」*/
@@ -330,7 +390,7 @@
 .list03 li:after,
 .list02 li:after,
 .list05 li:after {
-  background: #4682b4;
+  background: saddlebrown;
   color: #fff;
   font-weight: bold;
   position: absolute;
@@ -450,9 +510,128 @@
     left: -106px;
   }
 }
-.kensuke01::after,
-.kensuke02::after {
+.kensuke00::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/ありがとう_100.png);
+}
+.kensuke01::after {
   background-image: url(https://kencellara.com/wp-content/uploads/toppage/butace.png);
+}
+.kensuke02::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/おはよう_100.png);
+}
+.kensuke03::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/了解_100.png);
+}
+.kensuke04::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/いいやん_100.png);
+}
+.kensuke05::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/お疲れ様_100.png);
+}
+.kensuke06::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/ま、なんでもええねん_100.png);
+}
+.kensuke07::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/お布団の中です_100.png);
+}
+.kensuke08::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/おやすみ_100.png);
+}
+.kensuke09::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/つかれた_100.png);
+}
+.kensuke10::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/ちょっと聞いてえ_100.png);
+}
+.kensuke11::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/ガーン_100.png);
+}
+.kensuke12::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/じーーー_100.png);
+}
+.kensuke13::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/なるほど_100.png);
+}
+.kensuke14::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/えええ_100.png);
+}
+.kensuke15::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/デートしませんか_100.png);
+}
+.kensuke16::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/ちょっと待って_100.png);
+}
+.kensuke17::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/おかわりください_100.png);
+}
+.kensuke18::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/ぺろぺろタイム_100.png);
+}
+.kensuke19::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/乾杯しましょう_100.png);
+}
+.kensuke20::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/最高のぺろぺろでした_100.png);
+}
+.kensuke21::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/めし_100.png);
+}
+.kensuke22::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/また行こう_100.png);
+}
+.kensuke23::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/まじ_100.png);
+}
+.kensuke24::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/頑張ります_100.png);
+}
+.kensuke25::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/どう_100.png);
+}
+.kensuke26::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/ですよね_100.png);
+}
+.kensuke27::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/さようなら_100.png);
+}
+.kensuke28::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/かしこまりました。_100.png);
+}
+.kensuke29::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/お大事に_100.png);
+}
+.kensuke30::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/おめでとう！_100.png);
+}
+.kensuke31::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/分かりません_100.png);
+}
+.kensuke32::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/ありよりのあり_100.png);
+}
+.kensuke33::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/ありりんちょ_100.png);
+}
+.kensuke34::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/やばい_100.png);
+}
+.kensuke35::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/それな_100.png);
+}
+.kensuke36::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/今から行く_100.png);
+}
+.kensuke37::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/申し訳ございません_100.png);
+}
+.kensuke38::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/よろしく_100.png);
+}
+.kensuke39::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/三重グルメならけんちぇ飯_100.png);
+}
+.kensuke40::after {
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/三重県最高じゃ_100.png);
 }
 
 .summaryTable {
@@ -557,10 +736,10 @@
   border-bottom: 2px dotted rosybrown;
 }
 
-.kenceWorkWindowZone {
+.kenceWindowZone {
   margin: 40px 0;
 }
-.kenceWorkWindowHeader {
+.kenceWindowHeader {
   color: saddlebrown;
   font-size: 28px;
   text-align: center;
@@ -570,26 +749,34 @@
   margin: 5px auto 10px;
   box-shadow: 0 0 10px 5px cornsilk;
 }
-.kenceWorkWindowExplain {
+.kenceWindowExplain {
   margin: 20px 40px;
   font-weight: bold;
 }
-.kenceWorkWindowExplain ul {
+.kenceWindowExplain ul {
   list-style-type: bengali;
 }
 @media screen and (min-width: 1200px) {
-  .kenceWorkWindowExplain ul {
+  .kenceWindowExplain ul {
     margin: 0 170px 10px;
   }
 }
-.kenceWorkWindowExplain p {
+.kenceWindowExplain p {
   text-align: center;
   font-size: 1.1em;
 }
-.kenceWorkWindow {
+.kenceWindow {
   margin: 20px 0 50px;
 }
-.kenceWorkWindow iframe {
+.kenceWindowModalOpen {
+  margin: 0 40px;
+  padding: 20px 0;
+}
+.kenceWindowCaution {
+  border-bottom: 10px solid cornsilk;
+  margin: 0 40px;
+}
+.kenceWindow iframe {
   max-height: 400px;
 }
 .kencemeshiSupportZone {
@@ -605,4 +792,46 @@
   color: #555555;
   background-color: #ffcccc;
   box-shadow: 0 0 10px 10px #ffcccc;
+}
+
+figure.aligncenter {
+  text-align: center;
+}
+.wp-caption-text {
+  text-align: center;
+  font-weight: bold;
+}
+
+.kencePoint {
+  border: 3px solid saddlebrown;
+  margin: 0 0 13px;
+}
+.kencePointTitle {
+  display: inline-block;
+  position: absolute;
+  font-weight: bold;
+  padding: 3px 15px;
+  background-color: saddlebrown;
+  color: #fff;
+  border-radius: 10px;
+  margin: 3px;
+}
+.kencePointTitle i {
+  font-style: inherit;
+  margin-right: .3em;
+}
+.kencePoint ul {
+  padding-top: 38px;
+  list-style: disclosure-closed;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.kencePoint p {
+  margin: 0;
+}
+.kencePoint .plainText {
+  margin: 18px 18px 15px;
+  font-size: 15px;
+  padding-top: 28px;
+  font-weight: bold;
 }

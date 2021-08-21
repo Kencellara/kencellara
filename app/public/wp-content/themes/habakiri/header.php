@@ -1,14 +1,3 @@
-<?php
-/**
- * Version    : 1.2.0
- * Author     : inc2734
- * Author URI : http://2inc.org
- * Created    : April 17, 2015
- * Modified   : August 30, 2015
- * License    : GPLv2 or later
- * License URI: license.txt
- */
-?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head prefix="og: http://ogp.me/ns# <?php echo ( is_single() || is_page() ) ? 'fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#' : 'fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#' ?>">
@@ -19,10 +8,11 @@
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5shiv.min.js"></script>
 	<![endif]-->
 	<?php
-		add_action('wp_enqueue_scripts', wp_enqueue_style('common-style', get_template_directory_uri() . '/css/common.css', array('habakiri')));
+		add_action('wp_enqueue_scripts', wp_enqueue_style('common-style', get_template_directory_uri() . '/css/common.css', array('habakiri'), '1.0.7'));
 		add_action('wp_enqueue_scripts', wp_enqueue_style('sp_common-style', get_template_directory_uri() . '/css/sp_common.css'));
-		add_action('wp_enqueue_scripts', wp_enqueue_style('header-style', get_template_directory_uri() . '/css/header.css'));
-		add_action('wp_enqueue_scripts', wp_enqueue_style('sidebar-style', get_template_directory_uri() . '/css/sidebar.css'));
+		add_action('wp_enqueue_scripts', wp_enqueue_style('header-style', get_template_directory_uri() . '/css/header.css'), array(), '1.0.7');
+		add_action('wp_enqueue_scripts', wp_enqueue_style('sp_header-style', get_template_directory_uri() . '/css/sp_header.css'), array(), '1.0.9');
+		add_action('wp_enqueue_scripts', wp_enqueue_style('sidebar-style', get_template_directory_uri() . '/css/sidebar.css'), array(), '1.0.5');
 		add_action('wp_enqueue_scripts', wp_enqueue_style('sp_sidebar-style', get_template_directory_uri() . '/css/sp_sidebar.css'));
 	?>
 	<?php
@@ -31,7 +21,8 @@
 		}
 		add_action( 'wp_enqueue_scripts', 'header_scripts' );
 	?>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+	<?php $theme_url = get_theme_file_uri(); ?>
+	<link href="<?php echo $theme_url; ?>/assets/fontawesome/css/all.css" rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -53,31 +44,6 @@
 		</div>
 		<?php do_action( 'habakiri_after_header_content' ); ?>
 	</header>
-	<!-- 固定ヘッダー -->
-	<div id="jsFixedSNS" class="miniInfoArea">
-		<div class="snsContainer">
-			<span class="leadToSns">
-				おトク情報GET! <i class="far fa-hand-point-right"></i>
-			</span>
-			<span class="leadToSnsShort">
-				SNS <i class="far fa-hand-point-right"></i>
-			</span>
-			<a href="https://www.instagram.com/kencellara_food" target="_blank" rel="noopener noreferrer">
-				<img class="InstagramIcon" src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210201/20210201213002.jpg" alt="instagram" />
-			</a>
-			<a class="twitter-button" href="https://twitter.com/kencellara_food" target="_blank" rel="noopener noreferrer">
-				<i class="fab fa-twitter-square"></i>
-			</a>
-			<a href="https://lin.ee/kjAkh3g" target="_blank" rel="noopener noreferrer">
-				<img class="LINEIcon" src="https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210201/20210201212953.jpg" alt="LINE" />
-			</a>
-			<a class="facebook-button" href="https://www.facebook.com/kencellarafood" target="_blank" rel="noopener noreferrer">
-				<i class="fab fa-facebook-square"></i>
-			</a>
-		</div>
-		<div class="fixedHeaderHomeBtn">
-			<a href=<?php echo home_url() ?>><i class="fas fa-home"></i></a>
-		</div>
-	</div>
+	<?php get_template_part( 'modules/fixed_header' ); ?>
 	<div id="contents">
 		<?php do_action( 'habakiri_before_contents_content' ); ?>

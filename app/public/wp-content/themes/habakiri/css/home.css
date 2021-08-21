@@ -63,6 +63,43 @@ section.typeA input:checked + .tabLabel + .content {
 	opacity: 1;
 }
 
+.simpleNews {
+  color: #fff;
+  background-color: brown;
+  width : 100%;
+  font-size : 17px;
+  text-align : center;
+  overflow : hidden;
+  font-weight: bold;
+}
+.simpleNews p {
+  margin: 0;
+  display : inline-block;
+  padding-left: 100%;
+  white-space : nowrap;
+  animation : scrollsimpleNews 20s linear infinite;
+}
+.simpleNews i {
+  margin: 0 .8em 0 .3em;
+}
+.simpleNews a {
+  background-color: #fff;
+  color: brown;
+  padding: .1em .8em;
+  margin: 0 1em;
+  vertical-align: .1em;
+}
+.simpleNews a:focus,
+.simpleNews a:hover,
+.simpleNews a:active {
+  color: brown;
+  opacity: 0.7;
+}
+@keyframes scrollsimpleNews {
+  0% { transform: translateX(0) }
+  100% { transform: translateX(-100%) }
+}
+
 /* 店舗数 */
 .storeCountArea {
   display: block;
@@ -147,11 +184,67 @@ section.typeA input:checked + .tabLabel + .content {
   color: darkgoldenrod !important;
 }
 
+/* あいうえお検索 */
+.aiueoSearchZone {
+  margin: 20px 10px;
+  padding: 15px 0;
+  box-shadow: 0px 0px 8px 3px black;
+  background-image: url(https://kencellara.com/wp-content/uploads/sticker/100/めし_100.png);
+  background-blend-mode: lighten;
+  background-color: rgba(255, 255, 255, 0.97);
+}
+.aiueoSearchZone table {
+  width: 100%;
+  margin: 10px 0;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+.aiueoSearchZone td {
+	height: 41px;
+	min-width: 20px;
+	margin: 5px 10px;
+	text-align: center;
+	display: inline-block;
+}
+.aiueoSearchZone td.brank {
+  width: 38px;
+}
+.aiueoSearchZone td:not(.brank) {
+	background: #EDEDED;
+	border-radius: 10px;
+	font: bold 18px arial;
+	line-height: 41px;
+}
+.aiueoSearchZone td a {
+  display: block;
+  padding: 0 10px;
+  border-radius: 10px;
+}
+.aiueoSearchZone td:not(.brank) span {
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0,0,0,0.4);
+  display: block;
+  padding: 0 10px;
+  color: #333;
+  border-radius: 10px;
+}
+.aiueoSearchZone td:not(.brank) a {
+  box-shadow: 2px 3px 0px 0px rgba(0, 0, 0, 0.3);
+  display: block;
+  padding: 0 10px;
+  color: #333 !important;
+  border-radius: 10px;
+}
+.aiueoSearchZone td:not(.brank) a:hover {
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.3);
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 /* 地域別検索エリア */
 .areaSearchZone {
-  border: 5px dashed cornsilk;
   padding-top: 10px;
-  height: 950px;
 }
 .areaList {
   margin: 0;
@@ -175,8 +268,7 @@ section.typeA input:checked + .tabLabel + .content {
 }
 .areaSearchZone a:hover {
   opacity: 0.6;
-  color: #fff;
-  background: linear-gradient(#fff, saddlebrown);
+  background: linear-gradient(#fff, lightcoral);
 }
 .areaSearchContainer {
   height: 100%;
@@ -184,12 +276,12 @@ section.typeA input:checked + .tabLabel + .content {
 .areaSearchHeader {
   text-align: center;
   font-weight: bold;
-  margin: 10px auto 30px;
+  margin: 10px auto 35px;
 }
 .areaSearchInner {
   display: flex;
   margin: auto;
-  background-image: url("https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210209/20210209002422.jpg");
+  background-image: url("https://kencellara.com/wp-content/uploads/toppage/mie_map.jpg");
   background-size: contain;
 }
 .areaZone {
@@ -197,6 +289,38 @@ section.typeA input:checked + .tabLabel + .content {
   text-align: center;
   font-weight: bold;
   flex-shrink: 0;
+}
+.areaBadge {
+  font-size: 20px;
+  border: 2px solid;
+  width: 40px;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  padding: 1px 0;
+  top: -17px;
+  left: -17px;
+  background-color: #fff;
+}
+.areaBadge.hokubu {
+  border-color: #1D87FB;
+  color: #1D87FB;
+}
+.areaBadge.iga {
+  border-color: #92D050;
+  color: #92D050;
+}
+.areaBadge.chubu {
+  border-color: #FFD13F;
+  color: #FFD13F;
+}
+.areaBadge.iseShima {
+  border-color: #91BCE3;
+  color: #91BCE3;
+}
+.areaBadge.higashikishu {
+  border-color: #DA54BD;
+  color: #DA54BD;
 }
 .areaHeader {
   color: #fff;
@@ -218,7 +342,6 @@ section.typeA input:checked + .tabLabel + .content {
   background-color: #DA54BD;
 }
 .inabe,
-.suzuka,
 .nabari,
 .watarai,
 .tamaki,
@@ -240,7 +363,7 @@ section.typeA input:checked + .tabLabel + .content {
   height: 200px;
 }
 .areaZone.hokubu {
-  top: 30px;
+  top: 10px;
   left: 150px;
 }
 .areaZone.iga {
@@ -263,12 +386,17 @@ section.typeA input:checked + .tabLabel + .content {
   font-size: 30px;
   margin-bottom: 8px;
 }
+.areaSearchNote {
+  font-size: 12px;
+  text-align: right;
+  color: saddlebrown;
+}
 
 /* ジャンル検索 */
 .genreSearchZone {
   border: 3px dotted cornsilk;
   margin: 20px 0;
-  background-image: url("https://cdn-ak.f.st-hatena.com/images/fotolife/k/ken_chan_bike/20210212/20210212010912.jpg");
+  background-image: url("https://kencellara.com/wp-content/uploads/toppage/izakaya_hukei_400.jpg");
 }
 .genreSearchContainer {
   padding: 20px 0 0;
@@ -296,30 +424,7 @@ section.typeA input:checked + .tabLabel + .content {
 .genreSearchColumn i {
   z-index: 2;
   transition: 0.5s;
-}
-i.oniku {
-  color: #ffffea;
-}
-i.teishoku {
-  color: #fff4ea;
-}
-i.kaisen {
-  color: #eaffea;
-}
-i.bread {
-  color: #f4ffea;
-}
-i.cafe {
-  color: #ffeaff;
-}
-i.chuka {
-  color: #f4eaff;
-}
-i.ramen {
-  color: #ffeaea;
-}
-i.izakaya {
-  color: #ffeaf4;
+  color: cornsilk;
 }
 .genreSearchColumn .fa-bookmark {
   margin: auto;
@@ -330,7 +435,9 @@ i.izakaya {
   color: #fff;
   font-family: “HGP行書体”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif, sans-serif;
 }
-.genreSearchCard a:hover {
+.genreSearchCard a:hover,
+.genreSearchCard a:active,
+.genreSearchCard a:focus {
   color: #fff;
 }
 .genreSearchCard:hover {
@@ -346,11 +453,11 @@ i.izakaya {
 .genreSearchColumn .fa-bookmark {
   font-size: 40px;
   top: -280px;
-  text-shadow: 1px 1px 2px burlywood;
+  text-shadow: 1px 1px 2px cornsilk;
 }
 .genreSearchCard {
   box-shadow: 3px 3px 3px 3px lightslategrey;
-  border: 3px outset burlywood;
+  border: 3px outset cornsilk;
 }
 .genreSearchCard a {
   font-size: 45px;
@@ -504,20 +611,8 @@ i.izakaya {
   color: #ccc;
 }
 
-/* ケンチェの窓口モーダル */
-.kenceWindowModal iframe[src^="https://docs.google.com/forms/d/e"] {
-  width: 100%;
-  height: 100vh;
-}
-.kenceWindowAnnounce {
-  border-top: 3px double darkgoldenrod;
+.kenceWindowModalOpen {
   background-color: cornsilk;
-  text-align: center;
-  padding: 10px 0;
-  font-weight: bold;
-}
-.kenceWindowAnnounce i {
-  font-size: 50px;
 }
 .kenceWindowCaution {
   display: block;
@@ -526,86 +621,6 @@ i.izakaya {
   background-color: cornsilk;
   text-align: center;
   padding-bottom: 10px;
-}
-.kenceWindowModalOpen {
-  display: block;
-  background-color: cornsilk;
-  text-align: center;
-  color: black;
-  padding: 20px 0;
-}
-.kenceWindowModalOpen a {
-  text-shadow: 1px 1px 1px silver;
-  font-weight: bold;
-  font-size: 20px;
-  padding: 10px;
-  border: 3px outset silver;
-  background-color: white;
-  color: black;
-}
-.kenceWindowModalOpen a:hover {
-  opacity: 0.6;
-  color: black;
-  text-shadow: 3px 3px 3px silver;
-}
-.kenceWindowModal {
-  display: none;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-}
-.kenceWindowModalBg {
-  background: rgba(0, 0, 0, 0.6);
-  height: 100vh;
-  width: 100%;
-}
-.kenceWindowModalContent {
-  width: 700px;
-  max-height: 830px;
-  background: #fff;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 5px;
-}
-.kenceWindowModalContentInner {
-  overflow-y: scroll;
-  position: relative;
-  max-height: 95vh;
-}
-a.kenceWindowModalClose {
-  color: black;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 15;
-  background: #fff;
-  padding: 10px;
-  border: 2px solid black;
-  font-weight: bold;
-  border-radius: 10px;
-  margin: 8px;
-}
-.kenceWindowModalOpen:hover,
-.kenceWindowModalClose:hover {
-  color: black;
-}
-.kenceWindowAnnounce {
-  font-size: 0.75em;
-}
-.kenceWindowAnnounce i {
-  font-size: calc(50px / 2);
-}
-.kenceWindowModalOpen {
-  padding: 15px 0 20px;
-}
-.kenceWindowModalContentInner {
-  max-height: 100vh;
 }
 
 .monthlyBlogInfo {
@@ -646,6 +661,9 @@ a.kenceWindowModalClose {
 .kencemeshiExplainContents p {
   font-size: 18px;
 }
+.kencemeshiExplainContents i {
+  margin: 0 .6em;
+}
 
 /* ケンチェ飯の実績 */
 .kencemeshiHistory {
@@ -662,6 +680,14 @@ a.kenceWindowModalClose {
 }
 .kencemeshiHistoryContents ul {
   margin-top: 10px;
+  list-style-type: disc;
+}
+.kencemeshiHistoryContents i {
+  margin-left: .5em;
+}
+.kencemeshiAnalytics {
+  margin: 30px 0;
+  text-align: center;
 }
 
 /* 支援 */

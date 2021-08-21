@@ -1,0 +1,185 @@
+.categoryZone {
+  padding: 10px;
+  margin: 0 20px 10px;
+  background-color: cornsilk;
+}
+
+.categoryAd {
+  margin: 20px 0;
+}
+
+/* 店舗数 */
+.storeCountArea {
+  display: block;
+  height: 120px;
+  padding: 30px 0;
+  margin-bottom: 8px;
+}
+.storeCountArea.look {
+  display: block;
+  margin: 30px auto;
+}
+.storeCountContainer {
+  margin: auto;
+  width: 300px;
+  text-align: center;
+  background-color: #FFF;
+  border-radius: 10px;
+  text-shadow: 2px 2px 2px silver;
+  font-size: 24px;
+  box-shadow: 0px 0px 10px 5px gold;
+}
+.storeCountContainer img {
+  width: 32px;
+  vertical-align: sub;
+}
+.categoryRecommendInner {
+  background-position-y: -150px;
+  background-position-x: -245px;
+  background-size: 1200px;
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 248, 220, 0.7);
+}
+.ramen .categoryRecommendInner {
+  background-image: url(https://kencellara.com/wp-content/uploads/category/700/ramen_butace_700.png);
+}
+.meat .categoryRecommendInner {
+  background-image: url(https://kencellara.com/wp-content/uploads/category/700/meat_butace_700.png);
+}
+.cafe .categoryRecommendInner {
+  background-image: url(https://kencellara.com/wp-content/uploads/category/700/cafe_butace_700.png);
+}
+.izakaya .categoryRecommendInner {
+  background-image: url(https://kencellara.com/wp-content/uploads/category/700/izakaya_butace_700.png);
+}
+.bakery .categoryRecommendInner {
+  background-image: url(https://kencellara.com/wp-content/uploads/category/700/bakery_butace_700.png);
+}
+.sushi .categoryRecommendInner {
+  background-image: url(https://kencellara.com/wp-content/uploads/category/700/sushi_butace_700.png);
+}
+.set-meal .categoryRecommendInner {
+  background-image: url(https://kencellara.com/wp-content/uploads/category/700/set-meal_butace_700.png);
+}
+.chuka .categoryRecommendInner {
+  background-image: url(https://kencellara.com/wp-content/uploads/category/700/chuka_butace_700.png);
+}
+.storeCounter {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin: 0 8px;
+  color: crimson;
+}
+
+.categoryRecommendZone {
+  margin-top: 20px;
+}
+.categoryRecommendTitle {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 5px auto 10px;
+  width: 300px;
+  background-color: black;
+  color: white;
+  text-shadow: 1px 1px 1px red;
+  box-shadow: 0px 0px 10px 5px firebrick;
+  border-radius: 10px;
+}
+.categoryRecommendExplain {
+  text-align: left;
+  margin: auto;
+  background-color: white;
+  padding: 20px 10px;
+  display: flex;
+}
+.categoryRecommendExplain img {
+  max-width: 100%;
+  height: 120px;
+}
+.categoryRecommendExplain p {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 16px 0;
+}
+
+.categoryHeaderZone {
+  background-color: cornsilk;
+  margin: 0 20px 10px;
+  padding: 20px 0;
+}
+.categoryHeader {
+  color: black;
+  background-color: white;
+  margin: auto;
+  width: 320px;
+  box-shadow: 5px 5px 5px 1px black;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  text-shadow: 1px 1px 1px silver;
+  font-size: 22px;
+}
+
+.catRcmdRank {
+  margin: 30px 0;
+}
+.catRcmdRankHeader {
+  background-color: white;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  text-shadow: 1px 1px 1px silver;
+}
+.catRcmdRankHeader .fa-crown {
+  color: gold;
+}
+.catRcmdRankRow {
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 10px 0;
+  border: 5px outset grey;
+}
+.catRcmdRankRow > a {
+  color: #333;
+}
+.catRcmdRankRow > a:hover,
+.catRcmdRankRow > a:active,
+.catRcmdRankRow > a:focus {
+  color: #333;
+}
+.catRcmdRankRow.first {
+  border-color: gold;
+}
+.catRcmdRankRow.first .catRcmRankHead {
+  box-shadow: 0px 0px 5px 1px gold;
+}
+.catRcmdRankRow.second {
+  border-color: silver;
+}
+.catRcmdRankRow.second .catRcmRankHead {
+  box-shadow: 0px 0px 5px 1px silver;
+}
+.catRcmdRankRow.third {
+  border-color: #b87333;
+}
+.catRcmdRankRow.third .catRcmRankHead {
+  box-shadow: 0px 0px 5px 1px #b87333;
+}
+.catRcmRankHead {
+  background-color: #333;
+  color: #fff;
+}
+.catRcmRankHead > span {
+  margin-right: 20px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.catRcmRankDescription {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 15px 0;
+}

@@ -1,0 +1,24 @@
+@media screen and (max-width: 420px) {
+  .categoryZone {
+    margin: 10px 5px;
+  }
+  .categoryRecommendInner {
+    background-position-y: -75px;
+    background-position-x: -240px;
+    background-size: 700px;
+  }
+  .categoryHeaderZone {
+    margin: 5px;
+  }
+  .catRcmdRankRow {
+    margin-bottom: 15px;
+    padding: 5px 0;
+  }
+  .catRcmRankHead > span {
+    margin-right: 10px;
+    padding: 5px;
+  }
+  .catRcmRankDescription {
+    padding: 4px 7px;
+  }
+}

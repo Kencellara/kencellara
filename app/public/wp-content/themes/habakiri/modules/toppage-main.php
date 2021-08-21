@@ -4,7 +4,18 @@
 	$kence_work_page_id = get_page_by_path('kence_work')->ID;
   $upload_dir = wp_upload_dir();
   $common_img_dir = $upload_dir['baseurl'] . '/common';
+  $sticker_img_dir = $upload_dir['baseurl'] . '/sticker';
+  $hokubu_post_count = get_category_by_slug('kameyama')->count + get_category_by_slug('komono')->count + get_category_by_slug('yokkaichi')->count + get_category_by_slug('kuwana')->count;
+  $iga_post_count = get_category_by_slug('iga')->count;
+  $chubu_post_count = get_category_by_slug('tsu')->count + get_category_by_slug('matsusaka')->count + get_category_by_slug('meiwa')->count + get_category_by_slug('taki')->count;
+  $iseShima_post_count = get_category_by_slug('ise')->count + get_category_by_slug('shima')->count + get_category_by_slug('toba')->count + get_category_by_slug('minamiise')->count;
+  $higashikishu_post_count = get_category_by_slug('odai')->count + get_category_by_slug('kihoku')->count + get_category_by_slug('owase')->count;
 ?>
+
+<div class="simpleNews">
+  <p>ニュース<i class="fas fa-chevron-circle-right"></i>月間50,000アクセス達成！<a href="https://store.line.me/stickershop/product/16142065/ja?ref=gnsh_stickerDetail" target="_blank" rel="noreferrer"> ケンチェ飯公式LINEスタンプ販売開始（こちら）</a></p>
+</div>
+
 <div class="storeCountArea">
   <div class="storeCountContainer">
     <img src="<?php echo $common_img_dir; ?>/crown.jpg" alt="王冠" />
@@ -16,15 +27,14 @@
 <!-- スライドショー -->
 <div class="slider">
   <div>
-    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('wakaba'); ?>
+    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('yorokoba'); ?>
     <a href="<?php echo the_permalink($slider_articles_id); ?>">
       <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
     </a>
   </div>
   <div>
-    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('tree-crop'); ?>
-    <a href="<?php echo the_permalink($slider_articles_id); ?>">
-      <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
+    <a href="https://store.line.me/stickershop/product/16142065/ja?ref=gnsh_stickerDetail" target="_blank" rel="noreferrer">
+      <img src="<?php echo $sticker_img_dir . '/LINEスタンプ.jpg'; ?>" alt="ケンチェ飯公式LINEスタンプ" />
     </a>
   </div>
   <div>
@@ -34,19 +44,19 @@
     </a>
   </div>
   <div>
-    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('tokuhati'); ?>
+    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('ookami'); ?>
     <a href="<?php echo the_permalink($slider_articles_id); ?>">
       <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
     </a>
   </div>
   <div>
-    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('tanpopo'); ?>
+    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('hyakubunnoiti'); ?>
     <a href="<?php echo the_permalink($slider_articles_id); ?>">
       <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
     </a>
   </div>
   <div>
-    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('sitoronie'); ?>
+    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('gyouza-misuzu'); ?>
     <a href="<?php echo the_permalink($slider_articles_id); ?>">
       <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
     </a>
@@ -56,11 +66,12 @@
 <?php get_template_part( 'modules/slick-js' ); ?>
 
 <!-- 地域別検索 -->
-<div class="areaSearchZone">
+<div id="areaSearch" class="areaSearchZone">
   <div class="areaSearchContainer">
     <div class="areaSearchHeader topPageHeader">エリアでグルメ検索 <i class="fas fa-search"></i></div>
     <div class="areaSearchInner">
       <div class="hokubu areaZone">
+        <div class="areaBadge hokubu"><?php echo $hokubu_post_count; ?></div>
         <div class="hokubuHeader areaHeader">北部</div>
         <ul class="areaList">
           <li class="inabe">
@@ -79,11 +90,12 @@
             <a href=<?php echo get_category_link(get_category_by_slug('kameyama')->cat_ID); ?>>亀山</a>
           </li>
           <li class="suzuka">
-            <a href="">鈴鹿</a>
+            <a href=<?php echo get_category_link(get_category_by_slug('suzuka')->cat_ID); ?>>鈴鹿</a>
           </li>
         </ul>
       </div>
       <div class="iga areaZone">
+        <div class="areaBadge iga"><?php echo $iga_post_count; ?></div>
         <div class="igaHeader areaHeader">伊賀</div>
         <ul class="areaList">
           <li class="iga">
@@ -95,6 +107,7 @@
         </ul>
       </div>
       <div class="chubu areaZone">
+        <div class="areaBadge chubu"><?php echo $chubu_post_count; ?></div>
         <div class="chubuHeader areaHeader">中部</div>
         <ul class="areaList">
           <li class="tsu">
@@ -112,6 +125,7 @@
         </ul>
       </div>
       <div class="iseShima areaZone">
+        <div class="areaBadge iseShima"><?php echo $iseShima_post_count; ?></div>
         <div class="iseShimaHeader areaHeader">伊勢志摩</div>
         <ul class="areaList">
           <li class="ise">
@@ -135,6 +149,7 @@
         </ul>
       </div>
       <div class="higashikishu areaZone">
+        <div class="areaBadge higashikishu"><?php echo $higashikishu_post_count; ?></div>
         <div class="higashikishuHeader areaHeader">東紀州</div>
         <ul class="areaList">
           <li class="odai">
@@ -163,9 +178,10 @@
     </div>
   </div>
 </div>
+<div class="areaSearchNote">地域名左上の数字は訪問店舗数を示しています。</div>
 
 <!-- ジャンル別検索 -->
-<div class="genreSearchZone">
+<div id="genreSearch" class="genreSearchZone">
   <div class="genreSearchContainer">
     <div class="genreSearchHeader topPageHeader">ジャンルでグルメ検索 <i class="fas fa-search"></i></div>
     <div class="genreSearchInner">
@@ -229,41 +245,44 @@
   </div>
 </div>
 
+<!-- あいうえお検索 -->
+<?php get_template_part( 'modules/aiueo_search' ); ?>
+
 <div class="recommendGourmetZone">
   <div class="recommendGourmetHeader topPageHeader"><i class="fas fa-fire"></i> ケンチェ激推しグルメ <i class="fas fa-fire"></i></div>
   <div class="recommendGourmetContainer first">
     <div class="recommendGourmetBox">
+      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('morishita'); ?>
+      <div class="recommendGourmetImg">
+        <a href="<?php echo the_permalink($recommend_articles_id); ?>">
+          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="morishita" loading="lazy" />
+        </a>
+      </div>
+    </div>
+
+    <div class="recommendGourmetBox">
       <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('hatinoasiha'); ?>
       <div class="recommendGourmetImg">
         <a href="<?php echo the_permalink($recommend_articles_id); ?>">
-          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="四日市 はちのあしは" loading="lazy" />
+          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="hatinoasiha" loading="lazy" />
         </a>
       </div>
     </div>
 
     <div class="recommendGourmetBox">
-      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('ise-morisupa'); ?>
+      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('ace-burger'); ?>
       <div class="recommendGourmetImg">
         <a href="<?php echo the_permalink($recommend_articles_id); ?>">
-          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="伊勢 喫茶モリ" loading="lazy" />
+          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="ace-burger" loading="lazy" />
         </a>
       </div>
     </div>
 
     <div class="recommendGourmetBox">
-      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('ise-kippu'); ?>
+      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('shinmikaku'); ?>
       <div class="recommendGourmetImg">
         <a href="<?php echo the_permalink($recommend_articles_id); ?>">
-          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="伊勢 吉風" loading="lazy" />
-        </a>
-      </div>
-    </div>
-
-    <div class="recommendGourmetBox">
-      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('yashiro'); ?>
-      <div class="recommendGourmetImg">
-        <a href="<?php echo the_permalink($recommend_articles_id); ?>">
-          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="南伊勢 網本の八代" loading="lazy" />
+          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="shinmikaku" loading="lazy" />
         </a>
       </div>
     </div>
@@ -271,37 +290,37 @@
 
   <div class="recommendGourmetContainer">
     <div class="recommendGourmetBox">
-      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('tayu-tau'); ?>
-      <div class="recommendGourmetImg">
-        <a href="<?php echo the_permalink($recommend_articles_id); ?>">
-          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="津市 tayu-tau" loading="lazy" />
-        </a>
-      </div>
-    </div>
-
-    <div class="recommendGourmetBox">
-      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('uchida-horumon'); ?>
-      <div class="recommendGourmetImg">
-        <a href="<?php echo the_permalink($recommend_articles_id); ?>">
-          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="志摩 うちだホルモン" loading="lazy" />
-        </a>
-      </div>
-    </div>
-
-    <div class="recommendGourmetBox">
-      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('snowdrop'); ?>
-      <div class="recommendGourmetImg">
-        <a href="<?php echo the_permalink($recommend_articles_id); ?>">
-          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="津市 スノードロップ" loading="lazy" />
-        </a>
-      </div>
-    </div>
-
-    <div class="recommendGourmetBox">
       <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('magazu'); ?>
       <div class="recommendGourmetImg">
         <a href="<?php echo the_permalink($recommend_articles_id); ?>">
-          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="大帝国 マガーズドーナツ" loading="lazy" />
+          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="magazu" loading="lazy" />
+        </a>
+      </div>
+    </div>
+
+    <div class="recommendGourmetBox">
+      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('mikou'); ?>
+      <div class="recommendGourmetImg">
+        <a href="<?php echo the_permalink($recommend_articles_id); ?>">
+          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="mikou" loading="lazy" />
+        </a>
+      </div>
+    </div>
+
+    <div class="recommendGourmetBox">
+      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('osse'); ?>
+      <div class="recommendGourmetImg">
+        <a href="<?php echo the_permalink($recommend_articles_id); ?>">
+          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="osse" loading="lazy" />
+        </a>
+      </div>
+    </div>
+
+    <div class="recommendGourmetBox">
+      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('tree-crop'); ?>
+      <div class="recommendGourmetImg">
+        <a href="<?php echo the_permalink($recommend_articles_id); ?>">
+          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="yamachanti" loading="lazy" />
         </a>
       </div>
     </div>
@@ -353,8 +372,8 @@
         <tr>
           <td class="banzukeRank fourth">4位</td>
           <td class="banzukePost">
-            <h3><a class="articleLink" href="https://www.kencellara.com/entry/itiensou">一円相</a></h3>
-            <p>三重県松阪市にあるコスパ最強の居酒屋</p>
+            <h3><a class="articleLink" href="https://www.kencellara.com/entry/kazamidori">風見鶏</a></h3>
+            <p>ケンチェ飯選ぶ！県内でトップクラスに旨いラーメン屋</p>
           </td>
           <td class="banzukeStar fourth">
             <div class="star-rating">
@@ -365,8 +384,8 @@
         <tr>
           <td class="banzukeRank fifth">5位</td>
           <td class="banzukePost">
-            <h3><a class="articleLink" href="https://www.kencellara.com/entry/misono">味園焼肉店</a></h3>
-            <p>松阪と言えばの極上霜降り焼肉を堪能</p>
+            <h3><a class="articleLink" href="https://www.kencellara.com/entry/morishita">酒蔵森下</a></h3>
+            <p>伊勢市駅前にある最高にして最強の居酒屋</p>
           </td>
           <td class="banzukeStar fifth">
             <div class="star-rating">
@@ -399,7 +418,7 @@
 
 <!-- modal open -->
 <div id='kenceWindowModalOpen' class="kenceWindowModalOpen">
-  <a class="js-modal-open" href="" data-target="modal01">ケンチェの窓口</a>
+  <a id="js-modal-open-1" href="" data-target="modal01">ケンチェの窓口</a>
 </div>
 <!-- ./modal open -->
 
@@ -421,9 +440,7 @@
 </div>
 
 <div class="kencemeshiExplain">
-  <div class="kencemeshiExplainHeader topPageHeader">
-    ケンチェ飯とは？
-  </div>
+  <div class="kencemeshiExplainHeader topPageHeader">ケンチェ飯とは？</div>
   <div class="kencemeshiExplainContents">
     <img src="<?php echo $upload_dir['baseurl']; ?>/toppage/kence_explain.jpg" alt="ケンチェ飯の説明" loading="lazy" />
     <p>三重県生まれ三重県育ちの「<strong>ケンチェラーラ.</strong>」が</p>
@@ -431,75 +448,19 @@
     <p>三重県の飲食店を探す際, <strong><u>カテゴリー別</u>, <u>エリア別</u></strong>に検索が可能.</p>
     <p><strong><u>読者限定のイベント</u></strong>や<strong><u>特典</u></strong>が盛りだくさんなので、ぜひご活用ください.</p>
     <p><span class="instaText">Instagram</span>で随時情報をお知らせ <a class="instaLink" href="https://www.instagram.com/kencellara_food/"><strong><u>@kencellara_food</u></strong></a></p>
-    <!-- <p class="p_f12em"><strong>ケンチェ飯の詳細は<a class="supportLink p_link" href=<?php echo get_permalink( $support_page_id ); ?>>こちら>></a></strong></p> -->
+    <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/wbnOVqYOFP8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p style="font-size:19px;text-align:center;"><strong>20秒でわかる『ケンチェ飯』<i class="fas fa-video"></i></strong></p>
   </div>
 </div>
 
 <div class="kencemeshiHistory">
-  <div class="kencemeshiHistoryHeader topPageHeader">ケンチェ飯の実績</div>
+  <div class="kencemeshiHistoryHeader topPageHeader">ケンチェ飯の歴史</div>
   <div class="kencemeshiHistoryContents">
-    <div class="year">
-      <h3>2020年</h3>
-      <div class="month">
-        <h4>8月</h4>
-        <ul>
-          <li>「ケンチェ飯」本格始動</li>
-        </ul>
-      </div>
-      <div class="month">
-        <h4>9月</h4>
-        <ul>
-          <li>GoogleAdsense広告連携開始</li>
-        </ul>
-      </div>
-      <div class="month">
-        <h4>11月</h4>
-        <ul>
-          <li><span style="color: #ff0000;"><strong>月間アクセス数 12703 PV</strong></span></li>
-        </ul>
-      </div>
-      <div class="month">
-        <h4>12月</h4>
-        <ul>
-          <li><strong><span style="color: #ff0000;">月間アクセス数  13948 PV</span></strong></li>
-        </ul>
-      </div>
-    </div>
-    <div class="year">
-      <h3>2021年</h3>
-      <div class="month">
-        <h4>1月</h4>
-        <ul>
-          <li><strong><span style="color: #ff0000;">月間アクセス数 18757 PV</span></strong></li>
-          <li><a href="https://miecolle.net/hito/1282" target="_blank" rel="noreferrer">ミエコレ 飲食店ライターとして「ケンチェ飯」掲載  <i class="fas fa-external-link-alt"></i></a></li>
-          <li>にっこう亭 取材依頼 受託</li>
-          <li><a href="https://www.kencellara.com/entry/2021-1-event" target="_blank" rel="noreferrer">江戸橋 富や コラボイベント 開催  <i class="fas fa-external-link-alt"></i></a></li>
-        </ul>
-      </div>
-      <div class="month">
-        <h4>2月</h4>
-        <ul>
-          <li><span style="color: #ff0000;"><strong>月間アクセス数 27704 PV</strong></span></li>
-          <li>三重タイムズ「ケンチェ飯」新聞掲載</li>
-          <li><a href="https://otonamie.jp/?page_id=34706" target="_blank" rel="noreferrer">OTONAMIE 地域のWEBメディアとして「ケンチェ飯」掲載  <i class="fas fa-external-link-alt"></i></a></li>
-          <li>CAFE&amp;BAR TRIPLE A 取材依頼 受託</li>
-        </ul>
-      </div>
-      <div class="month">
-        <h4>3月</h4>
-        <ul>
-          <li>B&amp;Bフォレスト志摩 取材依頼 受託</li>
-          <li>株式会社えんこね 業務提携</li>
-        </ul>
-      </div>
-      <div class="month">
-        <h4>4月</h4>
-        <ul>
-          <li>ごきげんえびすHANARE 取材依頼 受託</li>
-          <li>麵屋AZITO 取材依頼 受託</li>
-        </ul>
-      </div>
-    </div>
+    <?php get_template_part('modules/history'); ?>
+  </div>
+  <div class="kencemeshiAnalytics">
+    <div class="kencemeshiAnalyticsHeader commonHeader">月別サイト運用結果</div>
+    <img src="<?php echo $upload_dir['baseurl']; ?>/common/analytics_202107.jpg" alt="アナリティクス202107" loading="lazy" />
   </div>
   <div class="supportZone">
     <script src="https://codoc.jp/js/cms.js" data-css="red-square" charset="UTF-8" defer></script>
@@ -508,20 +469,6 @@
       <p class="acknowledgement">
         お気持ありがとうございます。支援金は、ケンチェ飯の活動費用として大切に使わせていただきます。今後とも応援よろしくお願いします。
       </p>
-      <!-- <h3 class="supportNavTitle">支援金の使い道</h3>
-      <ul class="supportNavList">
-        <li>ブログ維持費</li>
-        <li>活動費</li>
-        <li>宣伝費</li>
-      </ul> -->
-      <!-- <h3 class="supportNavTitle">支援額</h3>
-      <ul class="supportNavList">
-        <li>100円～10000円</li>
-      </ul> -->
-      <!-- <h3 class="supportNavTitle">コラボ・お仕事の依頼</h3>
-      <ul class="supportNavList">
-        <li><a class="supportLink" href=<?php echo get_permalink( $kence_work_page_id ); ?>>こちら</a>をクリック！</li>
-      </ul> -->
       <p class="to_kence_work">コラボ・お仕事のご依頼は上記『ケンチェの窓口』からお願い致します。</p>
     </div>
   </div>

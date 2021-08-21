@@ -2,7 +2,7 @@
   <!--シェアボタン-->
   <div class="snsShare">
     <div class="snsShareInner">
-      <span>シェアしてね <i class="fas fa-share-alt"></i></span>
+      <span>シェアする <i class="fas fa-share-alt"></i></span>
       <!--Facebook-->
       <a class="facebook-button" href="//www.facebook.com/sharer.php?u=<?php echo urlencode(get_permalink()); ?>&t=<?php echo urlencode(the_title("","",0)); ?>" target="_blank" title="facebookでシェアする">
         <i class="fab fa-facebook-square"></i>
