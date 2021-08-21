@@ -25,7 +25,7 @@
   			<main id="main" role="main">
           <div class="tagSearchZone">
             <?php if ($is_multi): ?>
-              <div class="commonHeader tagSearchHeader">『<?php echo implode(" + ", $multi_tags_arr); ?>』のお店一覧</div>
+              <div class="commonHeader tagSearchHeader">『<?php echo implode(" × ", $multi_tags_arr); ?>』のお店一覧</div>
             <?php else: ?>
               <div class="commonHeader tagSearchHeader">『<?php echo $tag_name; ?>』のお店一覧</div>
             <?php endif; ?>

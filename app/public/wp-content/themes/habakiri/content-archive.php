@@ -1,5 +1,7 @@
 <?php
 	$cat = get_category( get_query_var("cat") );
+	$parent_cat_slug = get_category($cat->category_parent)->slug;
+	// var_dump($parent_cat);
 	$cat_slug = $cat->slug;
 	$cat_name = $cat->name;
 	$query_vars = $wp_query->query_vars;
@@ -9,7 +11,9 @@
 <article class="article article--archive">
 	<div class="entry">
 		<?php do_action( 'habakiri_before_entries' ); ?>
-		<?php if ($cat_slug != '' && $paged < 2) {
+		<?php if ($parent_cat_slug == 'area') {
+			get_template_part( 'modules/category-area' );
+		} elseif ($cat_slug != '' && $paged < 2) {
 			get_template_part( 'modules/category-' . $cat_slug );
 		} ?>
 		<div class="categoryHeaderZone">
