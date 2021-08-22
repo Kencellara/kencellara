@@ -19,7 +19,7 @@
 			これは雑誌や新聞ではなく、<strong>電子媒体メディアならではの強み</strong>となっています。
 		</p>
 		<p><span class="p_crimson p_bold">三重県の飲食業界を活気づける</span>ために、今後も必死で執筆・改善に取り組んでいきますので是非ご協力をお願いします。</p>
-		<p>詳しくは<strong>下記連絡先</strong>、または<strong>お問い合わせフォーム</strong>からお願いします。<span class="p_crimson p_bold">（注意：名前・連絡先・要件の3点は必ずご記入願います。）</span></p>
+		<p>取材・執筆のご依頼やご要望等は下記『<strong>ケンチェの窓口</strong>』または『<strong>ケンチェ飯の連絡先</strong>』からお願いします。<span class="p_crimson p_bold">（注意：名前・連絡先・要件の3点は必ずご記入願います。）</span></p>
 		<!-- modal open -->
 		<div class="kenceWindowModalOpen kenceWorkWindowModalOpen">
 		  <a id="js-modal-open-2" href="" data-target="modal02">ケンチェの窓口</a>
