@@ -11,7 +11,7 @@
 	      foreach ($cats as $cat) {
 					$parent_id = $cat->category_parent;
 					$parent_name = get_category($parent_id)->category_nicename;
-	        if ($parent_name == 'area') {
+	        if ($parent_name == 'area' || $parent_name == 'outside_mie') {
 	    ?>
 	      <span class="tagPostAreaCat"><?php echo $cat->name; ?></span>
 	    <?php break;}} ?>
