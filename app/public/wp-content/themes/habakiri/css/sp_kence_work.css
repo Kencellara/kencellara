@@ -2,6 +2,12 @@
   .kence_work {
     padding: 15px 5px;
   }
+  .kenceWorkWindow {
+    padding: 10px;
+  }
+  .kenceWorkWindowExplain {
+    font-size: 14px;
+  }
   .kencemeshiHistoryContents.kencemeshiHistoryContents {
     padding: 5px;
   }
@@ -17,12 +23,6 @@
   }
   .hyokkoriButace {
     display: none;
-  }
-  .whatKencemeshiDoHeader {
-    font-size: 20px;
-  }
-  .whatKencemeshiDoMain {
-    padding: 12px;
   }
   .kencemeshiSupportHeader {
     font-size: 20px;
