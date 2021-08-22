@@ -51,29 +51,6 @@
 	</div>
 </div>
 
-<!-- <div class="kenceWorkWindowHeader topPageHeader">お問い合わせフォーム</div>
-<div class="kenceWorkWindow kenceWorkContents">
-	<div class="kenceWorkWindowExplain">
-		お問い合わせは下記フォーム（ケンチェの窓口）よりお願い致します。
-	</div>
-	<div class="kenceWindowModalOpen kenceWorkWindowModalOpen">
-	  <a id="js-modal-open-2" href="" data-target="modal02">ケンチェの窓口</a>
-	</div>
-	<div id="modal02" class="kenceWindowModal js-modal">
-	  <div class="kenceWindowModalBg js-modal-close"></div>
-	  <div class="kenceWindowModalContent">
-	    <div class="kenceWindowModalContentInner">
-	      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf7z8zl1FGl9_pWK9EOQBTbHDTRJ3hd8yIlKoSIPhl4-LbGfg/viewform?embedded=true" width="639" height="830" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
-	      <a class="js-modal-close kenceWindowModalClose" href=""><span>閉じる</span></a>
-	    </div>
-	  </div>
-	</div>
-	<div class="kenceWorkWindowCaution">
-	  ※Googleフォームが開きます<br/>
-	  ※ページの遷移はございません
-	</div>
-</div> -->
-
 <div class="kencemeshiHistoryHeader topPageHeader">ケンチェ飯の歴史</div>
 <div class="kencemeshiHistoryContents kenceWorkContents">
   <?php get_template_part('modules/history'); ?>
@@ -118,7 +95,6 @@
     <p>少数精鋭で最高の ”<span class="p_crimson">グルメディア</span>” を作っています。</p>
     <p>三重県で生活を営む人々や県外から三重を訪れる方々が、少しでも「三重の食で感動する」お手伝いができればと考えています。</p>
     <p>また高齢者の飲食店オーナー様の支援、飲食店の宣伝活動も行っています。</p>
-    <p>毎月、取り組んだこと・活動内容は<a href="https://www.kencellara.com/archive/category/%E3%83%96%E3%83%AD%E3%82%B0%E9%81%93">活動の忘備録</a>に記しているので、気になる方はチェックしてみてください。</p>
     <p>このような、ケンチェ飯の目的や活動にご賛同いただける企業・団体・行政などの方々に、ご支援・スポンサー・タイアップのご提案をさせていただいております。<br />何卒、ご理解とご協力を賜りますようお願い申し上げます。</p>
   </div>
 </div>
