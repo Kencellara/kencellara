@@ -183,3 +183,39 @@
   font-weight: bold;
   padding: 8px 15px 0;
 }
+
+.tagSearch {
+  text-align: center;
+}
+.tagSearchBtn {
+  width: 220px;
+  height: 50px;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 1px 2px 0px 1px black;
+}
+.tagCrowd {
+  display: none;
+  margin-top: 20px;
+}
+.tagCrowd.open {
+  display: block;
+}
+.tagCrowd a {
+  display: inline-block;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 0 10px 10px 0;
+  font-weight: bold;
+}
+.budgetTagCrowd a {
+  color: blueviolet;
+}
+.genreTagCrowd a {
+  color: darkblue;
+}
