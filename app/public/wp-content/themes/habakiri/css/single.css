@@ -107,6 +107,11 @@
 .trackbacks {
   display: none;
 }
+.tmpInfo {
+  text-align: center;
+  font-weight: bold;
+  background-color: lightyellow;
+}
 
 /*シェアボタン*/
 .snsShareInner {
