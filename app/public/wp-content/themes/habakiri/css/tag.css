@@ -48,8 +48,13 @@
 }
 .toTopBtnZone {
   display: flex;
-  background-image: url("https://kencellara.com/wp-content/uploads/sticker/300/三重県最高じゃ_300.png");
   background-size: contain;
+}
+.toTopBtnZone.toSearch {
+  background-image: url("https://kencellara.com/wp-content/uploads/sticker/300/三重県最高じゃ_300.png");
+}
+.toTopBtnZone.toTop {
+  background-image: url("https://kencellara.com/wp-content/uploads/sticker/300/三重グルメならけんちぇ飯_300.png");
 }
 .toTopBtn {
   display: inline-block;

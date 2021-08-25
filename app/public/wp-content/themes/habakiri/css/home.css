@@ -29,7 +29,7 @@ section.typeA::after {
 	display: block;
 	background: darkgoldenrod;
 }
-section.typeA .tabLabel {	/* タブ */
+section.typeA .tabLabel {
   font-size: 20px;
 	margin-right: 3px;
 	padding: 8px 12px;
@@ -38,7 +38,6 @@ section.typeA .tabLabel {	/* タブ */
 	border-radius: 3px 3px 0 0;
 	color: saddlebrown;
 	background: cornsilk;
-	transition: .5s ;
 	cursor: pointer;
   text-align: center;
 }

@@ -38,7 +38,7 @@
     </a>
   </div>
   <div>
-    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('torigen'); ?>
+    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('rita'); ?>
     <a href="<?php echo the_permalink($slider_articles_id); ?>">
       <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
     </a>
@@ -270,10 +270,10 @@
     </div>
 
     <div class="recommendGourmetBox">
-      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('ace-burger'); ?>
+      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('le-bamboche'); ?>
       <div class="recommendGourmetImg">
         <a href="<?php echo the_permalink($recommend_articles_id); ?>">
-          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="ace-burger" loading="lazy" />
+          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="le-bamboche" loading="lazy" />
         </a>
       </div>
     </div>
@@ -290,10 +290,10 @@
 
   <div class="recommendGourmetContainer">
     <div class="recommendGourmetBox">
-      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('magazu'); ?>
+      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('akari'); ?>
       <div class="recommendGourmetImg">
         <a href="<?php echo the_permalink($recommend_articles_id); ?>">
-          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="magazu" loading="lazy" />
+          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="akari" loading="lazy" />
         </a>
       </div>
     </div>
@@ -308,10 +308,10 @@
     </div>
 
     <div class="recommendGourmetBox">
-      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('osse'); ?>
+      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('yakiniku-genchan'); ?>
       <div class="recommendGourmetImg">
         <a href="<?php echo the_permalink($recommend_articles_id); ?>">
-          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="osse" loading="lazy" />
+          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="yakiniku-genchan" loading="lazy" />
         </a>
       </div>
     </div>
