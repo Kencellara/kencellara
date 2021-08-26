@@ -1,11 +1,29 @@
 .categoryZone {
   padding: 10px;
-  margin: 0 20px 10px;
+  margin: 0 20px 0;
   background-color: cornsilk;
+}
+.categoryZone.area {
+  padding-bottom: 25px;
 }
 
 .categoryAd {
   margin: 20px 0;
+}
+
+.areaHeader {
+  width: 350px;
+  margin: 10px auto 25px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: burlywood;
+  color: #333;
+  border: 2px outset burlywood;
+  text-shadow: 1px 1px 1px #fff;
+}
+.areaHeader i {
+  margin: 0 .5em;
 }
 
 /* 店舗数 */
@@ -107,7 +125,7 @@
 
 .categoryHeaderZone {
   background-color: cornsilk;
-  margin: 0 20px 10px;
+  margin: 0 20px 0;
   padding: 20px 0;
 }
 .categoryHeader {

@@ -5,9 +5,11 @@
   $budget_tag_arr = array('500', '1000', '2000', '3000', '4000', '5000');
   $genre_tag_arr = array('gurumet-b', 'italian', 'udon', 'meat', 'cafe', 'curry', 'sweets', 'chain', 'take-out', 'food-fight', 'humburger', 'bakery', 'french', 'misyuran', 'ramen', 'chuka', 'set-meal', 'izakaya', 'sushi', 'yakitori', 'yakiniku', 'all-you-can-eat', 'gyouza');
   $cat_slug = $wp_query->query_vars['category_name'];
+  $cat_name = $wp_query->queried_object->name;
 ?>
 
 <div class="categoryZone area">
+  <div class="areaHeader"><i class="fas fa-utensils"></i><?= $cat_name ?>のグルメ<i class="fas fa-utensils"></i></div>
   <div class="tagSearch">
     <button id="js-budgetBtn" class="tagSearchBtn">予算</button><button id="js-genreBtn" class="tagSearchBtn">ジャンル</button>
   </div>

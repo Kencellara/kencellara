@@ -9,7 +9,7 @@
     background-size: 700px;
   }
   .categoryHeaderZone {
-    margin: 5px;
+    margin: 0;
   }
   .catRcmdRankRow {
     margin-bottom: 15px;
@@ -23,5 +23,25 @@
   .catRcmRankDescription {
     padding: 4px 7px;
     font-size: 15px;
+  }
+  .areaHeader {
+    width: 330px;
+    font-size: 22px;
+    margin: 10px auto 20px;
+  }
+  .tagSearchBtn {
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+  }
+  .tagCrowd {
+    margin-top: 15px;
+  }
+  .tagCrowd a {
+    padding: 8px;
+    margin: 0 8px 8px 0;
+  }
+  .categoryZone.area {
+    padding-bottom: 10px;
   }
 }
