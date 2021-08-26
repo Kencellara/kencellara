@@ -207,6 +207,10 @@
 	transform: translate(0,2px);
 	box-shadow: none;
 }
+.tagSearchBtn.open {
+  background-color: #333;
+  color: #fff;
+}
 .tagCrowd {
   display: none;
   margin-top: 20px;
