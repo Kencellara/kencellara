@@ -8,6 +8,9 @@
 .tagSearchHeader {
   margin-bottom: 35px;
 }
+.tagSearchHeader.multi {
+  width: 500px;
+}
 .tagPostContainer {
   color: #333;
   padding: 10px 20px;
@@ -74,4 +77,7 @@ a.toTopBtn:active {
   color: cornsilk;
   background-color: saddlebrown;
   border-color: cornsilk;
+}
+.entries.tag {
+  margin: 0;
 }
