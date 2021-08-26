@@ -225,10 +225,10 @@
   border-radius: 10px;
   margin: 0 10px 10px 0;
   font-weight: bold;
+  color: #333;
+  border: 1px solid #333;
 }
-.budgetTagCrowd a {
-  color: blueviolet;
-}
-.genreTagCrowd a {
-  color: darkblue;
+.tagCrowd a:hover {
+  background-color: #333;
+  color: #fff;
 }
