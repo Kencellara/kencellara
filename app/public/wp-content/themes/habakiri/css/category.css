@@ -196,7 +196,16 @@
   background-color: #fff;
   border-radius: 10px;
   border: none;
-  box-shadow: 1px 2px 0px 1px black;
+  box-shadow: 1px 2px 0px 0px black;
+}
+.tagSearchBtn:hover {
+  opacity: 0.7;
+}
+.tagSearchBtn:active {
+  -webkit-transform: translate(0,2px);
+	-moz-transform: translate(0,2px);
+	transform: translate(0,2px);
+	box-shadow: none;
 }
 .tagCrowd {
   display: none;
