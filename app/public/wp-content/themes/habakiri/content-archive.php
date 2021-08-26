@@ -1,7 +1,6 @@
 <?php
 	$cat = get_category( get_query_var("cat") );
 	$parent_cat_slug = get_category($cat->category_parent)->slug;
-	// var_dump($parent_cat);
 	$cat_slug = $cat->slug;
 	$cat_name = $cat->name;
 	$query_vars = $wp_query->query_vars;
@@ -17,7 +16,7 @@
 			get_template_part( 'modules/category-' . $cat_slug );
 		} ?>
 		<div class="categoryHeaderZone">
-			<?php if ($cat_slug == ''): ?>
+			<?php if ($cat_slug == '' || $parent_cat_slug == 'area'): ?>
 				<div class="categoryHeader">新着記事</div>
 			<?php else: ?>
 				<div class="categoryHeader">『<?php echo $cat_name; ?>』新着記事</div>
