@@ -789,6 +789,27 @@ class Habakiri_Base_Functions {
 	  return $number;
 	}
 
+	public function getMultiTagPosts($slug_arr) {
+	  global $wpdb;
+
+		$arg = array(
+	    'post_status' => 'publish',
+	    'post_type' => 'post',
+	    'tax_query' => array(
+	      array(
+	        'taxonomy' => 'post_tag',
+	        'field' => 'slug',
+	        'terms' => $slug_arr,
+	        'operator' => 'AND'
+	      )
+	    )
+		);
+		$posts = get_posts($arg);
+		$posts_count = count($posts);
+
+	  return $posts_count;
+	}
+
 	public function sortPostsByCategory() {
 		global $posts;
 

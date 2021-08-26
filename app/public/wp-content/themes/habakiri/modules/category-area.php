@@ -13,6 +13,10 @@
   </div>
   <div id="budgetTagCrowd" class="budgetTagCrowd tagCrowd">
     <?php foreach ($budget_tag_arr as $tag_slug):
+      $posts_count = Habakiri_Base_Functions::getMultiTagPosts(array($cat_slug, $tag_slug));
+      if ($posts_count < 1) {
+        continue;
+      }
       $tags = get_tags(array('slug' => $tag_slug));
       $tag_name = $tags[0]->name;
       $path = '/tag/' . $cat_slug . '+' . $tag_slug;
@@ -23,6 +27,10 @@
   </div>
   <div id="genreTagCrowd" class="genreTagCrowd tagCrowd">
     <?php foreach ($genre_tag_arr as $tag_slug):
+      $posts_count = Habakiri_Base_Functions::getMultiTagPosts(array($cat_slug, $tag_slug));
+      if ($posts_count < 1) {
+        continue;
+      }
       $tags = get_tags(array('slug' => $tag_slug));
       $tag_name = $tags[0]->name;
       $path = '/tag/' . $cat_slug . '+' . $tag_slug;
