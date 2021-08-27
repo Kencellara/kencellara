@@ -250,3 +250,8 @@
   background-color: #333;
   color: #fff;
 }
+.tagCrowd a:active,
+.tagCrowd a:focus {
+  background-color: #fff;
+  color: #333;
+}
