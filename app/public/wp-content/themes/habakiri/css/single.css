@@ -418,6 +418,7 @@
 }
 .menuCaution {
   text-align: right;
+  margin-bottom: 10px;
 }
 .list03::before {
   content: "MENU";
