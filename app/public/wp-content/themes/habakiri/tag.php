@@ -30,11 +30,11 @@
           <div class="tagSearchZone">
             <?php if ($is_multi): ?>
               <div class="commonHeader tagSearchHeader multi">『<?php echo implode(" × ", $multi_tags_arr); ?>』のお店</div>
-              <?php while ( have_posts() ) : the_post(); ?>
-                <div class="entries tag">
+              <div class="entries tag">
+                <?php while ( have_posts() ) : the_post(); ?>
                   <?php get_template_part( 'content', 'summary' ); ?>
-                </div>
-              <?php endwhile; ?>
+                <?php endwhile; ?>
+              </div>
             <?php else: ?>
               <div class="commonHeader tagSearchHeader">『<?php echo $tag_name; ?>』のお店</div>
               <?php while ( have_posts() ) : the_post(); ?>
