@@ -1,8 +1,8 @@
 <?php
-  add_action('wp_enqueue_scripts', wp_enqueue_style('tag-style', get_template_directory_uri() . '/css/tag.css', array('habakiri', 'common-style'), '1.0.11.2'));
-  add_action('wp_enqueue_scripts', wp_enqueue_style('sp_tag-style', get_template_directory_uri() . '/css/sp_tag.css', array(), '1.0.7'));
-  add_action('wp_enqueue_scripts', wp_enqueue_style('archive-style', get_template_directory_uri() . '/css/archive.css', array(), '1.0.7'));
-  add_action('wp_enqueue_scripts', wp_enqueue_style('sp_archive-style', get_template_directory_uri() . '/css/sp_archive.css', array(), '1.0.7'));
+  add_action('wp_enqueue_scripts', wp_enqueue_style('tag-style', get_template_directory_uri() . '/css/tag.css', array('habakiri', 'common-style'), '1.0.12'));
+  add_action('wp_enqueue_scripts', wp_enqueue_style('sp_tag-style', get_template_directory_uri() . '/css/sp_tag.css', array(), '1.0.12'));
+  add_action('wp_enqueue_scripts', wp_enqueue_style('archive-style', get_template_directory_uri() . '/css/archive.css', array(), '1.0.12'));
+  add_action('wp_enqueue_scripts', wp_enqueue_style('sp_archive-style', get_template_directory_uri() . '/css/sp_archive.css', array(), '1.0.12'));
   add_action('wp_enqueue_scripts', wp_enqueue_style('new_posts-style', get_template_directory_uri() . '/css/new_posts.css', array(), '1.0.7'));
   add_action('wp_enqueue_scripts', wp_enqueue_style('sp_new_posts-style', get_template_directory_uri() . '/css/sp_new_posts.css', array(), '1.0.7'));
 ?>
