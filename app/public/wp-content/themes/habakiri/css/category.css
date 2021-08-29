@@ -246,12 +246,9 @@
   color: #333;
   border: 1px solid #333;
 }
-.tagCrowd a:hover {
-  background-color: #333;
-  color: #fff;
-}
+.tagCrowd a:hover,
 .tagCrowd a:active,
 .tagCrowd a:focus {
-  background-color: #fff;
-  color: #333;
+  background-color: #333;
+  color: #fff;
 }

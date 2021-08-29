@@ -34,6 +34,9 @@
     height: 40px;
     font-size: 18px;
   }
+  .tagSearchBtn:hover {
+    opacity: 1;
+  }
   .tagCrowd {
     margin-top: 15px;
   }
