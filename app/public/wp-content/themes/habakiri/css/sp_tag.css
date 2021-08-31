@@ -5,6 +5,9 @@
   .tagSearchHeader {
     margin-bottom: 30px;
   }
+  .tagSearchHeader.multi {
+    width: 320px;
+  }
   .tagPostContainer {
     margin-bottom: 15px;
   }

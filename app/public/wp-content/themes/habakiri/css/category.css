@@ -1,11 +1,29 @@
 .categoryZone {
   padding: 10px;
-  margin: 0 20px 10px;
+  margin: 0 20px 0;
   background-color: cornsilk;
+}
+.categoryZone.area {
+  padding-bottom: 25px;
 }
 
 .categoryAd {
   margin: 20px 0;
+}
+
+.areaHeader {
+  width: 350px;
+  margin: 10px auto 25px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: burlywood;
+  color: #333;
+  border: 2px outset burlywood;
+  text-shadow: 1px 1px 1px #fff;
+}
+.areaHeader i {
+  margin: 0 .5em;
 }
 
 /* 店舗数 */
@@ -107,7 +125,7 @@
 
 .categoryHeaderZone {
   background-color: cornsilk;
-  margin: 0 20px 10px;
+  margin: 0 20px 0;
   padding: 20px 0;
 }
 .categoryHeader {
@@ -182,4 +200,55 @@
   font-size: 16px;
   font-weight: bold;
   padding: 8px 15px 0;
+}
+
+.tagSearch {
+  text-align: center;
+}
+.tagSearchBtn {
+  width: 220px;
+  height: 50px;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 1px 2px 0px 0px black;
+}
+.tagSearchBtn:hover {
+  opacity: 0.7;
+}
+.tagSearchBtn:active {
+  -webkit-transform: translate(0,2px);
+	-moz-transform: translate(0,2px);
+	transform: translate(0,2px);
+	box-shadow: none;
+}
+.tagSearchBtn.open {
+  background-color: #333;
+  color: #fff;
+}
+.tagCrowd {
+  display: none;
+  margin-top: 20px;
+}
+.tagCrowd.open {
+  display: block;
+}
+.tagCrowd a {
+  display: inline-block;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 0 10px 10px 0;
+  font-weight: bold;
+  color: #333;
+  border: 1px solid #333;
+}
+.tagCrowd a:hover,
+.tagCrowd a:active,
+.tagCrowd a:focus {
+  background-color: #333;
+  color: #fff;
 }

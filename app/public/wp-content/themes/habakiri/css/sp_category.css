@@ -1,6 +1,7 @@
 @media screen and (max-width: 420px) {
   .categoryZone {
-    margin: 10px 5px;
+    margin: 0;
+    padding: 5px;
   }
   .categoryRecommendInner {
     background-position-y: -75px;
@@ -8,17 +9,42 @@
     background-size: 700px;
   }
   .categoryHeaderZone {
-    margin: 5px;
+    margin: 0;
   }
   .catRcmdRankRow {
     margin-bottom: 15px;
     padding: 5px 0;
   }
   .catRcmRankHead > span {
-    margin-right: 10px;
+    margin-right: 0;
     padding: 5px;
+    font-size: 16px;
   }
   .catRcmRankDescription {
     padding: 4px 7px;
+    font-size: 15px;
+  }
+  .areaHeader {
+    width: 330px;
+    font-size: 22px;
+    margin: 10px auto 20px;
+  }
+  .tagSearchBtn {
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+  }
+  .tagSearchBtn:hover {
+    opacity: 1;
+  }
+  .tagCrowd {
+    margin-top: 15px;
+  }
+  .tagCrowd a {
+    padding: 8px;
+    margin: 0 8px 8px 0;
+  }
+  .categoryZone.area {
+    padding-bottom: 10px;
   }
 }

@@ -246,3 +246,7 @@ a.kenceWindowModalClose {
 .followInsta:hover span {
   opacity: 0.8;
 }
+
+.sub-page-contents {
+  padding-top: 10px;
+}

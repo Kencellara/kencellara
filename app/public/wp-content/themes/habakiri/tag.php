@@ -1,6 +1,10 @@
 <?php
-  add_action('wp_enqueue_scripts', wp_enqueue_style('tag-style', get_template_directory_uri() . '/css/tag.css', array('habakiri', 'common-style'), '1.0.11.2'));
-  add_action('wp_enqueue_scripts', wp_enqueue_style('sp_tag-style', get_template_directory_uri() . '/css/sp_tag.css', array(), '1.0.7'));
+  add_action('wp_enqueue_scripts', wp_enqueue_style('tag-style', get_template_directory_uri() . '/css/tag.css', array('habakiri', 'common-style'), '1.0.12'));
+  add_action('wp_enqueue_scripts', wp_enqueue_style('sp_tag-style', get_template_directory_uri() . '/css/sp_tag.css', array(), '1.0.12'));
+  add_action('wp_enqueue_scripts', wp_enqueue_style('archive-style', get_template_directory_uri() . '/css/archive.css', array(), '1.0.12'));
+  add_action('wp_enqueue_scripts', wp_enqueue_style('sp_archive-style', get_template_directory_uri() . '/css/sp_archive.css', array(), '1.0.12'));
+  add_action('wp_enqueue_scripts', wp_enqueue_style('new_posts-style', get_template_directory_uri() . '/css/new_posts.css', array(), '1.0.7'));
+  add_action('wp_enqueue_scripts', wp_enqueue_style('sp_new_posts-style', get_template_directory_uri() . '/css/sp_new_posts.css', array(), '1.0.7'));
 ?>
 <?php
   $tag = get_queried_object();
@@ -25,13 +29,18 @@
   			<main id="main" role="main">
           <div class="tagSearchZone">
             <?php if ($is_multi): ?>
-              <div class="commonHeader tagSearchHeader">『<?php echo implode(" × ", $multi_tags_arr); ?>』のお店一覧</div>
+              <div class="commonHeader tagSearchHeader multi">『<?php echo implode(" × ", $multi_tags_arr); ?>』のお店</div>
+              <div class="entries tag">
+                <?php while ( have_posts() ) : the_post(); ?>
+                  <?php get_template_part( 'content', 'summary' ); ?>
+                <?php endwhile; ?>
+              </div>
             <?php else: ?>
-              <div class="commonHeader tagSearchHeader">『<?php echo $tag_name; ?>』のお店一覧</div>
+              <div class="commonHeader tagSearchHeader">『<?php echo $tag_name; ?>』のお店</div>
+              <?php while ( have_posts() ) : the_post(); ?>
+                <?php get_template_part( 'content', 'tag_summary' ); ?>
+              <?php endwhile; ?>
             <?php endif; ?>
-            <?php while ( have_posts() ) : the_post(); ?>
-      				<?php get_template_part( 'content', 'tag_summary' ); ?>
-      			<?php endwhile; ?>
             <?php get_template_part( 'modules/pagination' ); ?>
           </div>
           <div class="toTopBtnZone toSearch">

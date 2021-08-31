@@ -1,6 +1,6 @@
 .entries {
   background-color: cornsilk;
-  border: 3px outset cornsilk;
+  /* border: 3px outset cornsilk; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
