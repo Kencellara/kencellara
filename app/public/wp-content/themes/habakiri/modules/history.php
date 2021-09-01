@@ -21,7 +21,7 @@
   <div class="month">
     <h4>12月</h4>
     <ul>
-      <li><strong><span style="color: #ff0000;">月間アクセス数  13,948 PV</span></strong></li>
+      <li><strong><span style="color: #ff0000;">月間アクセス数 13,948 PV</span></strong></li>
     </ul>
   </div>
 </div>
@@ -68,7 +68,7 @@
   <div class="month">
     <h4>6月</h4>
     <ul>
-      <li>Instagramフォロワー2000人突破</li>
+      <li>Instagramフォロワー様2000人突破</li>
     </ul>
   </div>
   <div class="month">
@@ -82,7 +82,7 @@
   <div class="month">
     <h4>8月</h4>
     <ul>
-      <!-- <li><strong><span style="color: #ff0000;">月間アクセス数 60,000 PV</span></strong></li> -->
+      <li><strong><span style="color: #ff0000;">月間アクセス数 61,023 PV</span></strong></li>
       <li>【伊勢市】ツリークロップ 様 店舗広告掲載</li>
       <li>【伊勢市】開福亭 様 店舗広告掲載</li>
       <li>【伊勢市】酒蔵森下 様 店舗広告掲載</li>
