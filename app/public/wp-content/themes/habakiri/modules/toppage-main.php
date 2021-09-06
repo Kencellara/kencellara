@@ -5,6 +5,7 @@
   $upload_dir = wp_upload_dir();
   $common_img_dir = $upload_dir['baseurl'] . '/common';
   $sticker_img_dir = $upload_dir['baseurl'] . '/sticker';
+  $toppage_img_dir = $upload_dir['baseurl'] . '/toppage';
   $hokubu_post_count = get_category_by_slug('kameyama')->count + get_category_by_slug('komono')->count + get_category_by_slug('yokkaichi')->count + get_category_by_slug('kuwana')->count;
   $iga_post_count = get_category_by_slug('iga')->count;
   $chubu_post_count = get_category_by_slug('tsu')->count + get_category_by_slug('matsusaka')->count + get_category_by_slug('meiwa')->count + get_category_by_slug('taki')->count;
@@ -44,9 +45,9 @@
     </a>
   </div>
   <div>
-    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('ookami'); ?>
+    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('isemon'); ?>
     <a href="<?php echo the_permalink($slider_articles_id); ?>">
-      <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
+      <img src="<?= $toppage_img_dir ?>/yokoyama.jpg" />
     </a>
   </div>
   <div>
@@ -460,7 +461,7 @@
   </div>
   <div class="kencemeshiAnalytics">
     <div class="kencemeshiAnalyticsHeader commonHeader">月別サイト運用結果</div>
-    <img src="<?php echo $upload_dir['baseurl']; ?>/common/analytics_202107.jpg" alt="アナリティクス202107" loading="lazy" />
+    <img src="<?= $upload_dir['baseurl'] ?>/analytics/analytics_202108.jpg" alt="アナリティクス202108" loading="lazy" />
   </div>
   <div class="supportZone">
     <script src="https://codoc.jp/js/cms.js" data-css="red-square" charset="UTF-8" defer></script>
