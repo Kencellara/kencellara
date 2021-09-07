@@ -54,10 +54,7 @@
 <div class="kencemeshiHistoryHeader topPageHeader">ケンチェ飯の歴史</div>
 <div class="kencemeshiHistoryContents kenceWorkContents">
   <?php get_template_part('modules/history'); ?>
-	<div class="kencemeshiAnalytics">
-    <div class="kencemeshiAnalyticsHeader commonHeader">月別サイト運用結果</div>
-    <img src="<?php echo $upload_dir['baseurl']; ?>/common/analytics_202107.jpg" alt="アナリティクス202107" loading="lazy" />
-  </div>
+  <?php get_template_part('modules/analytics'); ?>
 </div>
 
 <div class="kenceWorkSlogan kenceWorkContents">
