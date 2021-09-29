@@ -38,6 +38,21 @@
   background-color: #fff;
   padding: 10px 30px;
 }
+a.linkHistory {
+  display: block;
+  text-align: center;
+  font-size: 22px;
+  border: 2px solid crimson;
+  margin: 20px 0;
+  background-color: cornsilk;
+  border-radius: 8px;
+  color: crimson;
+  font-weight: bold;
+}
+a.linkHistory:hover {
+  background-color: crimson;
+  color: #fff;
+}
 .kenceWorkExplainQ {
   font-weight: bold;
   font-size: 25px;

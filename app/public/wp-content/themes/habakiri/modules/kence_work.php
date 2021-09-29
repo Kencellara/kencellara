@@ -53,8 +53,9 @@
 
 <div class="kencemeshiHistoryHeader topPageHeader">ケンチェ飯の歴史</div>
 <div class="kencemeshiHistoryContents kenceWorkContents">
-  <?php get_template_part('modules/history'); ?>
-  <?php get_template_part('modules/analytics'); ?>
+	<?php get_template_part('modules/history'); ?>
+	<a class="linkHistory" href="https://kencellara.com/entry/history">過去のコラボ飯・広告掲載店を見る</a>
+	<?php get_template_part('modules/analytics'); ?>
 </div>
 
 <div class="kenceWorkSlogan kenceWorkContents">
