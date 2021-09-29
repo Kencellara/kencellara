@@ -45,19 +45,25 @@
     </a>
   </div>
   <div>
-    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('isemon'); ?>
+    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('history'); ?>
     <a href="<?php echo the_permalink($slider_articles_id); ?>">
-      <img src="<?= $toppage_img_dir ?>/yokoyama.jpg" />
+      <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
     </a>
   </div>
   <div>
-    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('hyakubunnoiti'); ?>
+    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('chicken-kamon'); ?>
     <a href="<?php echo the_permalink($slider_articles_id); ?>">
       <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
     </a>
   </div>
   <div>
     <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('gyouza-misuzu'); ?>
+    <a href="<?php echo the_permalink($slider_articles_id); ?>">
+      <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
+    </a>
+  </div>
+  <div>
+    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('mitani-honten'); ?>
     <a href="<?php echo the_permalink($slider_articles_id); ?>">
       <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
     </a>
@@ -280,10 +286,10 @@
     </div>
 
     <div class="recommendGourmetBox">
-      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('shinmikaku'); ?>
+      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('isemon'); ?>
       <div class="recommendGourmetImg">
         <a href="<?php echo the_permalink($recommend_articles_id); ?>">
-          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="shinmikaku" loading="lazy" />
+          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="isemon" loading="lazy" />
         </a>
       </div>
     </div>
@@ -300,10 +306,10 @@
     </div>
 
     <div class="recommendGourmetBox">
-      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('mikou'); ?>
+      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('macaroni'); ?>
       <div class="recommendGourmetImg">
         <a href="<?php echo the_permalink($recommend_articles_id); ?>">
-          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="mikou" loading="lazy" />
+          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="macaroni" loading="lazy" />
         </a>
       </div>
     </div>
@@ -385,8 +391,8 @@
         <tr>
           <td class="banzukeRank fifth">5位</td>
           <td class="banzukePost">
-            <h3><a class="articleLink" href="https://www.kencellara.com/entry/morishita">酒蔵森下</a></h3>
-            <p>伊勢市駅前にある最高にして最強の居酒屋</p>
+            <h3><a class="articleLink" href="https://www.kencellara.com/entry/hatiemon">八右衛門</a></h3>
+            <p>目利きのプロが選ぶ！山奥で食べる鮮度抜群の魚料理</p>
           </td>
           <td class="banzukeStar fifth">
             <div class="star-rating">
