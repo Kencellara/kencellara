@@ -4,10 +4,11 @@
 	add_action('wp_enqueue_scripts', wp_enqueue_style('slick-style', get_template_directory_uri() . '/src/js/slick/slick.css'));
 	add_action('wp_enqueue_scripts', wp_enqueue_style('slick-theme-style', get_template_directory_uri() . '/src/js/slick/slick-theme.css'));
 	add_action('wp_enqueue_scripts', wp_enqueue_script('slick-script', get_theme_file_uri('/src/js/slick/slick.min.js'), array('jquery')));
-  add_action('wp_enqueue_scripts', wp_enqueue_style('new_posts-style', get_template_directory_uri() . '/css/new_posts.css', array(), '1.0.10.1'));
-  add_action('wp_enqueue_scripts', wp_enqueue_style('sp_new_posts-style', get_template_directory_uri() . '/css/sp_new_posts.css', array(), '1.0.5'));
+  	add_action('wp_enqueue_scripts', wp_enqueue_style('new_posts-style', get_template_directory_uri() . '/css/new_posts.css', array(), '1.0.10.1'));
+  	add_action('wp_enqueue_scripts', wp_enqueue_style('sp_new_posts-style', get_template_directory_uri() . '/css/sp_new_posts.css', array(), '1.0.5'));
 	add_action('wp_enqueue_scripts', wp_enqueue_script('sp_ad_article-script', get_theme_file_uri('/js/sp_ad_article.js')));
 	$is_sp = Habakiri_Base_Functions::is_sp();
+	$magazine_exist = true;
 ?>
 <?php
 	function toppage_scripts() {
@@ -34,10 +35,17 @@
 							<?php get_template_part( 'modules/toppage-main' ); ?>
 						</div>
 						<input id="TAB-A03" type="radio" name="TAB-A">
-						<label class="tabLabel" for="TAB-A03">コラボ・取材</label>
-						<div class="content kence_work">
-							<?php get_template_part( 'modules/kence_work' ); ?>
-						</div>
+						<?php if ($magazine_exist): ?>
+							<label class="tabLabel" for="TAB-A03">有料記事</label>
+							<div class="content magazines">
+								<?php get_template_part( 'modules/magazines' ); ?>
+							</div>
+						<?php else: ?>
+							<label class="tabLabel" for="TAB-A03">コラボ・取材</label>
+							<div class="content kence_work">
+								<?php get_template_part( 'modules/kence_work' ); ?>
+							</div>
+						<?php endif; ?>
 					</section>
 				</main>
 			</div>
