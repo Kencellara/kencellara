@@ -95,7 +95,7 @@
   <div class="month">
     <h4>9月</h4>
     <ul>
-      <!-- <li><strong><span style="color: #ff0000;">月間アクセス数 61,023 PV</span></strong></li> -->
+      <li><strong><span style="color: #ff0000;">月間アクセス数 66,102 PV</span></strong></li>
       <li>よこやま あおい様 コラボ飯</li>
       <li>三重県最強グルメブロガー プリンセスシンデレラ様 コラボ飯</li>
     </ul>
