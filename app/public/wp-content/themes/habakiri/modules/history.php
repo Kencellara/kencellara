@@ -100,4 +100,11 @@
       <li>三重県最強グルメブロガー プリンセスシンデレラ様 コラボ飯</li>
     </ul>
   </div>
+  <div class="month">
+    <h4>10月</h4>
+    <ul>
+      <li><strong><span style="color: #ff0000;">月間アクセス数 78,547 PV</span></strong></li>
+      <li>もぐもぐ三重様 コラボ飯</li>
+    </ul>
+  </div>
 </div>
