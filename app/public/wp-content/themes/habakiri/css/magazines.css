@@ -1,0 +1,149 @@
+.mzHeader {
+    height: 80px;
+    background-color: #fff;
+}
+.mzHeaderLogo {
+    height: 80px;
+}
+.mzCopyZone {
+    margin-top: 10px;
+    margin-bottom: -200px;
+}
+.mzCopy {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+.mzCopy p {
+    margin-bottom: 0;
+}
+.mzCopyStickerZone {
+    width: 200px;
+    margin-left: auto;
+}
+.mzCopySticker {
+    position: relative;
+    top: -200px;
+}
+.mzContentsHeader {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 22px;
+    font-weight: bold;
+}
+.mzFixedFooter {
+    background-color: #eee;
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    z-index: 10;
+    opacity: 0.85;
+}
+.footerBtn a {
+    display: block;
+    width: 500px;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.footerBtn a:hover,
+.footerBtn a:active,
+.footerBtn a:focus {
+    background-color: #eee;
+    color: #333;
+    border: 1px solid #333;
+}
+.mzPlanZone {
+    padding: 30px;
+}
+.mzPlanEntrance {
+    display: flex;
+    margin: 30px 0;
+}
+.mzEachPlanZone {
+    width: calc(100% / 3);
+    padding: 30px 10px;
+    background-color: #f4a460;
+    border: 2px solid #333;
+    margin: 0 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.mzPlanTitle {
+    text-decoration: underline;
+    font-size: 32px;
+}
+.mzPlanCost {
+    font-size: 23px;
+}
+.mzPlanPoints {
+    height: 180px;
+    padding: 20px 0;
+    font-size: 16px;
+}
+.mzPlanPoints ul {
+    padding-left: 20px;
+    text-align: left;
+    list-style-type: disc;
+}
+.linkToCodoc {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.linkToCodoc a {
+    border-radius: 10px;
+    background-color: #333;
+    color: #fff;
+    display: block;
+    padding: 5px 0;
+}
+.linkToCodoc a:hover,
+.linkToCodoc a:active,
+.linkToCodoc a:focus {
+    background-color: #fff;
+    color: #333;
+}
+.mzPointZone {
+    margin-top: 50px;
+}
+.mzPointContentsZone {
+    display: flex;
+}
+.mzPointContents {
+    width: 50%;
+    background-color: midnightblue;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 20px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0 30px;
+}
+.mzPointContentsZone {
+    margin-top: 20px;
+}
+.mzPointTitle {
+    font-size: 23px;
+    text-align: center;
+}
+.mzPointList {
+    margin-top: 10px;
+}
+.mzPointList ul {
+    list-style-type: square;
+    font-size: 16px;
+}

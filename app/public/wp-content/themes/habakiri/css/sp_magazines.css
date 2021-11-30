@@ -1,0 +1,63 @@
+@media screen and (max-width: 420px) {
+    .mzHeader {
+        height: 50px;
+    }
+    .mzHeaderLogo {
+        height: 50px;
+    }
+    .mzCopyStickerZone {
+        width: 100px;
+    }
+    .mzCopySticker {
+        top: -160px;
+        right: -10px;
+    }
+    .mzCopyZone {
+        margin-bottom: -100px;
+    }
+    .mzCopy {
+        font-size: 20px;
+    }
+    .mzPlanZone {
+        margin-top: 30px;   
+        padding: 0 40px;
+    }
+    .mzPlanEntrance {
+        display: inherit;
+        margin: 10px 0;
+    }
+    .mzEachPlanZone {
+        width: 100%;
+        margin: 0 0 15px;
+        padding: 10px 5px;
+    }
+    .mzPlanTitle {
+        font-size: 30px;
+    }
+    .mzPlanCost {
+        font-size: 21px;
+    }
+    .mzPlanPoints {
+        height: 150px;
+        padding: 10px 0;
+    }
+    .mzContentsHeader {
+        width: 150px;
+    }
+    .mzFixedFooter {
+        height: 90px;
+    }
+    .footerBtn a {
+        width: 250px;
+        margin-top: 20px;
+        padding: 10px;
+    }
+    .mzPointContentsZone {
+        display: inherit;
+        margin-top: 0;
+    }
+    .mzPointContents {
+        width: inherit;
+        margin: 15px;
+    }
+}
