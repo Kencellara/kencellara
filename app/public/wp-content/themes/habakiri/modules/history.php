@@ -76,6 +76,7 @@
     <ul>
       <li><strong><span style="color: #ff0000;">月間アクセス数 50,597 PV</span></strong></li>
       <li>よろこば食堂 様 取材依頼 受託</li>
+      <li>MZボイス ラジオ出演</li>
       <li><a href="https://store.line.me/stickershop/product/16142065/ja?ref=gnsh_stickerDetail" target="_blank" rel="noreferrer">ケンチェ飯公式LINEスタンプ販売開始<i class="fas fa-external-link-alt"></i></a></li>
     </ul>
   </div>
@@ -105,6 +106,15 @@
     <ul>
       <li><strong><span style="color: #ff0000;">月間アクセス数 78,547 PV</span></strong></li>
       <li>もぐもぐ三重様 コラボ飯</li>
+    </ul>
+  </div>
+  <div class="month">
+    <h4>11月</h4>
+    <ul>
+      <li><strong><span style="color: #ff0000;">月間アクセス数 80,417 PV</span></strong></li>
+      <li>Instagramフォロワー4000人突破</li>
+      <li>ベースメン様 コラボ飯</li>
+      <li>竹寿司様 取材依頼 受注</li>
     </ul>
   </div>
 </div>

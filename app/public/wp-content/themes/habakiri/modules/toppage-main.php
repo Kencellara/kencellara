@@ -14,7 +14,7 @@
 ?>
 
 <div class="simpleNews">
-  <p>ニュース<i class="fas fa-chevron-circle-right"></i>月間78,000アクセス達成！<a href="https://store.line.me/stickershop/product/16142065/ja?ref=gnsh_stickerDetail" target="_blank" rel="noreferrer"> ケンチェ飯公式LINEスタンプ販売開始（こちら）</a></p>
+  <p>ニュース<i class="fas fa-chevron-circle-right"></i>月間80,000アクセス達成！<a href="https://store.line.me/stickershop/product/16142065/ja?ref=gnsh_stickerDetail" target="_blank" rel="noreferrer"> ケンチェ飯公式LINEスタンプ販売開始（こちら）</a></p>
 </div>
 
 <div class="storeCountArea">
@@ -28,18 +28,18 @@
 <!-- スライドショー -->
 <div class="slider">
   <div>
-    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('le-bamboche'); ?>
-    <a href="<?php echo the_permalink($slider_articles_id); ?>">
-      <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
-    </a>
-  </div>
-  <div>
     <a href="https://store.line.me/stickershop/product/16142065/ja?ref=gnsh_stickerDetail" target="_blank" rel="noreferrer">
       <img src="<?php echo $sticker_img_dir . '/LINEスタンプ.jpg'; ?>" alt="ケンチェ飯公式LINEスタンプ" />
     </a>
   </div>
   <div>
-    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('rita'); ?>
+    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('wagyuuya-kosho'); ?>
+    <a href="<?php echo the_permalink($slider_articles_id); ?>">
+      <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
+    </a>
+  </div>
+  <div>
+    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('menya-sen'); ?>
     <a href="<?php echo the_permalink($slider_articles_id); ?>">
       <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
     </a>
@@ -57,7 +57,7 @@
     </a>
   </div>
   <div>
-    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('gyouza-misuzu'); ?>
+    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('nakaroku'); ?>
     <a href="<?php echo the_permalink($slider_articles_id); ?>">
       <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
     </a>
@@ -259,10 +259,10 @@
   <div class="recommendGourmetHeader topPageHeader"><i class="fas fa-fire"></i> ケンチェ激推しグルメ <i class="fas fa-fire"></i></div>
   <div class="recommendGourmetContainer first">
     <div class="recommendGourmetBox">
-      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('kaisen-minato'); ?>
+      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('kisen'); ?>
       <div class="recommendGourmetImg">
         <a href="<?php echo the_permalink($recommend_articles_id); ?>">
-          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="kaisen-minato" loading="lazy" />
+          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="kisen" loading="lazy" />
         </a>
       </div>
     </div>
@@ -277,19 +277,19 @@
     </div>
 
     <div class="recommendGourmetBox">
-      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('wakaba'); ?>
+      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('hakata-ichou'); ?>
       <div class="recommendGourmetImg">
         <a href="<?php echo the_permalink($recommend_articles_id); ?>">
-          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="wakaba" loading="lazy" />
+          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="hakata-ichou" loading="lazy" />
         </a>
       </div>
     </div>
 
     <div class="recommendGourmetBox">
-      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('isemon'); ?>
+      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('matusaka-oka'); ?>
       <div class="recommendGourmetImg">
         <a href="<?php echo the_permalink($recommend_articles_id); ?>">
-          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="isemon" loading="lazy" />
+          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="matusaka-oka" loading="lazy" />
         </a>
       </div>
     </div>
@@ -324,10 +324,10 @@
     </div>
 
     <div class="recommendGourmetBox">
-      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('oliver-cofee'); ?>
+      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('take-sushi'); ?>
       <div class="recommendGourmetImg">
         <a href="<?php echo the_permalink($recommend_articles_id); ?>">
-          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="oliver-cofee" loading="lazy" />
+          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt="take-sushi" loading="lazy" />
         </a>
       </div>
     </div>
