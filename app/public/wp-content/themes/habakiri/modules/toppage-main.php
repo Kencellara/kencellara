@@ -14,7 +14,7 @@
 ?>
 
 <div class="simpleNews">
-  <p>ニュース<i class="fas fa-chevron-circle-right"></i>月間80,000アクセス達成！<a href="https://store.line.me/stickershop/product/16142065/ja?ref=gnsh_stickerDetail" target="_blank" rel="noreferrer"> ケンチェ飯公式LINEスタンプ販売開始（こちら）</a></p>
+  <p>ニュース<i class="fas fa-chevron-circle-right"></i>一眼レフ導入！ 月間80,000アクセス達成！<a href="https://store.line.me/stickershop/product/16142065/ja?ref=gnsh_stickerDetail" target="_blank" rel="noreferrer"> ケンチェ飯公式LINEスタンプ販売開始（こちら）</a></p>
 </div>
 
 <div class="storeCountArea">
