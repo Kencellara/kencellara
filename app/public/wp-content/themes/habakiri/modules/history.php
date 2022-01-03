@@ -117,4 +117,14 @@
       <li>竹寿司様 取材依頼 受注</li>
     </ul>
   </div>
+  <div class="month">
+    <h4>12月</h4>
+    <ul>
+      <li><strong><span style="color: #ff0000;">月間アクセス数 84,006 PV</span></strong></li>
+      <li>もぐもぐ三重様 第2回コラボ飯</li>
+      <li>チームプリンセス コラボ飯</li>
+      <li>chouchou box様 取材依頼 受託</li>
+      <li>石崎様 コラボ飯</li>
+    </ul>
+  </div>
 </div>
