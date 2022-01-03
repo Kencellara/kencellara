@@ -882,12 +882,51 @@ class Habakiri_Base_Functions {
 	}
 
 	public function is_sp() {
-    $useragents = array('Android', 'iPhone');
-    $pattern = '/'.implode('|', $useragents).'/i';
-    if (!preg_match($pattern, $_SERVER['HTTP_USER_AGENT'])) {
-      return false;
-    }
-    return true;
+	  $useragents = array('Android', 'iPhone');
+	  $pattern = '/'.implode('|', $useragents).'/i';
+	  if (!preg_match($pattern, $_SERVER['HTTP_USER_AGENT'])) {
+	  	return false;
+	  }
+	  return true;
+	}
+
+	public function set_random_articles() {
+	  $articles = array(
+		"atumura",
+		"hanare",
+		"hakata-ichou",
+		"koppeya-bakery",
+		"yellow-tail",
+		"syuuei",
+		"kawausokun",
+		"giorno-pace",
+		"bubu-cafe",
+		"chocolaterie4",
+		"new-kotobuki",
+		"torisoba-narukawa",
+		"vansennu",
+		"chanto-cafe",
+		"wakaba",
+		"megane-syobou",
+		"akebono-sushi",
+		"owase-onigawara",
+		"keijou",
+		"tobari"
+	  );
+	  $rands = array();
+	  $random_articles = array();
+	  for ($i = 0; $i <= 19; $i++) {
+		$is_dup = true;
+		while ($is_dup) {
+		  $tmp = mt_rand(0, 19);
+		  if (!in_array($tmp, $rands)) {
+		    array_push($rands, $tmp);
+		    array_push($random_articles, $articles[$tmp]);
+			$is_dup = false;
+		  }
+		}
+	  }
+	  return $random_articles;
 	}
 }
 
