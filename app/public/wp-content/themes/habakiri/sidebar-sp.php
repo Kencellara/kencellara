@@ -1,6 +1,7 @@
 <!-- 変数定義 -->
 <?php
 	$upload_dir = wp_upload_dir();
+	$sns_img_dir = wp_upload_dir()['baseurl'] . '/sns';
 	$kw_page_id = get_page_by_path('kence_work')->ID;
 	$genre_cat_ID = get_category_by_slug('genre')->cat_ID;
 	$area_cat_ID = get_category_by_slug('area')->cat_ID;
@@ -34,7 +35,7 @@
 		<div class="sb_plofile sb_content">
 			<div class="profileHeader sb_header">ケンチェ飯とは</div>
 			<div class="profileImg">
-				<img class="hatena-fotolife" title="サイドバーブタチェ" src="<?php echo $upload_dir['baseurl']; ?>/sidebar/profile_300.jpg" alt="サイドバーブタチェ" loading="lazy" />
+				<img class="sidebarButace" title="サイドバーブタチェ" src="<?php echo $upload_dir['baseurl']; ?>/sidebar/profile_v2_350.jpg" alt="サイドバーブタチェ" loading="lazy" />
 			</div>
 			<div class="profileSentence">
 				三重県で一番詳しいグルメディア.<br>
@@ -43,8 +44,25 @@
 				どのサイトよりも詳しく三重県のグルメ情報を発信.<br>
 				三重で本当に美味い食べ物を探すならココ！<br>
 				取材依頼・食事のお誘いお待ちしております.<br>
+				→ 詳しくは<a href="https://kencellara.com/entry/history">コチラ</a>
 			</div>
-			</div>
+		</div>
+		<div class="sb_snsLogosHeader sb_content">
+			ケンチェ飯SNS <i class="fas fa-level-down-alt"></i><i class="fas fa-level-down-alt"></i><i class="fas fa-level-down-alt"></i>
+		</div>
+		<div class="sb_snsLogos sb_content">
+			<a href="https://www.instagram.com/kencellara_food" target="_blank" rel="noopener noreferrer">
+				<img class="InstagramIcon" src="<?php echo $sns_img_dir; ?>/Instagram.jpg" alt="instagram" />
+			</a>
+			<a class="twitter-button" href="https://twitter.com/kencellara_food" target="_blank" rel="noopener noreferrer">
+				<i class="fab fa-twitter-square"></i>
+			</a>
+			<a href="https://lin.ee/kjAkh3g" target="_blank" rel="noopener noreferrer">
+				<img class="LINEIcon" src="<?php echo $sns_img_dir; ?>/LINE.jpg" alt="LINE" />
+			</a>
+			<a class="facebook-button" href="https://www.facebook.com/kencellarafood" target="_blank" rel="noopener noreferrer">
+				<i class="fab fa-facebook-square"></i>
+			</a>
 		</div>
 		<div class="sb_adsense sb_content">
 			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
