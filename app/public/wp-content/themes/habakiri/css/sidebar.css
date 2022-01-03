@@ -56,6 +56,39 @@
   font-weight: bold;
   padding-top: 10px;
 }
+.sb_snsLogosHeader {
+  margin: 0 !important;
+  font-weight: bold;
+  color: saddlebrown;
+  font-size: 16px;
+}
+.sb_snsLogos {
+  text-align: center;
+  margin: 5px 0 !important;
+}
+.sb_snsLogos a {
+  margin: 0 8px;
+}
+.sb_snsLogos .InstagramIcon {
+  height: 35px;
+}
+.sb_snsLogos .fa-twitter-square {
+  background-color: #fff;
+  color: #55acee;
+  font-size: 37px;
+  vertical-align: middle;
+}
+.sb_snsLogos .LINEIcon {
+  height: 35px;
+  border-radius: 10px;
+}
+.sb_snsLogos .fa-facebook-square {
+  background-color: white;
+  border-radius: 10px;
+  vertical-align: top;
+  font-size: 37px;
+  color: #305097;
+}
 .sb_archive ul {
   padding-left: 10px;
 }
