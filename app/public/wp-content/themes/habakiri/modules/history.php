@@ -68,7 +68,7 @@
   <div class="month">
     <h4>6月</h4>
     <ul>
-      <li><span style="color:deeppink;">Instagramフォロワー様2000人突破</span></li>
+      <li><span style="color:deeppink;">Instagramフォロワー様 2000人 突破</span></li>
     </ul>
   </div>
   <div class="month">
@@ -112,7 +112,7 @@
     <h4>11月</h4>
     <ul>
       <li><strong><span style="color: #ff0000;">月間アクセス数 80,417 PV</span></strong></li>
-      <li><span style="color:deeppink;">Instagramフォロワー4000人突破</span></li>
+      <li><span style="color:deeppink;">Instagramフォロワー様 4000人 突破</span></li>
       <li><a href="https://kencellara.com/entry/gravy-burger" target="_blank" rel="noreferrer">ベースメン様 コラボ飯</a><i class="fas fa-external-link-alt"></i></li>
       <li><a href="https://kencellara.com/entry/take-sushi" target="_blank" rel="noreferrer">竹寿司様 取材依頼 受注</a><i class="fas fa-external-link-alt"></i></li>
     </ul>
@@ -123,7 +123,7 @@
       <li><strong><span style="color: #ff0000;">月間アクセス数 84,006 PV</span></strong></li>
       <li><a href="https://kencellara.com/entry/yellow-tail" target="_blank" rel="noreferrer">もぐもぐ三重様 第2回コラボ飯</a><i class="fas fa-external-link-alt"></i></li>
       <li><a href="https://kencellara.com/entry/atumura" target="_blank" rel="noreferrer">チームプリンセス コラボ飯</a><i class="fas fa-external-link-alt"></i></li>
-      <li>chouchou box様 取材依頼 受託</li>
+      <li><a href="https://kencellara.com/entry/chouchou-box" target="_blank" rel="noreferrer">chouchou box様 取材依頼 受託</a><i class="fas fa-external-link-alt"></i></li>
       <li><a href="https://kencellara.com/entry/gyouza-channel" target="_blank" rel="noreferrer">石崎様 コラボ飯</a><i class="fas fa-external-link-alt"></i></li>
     </ul>
   </div>
