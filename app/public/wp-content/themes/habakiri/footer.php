@@ -1,14 +1,3 @@
-<?php
-/**
- * Version    : 1.0.1
- * Author     : inc2734
- * Author URI : http://2inc.org
- * Created    : April 17, 2015
- * Modified   : August 24, 2015
- * License    : GPLv2 or later
- * License URI: license.txt
- */
-?>
 <?php $upload_dir = wp_upload_dir(); ?>
 <?php
 	add_action('wp_enqueue_scripts', wp_enqueue_style('footer-style', get_template_directory_uri() . '/css/footer.css', array('common-style')));
@@ -43,8 +32,8 @@
 		</div>
 	</footer>
 	<ul class="toTop-nav">
-    <li><a href="javascript:void(0);" onclick="smoothScroll(0);return false;"><i class="fas fa-chevron-up"></i></a></li>
-  </ul>
+		<li><a href="javascript:void(0);" onclick="smoothScroll(0);return false;"><i class="fas fa-chevron-up"></i></a></li>
+	</ul>
 <!-- end #container --></div>
 <?php wp_footer(); ?>
 </body>
