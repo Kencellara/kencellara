@@ -6,6 +6,7 @@
   $common_img_dir = $upload_dir['baseurl'] . '/common';
   $sticker_img_dir = $upload_dir['baseurl'] . '/sticker';
   $toppage_img_dir = $upload_dir['baseurl'] . '/toppage';
+  $magazine_img_dir = $upload_dir['baseurl'] . '/magazine';
   $hokubu_post_count = get_category_by_slug('kameyama')->count + get_category_by_slug('komono')->count + get_category_by_slug('yokkaichi')->count + get_category_by_slug('kuwana')->count;
   $iga_post_count = get_category_by_slug('iga')->count;
   $chubu_post_count = get_category_by_slug('tsu')->count + get_category_by_slug('matsusaka')->count + get_category_by_slug('meiwa')->count + get_category_by_slug('taki')->count;
@@ -27,51 +28,43 @@
 </div>
 
 <!-- スライドショー -->
-<div class="slider">
-  <div>
-    <a href="https://store.line.me/stickershop/product/16142065/ja?ref=gnsh_stickerDetail" target="_blank" rel="noreferrer">
-      <img src="<?php echo $sticker_img_dir . '/LINEスタンプ.jpg'; ?>" alt="ケンチェ飯公式LINEスタンプ" />
-    </a>
-  </div>
-  <div>
-    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug($random_articles[0]); ?>
-    <a href="<?php echo the_permalink($slider_articles_id); ?>">
-      <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
-    </a>
-  </div>
-  <div>
-    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug($random_articles[1]); ?>
-    <a href="<?php echo the_permalink($slider_articles_id); ?>">
-      <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
-    </a>
-  </div>
-  <div>
-    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('history'); ?>
-    <a href="<?php echo the_permalink($slider_articles_id); ?>">
-      <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
-    </a>
-  </div>
-  <div>
-    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug($random_articles[2]); ?>
-    <a href="<?php echo the_permalink($slider_articles_id); ?>">
-      <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
-    </a>
-  </div>
-  <div>
-    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug($random_articles[3]); ?>
-    <a href="<?php echo the_permalink($slider_articles_id); ?>">
-      <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
-    </a>
-  </div>
-  <div>
-    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug($random_articles[4]); ?>
-    <a href="<?php echo the_permalink($slider_articles_id); ?>">
-      <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
-    </a>
+<div class="magazineSlideZone">
+  <div class="magazineHeader topPageHeader">マガジン <i class="fas fa-book-open"></i></div>
+  <div class="sliderMagazine">
+    <div>
+      <div class="eachMagazineZone">
+        <img src="<?php echo $magazine_img_dir; ?>/1.jpg" alt="雑誌" />
+        <div class="magazineTitle">雑誌１</div>
+      </div>
+    </div>
+    <div>
+      <div class="eachMagazineZone">
+        <img src="<?php echo $magazine_img_dir; ?>/1.jpg" alt="雑誌" />
+        <div class="magazineTitle">雑誌１</div>
+      </div>
+    </div>
+    <div>
+      <div class="eachMagazineZone">
+        <img src="<?php echo $magazine_img_dir; ?>/1.jpg" alt="雑誌" />
+        <div class="magazineTitle">雑誌１</div>
+      </div>
+    </div>
+    <div>
+      <div class="eachMagazineZone">
+        <img src="<?php echo $magazine_img_dir; ?>/1.jpg" alt="雑誌" />
+        <div class="magazineTitle">雑誌１</div>
+      </div>
+    </div>
+    <div>
+      <div class="eachMagazineZone">
+        <img src="<?php echo $magazine_img_dir; ?>/1.jpg" alt="雑誌" />
+        <div class="magazineTitle">雑誌１</div>
+      </div>
+    </div>
   </div>
 </div>
-<!-- slickはレイアウト崩れを避けるため直後読み込み -->
-<?php get_template_part( 'modules/slick-js' ); ?>
+<?php get_template_part( 'modules/slick-js-magazine' ); ?>
+
 
 <!-- 地域別検索 -->
 <div id="areaSearch" class="areaSearchZone">
