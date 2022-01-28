@@ -2,6 +2,7 @@
 	add_action('wp_enqueue_scripts', wp_enqueue_script('sp_ad_article-script', get_template_directory_uri() . '/js/sp_ad_article.js'));
   $random_articles = Habakiri_Base_Functions::set_random_articles();
 ?>
+<!-- トップページにあったスライドショー -->
 <div class="topSliderZone">
   <div class="newPostsHeader topPageHeader">おすすめ記事</div>
   <div class="slider">
