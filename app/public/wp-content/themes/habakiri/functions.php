@@ -892,26 +892,26 @@ class Habakiri_Base_Functions {
 
 	public function set_random_articles() {
 	  $articles = array(
+		"miyako-sushi",
+		"touyouke-grill",
+		"kannoshita",
+		"kyouguti-coffee",
+		"gyouza-channel",
+		"tando",
+		"wakaba",
+		"kan",
 		"atumura",
-		"hanare",
-		"hakata-ichou",
-		"koppeya-bakery",
-		"yellow-tail",
-		"syuuei",
-		"kawausokun",
+		"goshichiya",
+		"keijou",
+		"ueda-syouten",
+		"kazamidori",
+		"tomiyama",
+		"kaikou",
 		"giorno-pace",
 		"bubu-cafe",
 		"chocolaterie4",
 		"new-kotobuki",
-		"torisoba-narukawa",
-		"vansennu",
-		"chanto-cafe",
-		"wakaba",
-		"megane-syobou",
-		"akebono-sushi",
-		"owase-onigawara",
-		"keijou",
-		"tobari"
+		"torisoba-narukawa"
 	  );
 	  $rands = array();
 	  $random_articles = array();
