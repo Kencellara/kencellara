@@ -128,3 +128,14 @@
     </ul>
   </div>
 </div>
+<div class="year">
+  <h3>2022年</h3>
+  <div class="month">
+    <h4>1月</h4>
+    <ul>
+      <li><strong><span style="color: #ff0000;">月間アクセス数 94,902 PV</span></strong></li>
+      <li><a href="https://kencellara.com/entry/iron-tiger" target="_blank" rel="noreferrer">ムニュ様 コラボ飯</a><i class="fas fa-external-link-alt"></i></li>
+      <li><a href="https://kencellara.com/entry/miyako-sushi" target="_blank" rel="noreferrer">チームプリンセス 第2回コラボ飯</a><i class="fas fa-external-link-alt"></i></li>
+    </ul>
+  </div>
+</div>
