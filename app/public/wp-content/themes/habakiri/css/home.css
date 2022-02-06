@@ -194,6 +194,7 @@ section.typeA input:checked + .tabLabel + .content {
 }
 .magazineSlideZone .slick-slide {
   opacity: 1;
+  text-align: center;
 }
 .magazineSlideZone .slick-prev::before,
 .magazineSlideZone .slick-next::before {
@@ -206,9 +207,10 @@ section.typeA input:checked + .tabLabel + .content {
   color: crimson !important;
 }
 .magazineTitle {
-  text-align: center;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
+  margin-top: 2px;
+  color: black;
 }
 
 

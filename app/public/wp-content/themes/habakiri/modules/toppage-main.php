@@ -30,36 +30,54 @@
 <!-- スライドショー -->
 <div class="magazineSlideZone">
   <div class="magazineHeader topPageHeader">マガジン <i class="fas fa-book-open"></i></div>
-  <div class="sliderMagazine">
+  <div id="sliderMagazine" class="sliderMagazine">
     <div>
-      <div class="eachMagazineZone">
-        <img src="<?php echo $magazine_img_dir; ?>/1.jpg" alt="雑誌" />
-        <div class="magazineTitle">雑誌１</div>
-      </div>
+      <a href="https://kencellara.com/magazine/ise-ramen" target="_blank" rel="noreferrer">
+        <img src="<?php echo $magazine_img_dir; ?>/cover/ise-ramen.jpg" alt="伊勢のおすすめラーメン" />
+        <span class="magazineTitle">伊勢のおすすめラーメン</span>
+      </a>
     </div>
     <div>
-      <div class="eachMagazineZone">
-        <img src="<?php echo $magazine_img_dir; ?>/1.jpg" alt="雑誌" />
-        <div class="magazineTitle">雑誌１</div>
-      </div>
+      <a href="https://kencellara.com/magazine/chubu-oniku" target="_blank" rel="noreferrer">
+        <img src="<?php echo $magazine_img_dir; ?>/cover/chubu-oniku.jpg" alt="三重県中部至高のお肉" />
+        <span class="magazineTitle">三重県中部至高のお肉</span>
+      </a>
     </div>
     <div>
-      <div class="eachMagazineZone">
-        <img src="<?php echo $magazine_img_dir; ?>/1.jpg" alt="雑誌" />
-        <div class="magazineTitle">雑誌１</div>
-      </div>
+      <a href="https://kencellara.com/magazine/kakurega" target="_blank" rel="noreferrer">
+        <img src="<?php echo $magazine_img_dir; ?>/cover/kakurega.jpg" alt="隠れ家コレクション" />
+        <span class="magazineTitle">隠れ家コレクション</span>
+      </a>
     </div>
     <div>
-      <div class="eachMagazineZone">
-        <img src="<?php echo $magazine_img_dir; ?>/1.jpg" alt="雑誌" />
-        <div class="magazineTitle">雑誌１</div>
-      </div>
+      <a href="https://kencellara.com/magazine/cospa" target="_blank" rel="noreferrer">
+        <img src="<?php echo $magazine_img_dir; ?>/cover/cospa.jpg" alt="コスパ最強のお店１０選" />
+        <span class="magazineTitle">コスパ最強のお店１０選</span>
+      </a>
     </div>
     <div>
-      <div class="eachMagazineZone">
-        <img src="<?php echo $magazine_img_dir; ?>/1.jpg" alt="雑誌" />
-        <div class="magazineTitle">雑誌１</div>
-      </div>
+      <a href="https://kencellara.com/magazine/chubu-udon" target="_blank" rel="noreferrer">
+        <img src="<?php echo $magazine_img_dir; ?>/cover/chubu-udon.jpg" alt="中部の美味しい饂飩" />
+        <span class="magazineTitle">中部の美味しい饂飩</span>
+      </a>
+    </div>
+    <div>
+      <a href="https://kencellara.com/magazine/kence-osusume-1" target="_blank" rel="noreferrer">
+        <img src="<?php echo $magazine_img_dir; ?>/cover/kence-osusume-1.jpg" alt="ケンチェのおすすめ店" />
+        <span class="magazineTitle">ケンチェのおすすめ店</span>
+      </a>
+    </div>
+    <div>
+      <a href="https://kencellara.com/magazine/trend-cafe-1" target="_blank" rel="noreferrer">
+        <img src="<?php echo $magazine_img_dir; ?>/cover/trend-cafe-1.jpg" alt="今熱盛のカフェ８選" />
+        <span class="magazineTitle">今熱盛のカフェ８選</span>
+      </a>
+    </div>
+    <div>
+      <a href="https://kencellara.com/magazine/meiwa-matome" target="_blank" rel="noreferrer">
+        <img src="<?php echo $magazine_img_dir; ?>/cover/meiwa-matome.jpg" alt="明和町グルメまとめ" />
+        <span class="magazineTitle">明和町グルメまとめ</span>
+      </a>
     </div>
   </div>
 </div>
