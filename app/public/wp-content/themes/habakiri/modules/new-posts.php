@@ -1,6 +1,8 @@
 <?php
 	add_action('wp_enqueue_scripts', wp_enqueue_script('sp_ad_article-script', get_template_directory_uri() . '/js/sp_ad_article.js'));
   $random_articles = Habakiri_Base_Functions::set_random_articles();
+  $upload_dir = wp_upload_dir();
+  $sticker_img_dir = $upload_dir['baseurl'] . '/sticker';
 ?>
 <!-- トップページにあったスライドショー -->
 <div class="topSliderZone">

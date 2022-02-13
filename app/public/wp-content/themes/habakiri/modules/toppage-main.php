@@ -6,7 +6,6 @@
   $common_img_dir = $upload_dir['baseurl'] . '/common';
   $sticker_img_dir = $upload_dir['baseurl'] . '/sticker';
   $toppage_img_dir = $upload_dir['baseurl'] . '/toppage';
-  $magazine_img_dir = $upload_dir['baseurl'] . '/magazine';
   $hokubu_post_count = get_category_by_slug('kameyama')->count + get_category_by_slug('komono')->count + get_category_by_slug('yokkaichi')->count + get_category_by_slug('kuwana')->count;
   $iga_post_count = get_category_by_slug('iga')->count;
   $chubu_post_count = get_category_by_slug('tsu')->count + get_category_by_slug('matsusaka')->count + get_category_by_slug('meiwa')->count + get_category_by_slug('taki')->count;
@@ -33,49 +32,49 @@
   <div id="sliderMagazine" class="sliderMagazine">
     <div>
       <a href="https://kencellara.com/magazine/ise-ramen" target="_blank" rel="noreferrer">
-        <img src="<?php echo $magazine_img_dir; ?>/cover/ise-ramen.jpg" alt="伊勢のおすすめラーメン" />
+        <img src="https://kencellara.com/magazine/image/cover/ise-ramen.jpg" alt="伊勢のおすすめラーメン" />
         <span class="magazineTitle">伊勢のおすすめラーメン</span>
       </a>
     </div>
     <div>
       <a href="https://kencellara.com/magazine/chubu-oniku" target="_blank" rel="noreferrer">
-        <img src="<?php echo $magazine_img_dir; ?>/cover/chubu-oniku.jpg" alt="三重県中部至高のお肉" />
+        <img src="https://kencellara.com/magazine/image/cover/chubu-oniku.jpg" alt="三重県中部至高のお肉" />
         <span class="magazineTitle">三重県中部至高のお肉</span>
       </a>
     </div>
     <div>
       <a href="https://kencellara.com/magazine/kakurega" target="_blank" rel="noreferrer">
-        <img src="<?php echo $magazine_img_dir; ?>/cover/kakurega.jpg" alt="隠れ家コレクション" />
+        <img src="https://kencellara.com/magazine/image/cover/kakurega.jpg" alt="隠れ家コレクション" />
         <span class="magazineTitle">隠れ家コレクション</span>
       </a>
     </div>
     <div>
       <a href="https://kencellara.com/magazine/cospa" target="_blank" rel="noreferrer">
-        <img src="<?php echo $magazine_img_dir; ?>/cover/cospa.jpg" alt="コスパ最強のお店１０選" />
+        <img src="https://kencellara.com/magazine/image/cover/cospa.jpg" alt="コスパ最強のお店１０選" />
         <span class="magazineTitle">コスパ最強のお店１０選</span>
       </a>
     </div>
     <div>
       <a href="https://kencellara.com/magazine/chubu-udon" target="_blank" rel="noreferrer">
-        <img src="<?php echo $magazine_img_dir; ?>/cover/chubu-udon.jpg" alt="中部の美味しい饂飩" />
+        <img src="https://kencellara.com/magazine/image/cover/chubu-udon.jpg" alt="中部の美味しい饂飩" />
         <span class="magazineTitle">中部の美味しい饂飩</span>
       </a>
     </div>
     <div>
       <a href="https://kencellara.com/magazine/kence-osusume-1" target="_blank" rel="noreferrer">
-        <img src="<?php echo $magazine_img_dir; ?>/cover/kence-osusume-1.jpg" alt="ケンチェのおすすめ店" />
+        <img src="https://kencellara.com/magazine/image/cover/kence-osusume-1.jpg" alt="ケンチェのおすすめ店" />
         <span class="magazineTitle">ケンチェのおすすめ店</span>
       </a>
     </div>
     <div>
       <a href="https://kencellara.com/magazine/trend-cafe-1" target="_blank" rel="noreferrer">
-        <img src="<?php echo $magazine_img_dir; ?>/cover/trend-cafe-1.jpg" alt="今熱盛のカフェ８選" />
+        <img src="https://kencellara.com/magazine/image/cover/trend-cafe-1.jpg" alt="今熱盛のカフェ８選" />
         <span class="magazineTitle">今熱盛のカフェ８選</span>
       </a>
     </div>
     <div>
       <a href="https://kencellara.com/magazine/meiwa-matome" target="_blank" rel="noreferrer">
-        <img src="<?php echo $magazine_img_dir; ?>/cover/meiwa-matome.jpg" alt="明和町グルメまとめ" />
+        <img src="https://kencellara.com/magazine/image/cover/meiwa-matome.jpg" alt="明和町グルメまとめ" />
         <span class="magazineTitle">明和町グルメまとめ</span>
       </a>
     </div>
