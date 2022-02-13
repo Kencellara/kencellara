@@ -29,7 +29,7 @@
 
 <!-- スライドショー -->
 <div class="magazineSlideZone">
-  <div class="magazineHeader topPageHeader">マガジン <i class="fas fa-book-open"></i></div>
+  <div class="magazineHeader topPageHeader">ケンチェマガジン <i class="fas fa-book-open"></i></div>
   <div id="sliderMagazine" class="sliderMagazine">
     <div>
       <a href="https://kencellara.com/magazine/ise-ramen" target="_blank" rel="noreferrer">
