@@ -212,7 +212,9 @@ section.typeA input:checked + .tabLabel + .content {
   margin-top: 2px;
   color: black;
 }
-
+.sliderMagazine img {
+  border: 3px ridge black;
+}
 
 .topSliderZone {
   padding-top: 15px;
