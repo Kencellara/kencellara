@@ -6,4 +6,7 @@
   .newPostCard {
     width: 100%;
   }
+  .slider img {
+    margin: 0 auto;
+  }
 }

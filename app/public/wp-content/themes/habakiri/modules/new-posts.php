@@ -1,9 +1,61 @@
 <?php
 	add_action('wp_enqueue_scripts', wp_enqueue_script('sp_ad_article-script', get_template_directory_uri() . '/js/sp_ad_article.js'));
+  $random_articles = Habakiri_Base_Functions::set_random_articles();
+  $upload_dir = wp_upload_dir();
+  $sticker_img_dir = $upload_dir['baseurl'] . '/sticker';
 ?>
+<!-- トップページにあったスライドショー -->
+<div class="topSliderZone">
+  <div class="newPostsHeader topPageHeader">おすすめ記事</div>
+  <div class="slider">
+    <div>
+      <a href="https://store.line.me/stickershop/product/16142065/ja?ref=gnsh_stickerDetail" target="_blank" rel="noreferrer">
+        <img src="<?php echo $sticker_img_dir . '/LINEスタンプ.jpg'; ?>" alt="ケンチェ飯公式LINEスタンプ" />
+      </a>
+    </div>
+    <div>
+      <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug($random_articles[0]); ?>
+      <a href="<?php echo the_permalink($slider_articles_id); ?>">
+        <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
+      </a>
+    </div>
+    <div>
+      <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug($random_articles[1]); ?>
+      <a href="<?php echo the_permalink($slider_articles_id); ?>">
+        <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
+      </a>
+    </div>
+    <div>
+      <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('history'); ?>
+      <a href="<?php echo the_permalink($slider_articles_id); ?>">
+        <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
+      </a>
+    </div>
+    <div>
+      <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug($random_articles[2]); ?>
+      <a href="<?php echo the_permalink($slider_articles_id); ?>">
+        <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
+      </a>
+    </div>
+    <div>
+      <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug($random_articles[3]); ?>
+      <a href="<?php echo the_permalink($slider_articles_id); ?>">
+        <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
+      </a>
+    </div>
+    <div>
+      <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug($random_articles[4]); ?>
+      <a href="<?php echo the_permalink($slider_articles_id); ?>">
+        <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
+      </a>
+    </div>
+  </div>
+</div>
+<!-- slickはレイアウト崩れを避けるため直後読み込み -->
+<?php get_template_part( 'modules/slick-js' ); ?>
 
 <div class="newPostsZone all">
-  <div class="newPostsHeader topPageHeader">全ての記事</div>
+  <div class="newPostsHeader topPageHeader">最新記事</div>
   <div class="newPostsContainer">
     <?php get_template_part( 'modules/new-posts-loop', null, array('name'=>'', 'count'=>6) ); ?>
   </div>

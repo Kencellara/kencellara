@@ -17,7 +17,7 @@ body.home .sub-page-contents {
 
 /* 3タブ */
 section.typeA {
-  margin-top: 10px;
+  margin-top: 5px;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -133,7 +133,7 @@ section.typeA input:checked + .tabLabel + .content {
 
 /* スライドショー */
 .slider {
-  background-color: snow;
+  background-color: #fff;
   padding: 0 0 20px;
 }
 .slider img {
@@ -181,6 +181,45 @@ section.typeA input:checked + .tabLabel + .content {
 }
 .slick-dots li button:before {
   color: darkgoldenrod !important;
+}
+
+/* 雑誌のスライド */
+.magazineHeader {
+  margin-bottom: 15px;
+}
+.magazineSlideZone {
+  margin: 15px 0;
+  padding: 15px 0 5px;
+  background-color: linen;
+}
+.magazineSlideZone .slick-slide {
+  opacity: 1;
+  text-align: center;
+}
+.magazineSlideZone .slick-prev::before,
+.magazineSlideZone .slick-next::before {
+  color: crimson !important;
+}
+.magazineSlideZone .slick-dots {
+  background-color: linen;
+}
+.magazineSlideZone .slick-dots li button:before {
+  color: crimson !important;
+}
+.magazineTitle {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 2px;
+  color: black;
+}
+.sliderMagazine img {
+  border: 3px ridge black;
+}
+
+.topSliderZone {
+  padding-top: 15px;
+  margin-top: 10px;
+  background-color: cornsilk;
 }
 
 /* あいうえお検索 */
@@ -652,7 +691,7 @@ section.typeA input:checked + .tabLabel + .content {
   padding: 10px 0;
   text-align: center;
   background-color: cornsilk;
-  border: 3px inset cornsilk;
+  /* border: 3px inset cornsilk; */
 }
 .kencemeshiExplainContents img {
   margin-bottom: 20px;

@@ -27,51 +27,61 @@
 </div>
 
 <!-- スライドショー -->
-<div class="slider">
-  <div>
-    <a href="https://store.line.me/stickershop/product/16142065/ja?ref=gnsh_stickerDetail" target="_blank" rel="noreferrer">
-      <img src="<?php echo $sticker_img_dir . '/LINEスタンプ.jpg'; ?>" alt="ケンチェ飯公式LINEスタンプ" />
-    </a>
-  </div>
-  <div>
-    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug($random_articles[0]); ?>
-    <a href="<?php echo the_permalink($slider_articles_id); ?>">
-      <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
-    </a>
-  </div>
-  <div>
-    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug($random_articles[1]); ?>
-    <a href="<?php echo the_permalink($slider_articles_id); ?>">
-      <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
-    </a>
-  </div>
-  <div>
-    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('history'); ?>
-    <a href="<?php echo the_permalink($slider_articles_id); ?>">
-      <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
-    </a>
-  </div>
-  <div>
-    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug($random_articles[2]); ?>
-    <a href="<?php echo the_permalink($slider_articles_id); ?>">
-      <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
-    </a>
-  </div>
-  <div>
-    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug($random_articles[3]); ?>
-    <a href="<?php echo the_permalink($slider_articles_id); ?>">
-      <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
-    </a>
-  </div>
-  <div>
-    <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug($random_articles[4]); ?>
-    <a href="<?php echo the_permalink($slider_articles_id); ?>">
-      <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
-    </a>
+<div class="magazineSlideZone">
+  <div class="magazineHeader topPageHeader">ケンチェマガジン <i class="fas fa-book-open"></i></div>
+  <div id="sliderMagazine" class="sliderMagazine">
+    <div>
+      <a href="https://kencellara.com/magazine/ise-ramen" target="_blank" rel="noreferrer">
+        <img src="https://kencellara.com/magazine/image/cover/ise-ramen.jpg" alt="伊勢のおすすめラーメン" />
+        <span class="magazineTitle">伊勢のおすすめラーメン</span>
+      </a>
+    </div>
+    <div>
+      <a href="https://kencellara.com/magazine/chubu-oniku" target="_blank" rel="noreferrer">
+        <img src="https://kencellara.com/magazine/image/cover/chubu-oniku.jpg" alt="三重県中部至高のお肉" />
+        <span class="magazineTitle">三重県中部至高のお肉</span>
+      </a>
+    </div>
+    <div>
+      <a href="https://kencellara.com/magazine/kakurega" target="_blank" rel="noreferrer">
+        <img src="https://kencellara.com/magazine/image/cover/kakurega.jpg" alt="隠れ家コレクション" />
+        <span class="magazineTitle">隠れ家コレクション</span>
+      </a>
+    </div>
+    <div>
+      <a href="https://kencellara.com/magazine/cospa" target="_blank" rel="noreferrer">
+        <img src="https://kencellara.com/magazine/image/cover/cospa.jpg" alt="コスパ最強のお店１０選" />
+        <span class="magazineTitle">コスパ最強のお店１０選</span>
+      </a>
+    </div>
+    <div>
+      <a href="https://kencellara.com/magazine/chubu-udon" target="_blank" rel="noreferrer">
+        <img src="https://kencellara.com/magazine/image/cover/chubu-udon.jpg" alt="中部の美味しい饂飩" />
+        <span class="magazineTitle">中部の美味しい饂飩</span>
+      </a>
+    </div>
+    <div>
+      <a href="https://kencellara.com/magazine/kence-osusume-1" target="_blank" rel="noreferrer">
+        <img src="https://kencellara.com/magazine/image/cover/kence-osusume-1.jpg" alt="ケンチェのおすすめ店" />
+        <span class="magazineTitle">ケンチェのおすすめ店</span>
+      </a>
+    </div>
+    <div>
+      <a href="https://kencellara.com/magazine/trend-cafe-1" target="_blank" rel="noreferrer">
+        <img src="https://kencellara.com/magazine/image/cover/trend-cafe-1.jpg" alt="今熱盛のカフェ８選" />
+        <span class="magazineTitle">今熱盛のカフェ８選</span>
+      </a>
+    </div>
+    <div>
+      <a href="https://kencellara.com/magazine/meiwa-matome" target="_blank" rel="noreferrer">
+        <img src="https://kencellara.com/magazine/image/cover/meiwa-matome.jpg" alt="明和町グルメまとめ" />
+        <span class="magazineTitle">明和町グルメまとめ</span>
+      </a>
+    </div>
   </div>
 </div>
-<!-- slickはレイアウト崩れを避けるため直後読み込み -->
-<?php get_template_part( 'modules/slick-js' ); ?>
+<?php get_template_part( 'modules/slick-js-magazine' ); ?>
+
 
 <!-- 地域別検索 -->
 <div id="areaSearch" class="areaSearchZone">

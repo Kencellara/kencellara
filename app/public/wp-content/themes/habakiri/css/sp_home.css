@@ -6,6 +6,25 @@
     width: 290px;
     font-size: 20px;
   }
+  .magazineSlideZone {
+    margin: 10px 0;
+    padding: 5px 0 2px;
+  }
+  .sliderMagazine img {
+    height: 250px;
+    margin: auto;
+  }
+  .magazineSlideZone .slick-slider {
+    margin-bottom: 20px !important;
+  }
+  .slick-slide {
+    opacity: 1;
+  }
+  .magazineSlideZone .slick-dots {
+    padding-top: 0 !important;
+    bottom: -20px !important;
+    height: inherit !important;
+  }
   .aiueoSearchZone {
     margin: 10px 5px;
     padding: 12px 0;
