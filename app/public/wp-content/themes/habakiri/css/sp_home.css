@@ -20,6 +20,9 @@
   .slick-slide {
     opacity: 1;
   }
+  .slider img {
+    margin: 0 auto;
+  }
   .magazineSlideZone .slick-dots {
     padding-top: 0 !important;
     bottom: -20px !important;
