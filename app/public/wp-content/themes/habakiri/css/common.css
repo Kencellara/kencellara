@@ -8,7 +8,7 @@ html {
 .page_parent a:hover,
 .page_parent a:active {
   outline: none;
-  color: brown;
+  color: saddlebrown;
   text-decoration: none;
 }
 ul {
@@ -42,17 +42,11 @@ input::placeholder {
 }
 
 /* ヘッダーメニュー */
-.headerMenuContainer {
-  /* background-color: cornsilk;
-  padding: 10px 0; */
-}
 .headerMenu {
   display: flex;
-  /* justify-content: center; */
 }
 .menuItem {
   width: calc(100%/3);
-  /* margin-left: 10px; */
   background-color: cornsilk;
   color: saddlebrown;
   border-bottom: 2px solid saddlebrown;

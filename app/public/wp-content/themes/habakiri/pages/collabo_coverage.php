@@ -1,6 +1,6 @@
 <?php
-add_action('wp_enqueue_scripts', wp_enqueue_style('kence_work-style', get_template_directory_uri() . '/css/kence_work.css', array('habakiri', 'common-style'), '2.0'));
-add_action('wp_enqueue_scripts', wp_enqueue_style('sp_kence_work-style', get_template_directory_uri() . '/css/sp_kence_work.css', array(), '2.0'));
+add_action('wp_enqueue_scripts', wp_enqueue_style('collabo_coverage-style', get_template_directory_uri() . '/css/collabo_coverage.css', array('habakiri', 'common-style'), '2.0'));
+add_action('wp_enqueue_scripts', wp_enqueue_style('sp_collabo_coverage-style', get_template_directory_uri() . '/css/sp_collabo_coverage.css', array(), '2.0'));
 $upload_dir = wp_upload_dir();
 ?>
 <nav class="headerMenuContainer">
@@ -24,6 +24,50 @@ $upload_dir = wp_upload_dir();
 </nav>
 
 <div class="ccZone">
+  <div class="kenceWorkSlogan kenceWorkContents">
+    <div class="kenceWorkSloganHeader topPageHeader">ケンチェ飯とは？</div>
+    <img src="<?php echo $upload_dir['baseurl']; ?>/toppage/slogan.jpg" alt="ケンチェ飯のスローガン" loading="lazy" />
+  </div>
+
+  <div class="kenceWorkExplain kenceWorkContents">
+    <div class="kenceWorkExplainQ"><span class="question">Q. </span>なぜケンチェ飯を作ったの？</div>
+    <div class="kenceWorkExplainA">
+      <div class="answer">A.</div>
+      <p>三重県で生まれ三重県で育った「ケンチェラーラ」。</p>
+      <p>インターネットで三重県グルメを検索する際、上位に表示されるのは大手サイトや有名なお店ばかりであることに気づきました。</p>
+      <p>また大手サイトには表面的な情報（営業時間・定休日など）のみが掲載されており、飲食店のディープな情報が示されていない点に対して不便と感じました。</p>
+      <p>そこで、「どのサイトよりも詳しくお店を紹介する」ことをスローガンに掲げ、ケンチェ飯を作るに至りました。</p>
+      <p>三重県には飲食店が6999店舗あります。</p>
+      <p>ケンチェ飯では、お店を全店舗制覇すると同時に、お店の魅力やグルメ情報を多くの方と共有したいと考えています。</p>
+      <p>県内で最も詳しく、使いやすいメディアを構築するために、日々奮闘しています。</p>
+    </div>
+    <div class="kenceWorkExplainQ"><span class="question">Q. </span>ケンチェ飯の特徴は？</div>
+    <div class="kenceWorkExplainA">
+      <div class="answer">A.</div>
+      <p>ケンチェ飯では、三重県生まれ三重県育ちの筆者がどのサイトよりも詳しくお店を紹介。</p>
+      <p>各飲食店の基本情報、お店の背景、こだわりなどが１ページに綿密にまとめられています。</p>
+      <p>各記事は地域別・ジャンル別に検索ができるようにサイト設計を行っています。</p>
+      <!-- <p>例えば、松阪市でラーメンを食べたい時は「ジャンル：ラーメン」→「地域：松阪」で検索すれば、過去に訪れたラーメン店が全て表示されるようになっています。</p> -->
+      <img class="hyokkoriButace" src="<?php echo $upload_dir['baseurl']; ?>/toppage/butace.png" alt="ひょっこりブタチェ" loading="lazy" />
+      <p>また、大手サイトでは利害関係が絡み、忖度の入った評価が多々見られます。</p>
+      <p>ケンチェ飯では少数精鋭のため、本音で飲食店の特徴や食べた感想を紹介しています。</p>
+    </div>
+
+    <div class="kenceWorkExplainQ"><span class="question">Q. </span>ケンチェ飯の活動指針は？</div>
+    <div class="kenceWorkExplainA">
+      <div class="answer">A.</div>
+      <p>少数精鋭で最高の ”<span class="p_crimson">グルメディア</span>” を作っています。</p>
+      <p>三重県で生活を営む人々や県外から三重を訪れる方々が、少しでも「三重の食で感動する」お手伝いができればと考えています。</p>
+      <p>また高齢者の飲食店オーナー様の支援、飲食店の宣伝活動も行っています。</p>
+      <p>このような、ケンチェ飯の目的や活動にご賛同いただける企業・団体・行政などの方々に、ご支援・スポンサー・タイアップのご提案をさせていただいております。<br />何卒、ご理解とご協力を賜りますようお願い申し上げます。</p>
+    </div>
+  </div>
+
+  <div class="PRMovieHeader topPageHeader">20秒でわかる『ケンチェ飯』</div>
+  <div class="PRMovieZone">
+    <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/IvzX13M69lw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
   <div class="coverageRequest kenceWorkContents">
     <div class="coverageRequestHeader topPageHeader">取材依頼</div>
     <img src="<?php echo $upload_dir['baseurl']; ?>/toppage/kence_work.jpg" alt="コラボ・取材の依頼" loading="lazy" />
@@ -77,50 +121,6 @@ $upload_dir = wp_upload_dir();
     <?php get_template_part('modules/history'); ?>
     <a class="linkHistory" href="https://kencellara.com/entry/history">過去のコラボ飯・広告掲載店を見る</a>
     <?php get_template_part('modules/analytics'); ?>
-  </div>
-
-  <div class="PRMovieHeader topPageHeader">20秒でわかる『ケンチェ飯』</div>
-  <div class="PRMovieZone">
-    <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/IvzX13M69lw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-
-  <div class="kenceWorkSlogan kenceWorkContents">
-    <div class="kenceWorkSloganHeader topPageHeader">ケンチェ飯とは？</div>
-    <img src="<?php echo $upload_dir['baseurl']; ?>/toppage/slogan.jpg" alt="ケンチェ飯のスローガン" loading="lazy" />
-  </div>
-
-  <div class="kenceWorkExplain kenceWorkContents">
-    <div class="kenceWorkExplainQ"><span class="question">Q. </span>なぜケンチェ飯を作ったの？</div>
-    <div class="kenceWorkExplainA">
-      <div class="answer">A.</div>
-      <p>三重県で生まれ三重県で育った「ケンチェラーラ」。</p>
-      <p>インターネットで三重県グルメを検索する際、上位に表示されるのは大手サイトや有名なお店ばかりであることに気づきました。</p>
-      <p>また大手サイトには表面的な情報（営業時間・定休日など）のみが掲載されており、飲食店のディープな情報が示されていない点に対して不便と感じました。</p>
-      <p>そこで、「どのサイトよりも詳しくお店を紹介する」ことをスローガンに掲げ、ケンチェ飯を作るに至りました。</p>
-      <p>三重県には飲食店が6999店舗あります。</p>
-      <p>ケンチェ飯では、お店を全店舗制覇すると同時に、お店の魅力やグルメ情報を多くの方と共有したいと考えています。</p>
-      <p>県内で最も詳しく、使いやすいメディアを構築するために、日々奮闘しています。</p>
-    </div>
-    <div class="kenceWorkExplainQ"><span class="question">Q. </span>ケンチェ飯の特徴は？</div>
-    <div class="kenceWorkExplainA">
-      <div class="answer">A.</div>
-      <p>ケンチェ飯では、三重県生まれ三重県育ちの筆者がどのサイトよりも詳しくお店を紹介。</p>
-      <p>各飲食店の基本情報、お店の背景、こだわりなどが１ページに綿密にまとめられています。</p>
-      <p>各記事は地域別・ジャンル別に検索ができるようにサイト設計を行っています。</p>
-      <!-- <p>例えば、松阪市でラーメンを食べたい時は「ジャンル：ラーメン」→「地域：松阪」で検索すれば、過去に訪れたラーメン店が全て表示されるようになっています。</p> -->
-      <img class="hyokkoriButace" src="<?php echo $upload_dir['baseurl']; ?>/toppage/butace.png" alt="ひょっこりブタチェ" loading="lazy" />
-      <p>また、大手サイトでは利害関係が絡み、忖度の入った評価が多々見られます。</p>
-      <p>ケンチェ飯では少数精鋭のため、本音で飲食店の特徴や食べた感想を紹介しています。</p>
-    </div>
-
-    <div class="kenceWorkExplainQ"><span class="question">Q. </span>ケンチェ飯の活動指針は？</div>
-    <div class="kenceWorkExplainA">
-      <div class="answer">A.</div>
-      <p>少数精鋭で最高の ”<span class="p_crimson">グルメディア</span>” を作っています。</p>
-      <p>三重県で生活を営む人々や県外から三重を訪れる方々が、少しでも「三重の食で感動する」お手伝いができればと考えています。</p>
-      <p>また高齢者の飲食店オーナー様の支援、飲食店の宣伝活動も行っています。</p>
-      <p>このような、ケンチェ飯の目的や活動にご賛同いただける企業・団体・行政などの方々に、ご支援・スポンサー・タイアップのご提案をさせていただいております。<br />何卒、ご理解とご協力を賜りますようお願い申し上げます。</p>
-    </div>
   </div>
 
   <div class="kencemeshiSupportHeader">日頃よりご支援頂き誠にありがとうございます。</div>
