@@ -41,6 +41,37 @@ input::placeholder {
   color: saddlebrown !important;
 }
 
+/* ヘッダーメニュー */
+.headerMenuContainer {
+  /* background-color: cornsilk;
+  padding: 10px 0; */
+}
+.headerMenu {
+  display: flex;
+  /* justify-content: center; */
+}
+.menuItem {
+  width: calc(100%/3);
+  /* margin-left: 10px; */
+  background-color: cornsilk;
+  color: saddlebrown;
+  border-bottom: 2px solid saddlebrown;
+}
+.menuItem a {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  display: block;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+.menuItem.active a {
+  background-color: saddlebrown;
+  color: cornsilk;
+  border-bottom: 2px solid cornsilk;
+  cursor: default;
+}
+
 /* parts */
 .p_bold {
   font-weight: bold;

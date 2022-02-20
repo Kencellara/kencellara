@@ -1,17 +1,16 @@
 <?php
-  $gourmet_posts_count = get_category_by_slug('gourmet')->count;
-	$support_page_id = get_page_by_path('support')->ID;
-	$kence_work_page_id = get_page_by_path('kence_work')->ID;
-  $upload_dir = wp_upload_dir();
-  $common_img_dir = $upload_dir['baseurl'] . '/common';
-  $sticker_img_dir = $upload_dir['baseurl'] . '/sticker';
-  $toppage_img_dir = $upload_dir['baseurl'] . '/toppage';
-  $hokubu_post_count = get_category_by_slug('kameyama')->count + get_category_by_slug('komono')->count + get_category_by_slug('yokkaichi')->count + get_category_by_slug('kuwana')->count;
-  $iga_post_count = get_category_by_slug('iga')->count;
-  $chubu_post_count = get_category_by_slug('tsu')->count + get_category_by_slug('matsusaka')->count + get_category_by_slug('meiwa')->count + get_category_by_slug('taki')->count;
-  $iseShima_post_count = get_category_by_slug('ise')->count + get_category_by_slug('shima')->count + get_category_by_slug('toba')->count + get_category_by_slug('minamiise')->count;
-  $higashikishu_post_count = get_category_by_slug('odai')->count + get_category_by_slug('kihoku')->count + get_category_by_slug('owase')->count;
-  $random_articles = Habakiri_Base_Functions::set_random_articles();
+$gourmet_posts_count = get_category_by_slug('gourmet')->count;
+$support_page_id = get_page_by_path('support')->ID;
+$kence_work_page_id = get_page_by_path('kence_work')->ID;
+$upload_dir = wp_upload_dir();
+$common_img_dir = $upload_dir['baseurl'] . '/common';
+$sticker_img_dir = $upload_dir['baseurl'] . '/sticker';
+$toppage_img_dir = $upload_dir['baseurl'] . '/toppage';
+$hokubu_post_count = get_category_by_slug('kameyama')->count + get_category_by_slug('komono')->count + get_category_by_slug('yokkaichi')->count + get_category_by_slug('kuwana')->count;
+$iga_post_count = get_category_by_slug('iga')->count;
+$chubu_post_count = get_category_by_slug('tsu')->count + get_category_by_slug('matsusaka')->count + get_category_by_slug('meiwa')->count + get_category_by_slug('taki')->count;
+$iseShima_post_count = get_category_by_slug('ise')->count + get_category_by_slug('shima')->count + get_category_by_slug('toba')->count + get_category_by_slug('minamiise')->count;
+$higashikishu_post_count = get_category_by_slug('odai')->count + get_category_by_slug('kihoku')->count + get_category_by_slug('owase')->count;
 ?>
 
 <div class="simpleNews">
@@ -21,67 +20,68 @@
 <div class="storeCountArea">
   <div class="storeCountContainer">
     <img src="<?php echo $common_img_dir; ?>/crown.jpg" alt="王冠" />
-    現在<span class="storeCounter"><?php echo $gourmet_posts_count+8; ?></span>店舗制覇
+    現在<span class="storeCounter"><?php echo $gourmet_posts_count + 8; ?></span>店舗制覇
     <img src="<?php echo $common_img_dir; ?>/crown.jpg" alt="王冠" />
   </div>
 </div>
 
 <!-- スライドショー -->
-<div class="magazineSlideZone">
-  <div class="magazineHeader topPageHeader">ケンチェマガジン <i class="fas fa-book-open"></i></div>
-  <div id="sliderMagazine" class="sliderMagazine">
+<div class="topSliderZone">
+  <div class="newPostsHeader topPageHeader">おすすめ記事</div>
+  <div class="slider">
     <div>
-      <a href="https://kencellara.com/magazine/ise-ramen" target="_blank" rel="noreferrer">
-        <img src="https://kencellara.com/magazine/image/cover/ise-ramen.jpg" alt="伊勢のおすすめラーメン" />
-        <span class="magazineTitle">伊勢のおすすめラーメン</span>
+      <a href="https://store.line.me/stickershop/product/16142065/ja?ref=gnsh_stickerDetail" target="_blank" rel="noreferrer">
+        <img src="<?php echo $sticker_img_dir . '/LINEスタンプ.jpg'; ?>" alt="ケンチェ飯公式LINEスタンプ" />
       </a>
     </div>
     <div>
-      <a href="https://kencellara.com/magazine/chubu-oniku" target="_blank" rel="noreferrer">
-        <img src="https://kencellara.com/magazine/image/cover/chubu-oniku.jpg" alt="三重県中部至高のお肉" />
-        <span class="magazineTitle">三重県中部至高のお肉</span>
+      <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('kan'); ?>
+      <a href="<?php echo the_permalink($slider_articles_id); ?>">
+        <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
       </a>
     </div>
     <div>
-      <a href="https://kencellara.com/magazine/kakurega" target="_blank" rel="noreferrer">
-        <img src="https://kencellara.com/magazine/image/cover/kakurega.jpg" alt="隠れ家コレクション" />
-        <span class="magazineTitle">隠れ家コレクション</span>
+      <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('touyouke-grill'); ?>
+      <a href="<?php echo the_permalink($slider_articles_id); ?>">
+        <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
       </a>
     </div>
     <div>
-      <a href="https://kencellara.com/magazine/cospa" target="_blank" rel="noreferrer">
-        <img src="https://kencellara.com/magazine/image/cover/cospa.jpg" alt="コスパ最強のお店１０選" />
-        <span class="magazineTitle">コスパ最強のお店１０選</span>
+      <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('history'); ?>
+      <a href="<?php echo the_permalink($slider_articles_id); ?>">
+        <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
       </a>
     </div>
     <div>
-      <a href="https://kencellara.com/magazine/chubu-udon" target="_blank" rel="noreferrer">
-        <img src="https://kencellara.com/magazine/image/cover/chubu-udon.jpg" alt="中部の美味しい饂飩" />
-        <span class="magazineTitle">中部の美味しい饂飩</span>
+      <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('nakaroku'); ?>
+      <a href="<?php echo the_permalink($slider_articles_id); ?>">
+        <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
       </a>
     </div>
     <div>
-      <a href="https://kencellara.com/magazine/kence-osusume-1" target="_blank" rel="noreferrer">
-        <img src="https://kencellara.com/magazine/image/cover/kence-osusume-1.jpg" alt="ケンチェのおすすめ店" />
-        <span class="magazineTitle">ケンチェのおすすめ店</span>
+      <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('take-sushi'); ?>
+      <a href="<?php echo the_permalink($slider_articles_id); ?>">
+        <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
       </a>
     </div>
     <div>
-      <a href="https://kencellara.com/magazine/trend-cafe-1" target="_blank" rel="noreferrer">
-        <img src="https://kencellara.com/magazine/image/cover/trend-cafe-1.jpg" alt="今熱盛のカフェ８選" />
-        <span class="magazineTitle">今熱盛のカフェ８選</span>
-      </a>
-    </div>
-    <div>
-      <a href="https://kencellara.com/magazine/meiwa-matome" target="_blank" rel="noreferrer">
-        <img src="https://kencellara.com/magazine/image/cover/meiwa-matome.jpg" alt="明和町グルメまとめ" />
-        <span class="magazineTitle">明和町グルメまとめ</span>
+      <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('menya-sen'); ?>
+      <a href="<?php echo the_permalink($slider_articles_id); ?>">
+        <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" />
       </a>
     </div>
   </div>
 </div>
-<?php get_template_part( 'modules/slick-js-magazine' ); ?>
+<!-- slickはレイアウト崩れを避けるため直後読み込み -->
+<?php get_template_part('modules/slick-js'); ?>
 
+<div class="goToArticlesZone">
+  <div class="goToArticlesBtn">
+    <a href="<?= home_url('articles') ?>">
+      最新記事へ
+    </a> 
+  </div>
+</div>
 
 <!-- 地域別検索 -->
 <div id="areaSearch" class="areaSearchZone">
@@ -264,86 +264,8 @@
 </div>
 
 <!-- あいうえお検索 -->
-<?php get_template_part( 'modules/aiueo_search' ); ?>
+<?php get_template_part('modules/aiueo_search'); ?>
 
-<div class="recommendGourmetZone">
-  <div class="recommendGourmetHeader topPageHeader"><i class="fas fa-fire"></i> ケンチェ激推しグルメ <i class="fas fa-fire"></i></div>
-  <div class="recommendGourmetContainer first">
-    <div class="recommendGourmetBox">
-      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug($random_articles[5]); ?>
-      <div class="recommendGourmetImg">
-        <a href="<?php echo the_permalink($recommend_articles_id); ?>">
-          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt=<?= $random_articles[5] ?> loading="lazy" />
-        </a>
-      </div>
-    </div>
-
-    <div class="recommendGourmetBox">
-      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug($random_articles[6]); ?>
-      <div class="recommendGourmetImg">
-        <a href="<?php echo the_permalink($recommend_articles_id); ?>">
-          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt=<?= $random_articles[6] ?> loading="lazy" />
-        </a>
-      </div>
-    </div>
-
-    <div class="recommendGourmetBox">
-      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug($random_articles[7]); ?>
-      <div class="recommendGourmetImg">
-        <a href="<?php echo the_permalink($recommend_articles_id); ?>">
-          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt=<?= $random_articles[7] ?> loading="lazy" />
-        </a>
-      </div>
-    </div>
-
-    <div class="recommendGourmetBox">
-      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug($random_articles[8]); ?>
-      <div class="recommendGourmetImg">
-        <a href="<?php echo the_permalink($recommend_articles_id); ?>">
-          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt=<?= $random_articles[8] ?> loading="lazy" />
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="recommendGourmetContainer">
-    <div class="recommendGourmetBox">
-      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug($random_articles[9]); ?>
-      <div class="recommendGourmetImg">
-        <a href="<?php echo the_permalink($recommend_articles_id); ?>">
-          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt=<?= $random_articles[9] ?> loading="lazy" />
-        </a>
-      </div>
-    </div>
-
-    <div class="recommendGourmetBox">
-      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug($random_articles[10]); ?>
-      <div class="recommendGourmetImg">
-        <a href="<?php echo the_permalink($recommend_articles_id); ?>">
-          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt=<?= $random_articles[10] ?> loading="lazy" />
-        </a>
-      </div>
-    </div>
-
-    <div class="recommendGourmetBox">
-      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug($random_articles[11]); ?>
-      <div class="recommendGourmetImg">
-        <a href="<?php echo the_permalink($recommend_articles_id); ?>">
-          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt=<?= $random_articles[11] ?> loading="lazy" />
-        </a>
-      </div>
-    </div>
-
-    <div class="recommendGourmetBox">
-      <?php $recommend_articles_id = Habakiri_Base_Functions::get_post_id_by_slug($random_articles[12]); ?>
-      <div class="recommendGourmetImg">
-        <a href="<?php echo the_permalink($recommend_articles_id); ?>">
-          <img src="<?php echo get_the_post_thumbnail_url($recommend_articles_id, 'large'); ?>" alt=<?= $random_articles[12] ?> loading="lazy" />
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
 
 <!-- ケンチェ番付 -->
 <div class="banzukeZone">
@@ -429,8 +351,8 @@
 </div>
 
 <div class="kenceWindowAnnounce">
-  ご意見・ご要望は下記フォームからお気軽にどうぞ！<br/>
-  例：行って欲しいお店、コラボのご依頼、etc..<br/>
+  ご意見・ご要望は下記フォームからお気軽にどうぞ！<br />
+  例：行って欲しいお店、コラボのご依頼、etc..<br />
   <i class="fas fa-chevron-down"></i>
 </div>
 
@@ -453,38 +375,6 @@
 <!-- ./modal -->
 
 <div class="kenceWindowCaution">
-  ※Googleフォームが開きます<br/>
+  ※Googleフォームが開きます<br />
   ※ページの遷移はございません
-</div>
-
-<div class="kencemeshiExplain">
-  <div class="kencemeshiExplainHeader topPageHeader">ケンチェ飯とは？</div>
-  <div class="kencemeshiExplainContents">
-    <img src="<?php echo $upload_dir['baseurl']; ?>/toppage/kence_explain.jpg" alt="ケンチェ飯の説明" loading="lazy" />
-    <p>三重県生まれ三重県育ちの「<strong>ケンチェラーラ.</strong>」が</p>
-    <p>三重県グルメを食べ歩き, <strong><u>どのサイトよりも詳しく</u></strong>グルメ情報を発信するサイト.</p>
-    <p>三重県の飲食店を探す際, <strong><u>カテゴリー別</u>, <u>エリア別</u></strong>に検索が可能.</p>
-    <p><strong><u>読者限定のイベント</u></strong>や<strong><u>特典</u></strong>が盛りだくさんなので、ぜひご活用ください.</p>
-    <p><span class="instaText">Instagram</span>で随時情報をお知らせ <a class="instaLink" href="https://www.instagram.com/kencellara_food/"><strong><u>@kencellara_food</u></strong></a></p>
-    <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/IvzX13M69lw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <p style="font-size:19px;text-align:center;"><strong>20秒でわかる『ケンチェ飯』<i class="fas fa-video"></i></strong></p>
-  </div>
-</div>
-
-<div class="kencemeshiHistory">
-  <div class="kencemeshiHistoryHeader topPageHeader">ケンチェ飯の歴史</div>
-  <div class="kencemeshiHistoryContents">
-    <?php get_template_part('modules/history'); ?>
-  </div>
-  <?php get_template_part('modules/analytics'); ?>
-  <div class="supportZone">
-    <script src="https://codoc.jp/js/cms.js" data-css="red-square" charset="UTF-8" defer></script>
-    <div id="codoc-entry-Aly1W7g5Yg" class="codoc-entries" data-without-body="1" data-support-button-text="ケンチェ飯を支援する" data-show-like="0" data-show-powered-by="0" data-support-message="頂戴しましたご支援は、サイトの運営費に補填させて頂いております。"></div>
-    <div class="supportNav">
-      <p class="acknowledgement">
-        お気持ありがとうございます。支援金は、ケンチェ飯の活動費用として大切に使わせていただきます。今後とも応援よろしくお願いします。
-      </p>
-      <p class="to_kence_work">コラボ・お仕事のご依頼は上記『ケンチェの窓口』からお願い致します。</p>
-    </div>
-  </div>
 </div>

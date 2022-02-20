@@ -2,6 +2,9 @@
   .kence_work {
     padding: 15px 5px;
   }
+  .ccZone {
+    padding: 5px;
+  }
   .kenceWorkWindow {
     padding: 10px;
   }
@@ -9,10 +12,13 @@
     font-size: 14px;
   }
   .kencemeshiHistoryContents.kencemeshiHistoryContents {
-    padding: 5px;
+    padding: 5px 5px 5px 15px;
   }
   a.linkHistory {
     font-size: 17px;
+  }
+  .PRMovieHeader {
+    width: 320px;
   }
   .kenceWorkExplainQ {
     font-size: 18px;

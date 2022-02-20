@@ -2,6 +2,10 @@
   .col-md-9 {
     padding: 0 5px;
   }
+  .menuItem a {
+    padding: 8px 5px;
+    font-size: 16px;
+  }
   .kenceWindowModalContent {
     width: calc(700px / 2);
   }
