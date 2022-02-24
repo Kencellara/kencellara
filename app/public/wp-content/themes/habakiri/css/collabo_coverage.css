@@ -46,6 +46,9 @@
   background-color: #eee;
   padding: 10px 30px;
 }
+.kencemeshiHistoryContents ul {
+  list-style: inherit;
+}
 a.linkHistory {
   display: block;
   text-align: center;
