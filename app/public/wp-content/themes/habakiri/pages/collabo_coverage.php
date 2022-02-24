@@ -1,6 +1,4 @@
 <?php
-add_action('wp_enqueue_scripts', wp_enqueue_style('collabo_coverage-style', get_template_directory_uri() . '/css/collabo_coverage.css', array('habakiri', 'common-style'), '2.0'));
-add_action('wp_enqueue_scripts', wp_enqueue_style('sp_collabo_coverage-style', get_template_directory_uri() . '/css/sp_collabo_coverage.css', array(), '2.0'));
 $upload_dir = wp_upload_dir();
 ?>
 <nav class="headerMenuContainer">
