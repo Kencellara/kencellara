@@ -74,6 +74,12 @@
         <span class="magazineTitle">三重県「カツ」まとめ</span>
       </a>
     </div>
+    <div>
+      <a href="https://kencellara.com/magazine/sushi-matome-1" target="_blank" rel="noreferrer">
+        <img src="https://kencellara.com/magazine/image/cover/sushi-matome-1.jpg" alt="三重県「カツ」まとめ" />
+        <span class="magazineTitle">中南部お寿司特集</span>
+      </a>
+    </div>
   </div>
 </div>
 <?php get_template_part('modules/slick-js-magazine'); ?>
