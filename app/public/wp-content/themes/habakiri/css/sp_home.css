@@ -2,9 +2,8 @@
   section.typeA .tabLabel {
     font-size: 14px;
   }
-  .topPageHeader {
-    width: 290px;
-    font-size: 20px;
+  .topPageHeader.areaSearchHeader {
+    margin-bottom: 35px;
   }
   .magazineSlideZone {
     margin: 10px 0;
