@@ -434,7 +434,6 @@ section.typeA input:checked + .tabLabel + .content {
 
 /* ジャンル検索 */
 .genreSearchZone {
-  border: 3px dotted cornsilk;
   margin: 20px 0;
   background-image: url("https://kencellara.com/wp-content/uploads/toppage/izakaya_hukei_400.jpg");
 }
@@ -558,7 +557,6 @@ section.typeA input:checked + .tabLabel + .content {
 }
 .banzukeContainer {
   padding: 10px 0;
-  border: 3px ridge darkgoldenrod;
   background-color: cornsilk;
 }
 .banzukeContainer.sp {
@@ -568,9 +566,6 @@ section.typeA input:checked + .tabLabel + .content {
 .banzukeContainer.sp.open {
   height: calc(100% + 45px);
 }
-/* .banzukeContainer.sp tr:nth-child(n+4) {
-  display: none;
-} */
 .banzukeContainer.sp.open tr:nth-child(n+4) {
   display: table-row;
 }
@@ -656,7 +651,6 @@ section.typeA input:checked + .tabLabel + .content {
 }
 .kenceWindowCaution {
   display: block;
-  border-bottom: 3px double darkgoldenrod;
   font-size: 12px;
   background-color: cornsilk;
   text-align: center;
