@@ -67,14 +67,27 @@
   color: darkgoldenrod !important;
 }
 
-/* 雑誌のスライド */
+/* magazines */
+.magazineArea .contentBox {
+  margin-bottom: 15px;
+  background-color: #ccc4a5;
+}
+.newMagazineZone {
+  padding: 10px;
+}
+.newMagazines {
+  display: flex;
+}
+.newMagazineBox {
+  margin: 30px;
+  text-align: center;
+}
 .magazineHeader {
   margin-bottom: 15px;
 }
 .magazineSlideZone {
   margin: 0;
   padding: 15px 0 5px;
-  background-color: linen;
 }
 .magazineSlideZone .slick-slide {
   opacity: 1;
@@ -85,7 +98,7 @@
   color: crimson !important;
 }
 .magazineSlideZone .slick-dots {
-  background-color: linen;
+  background-color: #ccc4a5;
 }
 .magazineSlideZone .slick-dots li button:before {
   color: crimson !important;
