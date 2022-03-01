@@ -22,7 +22,7 @@
 		add_action( 'wp_enqueue_scripts', 'header_scripts' );
 	?>
 	<?php $theme_url = get_theme_file_uri(); ?>
-	<link href="<?php echo $theme_url; ?>/assets/fontawesome/css/all.css" rel="stylesheet">
+	<link href="<?php echo $theme_url; ?>/assets/fontawesome/css/all.min.css" rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
