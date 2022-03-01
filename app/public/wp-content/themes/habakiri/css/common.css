@@ -86,13 +86,6 @@ input::placeholder {
   text-shadow: 2px 2px 2px gold;
 }
 
-/* codoc */
-.codoc-entry {
-  border: 3px outset crimson;
-  margin: 30px auto;
-  background-color: #fff;
-}
-
 a.instaLink {
   color: deeppink;
 }
