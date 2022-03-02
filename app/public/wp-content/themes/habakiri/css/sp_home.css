@@ -20,6 +20,7 @@
     opacity: 1;
   }
   .slider img {
+    width: 280px;
     margin: 0 auto;
   }
   .magazineSlideZone .slick-dots {

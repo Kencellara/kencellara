@@ -132,14 +132,14 @@ section.typeA input:checked + .tabLabel + .content {
 /* スライドショー */
 .slider {
   background-color: #fff;
-  padding: 0 0 20px;
+  padding: 12px 0 26px;
 }
 .slider img {
-  width: 90%;
+  width: 200px;
   margin: 20px auto 0;
 }
 .slick-slide {
-  margin: 20px;
+  margin: 5px 20px;
   opacity: 0.6;
 }
 .slick-slider {
@@ -147,10 +147,10 @@ section.typeA input:checked + .tabLabel + .content {
 }
 .slick-center {
   opacity: 1;
-  transform: scale(1.5);
 }
 .slick-center img {
-  margin: 10px;
+  transform: scale(1.4);
+  margin: 10px auto;
   padding: 15px 0;
 }
 .slick-prev {
