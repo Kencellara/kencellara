@@ -10,7 +10,7 @@
 		<div id="footer-menu">
 		  <div id="blog-title-content">
 	      <a href=<?php echo home_url() ?>>
-	        <img title="ケンチェ飯" src="<?php echo $upload_dir['baseurl']; ?>/toppage/footer.jpg" alt="ケンチェ飯フッター" style="height: 50px;" loading="lazy" />
+	        <img title="ケンチェ飯" src="<?php echo $upload_dir['baseurl']; ?>/common/footer_300.jpg" alt="ケンチェ飯フッター" style="height: 50px;" loading="lazy" />
 	      </a>
 	    </div>
 	    <nav>
