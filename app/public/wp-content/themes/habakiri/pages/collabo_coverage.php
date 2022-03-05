@@ -1,4 +1,5 @@
 <?php
+add_action('wp_enqueue_scripts', wp_enqueue_script('modal-script', get_theme_file_uri('/js/modal.js'), array('jquery')));
 $upload_dir = wp_upload_dir();
 ?>
 <nav class="headerMenuContainer">
