@@ -19,9 +19,9 @@ $higashikishu_post_count = get_category_by_slug('odai')->count + get_category_by
 
 <div class="storeCountArea">
   <div class="storeCountContainer">
-    <img src="<?php echo $common_img_dir; ?>/crown.jpg" alt="王冠" />
+    <img src="<?php echo $common_img_dir; ?>/crown_50.jpg" alt="王冠" />
     現在<span class="storeCounter"><?php echo $gourmet_posts_count + 8; ?></span>店舗制覇
-    <img src="<?php echo $common_img_dir; ?>/crown.jpg" alt="王冠" />
+    <img src="<?php echo $common_img_dir; ?>/crown_50.jpg" alt="王冠" />
   </div>
 </div>
 
