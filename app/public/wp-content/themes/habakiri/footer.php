@@ -1,7 +1,7 @@
 <?php $upload_dir = wp_upload_dir(); ?>
 <?php
-	add_action('wp_enqueue_scripts', wp_enqueue_style('footer-style', get_template_directory_uri() . '/css/footer.css', array('common-style')));
-	add_action('wp_enqueue_scripts', wp_enqueue_style('sp_footer-style', get_template_directory_uri() . '/css/sp_footer.css'));
+	add_action('wp_enqueue_scripts', wp_enqueue_style('footer-style', get_template_directory_uri() . '/scss-css/footer.css', array('common-style'), '3.0'));
+	add_action('wp_enqueue_scripts', wp_enqueue_style('sp_footer-style', get_template_directory_uri() . '/scss-css/sp_footer.css', [], '3.0'));
 	add_action('wp_enqueue_scripts', wp_enqueue_script('to_pagetop-script', get_template_directory_uri() . '/js/to_pagetop.js'));
 ?>
 		<?php do_action( 'habakiri_after_contents_content' ); ?>
@@ -10,7 +10,7 @@
 		<div id="footer-menu">
 		  <div id="blog-title-content">
 	      <a href=<?php echo home_url() ?>>
-	        <img title="ケンチェ飯" src="<?php echo $upload_dir['baseurl']; ?>/common/footer_300.jpg" alt="ケンチェ飯フッター" style="height: 50px;" loading="lazy" />
+	        <img title="ケンチェ飯" src="<?php echo $upload_dir['baseurl']; ?>/common/footer_300.jpg" alt="ケンチェ飯フッター" style="height:50px;width:268px" loading="lazy" />
 	      </a>
 	    </div>
 	    <nav>

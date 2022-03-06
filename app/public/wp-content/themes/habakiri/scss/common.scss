@@ -298,3 +298,12 @@ a.kenceWindowModalClose {
 .sub-page-contents {
   padding-top: 10px;
 }
+
+
+.slider {
+  opacity: 0;
+  transition: opacity .3s linear;
+  &.slick-initialized {
+    opacity: 1;
+  }
+}
