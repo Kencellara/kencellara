@@ -22,15 +22,15 @@
     <div class="magazineHeader topPageHeader">マガジン新着 <i class="fas fa-bolt"></i></div>
     <div class="newMagazines">
       <div class="newMagazineBox">
-        <a href="https://kencellara.com/magazine/katu-matome-1" target="_blank" rel="noreferrer">
-          <img src="https://kencellara.com/magazine/image/cover/katu-matome-1.jpg" alt="三重県「カツ」まとめ" />
-          <span class="magazineTitle">三重県「カツ」まとめ</span>
+        <a href="https://kencellara.com/magazine/sushi-matome-1" target="_blank" rel="noreferrer">
+          <img src="https://kencellara.com/magazine/image/cover/sushi-matome-1.jpg" alt="中南部お寿司特集" />
+          <span class="magazineTitle">中南部お寿司特集</span>
         </a>
       </div>
       <div class="newMagazineBox">
-        <a href="https://kencellara.com/magazine/sushi-matome-1" target="_blank" rel="noreferrer">
-          <img src="https://kencellara.com/magazine/image/cover/sushi-matome-1.jpg" alt="三重県「カツ」まとめ" />
-          <span class="magazineTitle">中南部お寿司特集</span>
+        <a href="https://kencellara.com/magazine/ekichika" target="_blank" rel="noreferrer">
+          <img src="https://kencellara.com/magazine/image/cover/ekichika.jpg" alt="駅近飲食店オススメ8選" />
+          <span class="magazineTitle">駅近飲食店オススメ8選</span>
         </a>
       </div>
     </div>
@@ -94,8 +94,14 @@
       </div>
       <div>
         <a href="https://kencellara.com/magazine/sushi-matome-1" target="_blank" rel="noreferrer">
-          <img src="https://kencellara.com/magazine/image/cover/sushi-matome-1.jpg" alt="三重県「カツ」まとめ" />
+          <img src="https://kencellara.com/magazine/image/cover/sushi-matome-1.jpg" alt="中南部お寿司特集" />
           <span class="magazineTitle">中南部お寿司特集</span>
+        </a>
+      </div>
+      <div>
+        <a href="https://kencellara.com/magazine/ekichika" target="_blank" rel="noreferrer">
+          <img src="https://kencellara.com/magazine/image/cover/ekichika.jpg" alt="駅近飲食店オススメ8選" />
+          <span class="magazineTitle">駅近飲食店オススメ8選</span>
         </a>
       </div>
     </div>
