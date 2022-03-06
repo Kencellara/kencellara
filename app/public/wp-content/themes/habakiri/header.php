@@ -2,6 +2,16 @@
 <html <?php language_attributes(); ?>>
 
 <head prefix="og: http://ogp.me/ns# <?php echo (is_single() || is_page()) ? 'fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#' : 'fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#' ?>">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175503969-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'UA-175503969-1');
+	</script>
 	<script src="https://www.googleoptimize.com/optimize.js?id=OPT-NQWCZWX"></script>
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
