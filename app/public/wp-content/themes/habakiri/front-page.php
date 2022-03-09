@@ -5,13 +5,7 @@ add_action('wp_enqueue_scripts', wp_enqueue_style('slick-style', get_template_di
 add_action('wp_enqueue_scripts', wp_enqueue_style('slick-theme-style', get_template_directory_uri() .'/scss-css/slick-theme.css', array(), '3.0.2'));
 add_action('wp_enqueue_scripts', wp_enqueue_script('slick-script', get_theme_file_uri('/src/js/slick/slick.min.js'), array('jquery')));
 add_action('wp_enqueue_scripts', wp_enqueue_script('sp_ad_article-script', get_theme_file_uri('/js/sp_ad_article.js')));
-?>
-<?php
-function toppage_scripts()
-{
-	wp_enqueue_script('modal-script', get_template_directory_uri() . '/js/modal.js', array('jquery'));
-}
-add_action('wp_enqueue_scripts', 'toppage_scripts');
+add_action('wp_enqueue_scripts', wp_enqueue_script('modal-script', get_theme_file_uri('/js/modal.js')));
 ?>
 <?php get_header(); ?>
 
