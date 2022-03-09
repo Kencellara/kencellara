@@ -13,15 +13,9 @@
 		<?php get_template_part('modules/sidebar/profile'); ?>
 		<?php get_template_part('modules/sidebar/sns'); ?>
 		<?php get_template_part('modules/sidebar/adsense'); ?>
-		<?php get_template_part('modules/sidebar/popular_articles'); ?>
+		<?php get_template_part('modules/sidebar/magazines'); ?>
 		<?php get_template_part('modules/sidebar/instagram'); ?>
-		<!-- <div class="sb_categoryArticles sb_content">
-			<div class="sb_ramenHeader sb_header">『ラーメン』特集</div>
-			<?php get_template_part('modules/sb_category', null, array('name' => 'ramen', 'count' => 5)); ?>
-			<div class="sb_goToArchivePage">
-				<a href=<?php echo get_category_link(get_category_by_slug('ramen')->cat_ID); ?>>もっと見る <i class="fas fa-chevron-right"></i></a>
-			</div>
-		</div> -->
+		<?php get_template_part('modules/sidebar/popular_articles'); ?>
 		<?php get_template_part('modules/sidebar/adsense_2'); ?>
 		<?php get_template_part('modules/sidebar/categories'); ?>
 		<?php get_template_part('modules/sidebar/adsense_2'); ?>

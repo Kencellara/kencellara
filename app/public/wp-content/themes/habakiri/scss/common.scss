@@ -1,3 +1,5 @@
+@import 'settings';
+
 html {
   scroll-padding-top: 74px;
 }
@@ -299,11 +301,40 @@ a.kenceWindowModalClose {
   padding-top: 10px;
 }
 
-
 .slider {
   opacity: 0;
   transition: opacity .3s linear;
   &.slick-initialized {
     opacity: 1;
+  }
+}
+
+a.linkBtn {
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  color: $kence-color-1;
+  background-color: $kence-color-2;
+  box-shadow: 0 0 10px $kence-color-1;
+  border-radius: 8px;
+  transition: 0.3s;
+  &:hover,
+  &:active,
+  &:focus, {
+    color: $kence-color-2;
+    background-color: $kence-color-1;
+    &::after {
+      border-color: $kence-color-2;
+    }
+  }
+  &::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-top: 3px solid $kence-color-1;
+    border-right: 3px solid $kence-color-1;
+    transform: rotate(45deg);
   }
 }

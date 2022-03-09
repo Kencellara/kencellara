@@ -13,7 +13,7 @@
 		<?php get_template_part('modules/sidebar/profile'); ?>
 		<?php get_template_part('modules/sidebar/sns'); ?>
 		<?php get_template_part('modules/sidebar/adsense'); ?>
-		<?php get_template_part('modules/sidebar/popular_articles'); ?>
+		<?php get_template_part('modules/sidebar/magazines'); ?>
 		<?php get_template_part('modules/sidebar/instagram'); ?>
 	</div>
 </aside>

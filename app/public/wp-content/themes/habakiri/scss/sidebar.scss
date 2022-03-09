@@ -1,13 +1,15 @@
+@import 'settings';
+
 .sb_header {
-  color: saddlebrown;
+  color: $kence-color-2;
   position: relative;
   font-size: 120%;
   font-weight: bold;
   height: 37px;
   line-height: 30px;
   padding: 0.2em 0.5em;
-  background-color: cornsilk;
-  box-shadow: 0px 0px 0px 5px cornsilk;
+  background-color: $kence-color-1;
+  box-shadow: 0px 0px 0px 5px $kence-color-1;
   border: 1px dashed #fff;
   margin-bottom: 30px;
   &::before,
@@ -21,16 +23,16 @@
     top: 40px;
     left: -6px;
     border-width: 0 15px 15px 0;
-    border-right-color: darkgoldenrod;
+    border-right-color: $kence-color-3;
   }
 }
 .sb_subHeader {
   margin: 20px 2px;
   font-weight: bold;
   position: relative;
-  background: cornsilk;
-  box-shadow: 0px 0px 0px 5px cornsilk;
-  border: dashed 2px white;
+  background: $kence-color-1;
+  box-shadow: 0px 0px 0px 5px $kence-color-1;
+  border: dashed 2px #fff;
   padding: 0.2em 0.5em;
   color: brown;
   &::after {
@@ -40,7 +42,7 @@
     top: -7px;
     border-width: 0 0 15px 15px;
     border-style: solid;
-    border-color: #fff #fff darkgoldenrod;
+    border-color: #fff #fff $kence-color-3;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
   }
 }
@@ -62,7 +64,7 @@
 .sb_snsLogosHeader {
   margin: 0 !important;
   font-weight: bold;
-  color: saddlebrown;
+  color: $kence-color-2;
   font-size: 16px;
 }
 .sb_snsLogos {
@@ -77,7 +79,7 @@
   }
   .fa-twitter-square {
     background-color: #fff;
-    color: #55acee;
+    color: $tw-color;
     font-size: 37px;
     vertical-align: middle;
   }
@@ -85,11 +87,25 @@
     border-radius: 10px;
   }
   .fa-facebook-square {
-    background-color: white;
+    background-color: #fff;
     border-radius: 10px;
     vertical-align: top;
     font-size: 37px;
-    color: #305097;
+    color: $fb-color;
+  }
+}
+.topMagazine {
+  text-align: center;
+  img {
+    box-shadow: 0px 0px 20px 5px $kence-color-4;
+  }
+}
+.toMagazines {
+  margin: 25px auto 0;
+  font-weight: bold;
+  a {
+    width: 140px;
+    font-size: 15px;
   }
 }
 .sb_archive {
@@ -97,7 +113,7 @@
     padding-left: 10px;
   }
   a {
-    color: saddlebrown;
+    color: $kence-color-2;
   }
 }
 .sb_categoryContents {
@@ -110,7 +126,7 @@
   text-align: center;
   width: 100px;
   margin: 0 5px 5px 0;
-  border: 1px solid saddlebrown;
+  border: 1px solid $kence-color-2;
   border-radius: 9px;
 }
 
@@ -122,7 +138,7 @@ iframe.instagram-media {
 /* ピックアップ記事 */
 .sb_article {
   background-color: #fff;
-  border: 3px outset saddlebrown;
+  border: 3px outset $kence-color-2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

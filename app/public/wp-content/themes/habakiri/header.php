@@ -27,12 +27,12 @@
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5shiv.min.js"></script>
 	<![endif]-->
 	<?php
-	add_action('wp_enqueue_scripts', wp_enqueue_style('common-style', get_template_directory_uri() . '/scss-css/common.css', array('habakiri'), '3.0'));
+	add_action('wp_enqueue_scripts', wp_enqueue_style('common-style', get_template_directory_uri() . '/scss-css/common.css', array('habakiri'), '3.0.3'));
 	add_action('wp_enqueue_scripts', wp_enqueue_style('sp_common-style', get_template_directory_uri() . '/scss-css/sp_common.css', array(), '3.0.2'));
 	add_action('wp_enqueue_scripts', wp_enqueue_style('header-style', get_template_directory_uri() . '/scss-css/header.css', array(), '3.0.2'));
 	add_action('wp_enqueue_scripts', wp_enqueue_style('sp_header-style', get_template_directory_uri() . '/scss-css/sp_header.css', array(), '3.0'));
-	add_action('wp_enqueue_scripts', wp_enqueue_style('sidebar-style', get_template_directory_uri() . '/scss-css/sidebar.css', array(), '3.0.2'));
-	add_action('wp_enqueue_scripts', wp_enqueue_style('sp_sidebar-style', get_template_directory_uri() . '/scss-css/sp_sidebar.css', array(), '3.0'));
+	add_action('wp_enqueue_scripts', wp_enqueue_style('sidebar-style', get_template_directory_uri() . '/scss-css/sidebar.css', array(), '3.0.3'));
+	add_action('wp_enqueue_scripts', wp_enqueue_style('sp_sidebar-style', get_template_directory_uri() . '/scss-css/sp_sidebar.css', array(), '3.0.3'));
 	?>
 	<?php
 	function header_scripts()
