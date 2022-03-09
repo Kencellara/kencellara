@@ -33,13 +33,7 @@
 	add_action('wp_enqueue_scripts', wp_enqueue_style('sp_header-style', get_template_directory_uri() . '/scss-css/sp_header.css', array(), '3.0'));
 	add_action('wp_enqueue_scripts', wp_enqueue_style('sidebar-style', get_template_directory_uri() . '/scss-css/sidebar.css', array(), '3.0.3'));
 	add_action('wp_enqueue_scripts', wp_enqueue_style('sp_sidebar-style', get_template_directory_uri() . '/scss-css/sp_sidebar.css', array(), '3.0.3'));
-	?>
-	<?php
-	function header_scripts()
-	{
-		wp_enqueue_script('header_sns-script', get_template_directory_uri() . '/js/header_sns.js', array('jquery'));
-	}
-	add_action('wp_enqueue_scripts', 'header_scripts');
+	add_action('wp_enqueue_scripts', wp_enqueue_script('header_sns-script', get_theme_file_uri('/js/header_sns.js'), array('jquery')));
 	?>
 	<?php $theme_url = get_theme_file_uri(); ?>
 	<link href="<?php echo $theme_url; ?>/assets/fontawesome/css/all.min.css" rel="stylesheet">
