@@ -1,14 +1,15 @@
 <script>
   jQuery('.slider').slick({
+    lazyLoad: 'ondemand',
     arrows: true,
     centerMode: true,
-    centerPadding: '20px',
+    centerPadding: '50px',
     slidesToShow: 3,
     dots: true,
     autoplay: true,
     autoplaySpeed: 2500,
-    responsive: [
-      {
+    variableWidth: false,
+    responsive: [{
         breakpoint: 768,
         settings: {
           arrows: true,

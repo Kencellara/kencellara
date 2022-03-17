@@ -245,6 +245,11 @@
   border-left: double 7px black;
   border-right: double 7px black;
 }
+.box7::after {
+  content: '※標準：☆☆☆（MAX：☆5）';
+  float: right;
+  font-size: 13px;
+}
 .box7 p {
   margin: 0;
   padding: 0;

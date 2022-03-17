@@ -15,16 +15,5 @@
 		<?php get_template_part('modules/sidebar/adsense'); ?>
 		<?php get_template_part('modules/sidebar/magazines'); ?>
 		<?php get_template_part('modules/sidebar/instagram'); ?>
-		<?php get_template_part('modules/sidebar/popular_articles'); ?>
-		<?php get_template_part('modules/sidebar/adsense_2'); ?>
-		<?php get_template_part('modules/sidebar/categories'); ?>
-		<?php get_template_part('modules/sidebar/adsense_2'); ?>
-		<?php get_template_part('modules/sidebar/archive'); ?>
-		<?php get_template_part('modules/sidebar/adsense_fix'); ?>
-		<!-- <div class="sb_twitter sb_content">
-			<div class="twitterHeader sb_header">公式Twitter</div>
-			<a class="twitter-timeline" href="https://twitter.com/kencellara_food?ref_src=twsrc%5Etfw">Tweets by kencellara_food</a>
-			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-		</div> -->
 	</div>
 </aside>

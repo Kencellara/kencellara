@@ -7,20 +7,22 @@
 ?>
 <article <?php post_class( array( 'article', 'article--single' ) ); ?>>
 	<div class="entry">
-		<div class="aboveTitleInfo">
-			<?php if ($post_count_bool) { ?>
-				<div class="milestone"><i class="fas fa-utensils"></i>  <?php echo $post_count_num+8; ?>店舗目  <i class="fas fa-utensils"></i></div>
-			<?php } ?>
-		</div>
-		<?php Habakiri::the_title(); ?>
-		<div class="belowTitleInfo">
-			<div class="createdDate articleDate">公開日：<?php the_date("Y年m月d日"); ?></div>
-			<div class="lastModifiedDate articleDate">最終更新日：<?php the_modified_date("Y年m月d日"); ?></div>
-			<div class="tmpInfo">
-				感染症対策を講じた上で取材を行っております。
+		<div class="articleHeaderZone">
+			<div class="aboveTitleInfo">
+				<?php if ($post_count_bool) { ?>
+					<div class="milestone"><i class="fas fa-utensils"></i>  <?php echo $post_count_num+8; ?>店舗目  <i class="fas fa-utensils"></i></div>
+				<?php } ?>
 			</div>
+			<?php Habakiri::the_title(); ?>
+			<div class="belowTitleInfo">
+				<div class="createdDate articleDate">公開日：<?php the_date("Y年m月d日"); ?></div>
+				<div class="lastModifiedDate articleDate">最終更新日：<?php the_modified_date("Y年m月d日"); ?></div>
+				<div class="tmpInfo">
+					感染症対策を講じた上で取材を行っております。
+				</div>
+			</div>
+			<?php get_template_part( 'modules/above_article' ); ?>
 		</div>
-		<?php get_template_part( 'modules/above_article' ); ?>
 		<?php do_action( 'habakiri_before_entry_content' ); ?>
 		<div class="entry__content">
 			<?php the_content(); ?>

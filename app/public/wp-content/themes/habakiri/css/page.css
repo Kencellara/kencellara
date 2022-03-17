@@ -1,0 +1,214 @@
+.sub-page-contents {
+  padding: 0;
+}
+
+.topPageHeader {
+  color: black;
+  background-color: white;
+  margin: 10px auto 20px;
+  width: 320px;
+  box-shadow: 5px 5px 5px 1px black;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  text-shadow: 1px 1px 1px silver;
+  font-size: 22px;
+}
+
+/* スライドショー */
+.slider {
+  background-color: #fff;
+  padding: 0 0 20px;
+}
+.slider img {
+  width: 90%;
+  margin: 20px auto 0;
+}
+.slick-slide {
+  margin: 20px;
+  opacity: 0.6;
+}
+.slick-slider {
+  margin-bottom: 40px !important;
+}
+.slick-center {
+  opacity: 1;
+  transform: scale(1.5);
+}
+.slick-center img {
+  margin: 10px;
+  padding: 15px 0;
+}
+.slick-prev {
+  z-index: 1;
+}
+.slick-next {
+  right: 75px !important;
+}
+.slick-prev::before,
+.slick-next::before {
+  position: absolute;
+  top: -18px;
+  font-size: 60px !important;
+  color: darkgoldenrod !important;
+}
+.slick-prev:before {
+  left: 30px;
+}
+.slick-next:before {
+  right: -70px;
+}
+.slick-dots {
+  background-color: cornsilk;
+  height: 50px;
+  padding-top: 10px !important;
+}
+.slick-dots li button:before {
+  color: darkgoldenrod !important;
+}
+
+/* magazines */
+.magazineArea .contentBox {
+  margin-bottom: 15px;
+  background-color: #ccc4a5;
+}
+.newMagazineZone {
+  padding: 10px;
+}
+.newMagazines {
+  display: flex;
+}
+.newMagazineBox {
+  margin: 30px;
+  text-align: center;
+  width: 45%;
+}
+.magazineHeader {
+  margin-bottom: 15px;
+}
+.magazineSlideZone {
+  margin: 0;
+  padding: 15px 0 5px;
+}
+.magazineSlideZone .slick-slide {
+  opacity: 1;
+  text-align: center;
+}
+.magazineSlideZone .slick-prev::before,
+.magazineSlideZone .slick-next::before {
+  color: crimson !important;
+}
+.magazineSlideZone .slick-dots {
+  background-color: #ccc4a5;
+}
+.magazineSlideZone .slick-dots li button:before {
+  color: crimson !important;
+}
+.magazineTitle {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 2px;
+  color: black;
+}
+.sliderMagazine img {
+  border: 3px ridge black;
+}
+
+.kence_work {
+  background-color: cornsilk;
+  padding: 15px;
+}
+.kenceWorkContents {
+  margin-bottom: 35px;
+}
+.kenceWorkWindow {
+  padding: 20px;
+  background-color: #fff;
+}
+.kenceWorkWindowExplain {
+  font-size: 16px;
+}
+.kenceWorkWindowModalOpen {
+  background-color: #fff;
+}
+.kenceWorkWindowCaution {
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.kenceWorkWindowExplain .kenceAdress {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 19px;
+  border-bottom: 1px solid black;
+}
+.kenceWorkWindowExplain ul {
+  font-size: 16px;
+  font-weight: bold;
+  list-style-type: circle;
+  margin: 0;
+  padding-top: 8px;
+}
+
+.kenceWorkContents.kencemeshiHistoryContents {
+  background-color: #fff;
+  padding: 10px 30px;
+}
+a.linkHistory {
+  display: block;
+  text-align: center;
+  font-size: 22px;
+  border: 2px solid crimson;
+  margin: 20px 0;
+  background-color: cornsilk;
+  border-radius: 8px;
+  color: crimson;
+  font-weight: bold;
+}
+a.linkHistory:hover {
+  background-color: crimson;
+  color: #fff;
+}
+.kenceWorkExplainQ {
+  font-weight: bold;
+  font-size: 25px;
+  padding: 0.2em 0.5em;
+  margin: 30px 0;
+  color: #565656;
+  background: #ffeaea;
+  box-shadow: 0px 0px 0px 10px #ffeaea;
+  border: dashed 2px #ffc3c3;
+  border-radius: 8px;
+}
+.question {
+  color: crimson;
+}
+.kenceWorkExplainA {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  margin: 20px 0;
+  background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+  background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+}
+.answer {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+.hyokkoriButace {
+  height: 80px;
+  position: absolute;
+  right: 20px;
+}
+
+.kencemeshiSupportHeader {
+  font-weight: bold;
+  font-size: 23px;
+  text-align: center;
+  margin: 20px auto;
+  padding: 1em;
+  width: 90%;
+  color: #555555;
+  background-color: #ffcccc;
+  box-shadow: 0 0 10px 10px #ffcccc;
+}

@@ -1,0 +1,127 @@
+.header {
+  background: content-box radial-gradient(white, cornsilk);
+  .container {
+    padding: 0;
+  }
+}
+.headerImgContainer {
+  width: 100%;
+}
+.site-branding {
+  padding: 0;
+}
+.site-branding__heading {
+  img {
+    max-width: 1100px;
+    margin: auto;
+    display: block;
+  }
+  a {
+    display: block;
+  }
+}
+
+/* 固定ヘッダー */
+.miniInfoArea {
+  display: flex;
+  height: 50px;
+  padding: 10px 0;
+}
+.fixedHeaderKencemeshi {
+  display: none;
+  color: saddlebrown;
+  background-color: cornsilk;
+  padding: 1px 10px;
+  font-size: 17px;
+  margin-right: -175px;
+  margin-left: 10px;
+  border-radius: 5px;
+  i {
+    margin: 0 .3em;
+  }
+}
+.snsContainer {
+  display: flex;
+  margin: 0 auto;
+  width: 320px;
+  height: 100%;
+  span {
+    color: saddlebrown;
+    margin: auto;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  a {
+    margin: 0 auto;
+  }
+  img {
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+  }
+  .twitter-button {
+    text-align: center;
+    font-size: 25px;
+    width: 30px;
+  }
+  .fa-twitter-square {
+    background-color: #fff;
+    color: #55acee;
+    font-size: 31px;
+    vertical-align: top;
+  }
+  .facebook-button {
+    font-size: 29px;
+  }
+  .fa-facebook-square {
+    background-color: white;
+    border-radius: 10px;
+    vertical-align: top;
+    font-size: 31px;
+    color: #305097;
+  }
+}
+.leadToSnsShort {
+  display: none;
+}
+.fixedHeaderHomeBtn {
+  display: none;
+  margin-right: 20px;
+  font-size: 20px;
+  color: saddlebrown;
+  background-color: cornsilk;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 10px;
+}
+/* 固定時 */
+.miniInfoArea.fixed {
+  position: fixed;
+  top: 0;
+  left: auto;
+  z-index: 15;
+  width: 100%;
+  background-color: #fff;
+  margin: 0;
+  padding: 12px 0;
+  height: 50px;
+  .fixedHeaderKencemeshi {
+    display: block;
+  }
+  .snsContainer {
+    width: 240px;
+  }
+  .fixedHeaderHomeBtn {
+    display: block;
+    a {
+      display: block;
+    }
+  }
+  .leadToSns {
+    display: none;
+  }
+  .leadToSnsShort {
+    display: inline;
+  }
+}

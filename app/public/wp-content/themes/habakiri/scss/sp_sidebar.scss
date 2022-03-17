@@ -1,0 +1,15 @@
+@import 'settings';
+
+@media screen and (max-width: 420px) {
+  .sb_article {
+    margin: 10px;
+  }
+  .topMagazine {
+    img {
+      box-shadow: 0px 0px 30px 10px $kence-color-4;
+    }
+  }
+  .toMagazines {
+    margin-top: 35px;
+  }
+}

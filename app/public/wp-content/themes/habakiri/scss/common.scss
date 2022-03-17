@@ -1,3 +1,5 @@
+@import 'settings';
+
 html {
   scroll-padding-top: 74px;
 }
@@ -16,15 +18,17 @@ html {
   }
 } */
 
-.page_parent a {
-  color: saddlebrown;
-}
-.page_parent a:focus,
-.page_parent a:hover,
-.page_parent a:active {
-  outline: none;
-  color: #333;
-  text-decoration: none;
+.page_parent {
+  a {
+    color: saddlebrown;
+    &:focus,
+    &:hover,
+    &:active {
+      outline: none;
+      color: saddlebrown;
+      text-decoration: none;
+    }
+  }
 }
 ul {
   list-style-type: none;
@@ -33,24 +37,29 @@ ul {
   color: saddlebrown;
   background-color: cornsilk;
   border-color: saddlebrown;
+  &:hover,
+  &:active,
+  &:focus {
+    color: cornsilk;
+    background-color: saddlebrown;
+    border-color: cornsilk;
+  }
 }
-.btn:hover,
-.btn:active,
-.btn:focus {
-  color: cornsilk;
-  background-color: saddlebrown;
-  border-color: cornsilk;
-}
-.btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover, .open>.btn-default.dropdown-toggle {
+.btn-default.active,
+.btn-default.focus,
+.btn-default:active,
+.btn-default:focus,
+.btn-default:hover,
+.open>.btn-default.dropdown-toggle {
   color: saddlebrown;
   background-color: cornsilk;
   border-color: saddlebrown;
 }
 .form-control {
   color: saddlebrown !important;
-}
-.form-control:focus {
-  border-color: saddlebrown !important;
+  &:focus {
+    border-color: saddlebrown !important;
+  }
 }
 input::placeholder {
   color: saddlebrown !important;
@@ -65,20 +74,20 @@ input::placeholder {
   background-color: cornsilk;
   color: saddlebrown;
   border-bottom: 2px solid saddlebrown;
-}
-.menuItem a {
-  text-align: center;
-  font-weight: bold;
-  font-size: 20px;
-  display: block;
-  padding: 10px 30px;
-  cursor: pointer;
-}
-.menuItem.active a {
-  background-color: saddlebrown;
-  color: cornsilk;
-  border-bottom: 2px solid cornsilk;
-  cursor: default;
+  a {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+    padding: 10px 30px;
+    cursor: pointer;
+  }
+  &.active a {
+    background-color: saddlebrown;
+    color: cornsilk;
+    border-bottom: 2px solid cornsilk;
+    cursor: default;
+  }
 }
 
 /* parts */
@@ -101,12 +110,14 @@ input::placeholder {
   text-shadow: 2px 2px 2px gold;
 }
 
-a.instaLink {
-  color: deeppink;
-}
-a.supportLink,
-a.workLink {
-  color: crimson;
+a {
+  &.instaLink {
+    color: deeppink;
+  }
+  &.supportLink,
+  &.workLink {
+    color: crimson;
+  }
 }
 
 .forAd {
@@ -136,9 +147,9 @@ a.workLink {
   text-align: center;
   padding: 10px 0;
   font-weight: bold;
-}
-.kenceWindowAnnounce i {
-  font-size: 50px;
+  i {
+    font-size: 50px;
+  }
 }
 .kenceWindowCaution {
   display: block;
@@ -151,20 +162,22 @@ a.workLink {
   text-align: center;
   color: black;
   padding: 20px 0;
-}
-.kenceWindowModalOpen a {
-  text-shadow: 1px 1px 1px silver;
-  font-weight: bold;
-  font-size: 20px;
-  padding: 10px;
-  border: 3px outset silver;
-  background-color: white;
-  color: black;
-}
-.kenceWindowModalOpen a:hover {
-  opacity: 0.6;
-  color: black;
-  text-shadow: 3px 3px 3px silver;
+  a {
+    text-shadow: 1px 1px 1px silver;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    border: 3px outset silver;
+    background-color: white;
+    color: black;
+    &:hover,
+    &:active,
+    &:focus {
+      opacity: 0.6;
+      color: black;
+      text-shadow: 3px 3px 3px silver;
+    }
+  }
 }
 .kenceWindowModal {
   display: none;
@@ -208,6 +221,11 @@ a.kenceWindowModalClose {
   font-weight: bold;
   border-radius: 10px;
   margin: 8px;
+  &:hover,
+  &:active,
+  &:focus {
+    color: black;
+  }
 }
 .kenceWindowModalOpen:hover,
 .kenceWindowModalClose:hover {
@@ -226,21 +244,21 @@ a.kenceWindowModalClose {
 /* pagenation */
 .pagination {
   margin: 20px 0 20px 8px;
-}
-.pagination>li>span,
-.pagination>li>span:focus,
-.pagination>li>span:hover {
-  background-color: saddlebrown !important;
-  border-color: saddlebrown !important;
-  color: cornsilk !important;
-}
-.pagination>li>a {
-  color: saddlebrown !important;
-}
-.pagination>li>a:hover,
-.pagination>li>a:focus {
-  background-color: saddlebrown !important;
-  color: cornsilk !important;
+  &>li>span,
+  &>li>span:focus,
+  &>li>span:hover {
+    background-color: saddlebrown !important;
+    border-color: saddlebrown !important;
+    color: cornsilk !important;
+  }
+  &>li>a {
+    color: saddlebrown !important;
+  }
+  &>li>a:hover,
+  &>li>a:focus {
+    background-color: saddlebrown !important;
+    color: cornsilk !important;
+  }
 }
 
 .followInsta {
@@ -253,32 +271,70 @@ a.kenceWindowModalClose {
   text-align: center;
   background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
   overflow: hidden;
-}
-.followInsta::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(15deg, #ffdb2c, rgb(249, 118, 76) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;
-}
-.followInsta .fa-instagram {
-  font-size: 30px;
-  position: relative;
-  top: 4px;
-  font-style: inherit;
-  margin-right: 0.2em;
-}
-.followInsta span {
-  font-size: 22px;
-  display:inline-block;
-  position: relative;
-}
-.followInsta:hover span {
-  opacity: 0.8;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(15deg, #ffdb2c, rgb(249, 118, 76) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;
+  }
+  .fa-instagram {
+    font-size: 30px;
+    position: relative;
+    top: 4px;
+    font-style: inherit;
+    margin-right: 0.2em;
+  }
+  span {
+    font-size: 22px;
+    display:inline-block;
+    position: relative;
+  }
+  &:hover span {
+    opacity: 0.8;
+  }
 }
 
 .sub-page-contents {
   padding-top: 10px;
+}
+
+.slider {
+  opacity: 0;
+  transition: opacity .3s linear;
+  &.slick-initialized {
+    opacity: 1;
+  }
+}
+
+a.linkBtn {
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  color: $kence-color-1;
+  background-color: $kence-color-2;
+  box-shadow: 0 0 10px $kence-color-1;
+  border-radius: 8px;
+  transition: 0.3s;
+  &:hover,
+  &:active,
+  &:focus, {
+    color: $kence-color-2;
+    background-color: $kence-color-1;
+    &::after {
+      border-color: $kence-color-2;
+    }
+  }
+  &::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-top: 3px solid $kence-color-1;
+    border-right: 3px solid $kence-color-1;
+    transform: rotate(45deg);
+  }
 }

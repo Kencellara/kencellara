@@ -46,6 +46,10 @@
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
 }
 
+.sb_translate .switcher .selected {
+  z-index: 10;
+}
+
 .sb_content:nth-child(n+2) {
   margin: 30px 0;
 }

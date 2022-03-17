@@ -1,5 +1,5 @@
-.kence_work {
-  background-color: cornsilk;
+.ccZone {
+  background-color: #fff;
   padding: 15px;
 }
 .kenceWorkContents {
@@ -33,10 +33,21 @@
   margin: 0;
   padding-top: 8px;
 }
-
-.kenceWorkContents.kencemeshiHistoryContents {
+.PRMovieHeader {
+  width: 350px;
+}
+.PRMovieZone {
+  text-align: center;
   background-color: #fff;
+  padding: 10px 0;
+  margin-bottom: 40px;
+}
+.kenceWorkContents.kencemeshiHistoryContents {
+  background-color: #eee;
   padding: 10px 30px;
+}
+.kencemeshiHistoryContents ul {
+  list-style: inherit;
 }
 a.linkHistory {
   display: block;

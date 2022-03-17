@@ -1,0 +1,12 @@
+@media screen and (max-width: 420px) {
+  .newMagazineBox {
+    margin: 10px;
+  }
+  .newMagazineBox .magazineTitle {
+    font-size: 13px;
+  }
+  .magazineSlideZone .slick-slide {
+    padding: 20px;
+    margin: 10px;
+  }
+}

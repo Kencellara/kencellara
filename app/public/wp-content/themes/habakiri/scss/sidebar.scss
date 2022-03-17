@@ -1,0 +1,162 @@
+@import 'settings';
+
+.sb_header {
+  color: $kence-color-2;
+  position: relative;
+  font-size: 120%;
+  font-weight: bold;
+  height: 37px;
+  line-height: 30px;
+  padding: 0.2em 0.5em;
+  background-color: $kence-color-1;
+  box-shadow: 0px 0px 0px 5px $kence-color-1;
+  border: 1px dashed #fff;
+  margin-bottom: 30px;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-color: transparent;
+  }
+  &::before {
+    top: 40px;
+    left: -6px;
+    border-width: 0 15px 15px 0;
+    border-right-color: $kence-color-3;
+  }
+}
+.sb_subHeader {
+  margin: 20px 2px;
+  font-weight: bold;
+  position: relative;
+  background: $kence-color-1;
+  box-shadow: 0px 0px 0px 5px $kence-color-1;
+  border: dashed 2px #fff;
+  padding: 0.2em 0.5em;
+  color: brown;
+  &::after {
+    position: absolute;
+    content: '';
+    left: -7px;
+    top: -7px;
+    border-width: 0 0 15px 15px;
+    border-style: solid;
+    border-color: #fff #fff $kence-color-3;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.sb_translate .switcher .selected {
+  z-index: 10;
+}
+
+.sb_content:nth-child(n+2) {
+  margin: 30px 0;
+}
+.profileImg {
+  text-align: center;
+}
+.profileSentence {
+  font-weight: bold;
+  padding-top: 10px;
+}
+.sb_snsLogosHeader {
+  margin: 0 !important;
+  font-weight: bold;
+  color: $kence-color-2;
+  font-size: 16px;
+}
+.sb_snsLogos {
+  text-align: center;
+  margin: 5px 0 !important;
+  a {
+    margin: 0 8px;
+  }
+  img {
+    height: 35px;
+    width: 35px;
+  }
+  .fa-twitter-square {
+    background-color: #fff;
+    color: $tw-color;
+    font-size: 37px;
+    vertical-align: middle;
+  }
+  .LINEIcon {
+    border-radius: 10px;
+  }
+  .fa-facebook-square {
+    background-color: #fff;
+    border-radius: 10px;
+    vertical-align: top;
+    font-size: 37px;
+    color: $fb-color;
+  }
+}
+.topMagazine {
+  text-align: center;
+  img {
+    box-shadow: 0px 0px 20px 5px $kence-color-4;
+  }
+}
+.toMagazines {
+  margin: 25px auto 0;
+  font-weight: bold;
+  a {
+    width: 140px;
+    font-size: 15px;
+  }
+}
+.sb_archive {
+  ul {
+    padding-left: 10px;
+  }
+  a {
+    color: $kence-color-2;
+  }
+}
+.sb_categoryContents {
+  display: inline-flex;
+  flex-flow: wrap;
+}
+.sb_categories a {
+  font-weight: bold;
+  padding: 5px;
+  text-align: center;
+  width: 100px;
+  margin: 0 5px 5px 0;
+  border: 1px solid $kence-color-2;
+  border-radius: 9px;
+}
+
+/* インスタ */
+iframe.instagram-media {
+  min-width: 0 !important;
+}
+
+/* ピックアップ記事 */
+.sb_article {
+  background-color: #fff;
+  border: 3px outset $kence-color-2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  margin-bottom: 5px;
+}
+.sb_articleTitle {
+  line-height: 1.0;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 8px 10px;
+  border: 3px solid #ccc;
+  border-radius: 3em .7em 2em .7em/.7em 2em .7em 3em;
+  margin: 8px 3px;
+  a {
+    color: #333;
+  }
+}
