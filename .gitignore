@@ -9,3 +9,4 @@
 /app/public/wp-content/themes/*
 !/app/public/wp-content/themes/habakiri
 /app/public/wp-content/themes/habakiri/scss-css/*
+.DS_Store
