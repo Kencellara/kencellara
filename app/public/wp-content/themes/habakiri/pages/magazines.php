@@ -22,15 +22,15 @@
     <div class="magazineHeader topPageHeader">マガジン新着 <i class="fas fa-bolt"></i></div>
     <div class="newMagazines">
       <div class="newMagazineBox">
-        <a href="https://kencellara.com/magazine/ekichika" target="_blank" rel="noreferrer">
-          <img src="https://kencellara.com/magazine/image/cover/ekichika.jpg" alt="駅近飲食店オススメ8選" />
-          <span class="magazineTitle">駅近飲食店オススメ8選</span>
-        </a>
-      </div>
-      <div class="newMagazineBox">
         <a href="https://kencellara.com/magazine/march-osusume" target="_blank" rel="noreferrer">
           <img src="https://kencellara.com/magazine/image/cover/march-osusume.jpg" alt="3月ケンチェオススメ特集" />
           <span class="magazineTitle">3月ケンチェオススメ特集</span>
+        </a>
+      </div>
+      <div class="newMagazineBox">
+        <a href="https://kencellara.com/magazine/yousyoku-1" target="_blank" rel="noreferrer">
+          <img src="https://kencellara.com/magazine/image/cover/yousyoku-1.jpg" alt="みんな大好き洋食特集" />
+          <span class="magazineTitle">みんな大好き洋食特集</span>
         </a>
       </div>
     </div>
@@ -108,6 +108,12 @@
         <a href="https://kencellara.com/magazine/march-osusume" target="_blank" rel="noreferrer">
           <img src="https://kencellara.com/magazine/image/cover/march-osusume.jpg" alt="3月ケンチェオススメ特集" />
           <span class="magazineTitle">3月ケンチェオススメ特集</span>
+        </a>
+      </div>
+      <div>
+        <a href="https://kencellara.com/magazine/yousyoku-1" target="_blank" rel="noreferrer">
+          <img src="https://kencellara.com/magazine/image/cover/yousyoku-1.jpg" alt="みんな大好き洋食特集" />
+          <span class="magazineTitle">みんな大好き洋食特集</span>
         </a>
       </div>
     </div>
