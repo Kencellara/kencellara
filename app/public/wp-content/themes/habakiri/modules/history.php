@@ -148,4 +148,13 @@
       <li>インスタ広告 開始</li>
     </ul>
   </div>
+  <div class="month">
+    <h4>3月</h4>
+    <ul>
+      <li><strong><span style="color: #ff0000;">月間アクセス数 106,232 PV</span></strong></li>
+      <li><a href="https://kencellara.com/entry/alley_luck" target="_blank" rel="noreferrer">アリーラック様 取材依頼 受託</a> <i class="fas fa-external-link-alt"></i></li>
+      <li><a href="https://kencellara.com/entry/akatuki_syouten" target="_blank" rel="noreferrer">暁商店様 取材依頼 受託</a> <i class="fas fa-external-link-alt"></i></li>
+      <li>株式会社ザイマックス様 業務提携</a></li>
+    </ul>
+  </div>
 </div>
