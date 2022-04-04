@@ -22,6 +22,9 @@ $upload_dir = wp_upload_dir();
   </div>
 </nav>
 
+<div class="simpleNews">
+  <p>ニュース<i class="fas fa-chevron-circle-right"></i>月間10万アクセス達成！</p>
+</div>
 <div class="ccZone">
   <div class="kenceWorkSlogan kenceWorkContents">
     <div class="kenceWorkSloganHeader topPageHeader">ケンチェ飯とは？</div>

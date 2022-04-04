@@ -13,10 +13,6 @@ $iseShima_post_count = get_category_by_slug('ise')->count + get_category_by_slug
 $higashikishu_post_count = get_category_by_slug('odai')->count + get_category_by_slug('kihoku')->count + get_category_by_slug('owase')->count;
 ?>
 
-<div class="simpleNews">
-  <p>ニュース<i class="fas fa-chevron-circle-right"></i>Instagramフォロワー6,000人，月間95,000アクセス達成！<a href="https://store.line.me/stickershop/product/16142065/ja?ref=gnsh_stickerDetail" target="_blank" rel="noreferrer"> ケンチェ飯公式LINEスタンプ販売開始（こちら）</a></p>
-</div>
-
 <div class="storeCountArea">
   <div class="storeCountContainer">
     <img src="<?php echo $common_img_dir; ?>/crown_50.jpg" alt="王冠" />

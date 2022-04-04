@@ -6,8 +6,8 @@ add_action('wp_enqueue_scripts', wp_enqueue_style('sp_page-style', get_template_
 add_action('wp_enqueue_scripts', wp_enqueue_style('slick-style', get_template_directory_uri() . '/src/js/slick/slick.css'));
 add_action('wp_enqueue_scripts', wp_enqueue_style('slick-theme-style', get_template_directory_uri() . '/src/js/slick/slick-theme.css'));
 add_action('wp_enqueue_scripts', wp_enqueue_script('slick-script', get_theme_file_uri('/src/js/slick/slick.min.js'), array('jquery')));
-add_action('wp_enqueue_scripts', wp_enqueue_style('collabo_coverage-style', get_template_directory_uri() . '/css/collabo_coverage.css', array(), '2.0.2'));
-add_action('wp_enqueue_scripts', wp_enqueue_style('sp_collabo_coverage-style', get_template_directory_uri() . '/css/sp_collabo_coverage.css', array(), '2.0'));
+add_action('wp_enqueue_scripts', wp_enqueue_style('collabo_coverage-style', get_template_directory_uri() . '/scss-css/collabo_coverage.css', array(), '3.0'));
+add_action('wp_enqueue_scripts', wp_enqueue_style('sp_collabo_coverage-style', get_template_directory_uri() . '/scss-css/sp_collabo_coverage.css', array(), '3.0'));
 ?>
 <?php get_header(); ?>
 
