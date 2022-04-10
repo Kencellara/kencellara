@@ -22,15 +22,15 @@
     <div class="magazineHeader topPageHeader">マガジン新着 <i class="fas fa-bolt"></i></div>
     <div class="newMagazines">
       <div class="newMagazineBox">
-        <a href="https://kencellara.com/magazine/yousyoku-1" target="_blank" rel="noreferrer">
-          <img src="https://kencellara.com/magazine/image/cover/yousyoku-1.jpg" alt="みんな大好き洋食特集" />
-          <span class="magazineTitle">みんな大好き洋食特集</span>
-        </a>
-      </div>
-      <div class="newMagazineBox">
         <a href="https://kencellara.com/magazine/april-osusume" target="_blank" rel="noreferrer">
           <img src="https://kencellara.com/magazine/image/cover/april-osusume.jpg" alt="４月 ケンチェオススメ特集" />
           <span class="magazineTitle">４月 ケンチェオススメ特集</span>
+        </a>
+      </div>
+      <div class="newMagazineBox">
+        <a href="https://kencellara.com/magazine/tsu-ramen-1" target="_blank" rel="noreferrer">
+          <img src="https://kencellara.com/magazine/image/cover/tsu-ramen-1.jpg" alt="津市ラーメン特集" />
+          <span class="magazineTitle">津市ラーメン特集</span>
         </a>
       </div>
     </div>
@@ -120,6 +120,12 @@
         <a href="https://kencellara.com/magazine/april-osusume" target="_blank" rel="noreferrer">
           <img src="https://kencellara.com/magazine/image/cover/april-osusume.jpg" alt="４月 ケンチェオススメ特集" />
           <span class="magazineTitle">４月 ケンチェオススメ特集</span>
+        </a>
+      </div>
+      <div>
+        <a href="https://kencellara.com/magazine/tsu-ramen-1" target="_blank" rel="noreferrer">
+          <img src="https://kencellara.com/magazine/image/cover/tsu-ramen-1.jpg" alt="津市ラーメン特集" />
+          <span class="magazineTitle">津市ラーメン特集</span>
         </a>
       </div>
     </div>
