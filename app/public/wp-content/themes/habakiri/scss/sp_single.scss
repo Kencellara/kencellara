@@ -1,0 +1,101 @@
+@media screen and (max-width: 420px) {
+  .sub-page-contents {
+    padding-top: 0;
+  }
+  .col-md-9 {
+    padding: 0 10px;
+  }
+  .entry h1.entry__title {
+    font-size: 19px;
+  }
+  .articleDate {
+    font-size: 12.5px;
+  }
+  .entry__content {
+    padding: 10px;
+  }
+  .entry__content p {
+    font-size: 15px;
+  }
+  .entry__content ul {
+    font-size: 15px;
+  }
+  .entry__content h2 {
+    font-size: 18px;
+  }
+  .entry__content h3 {
+    font-size: 18px;
+  }
+  .l-fuki, .r-fuki {
+    padding: 15px;
+  }
+  .summaryTable {
+    width: 100%;
+  }
+  .related-posts {
+    margin-top: 10px;
+    padding-top: 15px;
+  }
+  .related-posts .entry--has_media__media {
+    width: 100%;
+  }
+  .related-posts .entry--has_media__body {
+    padding: 15px 5px 0;
+  }
+  .related-posts .entry__summary {
+    display: none;
+  }
+  .kencemeshiSupportHeader {
+    font-size: 22px;
+  }
+  .blogcard {
+    margin: 10px;
+  }
+  .blogcard.ex {
+    height: inherit;
+    padding: 10px;
+  }
+  .blogcard_thumbnail {
+    padding: 10px;
+  }
+  .blogcard_thumbnail img {
+    max-height: 160px;
+    width: 100%;
+  }
+  .blogcard_title {
+    font-size: 15px;
+    padding: 10px;
+  }
+  .blogcard_excerpt {
+    display: none;
+    padding: 0 10px;
+  }
+  .blogcard_link {
+    padding: 10px;
+  }
+  .blogcard_link .favicon {
+    float: left;
+  }
+  .kenceWindowExplain {
+    margin: 15px 10px 8px;
+  }
+  .kenceWindowModalOpen {
+    margin: 0 20px;
+  }
+  .kenceWindowCaution {
+    margin: 0 20px;
+  }
+  .kencePointTitle {
+    display: table;
+    position: inherit;
+    margin: 5px auto 0;
+  }
+  .kencePoint ul {
+    padding-top: 10px;
+  }
+  .kencePoint .plainText {
+    margin: 12px 18px;
+    font-size: 14px;
+    padding: 0;
+  }
+}
