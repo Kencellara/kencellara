@@ -706,7 +706,7 @@ class Habakiri_Base_Functions {
 		$id = Habakiri_Base_Functions::get_post_id_by_slug($slug);
 		$post = get_post($id);
 
-		$sc_Linkcard .='
+		$sc_Linkcard ='
 			<div class="emphasize-link">
 				<div class="blogcard ex">
 					<a href="'. $post->guid .'" target="_blank">
@@ -832,8 +832,7 @@ class Habakiri_Base_Functions {
 	}
 
 	public function introInsta() {
-		$sticker_img_dir = wp_upload_dir()['baseurl'] . '/sticker/';
-		$introInsta .='
+		$introInsta ='
 			<div class="noticeBox">
 				<div class="noticeBoxHeader">おしらせ</div>
 				<p>ケンチェ飯では三重県グルメ全店舗制覇を目指して、どこよりも詳しいグルメ情報をお届け！</p>

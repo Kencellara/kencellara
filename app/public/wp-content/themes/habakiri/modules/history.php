@@ -157,4 +157,12 @@
       <li>株式会社ザイマックス様 業務提携</a></li>
     </ul>
   </div>
+  <div class="month">
+    <h4>5月</h4>
+    <ul>
+      <li><strong><span style="color: #ff0000;">月間アクセス数 115,307 PV</span></strong></li>
+      <li>GETDOG様 取材依頼 受託</li>
+      <li>芋ぴっぴ伊勢店様 取材依頼 受託</li>
+    </ul>
+  </div>
 </div>

@@ -23,7 +23,7 @@ $upload_dir = wp_upload_dir();
 </nav>
 
 <div class="simpleNews">
-  <p>ニュース<i class="fas fa-chevron-circle-right"></i>月間10万アクセス達成！</p>
+  <p>ニュース<i class="fas fa-chevron-circle-right"></i>月間11.5万アクセス達成！</p>
 </div>
 <div class="ccZone">
   <div class="kenceWorkSlogan kenceWorkContents">
@@ -80,7 +80,7 @@ $upload_dir = wp_upload_dir();
     <div class="kenceWorkWindowExplain">
       <p>ケンチェ飯では三重県にある飲食店の取材・執筆を<strong>無料で</strong>承っております。</p>
       <p>
-        現在、月間サイトアクセス数<span class="p_crimson p_bold">10万回</span>を達成し、その流入者のうち<strong>大半が県内で飲食店を探している</strong>方となっています。<br />
+        現在、月間サイトアクセス数<span class="p_crimson p_bold">11.5万</span>を達成し、その流入者のうち<strong>大半が県内で飲食店を探している</strong>方となっています。<br />
         そのため、他のメディアに比べて<strong>効果的かつ直接的に熱いユーザー層に宣伝する</strong>ことができます。<br />
         また、一度サイト上でお店を紹介すると<strong>半永久的に宣伝することができる</strong>大きなメリットもあります。<br />
         これは雑誌や新聞ではなく、<strong>電子媒体メディアならではの強み</strong>となっています。
