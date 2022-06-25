@@ -1,6 +1,5 @@
 <script>
   jQuery('.slider').slick({
-    lazyLoad: 'progressive',
     arrows: true,
     centerMode: true,
     centerPadding: '50px',
