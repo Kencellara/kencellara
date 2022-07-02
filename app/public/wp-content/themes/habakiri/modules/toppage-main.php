@@ -33,37 +33,37 @@ $higashikishu_post_count = get_category_by_slug('odai')->count + get_category_by
     <div>
       <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('kan'); ?>
       <a href="<?php echo the_permalink($slider_articles_id); ?>">
-        <img data-lazy="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" alt="kan" loading="lazy" />
+        <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" alt="kan" />
       </a>
     </div>
     <div>
       <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('touyouke-grill'); ?>
       <a href="<?php echo the_permalink($slider_articles_id); ?>">
-        <img data-lazy="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" alt="touyouke-grill" loading="lazy" />
+        <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" alt="touyouke-grill" />
       </a>
     </div>
     <div>
       <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('history'); ?>
       <a href="<?php echo the_permalink($slider_articles_id); ?>">
-        <img data-lazy="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" alt="history" loading="lazy" />
+        <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" alt="history" />
       </a>
     </div>
     <div>
       <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('nakaroku'); ?>
       <a href="<?php echo the_permalink($slider_articles_id); ?>">
-        <img data-lazy="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" alt="nakaroku" loading="lazy" />
+        <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" alt="nakaroku" />
       </a>
     </div>
     <div>
       <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('take-sushi'); ?>
       <a href="<?php echo the_permalink($slider_articles_id); ?>">
-        <img data-lazy="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" alt="take-sushi" loading="lazy" />
+        <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" alt="take-sushi" />
       </a>
     </div>
     <div>
       <?php $slider_articles_id = Habakiri_Base_Functions::get_post_id_by_slug('menya-sen'); ?>
       <a href="<?php echo the_permalink($slider_articles_id); ?>">
-        <img data-lazy="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" alt="menya-sen" loading="lazy" />
+        <img src="<?php echo get_the_post_thumbnail_url($slider_articles_id, 'large'); ?>" alt="menya-sen" />
       </a>
     </div>
   </div>
